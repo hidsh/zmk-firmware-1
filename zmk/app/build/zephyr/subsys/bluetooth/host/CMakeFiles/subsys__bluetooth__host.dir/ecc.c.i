@@ -1,0 +1,22313 @@
+# 0 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build//"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/autoconf.h" 1
+# 0 "<command-line>" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain/zephyr_stdint.h" 1
+# 0 "<command-line>" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+
+
+
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 1 3 4
+# 12 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 1 3 4
+
+
+
+
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/features.h" 1 3 4
+# 28 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/features.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/picolibc.h" 1 3 4
+
+
+
+
+
+       
+# 29 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/features.h" 2 3 4
+# 9 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 2 3 4
+# 41 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+
+# 41 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef signed char __int8_t;
+
+typedef unsigned char __uint8_t;
+# 55 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef short int __int16_t;
+
+typedef short unsigned int __uint16_t;
+# 77 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef 
+# 77 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       int 
+# 77 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                      __int32_t;
+
+typedef 
+# 79 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       unsigned int 
+# 79 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                       __uint32_t;
+# 103 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef 
+# 103 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       long long int 
+# 103 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                      __int64_t;
+
+typedef 
+# 105 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       unsigned long long int 
+# 105 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                       __uint64_t;
+# 134 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef signed char __int_least8_t;
+
+typedef unsigned char __uint_least8_t;
+# 160 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef short int __int_least16_t;
+
+typedef short unsigned int __uint_least16_t;
+# 182 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef 
+# 182 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       int 
+# 182 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                            __int_least32_t;
+
+typedef 
+# 184 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       unsigned int 
+# 184 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                             __uint_least32_t;
+# 200 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef 
+# 200 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       long long int 
+# 200 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                            __int_least64_t;
+
+typedef 
+# 202 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       unsigned long long int 
+# 202 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                             __uint_least64_t;
+# 214 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+typedef long long int __intmax_t;
+
+
+
+
+
+
+
+typedef long long unsigned int __uintmax_t;
+
+
+
+
+
+
+
+typedef 
+# 230 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       long int 
+# 230 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                       __intptr_t;
+
+typedef 
+# 232 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h"
+       long unsigned int 
+# 232 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_default_types.h" 3 4
+                        __uintptr_t;
+# 13 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 2 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_intsup.h" 1 3 4
+# 35 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_intsup.h" 3 4
+       
+       
+       
+       
+       
+       
+       
+       
+# 190 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_intsup.h" 3 4
+       
+       
+       
+       
+       
+       
+       
+       
+# 14 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 2 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_stdint.h" 1 3 4
+# 20 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_stdint.h" 3 4
+typedef __int8_t int8_t ;
+
+
+
+typedef __uint8_t uint8_t ;
+
+
+
+
+
+
+
+typedef __int16_t int16_t ;
+
+
+
+typedef __uint16_t uint16_t ;
+
+
+
+
+
+
+
+typedef __int32_t int32_t ;
+
+
+
+typedef __uint32_t uint32_t ;
+
+
+
+
+
+
+
+typedef __int64_t int64_t ;
+
+
+
+typedef __uint64_t uint64_t ;
+
+
+
+
+
+
+typedef __intmax_t intmax_t;
+
+
+
+
+typedef __uintmax_t uintmax_t;
+
+
+
+
+typedef __intptr_t intptr_t;
+
+
+
+
+typedef __uintptr_t uintptr_t;
+# 15 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 2 3 4
+
+
+
+
+
+
+typedef __int_least8_t int_least8_t;
+typedef __uint_least8_t uint_least8_t;
+
+
+
+
+typedef __int_least16_t int_least16_t;
+typedef __uint_least16_t uint_least16_t;
+
+
+
+
+typedef __int_least32_t int_least32_t;
+typedef __uint_least32_t uint_least32_t;
+
+
+
+
+typedef __int_least64_t int_least64_t;
+typedef __uint_least64_t uint_least64_t;
+# 51 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+  typedef int int_fast8_t;
+  typedef unsigned int uint_fast8_t;
+# 61 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+  typedef int int_fast16_t;
+  typedef unsigned int uint_fast16_t;
+# 71 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+  typedef 
+# 71 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h"
+         int 
+# 71 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+                             int_fast32_t;
+  typedef 
+# 72 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h"
+         unsigned int 
+# 72 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+                              uint_fast32_t;
+# 81 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+  typedef 
+# 81 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h"
+         long long int 
+# 81 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+                             int_fast64_t;
+  typedef 
+# 82 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h"
+         unsigned long long int 
+# 82 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdint.h" 3 4
+                              uint_fast64_t;
+# 9 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/check.h" 1
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/check.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/__assert.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/__assert.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stdbool.h" 1 3 4
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/__assert.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain.h" 1
+# 50 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain/gcc.h" 1
+# 98 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain/gcc.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain/common.h" 1
+# 99 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain/gcc.h" 2
+# 51 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/toolchain.h" 2
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/__assert.h" 2
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/__assert.h"
+
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/__assert.h"
+void __attribute__((format (printf, 1, 2))) assert_print(const char *fmt, ...);
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/check.h" 2
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h" 1
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 145 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 3 4
+
+# 145 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 3 4
+typedef int ptrdiff_t;
+# 214 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 3 4
+typedef unsigned int size_t;
+# 329 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 3 4
+typedef unsigned int wchar_t;
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/types.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/types.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/types.h" 2
+# 22 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/types.h"
+
+# 22 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/types.h"
+typedef union {
+ long long thelonglong;
+ long double thelongdouble;
+ uintmax_t theuintmax_t;
+ size_t thesize_t;
+ uintptr_t theuintptr_t;
+ void *thepvoid;
+ void (*thepfunc)(void);
+} z_max_align_t;
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h" 1
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_macro.h" 1
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_macro.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_loops.h" 1
+# 1083 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_loops.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_listify.h" 1
+# 1084 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_loops.h" 2
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h" 2
+# 153 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1
+# 154 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h" 2
+# 184 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1
+# 185 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1
+# 188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1
+# 191 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_internal.h" 2
+# 35 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util_macro.h" 2
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h" 2
+# 28 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h" 2
+# 379 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+static inline 
+# 379 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h" 3 4
+             _Bool 
+# 379 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+                  is_power_of_two(unsigned int x)
+{
+ return (((x) != 0U) && (((x) & ((x) - 1U)) == 0U));
+}
+# 391 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+static inline int64_t arithmetic_shift_right(int64_t value, uint8_t shift)
+{
+ int64_t sign_ext;
+
+ if (shift == 0U) {
+  return value;
+ }
+
+
+ sign_ext = (value >> 63) & 1;
+
+
+ sign_ext = -sign_ext;
+
+
+ return (value >> shift) | (sign_ext << (64 - shift));
+}
+# 418 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+static inline void bytecpy(void *dst, const void *src, size_t size)
+{
+ size_t i;
+
+ for (i = 0; i < size; ++i) {
+  ((volatile uint8_t *)dst)[i] = ((volatile const uint8_t *)src)[i];
+ }
+}
+# 437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+static inline void byteswp(void *a, void *b, size_t size)
+{
+ uint8_t t;
+ uint8_t *aa = (uint8_t *)a;
+ uint8_t *bb = (uint8_t *)b;
+
+ for (; size > 0; --size) {
+  t = *aa;
+  *aa++ = *bb;
+  *bb++ = t;
+ }
+}
+# 458 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+int char2hex(char c, uint8_t *x);
+# 468 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+int hex2char(uint8_t x, char *c);
+# 480 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+size_t bin2hex(const uint8_t *buf, size_t buflen, char *hex, size_t hexlen);
+# 492 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+size_t hex2bin(const char *hex, size_t hexlen, uint8_t *buf, size_t buflen);
+# 501 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+static inline uint8_t bcd2bin(uint8_t bcd)
+{
+ return ((10 * (bcd >> 4)) + (bcd & 0x0F));
+}
+# 513 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+static inline uint8_t bin2bcd(uint8_t bin)
+{
+ return (((bin / 10) << 4) | (bin % 10));
+}
+# 531 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+uint8_t u8_to_dec(char *buf, uint8_t buflen, uint8_t value);
+# 557 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+char *utf8_trunc(char *utf8_str);
+# 573 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+char *utf8_lcpy(char *dst, const char *src, size_t n);
+# 640 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/time_units.h" 1
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/time_units.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/time_units.h" 2
+# 641 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/util.h" 2
+# 16 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 1
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 1
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 21 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 1 3 4
+
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/newlib.h" 1 3 4
+# 6 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 2 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/cdefs.h" 1 3 4
+# 47 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/cdefs.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 48 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/cdefs.h" 2 3 4
+# 7 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 2 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/syslimits.h" 1 3 4
+# 8 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 2 3 4
+# 138 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed/limits.h" 1 3 4
+# 139 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 2 3 4
+# 23 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/linker/sections.h" 1
+# 137 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/linker/sections.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/linker/section_tags.h" 1
+# 138 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/linker/sections.h" 2
+# 25 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 2
+# 22 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+typedef long atomic_t;
+typedef atomic_t atomic_val_t;
+typedef void *atomic_ptr_t;
+typedef atomic_ptr_t atomic_ptr_val_t;
+# 43 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h" 1
+# 40 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline 
+# 40 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h" 3 4
+             _Bool 
+# 40 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+                  atomic_cas(atomic_t *target, atomic_val_t old_value,
+     atomic_val_t new_value)
+{
+ return __atomic_compare_exchange_n(target, &old_value, new_value,
+        0, 5,
+        5);
+}
+# 64 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline 
+# 64 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h" 3 4
+             _Bool 
+# 64 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+                  atomic_ptr_cas(atomic_ptr_t *target, atomic_ptr_val_t old_value,
+      atomic_ptr_val_t new_value)
+{
+ return __atomic_compare_exchange_n(target, &old_value, new_value,
+        0, 5,
+        5);
+}
+# 86 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_add(atomic_t *target, atomic_val_t value)
+{
+ return __atomic_fetch_add(target, value, 5);
+}
+# 105 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_sub(atomic_t *target, atomic_val_t value)
+{
+ return __atomic_fetch_sub(target, value, 5);
+}
+# 123 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_inc(atomic_t *target)
+{
+ return atomic_add(target, 1);
+}
+# 141 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_dec(atomic_t *target)
+{
+ return atomic_sub(target, 1);
+}
+# 159 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_get(const atomic_t *target)
+{
+ return __atomic_load_n(target, 5);
+}
+# 177 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_ptr_val_t atomic_ptr_get(const atomic_ptr_t *target)
+{
+ return __atomic_load_n(target, 5);
+}
+# 197 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_set(atomic_t *target, atomic_val_t value)
+{
+
+
+
+
+ return __atomic_exchange_n(target, value, 5);
+}
+# 221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_ptr_val_t atomic_ptr_set(atomic_ptr_t *target, atomic_ptr_val_t value)
+{
+ return __atomic_exchange_n(target, value, 5);
+}
+# 240 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_clear(atomic_t *target)
+{
+ return atomic_set(target, 0);
+}
+# 259 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_ptr_val_t atomic_ptr_clear(atomic_ptr_t *target)
+{
+ return atomic_ptr_set(target, 
+# 261 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h" 3 4
+                              ((void *)0)
+# 261 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+                                  );
+}
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_or(atomic_t *target, atomic_val_t value)
+{
+ return __atomic_fetch_or(target, value, 5);
+}
+# 299 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_xor(atomic_t *target, atomic_val_t value)
+{
+ return __atomic_fetch_xor(target, value, 5);
+}
+# 319 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_and(atomic_t *target, atomic_val_t value)
+{
+ return __atomic_fetch_and(target, value, 5);
+}
+# 339 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic_builtin.h"
+static inline atomic_val_t atomic_nand(atomic_t *target, atomic_val_t value)
+{
+ return __atomic_fetch_nand(target, value, 5);
+}
+# 44 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 2
+# 131 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+static inline 
+# 131 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 3 4
+             _Bool 
+# 131 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+                  atomic_test_bit(const atomic_t *target, int bit)
+{
+ atomic_val_t val = atomic_get(((target) + ((bit) / (sizeof(atomic_val_t) * 8))));
+
+ return (1 & (val >> (bit & ((sizeof(atomic_val_t) * 8) - 1)))) != 0;
+}
+# 152 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+static inline 
+# 152 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 3 4
+             _Bool 
+# 152 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+                  atomic_test_and_clear_bit(atomic_t *target, int bit)
+{
+ atomic_val_t mask = (1UL << ((unsigned long)(bit) & ((sizeof(atomic_val_t) * 8) - 1U)));
+ atomic_val_t old;
+
+ old = atomic_and(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), ~mask);
+
+ return (old & mask) != 0;
+}
+# 176 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+static inline 
+# 176 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 3 4
+             _Bool 
+# 176 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+                  atomic_test_and_set_bit(atomic_t *target, int bit)
+{
+ atomic_val_t mask = (1UL << ((unsigned long)(bit) & ((sizeof(atomic_val_t) * 8) - 1U)));
+ atomic_val_t old;
+
+ old = atomic_or(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), mask);
+
+ return (old & mask) != 0;
+}
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+static inline void atomic_clear_bit(atomic_t *target, int bit)
+{
+ atomic_val_t mask = (1UL << ((unsigned long)(bit) & ((sizeof(atomic_val_t) * 8) - 1U)));
+
+ (void)atomic_and(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), ~mask);
+}
+# 217 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+static inline void atomic_set_bit(atomic_t *target, int bit)
+{
+ atomic_val_t mask = (1UL << ((unsigned long)(bit) & ((sizeof(atomic_val_t) * 8) - 1U)));
+
+ (void)atomic_or(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), mask);
+}
+# 237 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+static inline void atomic_set_bit_to(atomic_t *target, int bit, 
+# 237 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h" 3 4
+                                                               _Bool 
+# 237 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/atomic.h"
+                                                                    val)
+{
+ atomic_val_t mask = (1UL << ((unsigned long)(bit) & ((sizeof(atomic_val_t) * 8) - 1U)));
+
+ if (val) {
+  (void)atomic_or(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), mask);
+ } else {
+  (void)atomic_and(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), ~mask);
+ }
+}
+# 26 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/sched_priq.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/sched_priq.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 1
+# 28 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 2
+# 37 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+struct _dnode {
+ union {
+  struct _dnode *head;
+  struct _dnode *next;
+ };
+ union {
+  struct _dnode *tail;
+  struct _dnode *prev;
+ };
+};
+
+
+
+
+typedef struct _dnode sys_dlist_t;
+
+
+
+typedef struct _dnode sys_dnode_t;
+# 203 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dlist_init(sys_dlist_t *list)
+{
+ list->head = (sys_dnode_t *)list;
+ list->tail = (sys_dnode_t *)list;
+}
+# 220 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dnode_init(sys_dnode_t *node)
+{
+ node->next = 
+# 222 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             ((void *)0)
+# 222 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                 ;
+ node->prev = 
+# 223 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             ((void *)0)
+# 223 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                 ;
+}
+# 234 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline 
+# 234 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             _Bool 
+# 234 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                  sys_dnode_is_linked(const sys_dnode_t *node)
+{
+ return node->next != 
+# 236 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                     ((void *)0)
+# 236 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                         ;
+}
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline 
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             _Bool 
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                  sys_dlist_is_head(sys_dlist_t *list, sys_dnode_t *node)
+{
+ return list->head == node;
+}
+# 262 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline 
+# 262 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             _Bool 
+# 262 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                  sys_dlist_is_tail(sys_dlist_t *list, sys_dnode_t *node)
+{
+ return list->tail == node;
+}
+# 275 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline 
+# 275 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             _Bool 
+# 275 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                  sys_dlist_is_empty(sys_dlist_t *list)
+{
+ return list->head == list;
+}
+# 290 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline 
+# 290 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+             _Bool 
+# 290 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                  sys_dlist_has_multiple_nodes(sys_dlist_t *list)
+{
+ return list->head != list->tail;
+}
+# 303 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
+{
+ return sys_dlist_is_empty(list) ? 
+# 305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                                  ((void *)0) 
+# 305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                                       : list->head;
+}
+# 318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_head_not_empty(sys_dlist_t *list)
+{
+ return list->head;
+}
+# 334 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_next_no_check(sys_dlist_t *list,
+       sys_dnode_t *node)
+{
+ return (node == list->tail) ? 
+# 337 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                              ((void *)0) 
+# 337 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                                   : node->next;
+}
+# 350 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_next(sys_dlist_t *list,
+            sys_dnode_t *node)
+{
+ return (node != 
+# 353 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                ((void *)0)
+# 353 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                    ) ? sys_dlist_peek_next_no_check(list, node) : 
+# 353 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                                                                   ((void *)0)
+# 353 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                                                                       ;
+}
+# 368 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_prev_no_check(sys_dlist_t *list,
+       sys_dnode_t *node)
+{
+ return (node == list->head) ? 
+# 371 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                              ((void *)0) 
+# 371 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                                   : node->prev;
+}
+# 385 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_prev(sys_dlist_t *list,
+            sys_dnode_t *node)
+{
+ return (node != 
+# 388 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                ((void *)0)
+# 388 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                    ) ? sys_dlist_peek_prev_no_check(list, node) : 
+# 388 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                                                                   ((void *)0)
+# 388 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                                                                       ;
+}
+# 399 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_peek_tail(sys_dlist_t *list)
+{
+ return sys_dlist_is_empty(list) ? 
+# 401 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                                  ((void *)0) 
+# 401 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                                       : list->tail;
+}
+# 413 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dlist_append(sys_dlist_t *list, sys_dnode_t *node)
+{
+ sys_dnode_t *const tail = list->tail;
+
+ node->next = list;
+ node->prev = tail;
+
+ tail->next = node;
+ list->tail = node;
+}
+# 433 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dlist_prepend(sys_dlist_t *list, sys_dnode_t *node)
+{
+ sys_dnode_t *const head = list->head;
+
+ node->next = head;
+ node->prev = list;
+
+ head->prev = node;
+ list->head = node;
+}
+# 452 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
+{
+ sys_dnode_t *const prev = successor->prev;
+
+ node->prev = prev;
+ node->next = successor;
+ prev->next = node;
+ successor->prev = node;
+}
+# 477 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dlist_insert_at(sys_dlist_t *list, sys_dnode_t *node,
+ int (*cond)(sys_dnode_t *node, void *data), void *data)
+{
+ if (sys_dlist_is_empty(list)) {
+  sys_dlist_append(list, node);
+ } else {
+  sys_dnode_t *pos = sys_dlist_peek_head(list);
+
+  while ((pos != 
+# 485 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                ((void *)0)
+# 485 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                    ) && (cond(pos, data) == 0)) {
+   pos = sys_dlist_peek_next(list, pos);
+  }
+  if (pos != 
+# 488 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+            ((void *)0)
+# 488 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                ) {
+   sys_dlist_insert(pos, node);
+  } else {
+   sys_dlist_append(list, node);
+  }
+ }
+}
+# 505 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline void sys_dlist_remove(sys_dnode_t *node)
+{
+ sys_dnode_t *const prev = node->prev;
+ sys_dnode_t *const next = node->next;
+
+ prev->next = next;
+ next->prev = prev;
+ sys_dnode_init(node);
+}
+# 525 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline sys_dnode_t *sys_dlist_get(sys_dlist_t *list)
+{
+ sys_dnode_t *node = 
+# 527 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                    ((void *)0)
+# 527 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                        ;
+
+ if (!sys_dlist_is_empty(list)) {
+  node = list->head;
+  sys_dlist_remove(node);
+ }
+
+ return node;
+}
+# 544 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+static inline size_t sys_dlist_len(sys_dlist_t *list)
+{
+ size_t len = 0;
+ sys_dnode_t *node = 
+# 547 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+                    ((void *)0)
+# 547 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+                        ;
+
+ for (node = sys_dlist_peek_head(list); node != 
+# 549 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h" 3 4
+((void *)0)
+# 549 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/dlist.h"
+; node = sys_dlist_peek_next(list, node)) {
+  len++;
+ }
+ return len;
+}
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/sched_priq.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h" 1
+# 58 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+struct rbnode {
+
+ struct rbnode *children[2];
+
+};
+# 86 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+typedef 
+# 86 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h" 3 4
+       _Bool 
+# 86 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+            (*rb_lessthan_t)(struct rbnode *a, struct rbnode *b);
+
+
+
+
+struct rbtree {
+
+ struct rbnode *root;
+
+ rb_lessthan_t lessthan_fn;
+
+ int max_depth;
+
+
+
+
+
+};
+
+
+
+
+
+
+typedef void (*rb_visit_t)(struct rbnode *node, void *cookie);
+
+struct rbnode *z_rb_child(struct rbnode *node, uint8_t side);
+int z_rb_is_black(struct rbnode *node);
+
+void z_rb_walk(struct rbnode *node, rb_visit_t visit_fn, void *cookie);
+
+struct rbnode *z_rb_get_minmax(struct rbtree *tree, uint8_t side);
+
+
+
+
+void rb_insert(struct rbtree *tree, struct rbnode *node);
+
+
+
+
+void rb_remove(struct rbtree *tree, struct rbnode *node);
+
+
+
+
+static inline struct rbnode *rb_get_min(struct rbtree *tree)
+{
+ return z_rb_get_minmax(tree, 0U);
+}
+
+
+
+
+static inline struct rbnode *rb_get_max(struct rbtree *tree)
+{
+ return z_rb_get_minmax(tree, 1U);
+}
+# 154 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+
+# 154 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h" 3 4
+_Bool 
+# 154 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+    rb_contains(struct rbtree *tree, struct rbnode *node);
+# 165 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+static inline void rb_walk(struct rbtree *tree, rb_visit_t visit_fn,
+      void *cookie)
+{
+ z_rb_walk(tree->root, visit_fn, cookie);
+}
+
+
+struct _rb_foreach {
+ struct rbnode **stack;
+ uint8_t *is_left;
+ int32_t top;
+};
+# 193 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/rb.h"
+struct rbnode *z_rb_foreach_next(struct rbtree *tree, struct _rb_foreach *f);
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/sched_priq.h" 2
+# 32 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/sched_priq.h"
+struct k_thread;
+
+struct k_thread *z_priq_dumb_best(sys_dlist_t *pq);
+void z_priq_dumb_remove(sys_dlist_t *pq, struct k_thread *thread);
+
+struct _priq_rb {
+ struct rbtree tree;
+ int next_order_key;
+};
+
+void z_priq_rb_add(struct _priq_rb *pq, struct k_thread *thread);
+void z_priq_rb_remove(struct _priq_rb *pq, struct k_thread *thread);
+struct k_thread *z_priq_rb_best(struct _priq_rb *pq);
+# 53 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/sched_priq.h"
+struct _priq_mq {
+ sys_dlist_t queues[32];
+ unsigned int bitmask;
+};
+
+struct k_thread *z_priq_mq_best(struct _priq_mq *pq);
+# 28 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 1
+# 23 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 24 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/list_gen.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/list_gen.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/list_gen.h" 2
+# 26 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 2
+
+
+
+
+
+
+
+struct _snode {
+ struct _snode *next;
+};
+
+
+
+typedef struct _snode sys_snode_t;
+
+
+struct _slist {
+ sys_snode_t *head;
+ sys_snode_t *tail;
+};
+
+
+
+typedef struct _slist sys_slist_t;
+# 199 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_init(sys_slist_t *list)
+{
+ list->head = 
+# 201 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+             ((void *)0)
+# 201 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+                 ;
+ list->tail = 
+# 202 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+             ((void *)0)
+# 202 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+                 ;
+}
+
+
+
+
+
+
+
+static inline sys_snode_t *z_snode_next_peek(sys_snode_t *node)
+{
+ return node->next;
+}
+
+static inline void z_snode_next_set(sys_snode_t *parent, sys_snode_t *child)
+{
+ parent->next = child;
+}
+
+static inline void z_slist_head_set(sys_slist_t *list, sys_snode_t *node)
+{
+ list->head = node;
+}
+
+static inline void z_slist_tail_set(sys_slist_t *list, sys_snode_t *node)
+{
+ list->tail = node;
+}
+# 238 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline sys_snode_t *sys_slist_peek_head(sys_slist_t *list)
+{
+ return list->head;
+}
+# 250 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline sys_snode_t *sys_slist_peek_tail(sys_slist_t *list)
+{
+ return list->tail;
+}
+# 266 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline 
+# 266 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+             _Bool 
+# 266 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+                  sys_slist_is_empty(sys_slist_t *list);
+
+static inline 
+# 268 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+_Bool 
+# 268 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+sys_slist_is_empty(sys_slist_t *list) { return (sys_slist_peek_head(list) == 
+# 268 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 268 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+); }
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline sys_snode_t *sys_slist_peek_next_no_check(sys_snode_t *node);
+
+static inline sys_snode_t * sys_slist_peek_next_no_check(sys_snode_t *node) { return z_snode_next_peek(node); }
+# 290 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline sys_snode_t *sys_slist_peek_next(sys_snode_t *node);
+
+static inline sys_snode_t * sys_slist_peek_next(sys_snode_t *node) { return node != 
+# 292 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0) 
+# 292 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+? sys_slist_peek_next_no_check(node) : 
+# 292 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 292 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+; }
+# 302 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_prepend(sys_slist_t *list,
+         sys_snode_t *node);
+
+static inline void sys_slist_prepend(sys_slist_t *list, sys_snode_t *node) { z_snode_next_set(node, sys_slist_peek_head(list)); z_slist_head_set(list, node); if (sys_slist_peek_tail(list) == 
+# 305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { z_slist_tail_set(list, sys_slist_peek_head(list)); } }
+# 315 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_append(sys_slist_t *list,
+        sys_snode_t *node);
+
+static inline void sys_slist_append(sys_slist_t *list, sys_snode_t *node) { z_snode_next_set(node, 
+# 318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+); if (sys_slist_peek_tail(list) == 
+# 318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { z_slist_tail_set(list, node); z_slist_head_set(list, node); } else { z_snode_next_set( sys_slist_peek_tail(list), node); z_slist_tail_set(list, node); } }
+# 333 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_append_list(sys_slist_t *list,
+      void *head, void *tail);
+
+static inline void sys_slist_append_list(sys_slist_t *list, void *head, void *tail) { if (head != 
+# 336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0) 
+# 336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+&& tail != 
+# 336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { if (sys_slist_peek_tail(list) == 
+# 336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { z_slist_head_set(list, (sys_snode_t *)head); } else { z_snode_next_set( sys_slist_peek_tail(list), (sys_snode_t *)head); } z_slist_tail_set(list, (sys_snode_t *)tail); } }
+# 347 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_merge_slist(sys_slist_t *list,
+      sys_slist_t *list_to_append);
+
+static inline void sys_slist_merge_slist ( sys_slist_t *list, sys_slist_t *list_to_append) { sys_snode_t *head, *tail; head = sys_slist_peek_head(list_to_append); tail = sys_slist_peek_tail(list_to_append); sys_slist_append_list(list, head, tail); sys_slist_init(list_to_append); }
+# 361 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_insert(sys_slist_t *list,
+        sys_snode_t *prev,
+        sys_snode_t *node);
+
+static inline void sys_slist_insert(sys_slist_t *list, sys_snode_t *prev, sys_snode_t *node) { if (prev == 
+# 365 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 365 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { sys_slist_prepend(list, node); } else if (z_snode_next_peek(prev) == 
+# 365 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 365 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { sys_slist_append(list, node); } else { z_snode_next_set(node, z_snode_next_peek(prev)); z_snode_next_set(prev, node); } }
+# 377 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline sys_snode_t *sys_slist_get_not_empty(sys_slist_t *list);
+
+static inline sys_snode_t * sys_slist_get_not_empty(sys_slist_t *list) { sys_snode_t *node = sys_slist_peek_head(list); z_slist_head_set(list, z_snode_next_peek(node)); if (sys_slist_peek_tail(list) == node) { z_slist_tail_set(list, sys_slist_peek_head(list)); } return node; }
+# 390 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline sys_snode_t *sys_slist_get(sys_slist_t *list);
+
+static inline sys_snode_t * sys_slist_get(sys_slist_t *list) { return sys_slist_is_empty(list) ? 
+# 392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0) 
+# 392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+: sys_slist_get_not_empty(list); }
+# 404 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline void sys_slist_remove(sys_slist_t *list,
+        sys_snode_t *prev_node,
+        sys_snode_t *node);
+
+static inline void sys_slist_remove(sys_slist_t *list, sys_snode_t *prev_node, sys_snode_t *node) { if (prev_node == 
+# 408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+) { z_slist_head_set(list, z_snode_next_peek(node)); if (sys_slist_peek_tail(list) == node) { z_slist_tail_set(list, sys_slist_peek_head(list)); } } else { z_snode_next_set(prev_node, z_snode_next_peek(node)); if (sys_slist_peek_tail(list) == node) { z_slist_tail_set(list, prev_node); } } z_snode_next_set(node, 
+# 408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+); }
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline 
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+             _Bool 
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+                  sys_slist_find_and_remove(sys_slist_t *list,
+          sys_snode_t *node);
+# 430 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+static inline size_t sys_slist_len(sys_slist_t *list);
+
+static inline size_t sys_slist_len(sys_slist_t * list) { size_t len = 0; static sys_snode_t * node; for (node = sys_slist_peek_head(list); node != 
+# 432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+; node = sys_slist_peek_next(node)) { len++; } return len; }
+
+
+static inline 
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+_Bool 
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+sys_slist_find_and_remove(sys_slist_t *list, sys_snode_t *node) { sys_snode_t *prev = 
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+; sys_snode_t *test; for (test = sys_slist_peek_head(list); test != 
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+((void *)0)
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+; test = sys_slist_peek_next(test)) { if (test == node) { sys_slist_remove(list, prev, node); return 
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+1
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+; } prev = test; } return 
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h" 3 4
+0
+# 435 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/slist.h"
+; }
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 1
+# 28 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 2
+# 40 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+typedef uint32_t unative_t;
+
+
+
+struct _sfnode {
+ unative_t next_and_flags;
+};
+
+
+
+typedef struct _sfnode sys_sfnode_t;
+
+
+struct _sflist {
+ sys_sfnode_t *head;
+ sys_sfnode_t *tail;
+};
+
+
+
+typedef struct _sflist sys_sflist_t;
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_init(sys_sflist_t *list)
+{
+ list->head = 
+# 212 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+             ((void *)0)
+# 212 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+                 ;
+ list->tail = 
+# 213 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+             ((void *)0)
+# 213 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+                 ;
+}
+# 223 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *z_sfnode_next_peek(sys_sfnode_t *node)
+{
+ return (sys_sfnode_t *)(node->next_and_flags & ~0x3UL);
+}
+
+static inline uint8_t sys_sfnode_flags_get(sys_sfnode_t *node);
+
+static inline void z_sfnode_next_set(sys_sfnode_t *parent,
+           sys_sfnode_t *child)
+{
+ uint8_t cur_flags = sys_sfnode_flags_get(parent);
+
+ parent->next_and_flags = cur_flags | (unative_t)child;
+}
+
+static inline void z_sflist_head_set(sys_sflist_t *list, sys_sfnode_t *node)
+{
+ list->head = node;
+}
+
+static inline void z_sflist_tail_set(sys_sflist_t *list, sys_sfnode_t *node)
+{
+ list->tail = node;
+}
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *sys_sflist_peek_head(sys_sflist_t *list)
+{
+ return list->head;
+}
+# 267 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *sys_sflist_peek_tail(sys_sflist_t *list)
+{
+ return list->tail;
+}
+# 282 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline uint8_t sys_sfnode_flags_get(sys_sfnode_t *node)
+{
+ return node->next_and_flags & 0x3UL;
+}
+# 300 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sfnode_init(sys_sfnode_t *node, uint8_t flags)
+{
+ { };
+ node->next_and_flags = flags;
+}
+# 316 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sfnode_flags_set(sys_sfnode_t *node, uint8_t flags)
+{
+ { };
+ node->next_and_flags = (unative_t)(z_sfnode_next_peek(node)) | flags;
+}
+# 333 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline 
+# 333 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+             _Bool 
+# 333 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+                  sys_sflist_is_empty(sys_sflist_t *list);
+
+static inline 
+# 335 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+_Bool 
+# 335 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+sys_sflist_is_empty(sys_sflist_t *list) { return (sys_sflist_peek_head(list) == 
+# 335 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 335 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+); }
+# 346 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *sys_sflist_peek_next_no_check(sys_sfnode_t *node);
+
+static inline sys_sfnode_t * sys_sflist_peek_next_no_check(sys_sfnode_t *node) { return z_sfnode_next_peek(node); }
+# 357 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *sys_sflist_peek_next(sys_sfnode_t *node);
+
+static inline sys_sfnode_t * sys_sflist_peek_next(sys_sfnode_t *node) { return node != 
+# 359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0) 
+# 359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+? sys_sflist_peek_next_no_check(node) : 
+# 359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+; }
+# 369 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_prepend(sys_sflist_t *list,
+          sys_sfnode_t *node);
+
+static inline void sys_sflist_prepend(sys_sflist_t *list, sys_sfnode_t *node) { z_sfnode_next_set(node, sys_sflist_peek_head(list)); z_sflist_head_set(list, node); if (sys_sflist_peek_tail(list) == 
+# 372 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 372 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { z_sflist_tail_set(list, sys_sflist_peek_head(list)); } }
+# 382 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_append(sys_sflist_t *list,
+         sys_sfnode_t *node);
+
+static inline void sys_sflist_append(sys_sflist_t *list, sys_sfnode_t *node) { z_sfnode_next_set(node, 
+# 385 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 385 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+); if (sys_sflist_peek_tail(list) == 
+# 385 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 385 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { z_sflist_tail_set(list, node); z_sflist_head_set(list, node); } else { z_sfnode_next_set( sys_sflist_peek_tail(list), node); z_sflist_tail_set(list, node); } }
+# 400 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_append_list(sys_sflist_t *list,
+       void *head, void *tail);
+
+static inline void sys_sflist_append_list(sys_sflist_t *list, void *head, void *tail) { if (head != 
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0) 
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+&& tail != 
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { if (sys_sflist_peek_tail(list) == 
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { z_sflist_head_set(list, (sys_sfnode_t *)head); } else { z_sfnode_next_set( sys_sflist_peek_tail(list), (sys_sfnode_t *)head); } z_sflist_tail_set(list, (sys_sfnode_t *)tail); } }
+# 414 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_merge_sflist(sys_sflist_t *list,
+        sys_sflist_t *list_to_append);
+
+static inline void sys_sflist_merge_sflist ( sys_sflist_t *list, sys_sflist_t *list_to_append) { sys_sfnode_t *head, *tail; head = sys_sflist_peek_head(list_to_append); tail = sys_sflist_peek_tail(list_to_append); sys_sflist_append_list(list, head, tail); sys_sflist_init(list_to_append); }
+# 428 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_insert(sys_sflist_t *list,
+         sys_sfnode_t *prev,
+         sys_sfnode_t *node);
+
+static inline void sys_sflist_insert(sys_sflist_t *list, sys_sfnode_t *prev, sys_sfnode_t *node) { if (prev == 
+# 432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { sys_sflist_prepend(list, node); } else if (z_sfnode_next_peek(prev) == 
+# 432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { sys_sflist_append(list, node); } else { z_sfnode_next_set(node, z_sfnode_next_peek(prev)); z_sfnode_next_set(prev, node); } }
+# 444 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *sys_sflist_get_not_empty(sys_sflist_t *list);
+
+static inline sys_sfnode_t * sys_sflist_get_not_empty(sys_sflist_t *list) { sys_sfnode_t *node = sys_sflist_peek_head(list); z_sflist_head_set(list, z_sfnode_next_peek(node)); if (sys_sflist_peek_tail(list) == node) { z_sflist_tail_set(list, sys_sflist_peek_head(list)); } return node; }
+# 457 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline sys_sfnode_t *sys_sflist_get(sys_sflist_t *list);
+
+static inline sys_sfnode_t * sys_sflist_get(sys_sflist_t *list) { return sys_sflist_is_empty(list) ? 
+# 459 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0) 
+# 459 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+: sys_sflist_get_not_empty(list); }
+# 471 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline void sys_sflist_remove(sys_sflist_t *list,
+         sys_sfnode_t *prev_node,
+         sys_sfnode_t *node);
+
+static inline void sys_sflist_remove(sys_sflist_t *list, sys_sfnode_t *prev_node, sys_sfnode_t *node) { if (prev_node == 
+# 475 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 475 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+) { z_sflist_head_set(list, z_sfnode_next_peek(node)); if (sys_sflist_peek_tail(list) == node) { z_sflist_tail_set(list, sys_sflist_peek_head(list)); } } else { z_sfnode_next_set(prev_node, z_sfnode_next_peek(node)); if (sys_sflist_peek_tail(list) == node) { z_sflist_tail_set(list, prev_node); } } z_sfnode_next_set(node, 
+# 475 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 475 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+); }
+# 487 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline 
+# 487 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+             _Bool 
+# 487 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+                  sys_sflist_find_and_remove(sys_sflist_t *list,
+           sys_sfnode_t *node);
+
+static inline 
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+_Bool 
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+sys_sflist_find_and_remove(sys_sflist_t *list, sys_sfnode_t *node) { sys_sfnode_t *prev = 
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+; sys_sfnode_t *test; for (test = sys_sflist_peek_head(list); test != 
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+; test = sys_sflist_peek_next(test)) { if (test == node) { sys_sflist_remove(list, prev, node); return 
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+1
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+; } prev = test; } return 
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+0
+# 490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+; }
+# 499 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+static inline size_t sys_sflist_len(sys_sflist_t *list);
+
+static inline size_t sys_sflist_len(sys_sflist_t * list) { size_t len = 0; static sys_sfnode_t * node; for (node = sys_sflist_peek_head(list); node != 
+# 501 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h" 3 4
+((void *)0)
+# 501 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sflist.h"
+; node = sys_sflist_peek_next(node)) { len++; } return len; }
+# 31 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h" 1
+# 63 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+struct k_obj_type;
+struct k_obj_core;
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+extern sys_slist_t z_obj_type_list;
+
+
+struct k_obj_core_stats_desc {
+ size_t raw_size;
+ size_t query_size;
+
+
+ int (*raw)(struct k_obj_core *obj_core, void *stats);
+
+ int (*query)(struct k_obj_core *obj_core, void *stats);
+
+ int (*reset)(struct k_obj_core *obj_core);
+
+ int (*disable)(struct k_obj_core *obj_core);
+
+ int (*enable)(struct k_obj_core *obj_core);
+};
+
+
+struct k_obj_type {
+ sys_snode_t node;
+ sys_slist_t list;
+ uint32_t id;
+ size_t obj_core_offset;
+
+
+
+
+};
+
+
+struct k_obj_core {
+ sys_snode_t node;
+ struct k_obj_type *type;
+
+
+
+};
+# 141 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+struct k_obj_type *z_obj_type_init(struct k_obj_type *type,
+       uint32_t id, size_t off);
+# 155 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+struct k_obj_type *k_obj_type_find(uint32_t type_id);
+# 174 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_type_walk_locked(struct k_obj_type *type,
+      int (*func)(struct k_obj_core *, void *),
+      void *data);
+# 196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_type_walk_unlocked(struct k_obj_type *type,
+        int (*func)(struct k_obj_core *, void *),
+        void *data);
+# 209 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+void k_obj_core_init(struct k_obj_core *obj_core, struct k_obj_type *type);
+# 221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+void k_obj_core_link(struct k_obj_core *obj_core);
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+void k_obj_core_init_and_link(struct k_obj_core *obj_core,
+         struct k_obj_type *type);
+# 244 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+void k_obj_core_unlink(struct k_obj_core *obj_core);
+# 299 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_register(struct k_obj_core *obj_core, void *stats,
+         size_t stats_len);
+# 314 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_deregister(struct k_obj_core *obj_core);
+# 331 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_raw(struct k_obj_core *obj_core, void *stats,
+    size_t stats_len);
+# 350 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_query(struct k_obj_core *obj_core, void *stats,
+      size_t stats_len);
+# 364 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_reset(struct k_obj_core *obj_core);
+# 378 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_disable(struct k_obj_core *obj_core);
+# 391 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/obj_core.h"
+int k_obj_core_stats_enable(struct k_obj_core *obj_core);
+# 33 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h" 1
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h" 1
+# 9 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/mem_stats.h" 1
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/mem_stats.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 21 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/mem_stats.h" 2
+
+
+
+struct sys_memory_stats {
+ size_t free_bytes;
+ size_t allocated_bytes;
+ size_t max_allocated_bytes;
+};
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h" 2
+# 56 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+struct sys_heap {
+ struct z_heap *heap;
+ void *init_mem;
+ size_t init_bytes;
+};
+
+struct z_heap_stress_result {
+ uint32_t total_allocs;
+ uint32_t successful_allocs;
+ uint32_t total_frees;
+ uint64_t accumulated_in_use_bytes;
+};
+# 102 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void sys_heap_init(struct sys_heap *heap, void *mem, size_t bytes);
+# 121 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void *sys_heap_alloc(struct sys_heap *heap, size_t bytes);
+# 136 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void *sys_heap_aligned_alloc(struct sys_heap *heap, size_t align, size_t bytes);
+# 151 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void sys_heap_free(struct sys_heap *heap, void *mem);
+# 176 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void *sys_heap_aligned_realloc(struct sys_heap *heap, void *ptr,
+          size_t align, size_t bytes);
+# 196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+size_t sys_heap_usable_size(struct sys_heap *heap, void *mem);
+# 211 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+
+# 211 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h" 3 4
+_Bool 
+# 211 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+    sys_heap_validate(struct sys_heap *heap);
+# 242 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void sys_heap_stress(void *(*alloc_fn)(void *arg, size_t bytes),
+       void (*free_fn)(void *arg, void *p),
+       void *arg, size_t total_bytes,
+       uint32_t op_count,
+       void *scratch_mem, size_t scratch_bytes,
+       int target_percent,
+       struct z_heap_stress_result *result);
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+void sys_heap_print_info(struct sys_heap *heap, 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h" 3 4
+                                               _Bool 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_heap.h"
+                                                    dump_chunks);
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/structs.h" 1
+# 35 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/structs.h"
+struct _cpu_arch {
+
+
+
+
+
+
+};
+
+
+
+
+typedef struct _cpu_arch _cpu_arch_t;
+# 31 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/stats.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/stats.h"
+struct k_cycle_stats {
+ uint64_t total;
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/stats.h"
+ 
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/stats.h" 3 4
+_Bool 
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/stats.h"
+          track_usage;
+};
+# 32 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h" 2
+# 84 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+struct _ready_q {
+
+
+ struct k_thread *cache;
+
+
+
+ sys_dlist_t runq;
+
+
+
+
+
+};
+
+typedef struct _ready_q _ready_q_t;
+
+struct _cpu {
+
+ uint32_t nested;
+
+
+ char *irq_stack;
+
+
+ struct k_thread *current;
+
+
+ struct k_thread *idle_thread;
+# 124 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+ uint8_t id;
+
+
+ void *fp_ctx;
+# 154 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+ struct _cpu_arch arch;
+};
+
+typedef struct _cpu _cpu_t;
+
+struct z_kernel {
+ struct _cpu cpus[1];
+# 171 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+ struct _ready_q ready_q;
+# 185 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+ struct k_thread *current_fp;
+# 203 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+};
+
+typedef struct z_kernel _kernel_t;
+
+extern struct z_kernel _kernel;
+
+extern atomic_t _cpus_active;
+# 241 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_structs.h"
+typedef struct {
+ sys_dlist_t waitq;
+} _wait_q_t;
+
+
+
+
+
+
+
+struct _timeout;
+typedef void (*_timeout_func_t)(struct _timeout *t);
+
+struct _timeout {
+ sys_dnode_t node;
+ _timeout_func_t fn;
+
+
+ int64_t dticks;
+
+
+
+};
+
+typedef void (*k_thread_timeslice_fn_t)(struct k_thread *thread, void *data);
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_version.h" 1
+# 47 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_version.h"
+extern uint32_t sys_kernel_version_get(void);
+# 35 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 1
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscall_list.h" 1
+# 530 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscall_list.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stdarg.h" 3 4
+
+# 40 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 99 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stdarg.h" 3 4
+typedef __gnuc_va_list va_list;
+# 531 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscall_list.h" 2
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/syscall.h" 1
+# 21 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/syscall.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/syscall.h" 1
+# 22 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/syscall.h" 2
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 2
+# 86 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+
+# 86 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+typedef uintptr_t (*_k_syscall_handler_t)(uintptr_t arg1, uintptr_t arg2,
+       uintptr_t arg3, uintptr_t arg4,
+       uintptr_t arg5, uintptr_t arg6,
+       void *ssf);
+
+
+
+
+static inline __attribute__((always_inline)) 
+# 94 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 3 4
+                    _Bool 
+# 94 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+                         z_syscall_trap(void)
+{
+ 
+# 96 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 3 4
+_Bool 
+# 96 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+     ret = 
+# 96 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 3 4
+           0
+# 96 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+                ;
+# 106 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+ return ret;
+}
+
+
+
+
+
+
+
+static inline 
+# 115 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 3 4
+             _Bool 
+# 115 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+                  k_is_user_context(void)
+{
+
+
+
+ return 
+# 120 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h" 3 4
+       0
+# 120 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/syscall.h"
+            ;
+
+}
+# 36 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h" 2
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 1 3 4
+# 16 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/newlib.h" 1 3 4
+# 17 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 2 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/config.h" 1 3 4
+# 32 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/config.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/ieeefp.h" 1 3 4
+# 33 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/config.h" 2 3 4
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/float.h" 1 3 4
+# 35 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/config.h" 2 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/newlib.h" 1 3 4
+# 36 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/config.h" 2 3 4
+# 18 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 2 3 4
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/_ansi.h" 1 3 4
+# 43 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/_ansi.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/newlib.h" 1 3 4
+# 44 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/_ansi.h" 2 3 4
+# 20 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 2 3 4
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 23 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 2 3 4
+# 312 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 3 4
+
+# 312 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/inttypes.h" 3 4
+typedef struct {
+  intmax_t quot;
+  intmax_t rem;
+} imaxdiv_t;
+
+
+
+
+
+extern intmax_t imaxabs(intmax_t);
+extern imaxdiv_t imaxdiv(intmax_t __numer, intmax_t __denomer);
+extern intmax_t strtoimax(const char *restrict, char **restrict, int);
+extern uintmax_t strtoumax(const char *restrict, char **restrict, int);
+extern intmax_t wcstoimax(const wchar_t *restrict, wchar_t **restrict, int);
+extern uintmax_t wcstoumax(const wchar_t *restrict, wchar_t **restrict, int);
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h" 2
+# 47 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h"
+
+# 47 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h"
+extern __attribute__((format (printf, 1, 2))) void printk(const char *fmt, ...);
+extern __attribute__((format (printf, 1, 0))) void vprintk(const char *fmt, va_list ap);
+# 65 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 1 3 4
+# 48 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 49 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 2 3 4
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 1 3 4
+# 48 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/_ansi.h" 1 3 4
+# 49 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 2 3 4
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/_types.h" 1 3 4
+# 51 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 2 3 4
+
+
+
+
+
+
+# 56 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 3 4
+typedef __uint8_t u_int8_t;
+
+
+typedef __uint16_t u_int16_t;
+
+
+typedef __uint32_t u_int32_t;
+
+
+typedef __uint64_t u_int64_t;
+
+typedef __intptr_t register_t;
+
+
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 1 3 4
+# 52 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 359 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 3 4
+typedef unsigned int wint_t;
+# 53 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 2 3 4
+# 61 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/newlib.h" 1 3 4
+# 62 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 2 3 4
+
+
+
+
+typedef long __blkcnt_t;
+
+
+
+typedef long __blksize_t;
+
+
+
+typedef __uint64_t __fsblkcnt_t;
+
+
+
+typedef __uint32_t __fsfilcnt_t;
+
+
+
+typedef long _off_t;
+
+
+
+
+
+typedef int __pid_t;
+
+
+
+
+
+
+typedef short __dev_t;
+
+
+
+
+
+
+
+typedef unsigned short __uid_t;
+
+
+
+
+
+
+typedef unsigned short __gid_t;
+
+
+
+
+typedef __uint32_t __id_t;
+
+
+
+
+
+
+
+typedef unsigned short __ino_t;
+# 138 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 3 4
+typedef __uint32_t __mode_t;
+
+
+
+
+
+__extension__ typedef long long _off64_t;
+
+
+
+
+
+typedef _off_t __off_t;
+
+
+typedef _off64_t __loff_t;
+
+
+typedef long __key_t;
+
+
+
+
+
+
+
+typedef long _fpos_t;
+# 179 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 3 4
+typedef unsigned int __size_t;
+# 195 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 3 4
+typedef signed int _ssize_t;
+# 206 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_types.h" 3 4
+typedef _ssize_t __ssize_t;
+
+
+
+typedef struct
+{
+  int __count;
+  union
+  {
+    wint_t __wch;
+    unsigned char __wchb[4];
+  } __value;
+} _mbstate_t;
+
+
+
+
+typedef void *_iconv_t;
+
+
+
+
+
+
+typedef unsigned long __clock_t;
+
+
+
+
+
+
+typedef __int_least64_t __time_t;
+
+
+
+
+
+typedef unsigned long __clockid_t;
+
+
+typedef long __daddr_t;
+
+
+
+typedef unsigned long __timer_t;
+
+
+typedef __uint8_t __sa_family_t;
+
+
+
+typedef __uint32_t __socklen_t;
+
+
+typedef __int32_t __nl_item;
+typedef unsigned short __nlink_t;
+typedef long __suseconds_t;
+typedef unsigned long __useconds_t;
+# 74 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 2 3 4
+# 124 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 3 4
+typedef __blkcnt_t blkcnt_t;
+
+
+
+
+typedef __blksize_t blksize_t;
+
+
+
+
+typedef unsigned long clock_t;
+
+
+
+
+
+typedef __int_least64_t time_t;
+
+
+
+
+typedef __daddr_t daddr_t;
+
+
+typedef char * caddr_t;
+
+
+
+
+typedef __fsblkcnt_t fsblkcnt_t;
+typedef __fsfilcnt_t fsfilcnt_t;
+
+
+
+
+typedef __id_t id_t;
+
+
+
+
+typedef __ino_t ino_t;
+# 182 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 3 4
+typedef __off_t off_t;
+
+
+
+typedef __dev_t dev_t;
+
+
+
+typedef __uid_t uid_t;
+
+
+
+typedef __gid_t gid_t;
+
+
+
+
+typedef __pid_t pid_t;
+
+
+
+
+typedef __key_t key_t;
+
+
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+typedef __mode_t mode_t;
+
+
+
+
+typedef __nlink_t nlink_t;
+
+
+
+
+typedef __clockid_t clockid_t;
+
+
+
+
+
+typedef __timer_t timer_t;
+
+
+
+
+
+typedef __useconds_t useconds_t;
+
+
+
+
+typedef __suseconds_t suseconds_t;
+
+
+
+typedef __int64_t sbintime_t;
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/machine/types.h" 1 3 4
+# 249 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/types.h" 2 3 4
+# 53 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 2 3 4
+# 81 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+typedef uint16_t __ungetc_t;
+
+
+struct __file {
+ __ungetc_t unget;
+ uint8_t flags;
+# 95 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+ int (*put)(char, struct __file *);
+ int (*get)(struct __file *);
+ int (*flush)(struct __file *);
+};
+
+
+
+
+
+struct __file_close {
+ struct __file file;
+ int (*close)(struct __file *);
+};
+
+
+
+
+
+
+
+struct __file_ext {
+        struct __file_close cfile;
+        __off_t (*seek)(struct __file *, __off_t offset, int whence);
+        int (*setvbuf)(struct __file *, char *buf, int mode, size_t size);
+};
+# 133 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+typedef struct __file __FILE;
+
+typedef __FILE FILE;
+# 146 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
+# 194 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+FILE *fdevopen(int (*__put)(char, FILE*), int (*__get)(FILE*), int(*__flush)(FILE *));
+int fclose(FILE *__stream);
+int fflush(FILE *stream);
+# 214 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+int fputc(int __c, FILE *__stream);
+int putc(int __c, FILE *__stream);
+int putchar(int __c);
+
+
+
+int printf(const char *__fmt, ...) __attribute__((__format__ (printf, 1, 2)));
+int fprintf(FILE *__stream, const char *__fmt, ...) __attribute__((__format__ (printf, 2, 3)));
+int vprintf(const char *__fmt, va_list __ap) __attribute__((__format__ (printf, 1, 0)));
+int vfprintf(FILE *__stream, const char *__fmt, va_list __ap) __attribute__((__format__ (printf, 2, 0)));
+int sprintf(char *__s, const char *__fmt, ...) __attribute__((__format__ (printf, 2, 3)));
+int snprintf(char *__s, size_t __n, const char *__fmt, ...) __attribute__((__format__ (printf, 3, 4)));
+int vsprintf(char *__s, const char *__fmt, va_list ap) __attribute__((__format__ (printf, 2, 0)));
+int vsnprintf(char *__s, size_t __n, const char *__fmt, va_list ap) __attribute__((__format__ (printf, 3, 0)));
+int asprintf(char **strp, const char *fmt, ...) __attribute__((__format__ (printf, 2, 3)));
+int vasprintf(char **strp, const char *fmt, va_list ap) __attribute__((__format__ (printf, 2, 0)));
+
+int fputs(const char *__str, FILE *__stream);
+int puts(const char *__str);
+size_t fwrite(const void *__ptr, size_t __size, size_t __nmemb,
+         FILE *__stream);
+
+int fgetc(FILE *__stream);
+int getc(FILE *__stream);
+int getchar(void);
+
+
+int ungetc(int __c, FILE *__stream);
+
+int scanf(const char *__fmt, ...) __attribute__((__format__ (scanf, 1, 2)));
+int fscanf(FILE *__stream, const char *__fmt, ...) __attribute__((__format__ (scanf, 2, 3)));
+int vscanf(const char *__fmt, va_list __ap) __attribute__((__format__ (scanf, 1, 0)));
+int vfscanf(FILE *__stream, const char *__fmt, va_list __ap) __attribute__((__format__ (scanf, 2, 0)));
+int sscanf(const char *__buf, const char *__fmt, ...) __attribute__((__format__ (scanf, 2, 3)));
+int vsscanf(const char *__buf, const char *__fmt, va_list ap) __attribute__((__format__ (scanf, 2, 0)));
+
+char *fgets(char *__str, int __size, FILE *__stream);
+char *gets(char *__str);
+size_t fread(void *__ptr, size_t __size, size_t __nmemb,
+        FILE *__stream);
+
+void clearerr(FILE *__stream);
+
+
+
+
+int feof(FILE *__stream);
+
+
+
+
+int ferror(FILE *__stream);
+# 285 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+__extension__ typedef _fpos_t fpos_t;
+int fgetpos(FILE *stream, fpos_t *pos);
+FILE *fopen(const char *path, const char *mode) __attribute__((__malloc__, __malloc__(fclose,1)));
+FILE *freopen(const char *path, const char *mode, FILE *stream);
+FILE *fdopen(int, const char *) __attribute__((__malloc__, __malloc__(fclose,1)));
+FILE *fmemopen(void *buf, size_t size, const char *mode) __attribute__((__malloc__, __malloc__(fclose,1)));
+int fseek(FILE *stream, long offset, int whence);
+int fseeko(FILE *stream, __off_t offset, int whence);
+int fsetpos(FILE *stream, fpos_t *pos);
+long ftell(FILE *stream);
+__off_t ftello(FILE *stream);
+int fileno(FILE *);
+void perror(const char *s);
+int remove(const char *pathname);
+int rename(const char *oldpath, const char *newpath);
+void rewind(FILE *stream);
+void setbuf(FILE *stream, char *buf);
+void setbuffer(FILE *stream, char *buf, size_t size);
+void setlinebuf(FILE *stream);
+int setvbuf(FILE *stream, char *buf, int mode, size_t size);
+FILE *tmpfile(void);
+char *tmpnam (char *s);
+ssize_t getline(char **restrict lineptr, size_t *restrict n, FILE *restrict stream);
+ssize_t getdelim(char **restrict lineptr, size_t *restrict n, int delim, FILE *restrict stream);
+# 332 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/stdio.h" 3 4
+static __inline uint32_t
+__printf_float(float f)
+{
+ union {
+  float f;
+  uint32_t u;
+ } u = { .f = f };
+ return u.u;
+}
+# 66 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/printk.h" 2
+# 37 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/cpu.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/cpu.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 1
+# 31 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 32 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/cpu.h" 1
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq_offload.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq_offload.h"
+
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq_offload.h"
+typedef void (*irq_offload_routine_t)(const void *parameter);
+# 39 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq_offload.h"
+void irq_offload(irq_offload_routine_t routine, const void *parameter);
+# 35 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 2
+
+
+
+
+
+
+struct k_thread;
+struct k_mem_domain;
+
+typedef struct z_thread_stack_element k_thread_stack_t;
+
+typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
+# 68 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline uint32_t arch_k_cycle_get_32(void);
+# 82 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline uint64_t arch_k_cycle_get_64(void);
+# 183 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+void arch_cpu_idle(void);
+# 203 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+void arch_cpu_atomic_idle(unsigned int key);
+# 218 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+typedef __attribute__((__noreturn__)) void (*arch_cpustart_t)(void *data);
+# 240 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+void arch_start_cpu(int cpu_num, k_thread_stack_t *stack, int sz,
+      arch_cpustart_t fn, void *arg);
+
+
+
+
+
+
+
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 3 4
+_Bool 
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+    arch_cpu_active(int cpu_num);
+# 263 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline unsigned int arch_irq_lock(void);
+
+
+
+
+
+
+static inline void arch_irq_unlock(unsigned int key);
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline 
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 3 4
+             _Bool 
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+                  arch_irq_unlocked(unsigned int key);
+# 295 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+void arch_irq_disable(unsigned int irq);
+
+
+
+
+
+
+void arch_irq_enable(unsigned int irq);
+
+
+
+
+
+
+int arch_irq_is_enabled(unsigned int irq);
+# 322 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+int arch_irq_connect_dynamic(unsigned int irq, unsigned int priority,
+        void (*routine)(const void *parameter),
+        const void *parameter, uint32_t flags);
+# 340 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+int arch_irq_disconnect_dynamic(unsigned int irq, unsigned int priority,
+    void (*routine)(const void *parameter),
+    const void *parameter, uint32_t flags);
+# 398 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+unsigned int arch_irq_allocate(void);
+# 408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+void arch_irq_set_used(unsigned int irq);
+# 417 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+
+# 417 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 3 4
+_Bool 
+# 417 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+    arch_irq_is_used(unsigned int irq);
+# 507 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline unsigned int arch_num_cpus(void);
+# 866 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline 
+# 866 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 3 4
+             _Bool 
+# 866 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+                  arch_mem_coherent(void *ptr)
+{
+ (void)(ptr);
+ return 
+# 869 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 3 4
+       1
+# 869 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+           ;
+}
+# 914 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+static inline void arch_cohere_stacks(struct k_thread *old_thread,
+          void *old_switch_handle,
+          struct k_thread *new_thread)
+{
+ (void)(old_thread);
+ (void)(old_switch_handle);
+ (void)(new_thread);
+}
+# 1221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h"
+void arch_spin_relax(void);
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arch_inlines.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arch_inlines.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch_inlines.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch_inlines.h"
+static inline __attribute__((always_inline)) _cpu_t *arch_curr_cpu(void)
+{
+
+ return &_kernel.cpus[0];
+}
+
+
+static inline __attribute__((always_inline)) uint32_t arch_proc_id(void)
+{
+
+
+
+
+ return arch_curr_cpu()->id;
+}
+
+static inline __attribute__((always_inline)) unsigned int arch_num_cpus(void)
+{
+ return 1;
+}
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arch_inlines.h" 2
+# 1228 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/arch_interface.h" 2
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/cpu.h" 2
+
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 1
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 1
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/devicetree_generated.h" 1
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 4306 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/io-channels.h" 1
+# 4307 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/clocks.h" 1
+# 4308 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/gpio.h" 1
+# 4309 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/spi.h" 1
+# 4310 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/dma.h" 1
+# 4311 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/pwms.h" 1
+# 4312 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/fixed-partitions.h" 1
+# 4313 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/ordinals.h" 1
+# 4314 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/pinctrl.h" 1
+# 4315 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/can.h" 1
+# 4316 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/reset.h" 1
+# 4317 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree/mbox.h" 1
+# 4318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/devicetree.h" 2
+# 21 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/thread.h" 1
+# 25 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/thread.h"
+struct _callee_saved {
+ uint32_t v1;
+ uint32_t v2;
+ uint32_t v3;
+ uint32_t v4;
+ uint32_t v5;
+ uint32_t v6;
+ uint32_t v7;
+ uint32_t v8;
+ uint32_t psp;
+};
+
+typedef struct _callee_saved _callee_saved_t;
+
+
+struct _preempt_float {
+ float s16;
+ float s17;
+ float s18;
+ float s19;
+ float s20;
+ float s21;
+ float s22;
+ float s23;
+ float s24;
+ float s25;
+ float s26;
+ float s27;
+ float s28;
+ float s29;
+ float s30;
+ float s31;
+};
+
+
+struct _thread_arch {
+
+
+ uint32_t basepri;
+
+
+ uint32_t swap_return_value;
+
+
+
+
+
+
+
+ struct _preempt_float preempt_float;
+# 110 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/thread.h"
+ union {
+  uint32_t mode;
+
+
+  struct {
+   uint8_t mode_bits;
+   uint8_t mode_exc_return;
+   uint16_t mode_reserved2;
+  };
+
+ };
+# 130 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/thread.h"
+};
+
+
+
+
+typedef struct _thread_arch _thread_arch_t;
+# 26 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/exc.h" 1
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/exc.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/exc.h" 1
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/exc.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/nvic.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/exc.h" 2
+# 77 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/exc.h"
+struct __fpu_sf {
+ uint32_t s[16];
+
+
+
+ uint32_t fpscr;
+ uint32_t undefined;
+};
+# 101 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/exc.h"
+struct __esf {
+ struct __basic_sf {
+  union { uint32_t a1, r0; };
+  union { uint32_t a2, r1; };
+  union { uint32_t a3, r2; };
+  union { uint32_t a4, r3; };
+  union { uint32_t ip, r12; };
+  union { uint32_t lr, r14; };
+  union { uint32_t pc, r15; };
+  uint32_t xpsr;
+ } basic;
+
+ struct __fpu_sf fpu;
+
+
+
+
+};
+
+extern uint32_t z_arm_coredump_fault_sp;
+
+typedef struct __esf z_arch_esf_t;
+
+extern void z_arm_exc_exit(void);
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/exc.h" 2
+# 27 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/irq.h" 1
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/irq.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sw_isr_table.h" 1
+# 26 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sw_isr_table.h"
+extern void _isr_wrapper(void);
+
+
+extern void z_irq_spurious(const void *unused);
+
+
+
+
+
+
+struct _isr_table_entry {
+ const void *arg;
+ void (*isr)(const void *);
+};
+
+
+
+
+extern struct _isr_table_entry _sw_isr_table[];
+# 53 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sw_isr_table.h"
+struct _isr_list {
+
+ int32_t irq;
+
+ int32_t flags;
+
+ void *func;
+
+ const void *param;
+};
+# 88 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sw_isr_table.h"
+unsigned int z_get_sw_isr_table_idx(unsigned int irq);
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/irq.h" 2
+# 39 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/irq.h"
+extern void arch_irq_enable(unsigned int irq);
+extern void arch_irq_disable(unsigned int irq);
+extern int arch_irq_is_enabled(unsigned int irq);
+
+
+extern void z_arm_irq_priority_set(unsigned int irq, unsigned int prio,
+       uint32_t flags);
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/irq.h"
+extern void z_arm_int_exit(void);
+
+extern void z_arm_interrupt_init(void);
+# 153 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/irq.h"
+extern void z_arm_int_exit(void);
+
+
+
+
+
+
+static inline void arch_isr_direct_header(void)
+{
+
+
+
+}
+
+static inline void arch_isr_direct_footer(int maybe_swap)
+{
+
+
+
+ if (maybe_swap != 0) {
+  z_arm_int_exit();
+ }
+}
+# 28 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/error.h" 1
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/misc.h" 1
+# 22 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/misc.h"
+extern uint32_t sys_clock_cycle_get_32(void);
+
+static inline uint32_t arch_k_cycle_get_32(void)
+{
+ return sys_clock_cycle_get_32();
+}
+
+extern uint64_t sys_clock_cycle_get_64(void);
+
+static inline uint64_t arch_k_cycle_get_64(void)
+{
+ return sys_clock_cycle_get_64();
+}
+
+static inline __attribute__((always_inline)) void arch_nop(void)
+{
+ __asm__ volatile("nop");
+}
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/addr_types.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/addr_types.h"
+typedef uintptr_t paddr_t;
+typedef void *vaddr_t;
+# 31 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/ffs.h" 1
+# 31 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/ffs.h"
+static inline __attribute__((always_inline)) unsigned int find_msb_set(uint32_t op)
+{
+ if (op == 0) {
+  return 0;
+ }
+
+ return 32 - __builtin_clz(op);
+}
+# 53 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/ffs.h"
+static inline __attribute__((always_inline)) unsigned int find_lsb_set(uint32_t op)
+{
+
+ return __builtin_ffs(op);
+# 81 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/ffs.h"
+}
+# 32 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/nmi.h" 1
+# 33 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h" 1
+# 42 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h"
+static inline __attribute__((always_inline)) unsigned int arch_irq_lock(void)
+{
+ unsigned int key;
+# 57 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h"
+ unsigned int tmp;
+
+ __asm__ volatile(
+  "mov %1, %2;"
+  "mrs %0, BASEPRI;"
+  "msr BASEPRI_MAX, %1;"
+  "isb;"
+  : "=r"(key),
+
+
+
+
+
+
+  "=r"(tmp)
+
+  : "i"(((((1 + 0)) << (8 - 3)) & 0xff))
+  : "memory");
+# 88 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h"
+ return key;
+}
+
+
+
+
+
+
+static inline __attribute__((always_inline)) void arch_irq_unlock(unsigned int key)
+{
+# 107 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h"
+ __asm__ volatile(
+  "msr BASEPRI, %0;"
+  "isb;"
+  : : "r"(key) : "memory");
+# 122 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h"
+}
+
+static inline __attribute__((always_inline)) 
+# 124 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h" 3 4
+                    _Bool 
+# 124 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline_gcc.h"
+                         arch_irq_unlocked(unsigned int key)
+{
+
+ return key == 0U;
+}
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/asm_inline.h" 2
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/sys_bitops.h" 1
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/sys_bitops.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_io.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_io.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/sys_io.h" 2
+
+
+
+
+
+typedef uint32_t io_port_t;
+typedef uintptr_t mm_reg_t;
+typedef uintptr_t mem_addr_t;
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/sys_bitops.h" 2
+
+
+
+
+
+static inline __attribute__((always_inline)) void sys_set_bit(mem_addr_t addr, unsigned int bit)
+{
+ uint32_t temp = *(volatile uint32_t *)addr;
+
+ *(volatile uint32_t *)addr = temp | (1 << bit);
+}
+
+static inline __attribute__((always_inline)) void sys_clear_bit(mem_addr_t addr, unsigned int bit)
+{
+ uint32_t temp = *(volatile uint32_t *)addr;
+
+ *(volatile uint32_t *)addr = temp & ~(1 << bit);
+}
+
+static inline __attribute__((always_inline)) int sys_test_bit(mem_addr_t addr, unsigned int bit)
+{
+ uint32_t temp = *(volatile uint32_t *)addr;
+
+ return temp & (1 << bit);
+}
+
+static inline __attribute__((always_inline)) void sys_set_bits(mem_addr_t addr, unsigned int mask)
+{
+ uint32_t temp = *(volatile uint32_t *)addr;
+
+ *(volatile uint32_t *)addr = temp | mask;
+}
+
+static inline __attribute__((always_inline)) void sys_clear_bits(mem_addr_t addr, unsigned int mask)
+{
+ uint32_t temp = *(volatile uint32_t *)addr;
+
+ *(volatile uint32_t *)addr = temp & ~mask;
+}
+
+static inline __attribute__((always_inline))
+ void sys_bitfield_set_bit(mem_addr_t addr, unsigned int bit)
+{
+
+
+
+ sys_set_bit(addr + ((bit >> 5) << 2), bit & 0x1F);
+}
+
+static inline __attribute__((always_inline))
+ void sys_bitfield_clear_bit(mem_addr_t addr, unsigned int bit)
+{
+ sys_clear_bit(addr + ((bit >> 5) << 2), bit & 0x1F);
+}
+
+static inline __attribute__((always_inline))
+ int sys_bitfield_test_bit(mem_addr_t addr, unsigned int bit)
+{
+ return sys_test_bit(addr + ((bit >> 5) << 2), bit & 0x1F);
+}
+
+static inline __attribute__((always_inline))
+ int sys_test_and_set_bit(mem_addr_t addr, unsigned int bit)
+{
+ int ret;
+
+ ret = sys_test_bit(addr, bit);
+ sys_set_bit(addr, bit);
+
+ return ret;
+}
+
+static inline __attribute__((always_inline))
+ int sys_test_and_clear_bit(mem_addr_t addr, unsigned int bit)
+{
+ int ret;
+
+ ret = sys_test_bit(addr, bit);
+ sys_clear_bit(addr, bit);
+
+ return ret;
+}
+
+static inline __attribute__((always_inline))
+ int sys_bitfield_test_and_set_bit(mem_addr_t addr, unsigned int bit)
+{
+ int ret;
+
+ ret = sys_bitfield_test_bit(addr, bit);
+ sys_bitfield_set_bit(addr, bit);
+
+ return ret;
+}
+
+static inline __attribute__((always_inline))
+ int sys_bitfield_test_and_clear_bit(mem_addr_t addr, unsigned int bit)
+{
+ int ret;
+
+ ret = sys_bitfield_test_bit(addr, bit);
+ sys_bitfield_clear_bit(addr, bit);
+
+ return ret;
+}
+# 35 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/cpu.h" 1
+# 38 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/cortex_m/memory_map.h" 1
+# 39 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/sys_io.h" 1
+# 23 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/common/sys_io.h"
+static inline __attribute__((always_inline)) uint8_t sys_read8(mem_addr_t addr)
+{
+ return *(volatile uint8_t *)addr;
+}
+
+static inline __attribute__((always_inline)) void sys_write8(uint8_t data, mem_addr_t addr)
+{
+ *(volatile uint8_t *)addr = data;
+}
+
+static inline __attribute__((always_inline)) uint16_t sys_read16(mem_addr_t addr)
+{
+ return *(volatile uint16_t *)addr;
+}
+
+static inline __attribute__((always_inline)) void sys_write16(uint16_t data, mem_addr_t addr)
+{
+ *(volatile uint16_t *)addr = data;
+}
+
+static inline __attribute__((always_inline)) uint32_t sys_read32(mem_addr_t addr)
+{
+ return *(volatile uint32_t *)addr;
+}
+
+static inline __attribute__((always_inline)) void sys_write32(uint32_t data, mem_addr_t addr)
+{
+ *(volatile uint32_t *)addr = data;
+}
+
+static inline __attribute__((always_inline)) uint64_t sys_read64(mem_addr_t addr)
+{
+ return *(volatile uint64_t *)addr;
+}
+
+static inline __attribute__((always_inline)) void sys_write64(uint64_t data, mem_addr_t addr)
+{
+ *(volatile uint64_t *)addr = data;
+}
+# 40 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 57 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/fatal_types.h" 1
+# 24 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/fatal_types.h"
+enum k_fatal_error_reason {
+
+ K_ERR_CPU_EXCEPTION,
+
+
+ K_ERR_SPURIOUS_IRQ,
+
+
+ K_ERR_STACK_CHK_FAIL,
+
+
+ K_ERR_KERNEL_OOPS,
+
+
+ K_ERR_KERNEL_PANIC,
+
+
+ K_ERR_ARCH_START = 16
+};
+# 58 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+
+enum k_fatal_error_reason_arch {
+
+ K_ERR_ARM_MEM_GENERIC = K_ERR_ARCH_START,
+ K_ERR_ARM_MEM_STACKING,
+ K_ERR_ARM_MEM_UNSTACKING,
+ K_ERR_ARM_MEM_DATA_ACCESS,
+ K_ERR_ARM_MEM_INSTRUCTION_ACCESS,
+ K_ERR_ARM_MEM_FP_LAZY_STATE_PRESERVATION,
+
+
+ K_ERR_ARM_BUS_GENERIC,
+ K_ERR_ARM_BUS_STACKING,
+ K_ERR_ARM_BUS_UNSTACKING,
+ K_ERR_ARM_BUS_PRECISE_DATA_BUS,
+ K_ERR_ARM_BUS_IMPRECISE_DATA_BUS,
+ K_ERR_ARM_BUS_INSTRUCTION_BUS,
+ K_ERR_ARM_BUS_FP_LAZY_STATE_PRESERVATION,
+
+
+ K_ERR_ARM_USAGE_GENERIC,
+ K_ERR_ARM_USAGE_DIV_0,
+ K_ERR_ARM_USAGE_UNALIGNED_ACCESS,
+ K_ERR_ARM_USAGE_STACK_OVERFLOW,
+ K_ERR_ARM_USAGE_NO_COPROCESSOR,
+ K_ERR_ARM_USAGE_ILLEGAL_EXC_RETURN,
+ K_ERR_ARM_USAGE_ILLEGAL_EPSR,
+ K_ERR_ARM_USAGE_UNDEFINED_INSTRUCTION,
+
+
+ K_ERR_ARM_SECURE_GENERIC,
+ K_ERR_ARM_SECURE_ENTRY_POINT,
+ K_ERR_ARM_SECURE_INTEGRITY_SIGNATURE,
+ K_ERR_ARM_SECURE_EXCEPTION_RETURN,
+ K_ERR_ARM_SECURE_ATTRIBUTION_UNIT,
+ K_ERR_ARM_SECURE_TRANSITION,
+ K_ERR_ARM_SECURE_LAZY_STATE_PRESERVATION,
+ K_ERR_ARM_SECURE_LAZY_STATE_ERROR,
+
+
+ K_ERR_ARM_UNDEFINED_INSTRUCTION,
+ K_ERR_ARM_ALIGNMENT_FAULT,
+ K_ERR_ARM_BACKGROUND_FAULT,
+ K_ERR_ARM_PERMISSION_FAULT,
+ K_ERR_ARM_SYNC_EXTERNAL_ABORT,
+ K_ERR_ARM_ASYNC_EXTERNAL_ABORT,
+ K_ERR_ARM_SYNC_PARITY_ERROR,
+ K_ERR_ARM_ASYNC_PARITY_ERROR,
+ K_ERR_ARM_DEBUG_EVENT,
+ K_ERR_ARM_TRANSLATION_FAULT,
+ K_ERR_ARM_UNSUPPORTED_EXCLUSIVE_ACCESS_FAULT
+};
+# 268 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu.h" 1
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu_v7m.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu_v7m.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core_m.h" 1
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core_m.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/soc/arm/nordic_nrf/nrf52/soc.h" 1
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/soc/arm/nordic_nrf/nrf52/soc.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/soc/arm/nordic_nrf/common/./soc_nrf_common.h" 1
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/soc/arm/nordic_nrf/common/./soc_nrf_common.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 1
+# 37 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config.h" 1
+# 515 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config_common.h" 1
+# 516 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config.h" 2
+# 531 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config_nrf52840.h" 1
+# 532 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_config.h" 2
+# 38 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 1
+# 38 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 39 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 1 3 4
+# 49 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 50 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 2 3 4
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_locale.h" 1 3 4
+
+
+
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/newlib.h" 1 3 4
+# 8 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_locale.h" 2 3 4
+
+
+
+# 10 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/_locale.h" 3 4
+struct __locale_t;
+typedef struct __locale_t *locale_t;
+# 53 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 2 3 4
+
+
+
+
+
+
+
+
+void * memchr (const void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void * memcpy (void *restrict, const void *restrict, size_t);
+void * memmove (void *, const void *, size_t);
+void * memset (void *, int, size_t);
+char *strcat (char *restrict, const char *restrict);
+char *strchr (const char *, int);
+int strcmp (const char *, const char *);
+int strcoll (const char *, const char *);
+char *strcpy (char *restrict, const char *restrict);
+size_t strcspn (const char *, const char *);
+char *strerror (int);
+size_t strlen (const char *);
+char *strncat (char *restrict, const char *restrict, size_t);
+int strncmp (const char *, const char *, size_t);
+char *strncpy (char *restrict, const char *restrict, size_t);
+char *strpbrk (const char *, const char *);
+char *strrchr (const char *, int);
+size_t strspn (const char *, const char *);
+char *strstr (const char *, const char *);
+
+char *strtok (char *restrict, const char *restrict);
+
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+
+int strcoll_l (const char *, const char *, locale_t);
+char *strerror_l (int, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+
+
+
+
+
+
+void * memccpy (void *restrict, const void *restrict, int, size_t);
+# 108 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 3 4
+char *stpcpy (char *restrict, const char *restrict);
+char *stpncpy (char *restrict, const char *restrict, size_t);
+
+
+
+
+
+
+void free (void *) __attribute__ ((__nothrow__));
+char *strdup (const char *) __attribute__((__malloc__, __malloc__(free,1))) __attribute__((__warn_unused_result__));
+
+
+char *strndup (const char *, size_t) __attribute__((__malloc__, __malloc__(free,1))) __attribute__((__warn_unused_result__));
+# 131 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 3 4
+int strerror_r (int, char *, size_t)
+
+             __asm__ ("" "__xpg_strerror_r")
+
+  ;
+
+
+
+
+
+
+
+char * _strerror_r (int, int, int *);
+
+
+
+
+
+
+size_t strnlen (const char *, size_t);
+# 165 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 3 4
+char *strsignal (int __signo);
+# 210 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/string.h" 1 3 4
+# 211 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 2 3 4
+
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/ssp/string.h" 1 3 4
+# 35 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/ssp/string.h" 3 4
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/ssp/ssp.h" 1 3 4
+# 71 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/ssp/ssp.h" 3 4
+
+void __stack_chk_fail(void) __attribute__((__noreturn__));
+void __chk_fail(void) __attribute__((__noreturn__));
+void set_fortify_handler (void (*handler) (int sig));
+
+# 36 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/ssp/string.h" 2 3 4
+
+
+void *__memcpy_chk(void *, const void *, size_t, size_t);
+void *__memmove_chk(void *, const void *, size_t, size_t);
+void *__mempcpy_chk(void *, const void *, size_t, size_t);
+void *__memset_chk(void *, int, size_t, size_t);
+char *__stpcpy_chk(char *, const char *, size_t);
+char *__strcat_chk(char *, const char *, size_t);
+char *__strcpy_chk(char *, const char *, size_t);
+char *__strncat_chk(char *, const char *, size_t, size_t);
+char *__strncpy_chk(char *, const char *, size_t, size_t);
+
+# 82 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/ssp/string.h" 3 4
+
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __memcpy_ichk(void * restrict, const void * restrict, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __memcpy_ichk(void * restrict dst, const void * restrict src, size_t len) { return __builtin___memcpy_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __memmove_ichk(void *, const void *, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __memmove_ichk(void * dst, const void * src, size_t len) { return __builtin___memmove_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __mempcpy_ichk(void * restrict, const void * restrict, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __mempcpy_ichk(void * restrict dst, const void * restrict src, size_t len) { return __builtin___mempcpy_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __memset_ichk(void *, int, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) void * __memset_ichk(void * dst, int src, size_t len) { return __builtin___memset_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __stpcpy_ichk(char *, const char *); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __stpcpy_ichk(char * restrict dst, const char * restrict src) { return __builtin___stpcpy_chk(dst, src, __builtin_object_size(dst, 0)); }
+
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __stpncpy_ichk(char * restrict, const char * restrict, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __stpncpy_ichk(char * restrict dst, const char * restrict src, size_t len) { return __builtin___stpncpy_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strcpy_ichk(char *, const char *); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strcpy_ichk(char * restrict dst, const char * restrict src) { return __builtin___strcpy_chk(dst, src, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strcat_ichk(char *, const char *); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strcat_ichk(char * restrict dst, const char * restrict src) { return __builtin___strcat_chk(dst, src, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strncpy_ichk(char * restrict, const char * restrict, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strncpy_ichk(char * restrict dst, const char * restrict src, size_t len) { return __builtin___strncpy_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strncat_ichk(char * restrict, const char * restrict, size_t); extern __inline__ __attribute__((__always_inline__, __gnu_inline__)) char * __strncat_ichk(char * restrict dst, const char * restrict src, size_t len) { return __builtin___strncat_chk(dst, src, len, __builtin_object_size(dst, 0)); }
+
+# 216 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/string.h" 2 3 4
+# 41 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 1 3 4
+# 42 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h" 1
+# 193 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h" 1
+# 71 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+
+# 71 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef enum {
+
+  Reset_IRQn = -15,
+  NonMaskableInt_IRQn = -14,
+  HardFault_IRQn = -13,
+  MemoryManagement_IRQn = -12,
+
+  BusFault_IRQn = -11,
+
+  UsageFault_IRQn = -10,
+  SVCall_IRQn = -5,
+  DebugMonitor_IRQn = -4,
+  PendSV_IRQn = -2,
+  SysTick_IRQn = -1,
+
+  POWER_CLOCK_IRQn = 0,
+  RADIO_IRQn = 1,
+  UARTE0_UART0_IRQn = 2,
+  SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQn= 3,
+  SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQn= 4,
+  NFCT_IRQn = 5,
+  GPIOTE_IRQn = 6,
+  SAADC_IRQn = 7,
+  TIMER0_IRQn = 8,
+  TIMER1_IRQn = 9,
+  TIMER2_IRQn = 10,
+  RTC0_IRQn = 11,
+  TEMP_IRQn = 12,
+  RNG_IRQn = 13,
+  ECB_IRQn = 14,
+  CCM_AAR_IRQn = 15,
+  WDT_IRQn = 16,
+  RTC1_IRQn = 17,
+  QDEC_IRQn = 18,
+  COMP_LPCOMP_IRQn = 19,
+  SWI0_EGU0_IRQn = 20,
+  SWI1_EGU1_IRQn = 21,
+  SWI2_EGU2_IRQn = 22,
+  SWI3_EGU3_IRQn = 23,
+  SWI4_EGU4_IRQn = 24,
+  SWI5_EGU5_IRQn = 25,
+  TIMER3_IRQn = 26,
+  TIMER4_IRQn = 27,
+  PWM0_IRQn = 28,
+  PDM_IRQn = 29,
+  MWU_IRQn = 32,
+  PWM1_IRQn = 33,
+  PWM2_IRQn = 34,
+  SPIM2_SPIS2_SPI2_IRQn = 35,
+  RTC2_IRQn = 36,
+  I2S_IRQn = 37,
+  FPU_IRQn = 38,
+  USBD_IRQn = 39,
+  UARTE1_IRQn = 40,
+  QSPI_IRQn = 41,
+  CRYPTOCELL_IRQn = 42,
+  PWM3_IRQn = 45,
+  SPIM3_IRQn = 47
+} IRQn_Type;
+# 150 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h" 1
+# 63 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_version.h" 1
+# 64 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h" 2
+# 162 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_compiler.h" 1
+# 54 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_compiler.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h" 1
+# 29 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+#pragma GCC diagnostic ignored "-Wconversion"
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+# 71 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed)) T_UINT32 { uint32_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT16_WRITE { uint16_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT16_READ { uint16_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT32_WRITE { uint32_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT32_READ { uint32_t v; };
+#pragma GCC diagnostic pop
+# 258 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __ISB(void)
+{
+  __asm volatile ("isb 0xF":::"memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __DSB(void)
+{
+  __asm volatile ("dsb 0xF":::"memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __DMB(void)
+{
+  __asm volatile ("dmb 0xF":::"memory");
+}
+# 292 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __REV(uint32_t value)
+{
+
+  return __builtin_bswap32(value);
+
+
+
+
+
+
+}
+# 311 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __REV16(uint32_t value)
+{
+  uint32_t result;
+
+  __asm ("rev16 %0, %1" : "=r" (result) : "r" (value) );
+  return result;
+}
+# 326 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline int16_t __REVSH(int16_t value)
+{
+
+  return (int16_t)__builtin_bswap16(value);
+
+
+
+
+
+
+}
+# 346 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __ROR(uint32_t op1, uint32_t op2)
+{
+  op2 %= 32U;
+  if (op2 == 0U)
+  {
+    return op1;
+  }
+  return (op1 >> op2) | (op1 << (32U - op2));
+}
+# 373 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __RBIT(uint32_t value)
+{
+  uint32_t result;
+
+
+
+
+   __asm ("rbit %0, %1" : "=r" (result) : "r" (value) );
+# 393 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+  return result;
+}
+# 403 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint8_t __CLZ(uint32_t value)
+{
+# 414 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+  if (value == 0U)
+  {
+    return 32U;
+  }
+  return __builtin_clz(value);
+}
+# 432 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint8_t __LDREXB(volatile uint8_t *addr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrexb %0, %1" : "=r" (result) : "Q" (*addr) );
+
+
+
+
+
+
+   return ((uint8_t) result);
+}
+# 454 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint16_t __LDREXH(volatile uint16_t *addr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrexh %0, %1" : "=r" (result) : "Q" (*addr) );
+
+
+
+
+
+
+   return ((uint16_t) result);
+}
+# 476 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __LDREXW(volatile uint32_t *addr)
+{
+    uint32_t result;
+
+   __asm volatile ("ldrex %0, %1" : "=r" (result) : "Q" (*addr) );
+   return(result);
+}
+# 493 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __STREXB(uint8_t value, volatile uint8_t *addr)
+{
+   uint32_t result;
+
+   __asm volatile ("strexb %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" ((uint32_t)value) );
+   return(result);
+}
+# 510 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __STREXH(uint16_t value, volatile uint16_t *addr)
+{
+   uint32_t result;
+
+   __asm volatile ("strexh %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" ((uint32_t)value) );
+   return(result);
+}
+# 527 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __STREXW(uint32_t value, volatile uint32_t *addr)
+{
+   uint32_t result;
+
+   __asm volatile ("strex %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" (value) );
+   return(result);
+}
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __CLREX(void)
+{
+  __asm volatile ("clrex" ::: "memory");
+}
+# 593 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __RRX(uint32_t value)
+{
+  uint32_t result;
+
+  __asm volatile ("rrx %0, %1" : "=r" (result) : "r" (value) );
+  return(result);
+}
+# 608 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint8_t __LDRBT(volatile uint8_t *ptr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrbt %0, %1" : "=r" (result) : "Q" (*ptr) );
+
+
+
+
+
+
+   return ((uint8_t) result);
+}
+# 630 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint16_t __LDRHT(volatile uint16_t *ptr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrht %0, %1" : "=r" (result) : "Q" (*ptr) );
+
+
+
+
+
+
+   return ((uint16_t) result);
+}
+# 652 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __LDRT(volatile uint32_t *ptr)
+{
+    uint32_t result;
+
+   __asm volatile ("ldrt %0, %1" : "=r" (result) : "Q" (*ptr) );
+   return(result);
+}
+# 667 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __STRBT(uint8_t value, volatile uint8_t *ptr)
+{
+   __asm volatile ("strbt %1, %0" : "=Q" (*ptr) : "r" ((uint32_t)value) );
+}
+# 679 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __STRHT(uint16_t value, volatile uint16_t *ptr)
+{
+   __asm volatile ("strht %1, %0" : "=Q" (*ptr) : "r" ((uint32_t)value) );
+}
+# 691 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __STRT(uint32_t value, volatile uint32_t *ptr)
+{
+   __asm volatile ("strt %1, %0" : "=Q" (*ptr) : "r" (value) );
+}
+# 949 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __enable_irq(void)
+{
+  __asm volatile ("cpsie i" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __disable_irq(void)
+{
+  __asm volatile ("cpsid i" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_CONTROL(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, control" : "=r" (result) );
+  return(result);
+}
+# 1001 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_CONTROL(uint32_t control)
+{
+  __asm volatile ("MSR control, %0" : : "r" (control) : "memory");
+  __ISB();
+}
+# 1027 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_IPSR(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, ipsr" : "=r" (result) );
+  return(result);
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_APSR(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, apsr" : "=r" (result) );
+  return(result);
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_xPSR(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, xpsr" : "=r" (result) );
+  return(result);
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_PSP(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, psp" : "=r" (result) );
+  return(result);
+}
+# 1099 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_PSP(uint32_t topOfProcStack)
+{
+  __asm volatile ("MSR psp, %0" : : "r" (topOfProcStack) : );
+}
+# 1123 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_MSP(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, msp" : "=r" (result) );
+  return(result);
+}
+# 1153 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_MSP(uint32_t topOfMainStack)
+{
+  __asm volatile ("MSR msp, %0" : : "r" (topOfMainStack) : );
+}
+# 1204 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_PRIMASK(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, primask" : "=r" (result) );
+  return(result);
+}
+# 1234 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_PRIMASK(uint32_t priMask)
+{
+  __asm volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
+}
+# 1261 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __enable_fault_irq(void)
+{
+  __asm volatile ("cpsie f" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __disable_fault_irq(void)
+{
+  __asm volatile ("cpsid f" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_BASEPRI(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, basepri" : "=r" (result) );
+  return(result);
+}
+# 1313 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_BASEPRI(uint32_t basePri)
+{
+  __asm volatile ("MSR basepri, %0" : : "r" (basePri) : "memory");
+}
+# 1338 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_BASEPRI_MAX(uint32_t basePri)
+{
+  __asm volatile ("MSR basepri_max, %0" : : "r" (basePri) : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_FAULTMASK(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, faultmask" : "=r" (result) );
+  return(result);
+}
+# 1379 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_FAULTMASK(uint32_t faultMask)
+{
+  __asm volatile ("MSR faultmask, %0" : : "r" (faultMask) : "memory");
+}
+# 1588 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_FPSCR(void)
+{
+
+
+
+
+
+
+  return __builtin_arm_get_fpscr();
+# 1606 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __set_FPSCR(uint32_t fpscr)
+{
+
+
+
+
+
+
+  __builtin_arm_set_fpscr(fpscr);
+
+
+
+
+
+
+}
+# 1643 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __SADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("uadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+
+__attribute__((always_inline)) static inline uint32_t __SSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("ssub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("usub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+
+__attribute__((always_inline)) static inline uint32_t __SADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("uadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("ssub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("usub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("uasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("ssax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("usax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USAD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("usad8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USADA8(uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm ("usada8 %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+# 1965 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __UXTB16(uint32_t op1)
+{
+  uint32_t result;
+
+  __asm ("uxtb16 %0, %1" : "=r" (result) : "r" (op1));
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UXTAB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uxtab16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTB16(uint32_t op1)
+{
+  uint32_t result;
+
+  __asm ("sxtb16 %0, %1" : "=r" (result) : "r" (op1));
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTB16_RORn(uint32_t op1, uint32_t rotate)
+{
+  uint32_t result;
+  if (__builtin_constant_p(rotate) && ((rotate == 8U) || (rotate == 16U) || (rotate == 24U))) {
+    __asm volatile ("sxtb16 %0, %1, ROR %2" : "=r" (result) : "r" (op1), "i" (rotate) );
+  } else {
+    result = __SXTB16(__ROR(op1, rotate)) ;
+  }
+  return result;
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTAB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("sxtab16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTAB16_RORn(uint32_t op1, uint32_t op2, uint32_t rotate)
+{
+  uint32_t result;
+  if (__builtin_constant_p(rotate) && ((rotate == 8U) || (rotate == 16U) || (rotate == 24U))) {
+    __asm volatile ("sxtab16 %0, %1, %2, ROR %3" : "=r" (result) : "r" (op1) , "r" (op2) , "i" (rotate));
+  } else {
+    result = __SXTAB16(op1, __ROR(op2, rotate));
+  }
+  return result;
+}
+
+
+__attribute__((always_inline)) static inline uint32_t __SMUAD (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smuad %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMUADX (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smuadx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLAD (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smlad %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLADX (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smladx %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlald %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlaldx %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMUSD (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smusd %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMUSDX (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smusdx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLSD (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smlsd %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLSDX (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smlsdx %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlsld %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlsldx %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SEL (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sel %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline int32_t __QADD( int32_t op1, int32_t op2)
+{
+  int32_t result;
+
+  __asm volatile ("qadd %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline int32_t __QSUB( int32_t op1, int32_t op2)
+{
+  int32_t result;
+
+  __asm volatile ("qsub %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+# 2197 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h"
+__attribute__((always_inline)) static inline int32_t __SMMLA (int32_t op1, int32_t op2, int32_t op3)
+{
+ int32_t result;
+
+ __asm ("smmla %0, %1, %2, %3" : "=r" (result): "r" (op1), "r" (op2), "r" (op3) );
+ return(result);
+}
+
+
+
+
+
+#pragma GCC diagnostic pop
+# 55 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/cmsis_compiler.h" 2
+# 163 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h" 2
+# 264 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t _reserved0:16;
+    uint32_t GE:4;
+    uint32_t _reserved1:7;
+    uint32_t Q:1;
+    uint32_t V:1;
+    uint32_t C:1;
+    uint32_t Z:1;
+    uint32_t N:1;
+  } b;
+  uint32_t w;
+} APSR_Type;
+# 303 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t ISR:9;
+    uint32_t _reserved0:23;
+  } b;
+  uint32_t w;
+} IPSR_Type;
+# 321 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t ISR:9;
+    uint32_t _reserved0:1;
+    uint32_t ICI_IT_1:6;
+    uint32_t GE:4;
+    uint32_t _reserved1:4;
+    uint32_t T:1;
+    uint32_t ICI_IT_2:2;
+    uint32_t Q:1;
+    uint32_t V:1;
+    uint32_t C:1;
+    uint32_t Z:1;
+    uint32_t N:1;
+  } b;
+  uint32_t w;
+} xPSR_Type;
+# 376 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t nPRIV:1;
+    uint32_t SPSEL:1;
+    uint32_t FPCA:1;
+    uint32_t _reserved0:29;
+  } b;
+  uint32_t w;
+} CONTROL_Type;
+# 411 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile uint32_t ISER[8U];
+        uint32_t RESERVED0[24U];
+  volatile uint32_t ICER[8U];
+        uint32_t RESERVED1[24U];
+  volatile uint32_t ISPR[8U];
+        uint32_t RESERVED2[24U];
+  volatile uint32_t ICPR[8U];
+        uint32_t RESERVED3[24U];
+  volatile uint32_t IABR[8U];
+        uint32_t RESERVED4[56U];
+  volatile uint8_t IP[240U];
+        uint32_t RESERVED5[644U];
+  volatile uint32_t STIR;
+} NVIC_Type;
+# 445 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile const uint32_t CPUID;
+  volatile uint32_t ICSR;
+  volatile uint32_t VTOR;
+  volatile uint32_t AIRCR;
+  volatile uint32_t SCR;
+  volatile uint32_t CCR;
+  volatile uint8_t SHP[12U];
+  volatile uint32_t SHCSR;
+  volatile uint32_t CFSR;
+  volatile uint32_t HFSR;
+  volatile uint32_t DFSR;
+  volatile uint32_t MMFAR;
+  volatile uint32_t BFAR;
+  volatile uint32_t AFSR;
+  volatile const uint32_t PFR[2U];
+  volatile const uint32_t DFR;
+  volatile const uint32_t ADR;
+  volatile const uint32_t MMFR[4U];
+  volatile const uint32_t ISAR[5U];
+        uint32_t RESERVED0[5U];
+  volatile uint32_t CPACR;
+} SCB_Type;
+# 724 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+        uint32_t RESERVED0[1U];
+  volatile const uint32_t ICTR;
+  volatile uint32_t ACTLR;
+} SCnSCB_Type;
+# 764 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile uint32_t CTRL;
+  volatile uint32_t LOAD;
+  volatile uint32_t VAL;
+  volatile const uint32_t CALIB;
+} SysTick_Type;
+# 816 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile union
+  {
+    volatile uint8_t u8;
+    volatile uint16_t u16;
+    volatile uint32_t u32;
+  } PORT [32U];
+        uint32_t RESERVED0[864U];
+  volatile uint32_t TER;
+        uint32_t RESERVED1[15U];
+  volatile uint32_t TPR;
+        uint32_t RESERVED2[15U];
+  volatile uint32_t TCR;
+        uint32_t RESERVED3[32U];
+        uint32_t RESERVED4[43U];
+  volatile uint32_t LAR;
+  volatile const uint32_t LSR;
+        uint32_t RESERVED5[6U];
+  volatile const uint32_t PID4;
+  volatile const uint32_t PID5;
+  volatile const uint32_t PID6;
+  volatile const uint32_t PID7;
+  volatile const uint32_t PID0;
+  volatile const uint32_t PID1;
+  volatile const uint32_t PID2;
+  volatile const uint32_t PID3;
+  volatile const uint32_t CID0;
+  volatile const uint32_t CID1;
+  volatile const uint32_t CID2;
+  volatile const uint32_t CID3;
+} ITM_Type;
+# 904 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile uint32_t CTRL;
+  volatile uint32_t CYCCNT;
+  volatile uint32_t CPICNT;
+  volatile uint32_t EXCCNT;
+  volatile uint32_t SLEEPCNT;
+  volatile uint32_t LSUCNT;
+  volatile uint32_t FOLDCNT;
+  volatile const uint32_t PCSR;
+  volatile uint32_t COMP0;
+  volatile uint32_t MASK0;
+  volatile uint32_t FUNCTION0;
+        uint32_t RESERVED0[1U];
+  volatile uint32_t COMP1;
+  volatile uint32_t MASK1;
+  volatile uint32_t FUNCTION1;
+        uint32_t RESERVED1[1U];
+  volatile uint32_t COMP2;
+  volatile uint32_t MASK2;
+  volatile uint32_t FUNCTION2;
+        uint32_t RESERVED2[1U];
+  volatile uint32_t COMP3;
+  volatile uint32_t MASK3;
+  volatile uint32_t FUNCTION3;
+} DWT_Type;
+# 1051 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile const uint32_t SSPSR;
+  volatile uint32_t CSPSR;
+        uint32_t RESERVED0[2U];
+  volatile uint32_t ACPR;
+        uint32_t RESERVED1[55U];
+  volatile uint32_t SPPR;
+        uint32_t RESERVED2[131U];
+  volatile const uint32_t FFSR;
+  volatile uint32_t FFCR;
+  volatile const uint32_t FSCR;
+        uint32_t RESERVED3[759U];
+  volatile const uint32_t TRIGGER;
+  volatile const uint32_t FIFO0;
+  volatile const uint32_t ITATBCTR2;
+        uint32_t RESERVED4[1U];
+  volatile const uint32_t ITATBCTR0;
+  volatile const uint32_t FIFO1;
+  volatile uint32_t ITCTRL;
+        uint32_t RESERVED5[39U];
+  volatile uint32_t CLAIMSET;
+  volatile uint32_t CLAIMCLR;
+        uint32_t RESERVED7[8U];
+  volatile const uint32_t DEVID;
+  volatile const uint32_t DEVTYPE;
+} TPI_Type;
+# 1213 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile const uint32_t TYPE;
+  volatile uint32_t CTRL;
+  volatile uint32_t RNR;
+  volatile uint32_t RBAR;
+  volatile uint32_t RASR;
+  volatile uint32_t RBAR_A1;
+  volatile uint32_t RASR_A1;
+  volatile uint32_t RBAR_A2;
+  volatile uint32_t RASR_A2;
+  volatile uint32_t RBAR_A3;
+  volatile uint32_t RASR_A3;
+} MPU_Type;
+# 1309 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+        uint32_t RESERVED0[1U];
+  volatile uint32_t FPCCR;
+  volatile uint32_t FPCAR;
+  volatile uint32_t FPDSCR;
+  volatile const uint32_t MVFR0;
+  volatile const uint32_t MVFR1;
+  volatile const uint32_t MVFR2;
+} FPU_Type;
+# 1421 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+typedef struct
+{
+  volatile uint32_t DHCSR;
+  volatile uint32_t DCRSR;
+  volatile uint32_t DCRDR;
+  volatile uint32_t DEMCR;
+} CoreDebug_Type;
+# 1653 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+{
+  uint32_t reg_value;
+  uint32_t PriorityGroupTmp = (PriorityGroup & (uint32_t)0x07UL);
+
+  reg_value = ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR;
+  reg_value &= ~((uint32_t)((0xFFFFUL << 16U) | (7UL << 8U)));
+  reg_value = (reg_value |
+                ((uint32_t)0x5FAUL << 16U) |
+                (PriorityGroupTmp << 8U) );
+  ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR = reg_value;
+}
+
+
+
+
+
+
+
+static inline uint32_t __NVIC_GetPriorityGrouping(void)
+{
+  return ((uint32_t)((((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR & (7UL << 8U)) >> 8U));
+}
+# 1684 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_EnableIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    __asm volatile("":::"memory");
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISER[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+    __asm volatile("":::"memory");
+  }
+}
+# 1703 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t __NVIC_GetEnableIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return((uint32_t)(((((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISER[(((uint32_t)IRQn) >> 5UL)] & (1UL << (((uint32_t)IRQn) & 0x1FUL))) != 0UL) ? 1UL : 0UL));
+  }
+  else
+  {
+    return(0U);
+  }
+}
+# 1722 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_DisableIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ICER[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+    __DSB();
+    __ISB();
+  }
+}
+# 1741 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t __NVIC_GetPendingIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return((uint32_t)(((((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISPR[(((uint32_t)IRQn) >> 5UL)] & (1UL << (((uint32_t)IRQn) & 0x1FUL))) != 0UL) ? 1UL : 0UL));
+  }
+  else
+  {
+    return(0U);
+  }
+}
+# 1760 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_SetPendingIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISPR[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+  }
+}
+# 1775 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ICPR[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+  }
+}
+# 1792 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t __NVIC_GetActive(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return((uint32_t)(((((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->IABR[(((uint32_t)IRQn) >> 5UL)] & (1UL << (((uint32_t)IRQn) & 0x1FUL))) != 0UL) ? 1UL : 0UL));
+  }
+  else
+  {
+    return(0U);
+  }
+}
+# 1814 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->IP[((uint32_t)IRQn)] = (uint8_t)((priority << (8U - 3)) & (uint32_t)0xFFUL);
+  }
+  else
+  {
+    ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->SHP[(((uint32_t)IRQn) & 0xFUL)-4UL] = (uint8_t)((priority << (8U - 3)) & (uint32_t)0xFFUL);
+  }
+}
+# 1836 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t __NVIC_GetPriority(IRQn_Type IRQn)
+{
+
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return(((uint32_t)((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->IP[((uint32_t)IRQn)] >> (8U - 3)));
+  }
+  else
+  {
+    return(((uint32_t)((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->SHP[(((uint32_t)IRQn) & 0xFUL)-4UL] >> (8U - 3)));
+  }
+}
+# 1861 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)
+{
+  uint32_t PriorityGroupTmp = (PriorityGroup & (uint32_t)0x07UL);
+  uint32_t PreemptPriorityBits;
+  uint32_t SubPriorityBits;
+
+  PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(3)) ? (uint32_t)(3) : (uint32_t)(7UL - PriorityGroupTmp);
+  SubPriorityBits = ((PriorityGroupTmp + (uint32_t)(3)) < (uint32_t)7UL) ? (uint32_t)0UL : (uint32_t)((PriorityGroupTmp - 7UL) + (uint32_t)(3));
+
+  return (
+           ((PreemptPriority & (uint32_t)((1UL << (PreemptPriorityBits)) - 1UL)) << SubPriorityBits) |
+           ((SubPriority & (uint32_t)((1UL << (SubPriorityBits )) - 1UL)))
+         );
+}
+# 1888 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGroup, uint32_t* const pPreemptPriority, uint32_t* const pSubPriority)
+{
+  uint32_t PriorityGroupTmp = (PriorityGroup & (uint32_t)0x07UL);
+  uint32_t PreemptPriorityBits;
+  uint32_t SubPriorityBits;
+
+  PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(3)) ? (uint32_t)(3) : (uint32_t)(7UL - PriorityGroupTmp);
+  SubPriorityBits = ((PriorityGroupTmp + (uint32_t)(3)) < (uint32_t)7UL) ? (uint32_t)0UL : (uint32_t)((PriorityGroupTmp - 7UL) + (uint32_t)(3));
+
+  *pPreemptPriority = (Priority >> SubPriorityBits) & (uint32_t)((1UL << (PreemptPriorityBits)) - 1UL);
+  *pSubPriority = (Priority ) & (uint32_t)((1UL << (SubPriorityBits )) - 1UL);
+}
+# 1911 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline void __NVIC_SetVector(IRQn_Type IRQn, uint32_t vector)
+{
+  uint32_t *vectors = (uint32_t *)((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->VTOR;
+  vectors[(int32_t)IRQn + 16] = vector;
+
+}
+# 1927 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t __NVIC_GetVector(IRQn_Type IRQn)
+{
+  uint32_t *vectors = (uint32_t *)((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->VTOR;
+  return vectors[(int32_t)IRQn + 16];
+}
+
+
+
+
+
+
+__attribute__((__noreturn__)) static inline void __NVIC_SystemReset(void)
+{
+  __DSB();
+
+  ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR = (uint32_t)((0x5FAUL << 16U) |
+                           (((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR & (7UL << 8U)) |
+                            (1UL << 2U) );
+  __DSB();
+
+  for(;;)
+  {
+    __asm volatile ("nop");
+  }
+}
+# 1960 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv7.h" 1
+# 183 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv7.h"
+typedef struct {
+  uint32_t RBAR;
+  uint32_t RASR;
+} ARM_MPU_Region_t;
+
+
+
+
+static inline void ARM_MPU_Enable(uint32_t MPU_Control)
+{
+  __DMB();
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->CTRL = MPU_Control | (1UL );
+
+  ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->SHCSR |= (1UL << 16U);
+
+  __DSB();
+  __ISB();
+}
+
+
+
+static inline void ARM_MPU_Disable(void)
+{
+  __DMB();
+
+  ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->SHCSR &= ~(1UL << 16U);
+
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->CTRL &= ~(1UL );
+  __DSB();
+  __ISB();
+}
+
+
+
+
+static inline void ARM_MPU_ClrRegion(uint32_t rnr)
+{
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RNR = rnr;
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RASR = 0U;
+}
+
+
+
+
+
+static inline void ARM_MPU_SetRegion(uint32_t rbar, uint32_t rasr)
+{
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RBAR = rbar;
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RASR = rasr;
+}
+
+
+
+
+
+
+static inline void ARM_MPU_SetRegionEx(uint32_t rnr, uint32_t rbar, uint32_t rasr)
+{
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RNR = rnr;
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RBAR = rbar;
+  ((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RASR = rasr;
+}
+
+
+
+
+
+
+static inline void ARM_MPU_OrderedMemcpy(volatile uint32_t* dst, const uint32_t* 
+# 251 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv7.h" 3 4
+                                                                                  restrict 
+# 251 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv7.h"
+                                                                                             src, uint32_t len)
+{
+  uint32_t i;
+  for (i = 0U; i < len; ++i)
+  {
+    dst[i] = src[i];
+  }
+}
+
+
+
+
+
+static inline void ARM_MPU_Load(ARM_MPU_Region_t const* table, uint32_t cnt)
+{
+  const uint32_t rowWordSize = sizeof(ARM_MPU_Region_t)/4U;
+  while (cnt > 4U) {
+    ARM_MPU_OrderedMemcpy(&(((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RBAR), &(table->RBAR), 4U*rowWordSize);
+    table += 4U;
+    cnt -= 4U;
+  }
+  ARM_MPU_OrderedMemcpy(&(((MPU_Type *) ((0xE000E000UL) + 0x0D90UL) )->RBAR), &(table->RBAR), cnt*rowWordSize);
+}
+# 1961 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h" 2
+# 1981 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t SCB_GetFPUType(void)
+{
+  uint32_t mvfr0;
+
+  mvfr0 = ((FPU_Type *) ((0xE000E000UL) + 0x0F30UL) )->MVFR0;
+  if ((mvfr0 & ((0xFUL << 4U) | (0xFUL << 8U))) == 0x020U)
+  {
+    return 1U;
+  }
+  else
+  {
+    return 0U;
+  }
+}
+# 2022 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t SysTick_Config(uint32_t ticks)
+{
+  if ((ticks - 1UL) > (0xFFFFFFUL ))
+  {
+    return (1UL);
+  }
+
+  ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->LOAD = (uint32_t)(ticks - 1UL);
+  __NVIC_SetPriority (SysTick_IRQn, (1UL << 3) - 1UL);
+  ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0UL;
+  ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2U) |
+                   (1UL << 1U) |
+                   (1UL );
+  return (0UL);
+}
+# 2052 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+extern volatile int32_t ITM_RxBuffer;
+# 2064 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline uint32_t ITM_SendChar (uint32_t ch)
+{
+  if (((((ITM_Type *) (0xE0000000UL) )->TCR & (1UL )) != 0UL) &&
+      ((((ITM_Type *) (0xE0000000UL) )->TER & 1UL ) != 0UL) )
+  {
+    while (((ITM_Type *) (0xE0000000UL) )->PORT[0U].u32 == 0UL)
+    {
+      __asm volatile ("nop");
+    }
+    ((ITM_Type *) (0xE0000000UL) )->PORT[0U].u8 = (uint8_t)ch;
+  }
+  return (ch);
+}
+# 2085 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline int32_t ITM_ReceiveChar (void)
+{
+  int32_t ch = -1;
+
+  if (ITM_RxBuffer != ((int32_t)0x5AA55AA5U))
+  {
+    ch = ITM_RxBuffer;
+    ITM_RxBuffer = ((int32_t)0x5AA55AA5U);
+  }
+
+  return (ch);
+}
+# 2105 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h"
+static inline int32_t ITM_CheckChar (void)
+{
+
+  if (ITM_RxBuffer == ((int32_t)0x5AA55AA5U))
+  {
+    return (0);
+  }
+  else
+  {
+    return (1);
+  }
+}
+# 151 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/system_nrf52840.h" 1
+# 35 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/system_nrf52840.h"
+typedef void(*VECTOR_TABLE_Type)(void);
+
+
+
+
+extern uint32_t SystemCoreClock;
+
+
+
+
+
+extern void SystemInit (void);
+
+
+
+
+
+
+extern void SystemCoreClockUpdate (void);
+# 152 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h" 2
+# 202 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t PART;
+  volatile const uint32_t VARIANT;
+  volatile const uint32_t PACKAGE;
+  volatile const uint32_t RAM;
+  volatile const uint32_t FLASH;
+} FICR_INFO_Type;
+
+
+
+
+
+typedef struct {
+  volatile const uint32_t A0;
+  volatile const uint32_t A1;
+  volatile const uint32_t A2;
+  volatile const uint32_t A3;
+  volatile const uint32_t A4;
+  volatile const uint32_t A5;
+  volatile const uint32_t B0;
+  volatile const uint32_t B1;
+  volatile const uint32_t B2;
+  volatile const uint32_t B3;
+  volatile const uint32_t B4;
+  volatile const uint32_t B5;
+  volatile const uint32_t T0;
+  volatile const uint32_t T1;
+  volatile const uint32_t T2;
+  volatile const uint32_t T3;
+  volatile const uint32_t T4;
+} FICR_TEMP_Type;
+
+
+
+
+
+typedef struct {
+  volatile const uint32_t TAGHEADER0;
+
+
+  volatile const uint32_t TAGHEADER1;
+
+
+  volatile const uint32_t TAGHEADER2;
+
+
+  volatile const uint32_t TAGHEADER3;
+
+
+} FICR_NFC_Type;
+
+
+
+
+
+typedef struct {
+  volatile const uint32_t BYTES;
+  volatile const uint32_t RCCUTOFF;
+  volatile const uint32_t APCUTOFF;
+  volatile const uint32_t STARTUP;
+  volatile const uint32_t ROSC1;
+  volatile const uint32_t ROSC2;
+  volatile const uint32_t ROSC3;
+  volatile const uint32_t ROSC4;
+} FICR_TRNG90B_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t POWER;
+  volatile uint32_t POWERSET;
+  volatile uint32_t POWERCLR;
+
+  volatile const uint32_t RESERVED;
+} POWER_RAM_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t RTS;
+  volatile uint32_t TXD;
+  volatile uint32_t CTS;
+  volatile uint32_t RXD;
+} UART_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t RTS;
+  volatile uint32_t TXD;
+  volatile uint32_t CTS;
+  volatile uint32_t RXD;
+} UARTE_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+} UARTE_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+} UARTE_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCK;
+  volatile uint32_t MOSI;
+  volatile uint32_t MISO;
+} SPI_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCK;
+  volatile uint32_t MOSI;
+  volatile uint32_t MISO;
+  volatile uint32_t CSN;
+} SPIM_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} SPIM_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} SPIM_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t RXDELAY;
+  volatile uint32_t CSNDUR;
+
+
+} SPIM_IFTIMING_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCK;
+  volatile uint32_t MISO;
+  volatile uint32_t MOSI;
+  volatile uint32_t CSN;
+} SPIS_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} SPIS_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} SPIS_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCL;
+  volatile uint32_t SDA;
+} TWI_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCL;
+  volatile uint32_t SDA;
+} TWIM_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} TWIM_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} TWIM_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCL;
+  volatile uint32_t SDA;
+} TWIS_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} TWIS_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+  volatile uint32_t LIST;
+} TWIS_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t RX;
+} NFCT_FRAMESTATUS_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t FRAMECONFIG;
+  volatile uint32_t AMOUNT;
+} NFCT_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t FRAMECONFIG;
+  volatile const uint32_t AMOUNT;
+} NFCT_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t LIMITH;
+
+  volatile uint32_t LIMITL;
+
+} SAADC_EVENTS_CH_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PSELP;
+
+  volatile uint32_t PSELN;
+
+  volatile uint32_t CONFIG;
+
+  volatile uint32_t LIMIT;
+
+} SAADC_CH_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+
+  volatile const uint32_t AMOUNT;
+
+} SAADC_RESULT_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t LED;
+  volatile uint32_t A;
+  volatile uint32_t B;
+} QDEC_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+
+  volatile uint32_t CNT;
+
+  volatile uint32_t REFRESH;
+
+
+  volatile uint32_t ENDDELAY;
+  volatile const uint32_t RESERVED[4];
+} PWM_SEQ_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t OUT[4];
+
+} PWM_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t CLK;
+  volatile uint32_t DIN;
+} PDM_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+
+  volatile uint32_t MAXCNT;
+
+} PDM_SAMPLE_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t ADDR;
+
+  volatile uint32_t SIZE;
+
+
+  volatile uint32_t PERM;
+
+
+  volatile const uint32_t RESERVED;
+} ACL_ACL_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t EN;
+  volatile uint32_t DIS;
+} PPI_TASKS_CHG_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t EEP;
+  volatile uint32_t TEP;
+} PPI_CH_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t TEP;
+} PPI_FORK_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t WA;
+
+  volatile uint32_t RA;
+
+} MWU_EVENTS_REGION_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t WA;
+
+  volatile uint32_t RA;
+
+} MWU_EVENTS_PREGION_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SUBSTATWA;
+
+
+
+  volatile uint32_t SUBSTATRA;
+
+
+
+} MWU_PERREGION_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t START;
+
+  volatile uint32_t END;
+  volatile const uint32_t RESERVED[2];
+} MWU_REGION_Type;
+
+
+
+
+
+typedef struct {
+  volatile const uint32_t START;
+  volatile const uint32_t END;
+  volatile uint32_t SUBS;
+  volatile const uint32_t RESERVED;
+} MWU_PREGION_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t MODE;
+  volatile uint32_t RXEN;
+  volatile uint32_t TXEN;
+  volatile uint32_t MCKEN;
+  volatile uint32_t MCKFREQ;
+  volatile uint32_t RATIO;
+  volatile uint32_t SWIDTH;
+  volatile uint32_t ALIGN;
+  volatile uint32_t FORMAT;
+  volatile uint32_t CHANNELS;
+} I2S_CONFIG_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+} I2S_RXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+} I2S_TXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t MAXCNT;
+} I2S_RXTXD_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t MCK;
+  volatile uint32_t SCK;
+  volatile uint32_t LRCK;
+  volatile uint32_t SDIN;
+  volatile uint32_t SDOUT;
+} I2S_PSEL_Type;
+
+
+
+
+
+typedef struct {
+  volatile const uint32_t EPIN[8];
+
+
+  volatile const uint32_t RESERVED;
+  volatile const uint32_t EPOUT[8];
+
+
+} USBD_HALTED_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t EPOUT[8];
+
+  volatile const uint32_t ISOOUT;
+
+} USBD_SIZE_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+
+  volatile const uint32_t AMOUNT;
+
+  volatile const uint32_t RESERVED[2];
+} USBD_EPIN_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+} USBD_ISOIN_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+
+  volatile const uint32_t AMOUNT;
+
+  volatile const uint32_t RESERVED[2];
+} USBD_EPOUT_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t MAXCNT;
+  volatile const uint32_t AMOUNT;
+} USBD_ISOOUT_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SRC;
+  volatile uint32_t DST;
+  volatile uint32_t CNT;
+} QSPI_READ_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t DST;
+  volatile uint32_t SRC;
+  volatile uint32_t CNT;
+} QSPI_WRITE_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t PTR;
+  volatile uint32_t LEN;
+} QSPI_ERASE_Type;
+
+
+
+
+
+typedef struct {
+  volatile uint32_t SCK;
+  volatile uint32_t CSN;
+  volatile const uint32_t RESERVED;
+  volatile uint32_t IO0;
+  volatile uint32_t IO1;
+  volatile uint32_t IO2;
+  volatile uint32_t IO3;
+} QSPI_PSEL_Type;
+# 891 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[4];
+  volatile const uint32_t CODEPAGESIZE;
+  volatile const uint32_t CODESIZE;
+  volatile const uint32_t RESERVED1[18];
+  volatile const uint32_t DEVICEID[2];
+  volatile const uint32_t RESERVED2[6];
+  volatile const uint32_t ER[4];
+
+  volatile const uint32_t IR[4];
+  volatile const uint32_t DEVICEADDRTYPE;
+  volatile const uint32_t DEVICEADDR[2];
+  volatile const uint32_t RESERVED3[21];
+  volatile const FICR_INFO_Type INFO;
+  volatile const uint32_t RESERVED4[143];
+  volatile const uint32_t PRODTEST[3];
+
+  volatile const uint32_t RESERVED5[42];
+  volatile const FICR_TEMP_Type TEMP;
+
+  volatile const uint32_t RESERVED6[2];
+  volatile FICR_NFC_Type NFC;
+  volatile const uint32_t RESERVED7[488];
+  volatile FICR_TRNG90B_Type TRNG90B;
+} NRF_FICR_Type;
+# 928 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[5];
+  volatile uint32_t NRFFW[13];
+
+  volatile const uint32_t RESERVED1[2];
+  volatile uint32_t NRFHW[12];
+
+  volatile uint32_t CUSTOMER[32];
+  volatile const uint32_t RESERVED2[64];
+  volatile uint32_t PSELRESET[2];
+
+  volatile uint32_t APPROTECT;
+  volatile uint32_t NFCPINS;
+
+  volatile uint32_t DEBUGCTRL;
+  volatile const uint32_t RESERVED3[60];
+  volatile uint32_t REGOUT0;
+
+
+} NRF_UICR_Type;
+# 960 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[340];
+  volatile uint32_t FORCEPROTECT;
+
+  volatile const uint32_t RESERVED1;
+  volatile uint32_t DISABLE;
+} NRF_APPROTECT_Type;
+# 979 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_HFCLKSTART;
+  volatile uint32_t TASKS_HFCLKSTOP;
+  volatile uint32_t TASKS_LFCLKSTART;
+  volatile uint32_t TASKS_LFCLKSTOP;
+  volatile uint32_t TASKS_CAL;
+  volatile uint32_t TASKS_CTSTART;
+  volatile uint32_t TASKS_CTSTOP;
+  volatile const uint32_t RESERVED[57];
+  volatile uint32_t EVENTS_HFCLKSTARTED;
+  volatile uint32_t EVENTS_LFCLKSTARTED;
+  volatile const uint32_t RESERVED1;
+  volatile uint32_t EVENTS_DONE;
+  volatile uint32_t EVENTS_CTTO;
+  volatile const uint32_t RESERVED2[5];
+  volatile uint32_t EVENTS_CTSTARTED;
+
+  volatile uint32_t EVENTS_CTSTOPPED;
+
+  volatile const uint32_t RESERVED3[117];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED4[63];
+  volatile const uint32_t HFCLKRUN;
+
+  volatile const uint32_t HFCLKSTAT;
+  volatile const uint32_t RESERVED5;
+  volatile const uint32_t LFCLKRUN;
+
+  volatile const uint32_t LFCLKSTAT;
+  volatile const uint32_t LFCLKSRCCOPY;
+
+  volatile const uint32_t RESERVED6[62];
+  volatile uint32_t LFCLKSRC;
+  volatile const uint32_t RESERVED7[3];
+  volatile uint32_t HFXODEBOUNCE;
+
+  volatile const uint32_t RESERVED8[3];
+  volatile uint32_t CTIV;
+  volatile const uint32_t RESERVED9[8];
+  volatile uint32_t TRACECONFIG;
+  volatile const uint32_t RESERVED10[21];
+  volatile uint32_t LFRCMODE;
+} NRF_CLOCK_Type;
+# 1035 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[30];
+  volatile uint32_t TASKS_CONSTLAT;
+  volatile uint32_t TASKS_LOWPWR;
+  volatile const uint32_t RESERVED1[34];
+  volatile uint32_t EVENTS_POFWARN;
+  volatile const uint32_t RESERVED2[2];
+  volatile uint32_t EVENTS_SLEEPENTER;
+  volatile uint32_t EVENTS_SLEEPEXIT;
+  volatile uint32_t EVENTS_USBDETECTED;
+  volatile uint32_t EVENTS_USBREMOVED;
+  volatile uint32_t EVENTS_USBPWRRDY;
+  volatile const uint32_t RESERVED3[119];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED4[61];
+  volatile uint32_t RESETREAS;
+  volatile const uint32_t RESERVED5[9];
+  volatile const uint32_t RAMSTATUS;
+  volatile const uint32_t RESERVED6[3];
+  volatile const uint32_t USBREGSTATUS;
+  volatile const uint32_t RESERVED7[49];
+  volatile uint32_t SYSTEMOFF;
+  volatile const uint32_t RESERVED8[3];
+  volatile uint32_t POFCON;
+  volatile const uint32_t RESERVED9[2];
+  volatile uint32_t GPREGRET;
+  volatile uint32_t GPREGRET2;
+  volatile const uint32_t RESERVED10[21];
+  volatile uint32_t DCDCEN;
+  volatile const uint32_t RESERVED11;
+  volatile uint32_t DCDCEN0;
+  volatile const uint32_t RESERVED12[47];
+  volatile const uint32_t MAINREGSTATUS;
+  volatile const uint32_t RESERVED13[175];
+  volatile POWER_RAM_Type RAM[9];
+} NRF_POWER_Type;
+# 1084 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[321];
+  volatile uint32_t OUT;
+  volatile uint32_t OUTSET;
+  volatile uint32_t OUTCLR;
+  volatile const uint32_t IN;
+  volatile uint32_t DIR;
+  volatile uint32_t DIRSET;
+  volatile uint32_t DIRCLR;
+  volatile uint32_t LATCH;
+
+
+  volatile uint32_t DETECTMODE;
+
+  volatile const uint32_t RESERVED1[118];
+  volatile uint32_t PIN_CNF[32];
+
+} NRF_GPIO_Type;
+# 1114 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_TXEN;
+  volatile uint32_t TASKS_RXEN;
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_DISABLE;
+  volatile uint32_t TASKS_RSSISTART;
+
+  volatile uint32_t TASKS_RSSISTOP;
+  volatile uint32_t TASKS_BCSTART;
+  volatile uint32_t TASKS_BCSTOP;
+  volatile uint32_t TASKS_EDSTART;
+
+  volatile uint32_t TASKS_EDSTOP;
+  volatile uint32_t TASKS_CCASTART;
+
+  volatile uint32_t TASKS_CCASTOP;
+  volatile const uint32_t RESERVED[51];
+  volatile uint32_t EVENTS_READY;
+  volatile uint32_t EVENTS_ADDRESS;
+  volatile uint32_t EVENTS_PAYLOAD;
+  volatile uint32_t EVENTS_END;
+  volatile uint32_t EVENTS_DISABLED;
+  volatile uint32_t EVENTS_DEVMATCH;
+
+  volatile uint32_t EVENTS_DEVMISS;
+
+  volatile uint32_t EVENTS_RSSIEND;
+  volatile const uint32_t RESERVED1[2];
+  volatile uint32_t EVENTS_BCMATCH;
+  volatile const uint32_t RESERVED2;
+  volatile uint32_t EVENTS_CRCOK;
+  volatile uint32_t EVENTS_CRCERROR;
+  volatile uint32_t EVENTS_FRAMESTART;
+  volatile uint32_t EVENTS_EDEND;
+
+
+  volatile uint32_t EVENTS_EDSTOPPED;
+  volatile uint32_t EVENTS_CCAIDLE;
+  volatile uint32_t EVENTS_CCABUSY;
+  volatile uint32_t EVENTS_CCASTOPPED;
+  volatile uint32_t EVENTS_RATEBOOST;
+
+  volatile uint32_t EVENTS_TXREADY;
+
+  volatile uint32_t EVENTS_RXREADY;
+
+  volatile uint32_t EVENTS_MHRMATCH;
+  volatile const uint32_t RESERVED3[2];
+  volatile uint32_t EVENTS_SYNC;
+  volatile uint32_t EVENTS_PHYEND;
+
+
+  volatile const uint32_t RESERVED4[36];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED5[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED6[61];
+  volatile const uint32_t CRCSTATUS;
+  volatile const uint32_t RESERVED7;
+  volatile const uint32_t RXMATCH;
+  volatile const uint32_t RXCRC;
+  volatile const uint32_t DAI;
+  volatile const uint32_t PDUSTAT;
+  volatile const uint32_t RESERVED8[59];
+  volatile uint32_t PACKETPTR;
+  volatile uint32_t FREQUENCY;
+  volatile uint32_t TXPOWER;
+  volatile uint32_t MODE;
+  volatile uint32_t PCNF0;
+  volatile uint32_t PCNF1;
+  volatile uint32_t BASE0;
+  volatile uint32_t BASE1;
+  volatile uint32_t PREFIX0;
+  volatile uint32_t PREFIX1;
+  volatile uint32_t TXADDRESS;
+  volatile uint32_t RXADDRESSES;
+  volatile uint32_t CRCCNF;
+  volatile uint32_t CRCPOLY;
+  volatile uint32_t CRCINIT;
+  volatile const uint32_t RESERVED9;
+  volatile uint32_t TIFS;
+  volatile const uint32_t RSSISAMPLE;
+  volatile const uint32_t RESERVED10;
+  volatile const uint32_t STATE;
+  volatile uint32_t DATAWHITEIV;
+  volatile const uint32_t RESERVED11[2];
+  volatile uint32_t BCC;
+  volatile const uint32_t RESERVED12[39];
+  volatile uint32_t DAB[8];
+
+  volatile uint32_t DAP[8];
+
+  volatile uint32_t DACNF;
+  volatile uint32_t MHRMATCHCONF;
+  volatile uint32_t MHRMATCHMAS;
+  volatile const uint32_t RESERVED13;
+  volatile uint32_t MODECNF0;
+  volatile const uint32_t RESERVED14[3];
+  volatile uint32_t SFD;
+  volatile uint32_t EDCNT;
+  volatile uint32_t EDSAMPLE;
+  volatile uint32_t CCACTRL;
+  volatile const uint32_t RESERVED15[611];
+  volatile uint32_t POWER;
+} NRF_RADIO_Type;
+# 1233 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_STARTRX;
+  volatile uint32_t TASKS_STOPRX;
+  volatile uint32_t TASKS_STARTTX;
+  volatile uint32_t TASKS_STOPTX;
+  volatile const uint32_t RESERVED[3];
+  volatile uint32_t TASKS_SUSPEND;
+  volatile const uint32_t RESERVED1[56];
+  volatile uint32_t EVENTS_CTS;
+  volatile uint32_t EVENTS_NCTS;
+  volatile uint32_t EVENTS_RXDRDY;
+  volatile const uint32_t RESERVED2[4];
+  volatile uint32_t EVENTS_TXDRDY;
+  volatile const uint32_t RESERVED3;
+  volatile uint32_t EVENTS_ERROR;
+  volatile const uint32_t RESERVED4[7];
+  volatile uint32_t EVENTS_RXTO;
+  volatile const uint32_t RESERVED5[46];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED6[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED7[93];
+  volatile uint32_t ERRORSRC;
+  volatile const uint32_t RESERVED8[31];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED9;
+  volatile UART_PSEL_Type PSEL;
+  volatile const uint32_t RXD;
+  volatile uint32_t TXD;
+  volatile const uint32_t RESERVED10;
+  volatile uint32_t BAUDRATE;
+
+  volatile const uint32_t RESERVED11[17];
+  volatile uint32_t CONFIG;
+} NRF_UART_Type;
+# 1281 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_STARTRX;
+  volatile uint32_t TASKS_STOPRX;
+  volatile uint32_t TASKS_STARTTX;
+  volatile uint32_t TASKS_STOPTX;
+  volatile const uint32_t RESERVED[7];
+  volatile uint32_t TASKS_FLUSHRX;
+  volatile const uint32_t RESERVED1[52];
+  volatile uint32_t EVENTS_CTS;
+  volatile uint32_t EVENTS_NCTS;
+  volatile uint32_t EVENTS_RXDRDY;
+
+  volatile const uint32_t RESERVED2;
+  volatile uint32_t EVENTS_ENDRX;
+  volatile const uint32_t RESERVED3[2];
+  volatile uint32_t EVENTS_TXDRDY;
+  volatile uint32_t EVENTS_ENDTX;
+  volatile uint32_t EVENTS_ERROR;
+  volatile const uint32_t RESERVED4[7];
+  volatile uint32_t EVENTS_RXTO;
+  volatile const uint32_t RESERVED5;
+  volatile uint32_t EVENTS_RXSTARTED;
+  volatile uint32_t EVENTS_TXSTARTED;
+  volatile const uint32_t RESERVED6;
+  volatile uint32_t EVENTS_TXSTOPPED;
+  volatile const uint32_t RESERVED7[41];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED8[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED9[93];
+  volatile uint32_t ERRORSRC;
+
+  volatile const uint32_t RESERVED10[31];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED11;
+  volatile UARTE_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED12[3];
+  volatile uint32_t BAUDRATE;
+
+  volatile const uint32_t RESERVED13[3];
+  volatile UARTE_RXD_Type RXD;
+  volatile const uint32_t RESERVED14;
+  volatile UARTE_TXD_Type TXD;
+  volatile const uint32_t RESERVED15[7];
+  volatile uint32_t CONFIG;
+} NRF_UARTE_Type;
+# 1341 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[66];
+  volatile uint32_t EVENTS_READY;
+  volatile const uint32_t RESERVED1[126];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[125];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED3;
+  volatile SPI_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED4;
+  volatile const uint32_t RXD;
+  volatile uint32_t TXD;
+  volatile const uint32_t RESERVED5;
+  volatile uint32_t FREQUENCY;
+
+  volatile const uint32_t RESERVED6[11];
+  volatile uint32_t CONFIG;
+} NRF_SPI_Type;
+# 1372 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[4];
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED1;
+  volatile uint32_t TASKS_SUSPEND;
+  volatile uint32_t TASKS_RESUME;
+  volatile const uint32_t RESERVED2[56];
+  volatile uint32_t EVENTS_STOPPED;
+  volatile const uint32_t RESERVED3[2];
+  volatile uint32_t EVENTS_ENDRX;
+  volatile const uint32_t RESERVED4;
+  volatile uint32_t EVENTS_END;
+  volatile const uint32_t RESERVED5;
+  volatile uint32_t EVENTS_ENDTX;
+  volatile const uint32_t RESERVED6[10];
+  volatile uint32_t EVENTS_STARTED;
+  volatile const uint32_t RESERVED7[44];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED8[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED9[61];
+  volatile uint32_t STALLSTAT;
+
+
+
+  volatile const uint32_t RESERVED10[63];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED11;
+  volatile SPIM_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED12[3];
+  volatile uint32_t FREQUENCY;
+
+  volatile const uint32_t RESERVED13[3];
+  volatile SPIM_RXD_Type RXD;
+  volatile SPIM_TXD_Type TXD;
+  volatile uint32_t CONFIG;
+  volatile const uint32_t RESERVED14[2];
+  volatile SPIM_IFTIMING_Type IFTIMING;
+  volatile uint32_t CSNPOL;
+  volatile uint32_t PSELDCX;
+  volatile uint32_t DCXCNT;
+  volatile const uint32_t RESERVED15[19];
+  volatile uint32_t ORC;
+
+
+} NRF_SPIM_Type;
+# 1432 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[9];
+  volatile uint32_t TASKS_ACQUIRE;
+  volatile uint32_t TASKS_RELEASE;
+
+  volatile const uint32_t RESERVED1[54];
+  volatile uint32_t EVENTS_END;
+  volatile const uint32_t RESERVED2[2];
+  volatile uint32_t EVENTS_ENDRX;
+  volatile const uint32_t RESERVED3[5];
+  volatile uint32_t EVENTS_ACQUIRED;
+  volatile const uint32_t RESERVED4[53];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED5[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED6[61];
+  volatile const uint32_t SEMSTAT;
+  volatile const uint32_t RESERVED7[15];
+  volatile uint32_t STATUS;
+  volatile const uint32_t RESERVED8[47];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED9;
+  volatile SPIS_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED10[7];
+  volatile SPIS_RXD_Type RXD;
+  volatile SPIS_TXD_Type TXD;
+  volatile uint32_t CONFIG;
+  volatile const uint32_t RESERVED11;
+  volatile uint32_t DEF;
+
+  volatile const uint32_t RESERVED12[24];
+  volatile uint32_t ORC;
+} NRF_SPIS_Type;
+# 1478 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_STARTRX;
+  volatile const uint32_t RESERVED;
+  volatile uint32_t TASKS_STARTTX;
+  volatile const uint32_t RESERVED1[2];
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED2;
+  volatile uint32_t TASKS_SUSPEND;
+  volatile uint32_t TASKS_RESUME;
+  volatile const uint32_t RESERVED3[56];
+  volatile uint32_t EVENTS_STOPPED;
+  volatile uint32_t EVENTS_RXDREADY;
+  volatile const uint32_t RESERVED4[4];
+  volatile uint32_t EVENTS_TXDSENT;
+  volatile const uint32_t RESERVED5;
+  volatile uint32_t EVENTS_ERROR;
+  volatile const uint32_t RESERVED6[4];
+  volatile uint32_t EVENTS_BB;
+
+  volatile const uint32_t RESERVED7[3];
+  volatile uint32_t EVENTS_SUSPENDED;
+  volatile const uint32_t RESERVED8[45];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED9[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED10[110];
+  volatile uint32_t ERRORSRC;
+  volatile const uint32_t RESERVED11[14];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED12;
+  volatile TWI_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED13[2];
+  volatile const uint32_t RXD;
+  volatile uint32_t TXD;
+  volatile const uint32_t RESERVED14;
+  volatile uint32_t FREQUENCY;
+
+  volatile const uint32_t RESERVED15[24];
+  volatile uint32_t ADDRESS;
+} NRF_TWI_Type;
+# 1531 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_STARTRX;
+  volatile const uint32_t RESERVED;
+  volatile uint32_t TASKS_STARTTX;
+  volatile const uint32_t RESERVED1[2];
+  volatile uint32_t TASKS_STOP;
+
+  volatile const uint32_t RESERVED2;
+  volatile uint32_t TASKS_SUSPEND;
+  volatile uint32_t TASKS_RESUME;
+  volatile const uint32_t RESERVED3[56];
+  volatile uint32_t EVENTS_STOPPED;
+  volatile const uint32_t RESERVED4[7];
+  volatile uint32_t EVENTS_ERROR;
+  volatile const uint32_t RESERVED5[8];
+  volatile uint32_t EVENTS_SUSPENDED;
+
+  volatile uint32_t EVENTS_RXSTARTED;
+  volatile uint32_t EVENTS_TXSTARTED;
+  volatile const uint32_t RESERVED6[2];
+  volatile uint32_t EVENTS_LASTRX;
+  volatile uint32_t EVENTS_LASTTX;
+
+  volatile const uint32_t RESERVED7[39];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED8[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED9[110];
+  volatile uint32_t ERRORSRC;
+  volatile const uint32_t RESERVED10[14];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED11;
+  volatile TWIM_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED12[5];
+  volatile uint32_t FREQUENCY;
+
+  volatile const uint32_t RESERVED13[3];
+  volatile TWIM_RXD_Type RXD;
+  volatile TWIM_TXD_Type TXD;
+  volatile const uint32_t RESERVED14[13];
+  volatile uint32_t ADDRESS;
+} NRF_TWIM_Type;
+# 1587 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[5];
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED1;
+  volatile uint32_t TASKS_SUSPEND;
+  volatile uint32_t TASKS_RESUME;
+  volatile const uint32_t RESERVED2[3];
+  volatile uint32_t TASKS_PREPARERX;
+  volatile uint32_t TASKS_PREPARETX;
+  volatile const uint32_t RESERVED3[51];
+  volatile uint32_t EVENTS_STOPPED;
+  volatile const uint32_t RESERVED4[7];
+  volatile uint32_t EVENTS_ERROR;
+  volatile const uint32_t RESERVED5[9];
+  volatile uint32_t EVENTS_RXSTARTED;
+  volatile uint32_t EVENTS_TXSTARTED;
+  volatile const uint32_t RESERVED6[4];
+  volatile uint32_t EVENTS_WRITE;
+  volatile uint32_t EVENTS_READ;
+  volatile const uint32_t RESERVED7[37];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED8[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED9[113];
+  volatile uint32_t ERRORSRC;
+  volatile const uint32_t MATCH;
+
+  volatile const uint32_t RESERVED10[10];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED11;
+  volatile TWIS_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED12[9];
+  volatile TWIS_RXD_Type RXD;
+  volatile TWIS_TXD_Type TXD;
+  volatile const uint32_t RESERVED13[13];
+  volatile uint32_t ADDRESS[2];
+  volatile const uint32_t RESERVED14;
+  volatile uint32_t CONFIG;
+
+  volatile const uint32_t RESERVED15[10];
+  volatile uint32_t ORC;
+
+} NRF_TWIS_Type;
+# 1644 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_ACTIVATE;
+
+  volatile uint32_t TASKS_DISABLE;
+  volatile uint32_t TASKS_SENSE;
+
+  volatile uint32_t TASKS_STARTTX;
+
+  volatile const uint32_t RESERVED[3];
+  volatile uint32_t TASKS_ENABLERXDATA;
+  volatile const uint32_t RESERVED1;
+  volatile uint32_t TASKS_GOIDLE;
+  volatile uint32_t TASKS_GOSLEEP;
+  volatile const uint32_t RESERVED2[53];
+  volatile uint32_t EVENTS_READY;
+
+  volatile uint32_t EVENTS_FIELDDETECTED;
+  volatile uint32_t EVENTS_FIELDLOST;
+  volatile uint32_t EVENTS_TXFRAMESTART;
+
+  volatile uint32_t EVENTS_TXFRAMEEND;
+
+  volatile uint32_t EVENTS_RXFRAMESTART;
+
+  volatile uint32_t EVENTS_RXFRAMEEND;
+
+
+  volatile uint32_t EVENTS_ERROR;
+
+  volatile const uint32_t RESERVED3[2];
+  volatile uint32_t EVENTS_RXERROR;
+
+
+  volatile uint32_t EVENTS_ENDRX;
+
+  volatile uint32_t EVENTS_ENDTX;
+
+  volatile const uint32_t RESERVED4;
+  volatile uint32_t EVENTS_AUTOCOLRESSTARTED;
+  volatile const uint32_t RESERVED5[3];
+  volatile uint32_t EVENTS_COLLISION;
+  volatile uint32_t EVENTS_SELECTED;
+  volatile uint32_t EVENTS_STARTED;
+  volatile const uint32_t RESERVED6[43];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED7[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED8[62];
+  volatile uint32_t ERRORSTATUS;
+  volatile const uint32_t RESERVED9;
+  volatile NFCT_FRAMESTATUS_Type FRAMESTATUS;
+  volatile const uint32_t NFCTAGSTATE;
+  volatile const uint32_t RESERVED10[3];
+  volatile const uint32_t SLEEPSTATE;
+  volatile const uint32_t RESERVED11[6];
+  volatile const uint32_t FIELDPRESENT;
+  volatile const uint32_t RESERVED12[49];
+  volatile uint32_t FRAMEDELAYMIN;
+  volatile uint32_t FRAMEDELAYMAX;
+  volatile uint32_t FRAMEDELAYMODE;
+  volatile uint32_t PACKETPTR;
+
+  volatile uint32_t MAXLEN;
+
+  volatile NFCT_TXD_Type TXD;
+  volatile NFCT_RXD_Type RXD;
+  volatile const uint32_t RESERVED13[26];
+  volatile uint32_t NFCID1_LAST;
+  volatile uint32_t NFCID1_2ND_LAST;
+  volatile uint32_t NFCID1_3RD_LAST;
+  volatile uint32_t AUTOCOLRESCONFIG;
+
+
+  volatile uint32_t SENSRES;
+  volatile uint32_t SELRES;
+} NRF_NFCT_Type;
+# 1734 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_OUT[8];
+
+
+  volatile const uint32_t RESERVED[4];
+  volatile uint32_t TASKS_SET[8];
+
+
+  volatile const uint32_t RESERVED1[4];
+  volatile uint32_t TASKS_CLR[8];
+
+
+  volatile const uint32_t RESERVED2[32];
+  volatile uint32_t EVENTS_IN[8];
+
+  volatile const uint32_t RESERVED3[23];
+  volatile uint32_t EVENTS_PORT;
+
+  volatile const uint32_t RESERVED4[97];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED5[129];
+  volatile uint32_t CONFIG[8];
+
+} NRF_GPIOTE_Type;
+# 1771 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+
+  volatile uint32_t TASKS_SAMPLE;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_CALIBRATEOFFSET;
+  volatile const uint32_t RESERVED[60];
+  volatile uint32_t EVENTS_STARTED;
+  volatile uint32_t EVENTS_END;
+  volatile uint32_t EVENTS_DONE;
+
+
+
+  volatile uint32_t EVENTS_RESULTDONE;
+  volatile uint32_t EVENTS_CALIBRATEDONE;
+  volatile uint32_t EVENTS_STOPPED;
+  volatile SAADC_EVENTS_CH_Type EVENTS_CH[8];
+  volatile const uint32_t RESERVED1[106];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[61];
+  volatile const uint32_t STATUS;
+  volatile const uint32_t RESERVED3[63];
+  volatile uint32_t ENABLE;
+  volatile const uint32_t RESERVED4[3];
+  volatile SAADC_CH_Type CH[8];
+  volatile const uint32_t RESERVED5[24];
+  volatile uint32_t RESOLUTION;
+  volatile uint32_t OVERSAMPLE;
+
+
+
+  volatile uint32_t SAMPLERATE;
+  volatile const uint32_t RESERVED6[12];
+  volatile SAADC_RESULT_Type RESULT;
+} NRF_SAADC_Type;
+# 1820 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_COUNT;
+  volatile uint32_t TASKS_CLEAR;
+  volatile uint32_t TASKS_SHUTDOWN;
+  volatile const uint32_t RESERVED[11];
+  volatile uint32_t TASKS_CAPTURE[6];
+
+  volatile const uint32_t RESERVED1[58];
+  volatile uint32_t EVENTS_COMPARE[6];
+
+  volatile const uint32_t RESERVED2[42];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED3[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED4[126];
+  volatile uint32_t MODE;
+  volatile uint32_t BITMODE;
+  volatile const uint32_t RESERVED5;
+  volatile uint32_t PRESCALER;
+  volatile const uint32_t RESERVED6[11];
+  volatile uint32_t CC[6];
+
+} NRF_TIMER_Type;
+# 1858 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_CLEAR;
+  volatile uint32_t TASKS_TRIGOVRFLW;
+  volatile const uint32_t RESERVED[60];
+  volatile uint32_t EVENTS_TICK;
+  volatile uint32_t EVENTS_OVRFLW;
+  volatile const uint32_t RESERVED1[14];
+  volatile uint32_t EVENTS_COMPARE[4];
+
+  volatile const uint32_t RESERVED2[109];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[13];
+  volatile uint32_t EVTEN;
+  volatile uint32_t EVTENSET;
+  volatile uint32_t EVTENCLR;
+  volatile const uint32_t RESERVED4[110];
+  volatile const uint32_t COUNTER;
+  volatile uint32_t PRESCALER;
+
+  volatile const uint32_t RESERVED5[13];
+  volatile uint32_t CC[4];
+} NRF_RTC_Type;
+# 1895 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED[62];
+  volatile uint32_t EVENTS_DATARDY;
+  volatile const uint32_t RESERVED1[128];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[127];
+  volatile const int32_t TEMP;
+  volatile const uint32_t RESERVED3[5];
+  volatile uint32_t A0;
+  volatile uint32_t A1;
+  volatile uint32_t A2;
+  volatile uint32_t A3;
+  volatile uint32_t A4;
+  volatile uint32_t A5;
+  volatile const uint32_t RESERVED4[2];
+  volatile uint32_t B0;
+  volatile uint32_t B1;
+  volatile uint32_t B2;
+  volatile uint32_t B3;
+  volatile uint32_t B4;
+  volatile uint32_t B5;
+  volatile const uint32_t RESERVED5[2];
+  volatile uint32_t T0;
+  volatile uint32_t T1;
+  volatile uint32_t T2;
+  volatile uint32_t T3;
+  volatile uint32_t T4;
+} NRF_TEMP_Type;
+# 1938 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED[62];
+  volatile uint32_t EVENTS_VALRDY;
+
+  volatile const uint32_t RESERVED1[63];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED2[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[126];
+  volatile uint32_t CONFIG;
+  volatile const uint32_t VALUE;
+} NRF_RNG_Type;
+# 1965 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_STARTECB;
+  volatile uint32_t TASKS_STOPECB;
+  volatile const uint32_t RESERVED[62];
+  volatile uint32_t EVENTS_ENDECB;
+  volatile uint32_t EVENTS_ERRORECB;
+
+  volatile const uint32_t RESERVED1[127];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[126];
+  volatile uint32_t ECBDATAPTR;
+} NRF_ECB_Type;
+# 1990 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+
+  volatile const uint32_t RESERVED;
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED1[61];
+  volatile uint32_t EVENTS_END;
+  volatile uint32_t EVENTS_RESOLVED;
+  volatile uint32_t EVENTS_NOTRESOLVED;
+  volatile const uint32_t RESERVED2[126];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[61];
+  volatile const uint32_t STATUS;
+  volatile const uint32_t RESERVED4[63];
+  volatile uint32_t ENABLE;
+  volatile uint32_t NIRK;
+  volatile uint32_t IRKPTR;
+  volatile const uint32_t RESERVED5;
+  volatile uint32_t ADDRPTR;
+  volatile uint32_t SCRATCHPTR;
+} NRF_AAR_Type;
+# 2024 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_KSGEN;
+
+  volatile uint32_t TASKS_CRYPT;
+
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_RATEOVERRIDE;
+
+
+  volatile const uint32_t RESERVED[60];
+  volatile uint32_t EVENTS_ENDKSGEN;
+  volatile uint32_t EVENTS_ENDCRYPT;
+  volatile uint32_t EVENTS_ERROR;
+  volatile const uint32_t RESERVED1[61];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED2[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[61];
+  volatile const uint32_t MICSTATUS;
+  volatile const uint32_t RESERVED4[63];
+  volatile uint32_t ENABLE;
+  volatile uint32_t MODE;
+  volatile uint32_t CNFPTR;
+
+  volatile uint32_t INPTR;
+  volatile uint32_t OUTPTR;
+  volatile uint32_t SCRATCHPTR;
+  volatile uint32_t MAXPACKETSIZE;
+
+  volatile uint32_t RATEOVERRIDE;
+} NRF_CCM_Type;
+# 2068 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile const uint32_t RESERVED[63];
+  volatile uint32_t EVENTS_TIMEOUT;
+  volatile const uint32_t RESERVED1[128];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[61];
+  volatile const uint32_t RUNSTATUS;
+  volatile const uint32_t REQSTATUS;
+  volatile const uint32_t RESERVED3[63];
+  volatile uint32_t CRV;
+  volatile uint32_t RREN;
+  volatile uint32_t CONFIG;
+  volatile const uint32_t RESERVED4[60];
+  volatile uint32_t RR[8];
+} NRF_WDT_Type;
+# 2097 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_READCLRACC;
+  volatile uint32_t TASKS_RDCLRACC;
+  volatile uint32_t TASKS_RDCLRDBL;
+  volatile const uint32_t RESERVED[59];
+  volatile uint32_t EVENTS_SAMPLERDY;
+
+  volatile uint32_t EVENTS_REPORTRDY;
+  volatile uint32_t EVENTS_ACCOF;
+  volatile uint32_t EVENTS_DBLRDY;
+  volatile uint32_t EVENTS_STOPPED;
+  volatile const uint32_t RESERVED1[59];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED2[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[125];
+  volatile uint32_t ENABLE;
+  volatile uint32_t LEDPOL;
+  volatile uint32_t SAMPLEPER;
+  volatile const int32_t SAMPLE;
+  volatile uint32_t REPORTPER;
+
+  volatile const int32_t ACC;
+  volatile const int32_t ACCREAD;
+
+  volatile QDEC_PSEL_Type PSEL;
+  volatile uint32_t DBFEN;
+  volatile const uint32_t RESERVED4[5];
+  volatile uint32_t LEDPRE;
+  volatile const uint32_t ACCDBL;
+
+  volatile const uint32_t ACCDBLREAD;
+
+} NRF_QDEC_Type;
+# 2146 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_SAMPLE;
+  volatile const uint32_t RESERVED[61];
+  volatile uint32_t EVENTS_READY;
+  volatile uint32_t EVENTS_DOWN;
+  volatile uint32_t EVENTS_UP;
+  volatile uint32_t EVENTS_CROSS;
+  volatile const uint32_t RESERVED1[60];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED2[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[61];
+  volatile const uint32_t RESULT;
+  volatile const uint32_t RESERVED4[63];
+  volatile uint32_t ENABLE;
+  volatile uint32_t PSEL;
+  volatile uint32_t REFSEL;
+  volatile uint32_t EXTREFSEL;
+  volatile const uint32_t RESERVED5[8];
+  volatile uint32_t TH;
+  volatile uint32_t MODE;
+  volatile uint32_t HYST;
+} NRF_COMP_Type;
+# 2185 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile uint32_t TASKS_SAMPLE;
+  volatile const uint32_t RESERVED[61];
+  volatile uint32_t EVENTS_READY;
+  volatile uint32_t EVENTS_DOWN;
+  volatile uint32_t EVENTS_UP;
+  volatile uint32_t EVENTS_CROSS;
+  volatile const uint32_t RESERVED1[60];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED2[64];
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[61];
+  volatile const uint32_t RESULT;
+  volatile const uint32_t RESERVED4[63];
+  volatile uint32_t ENABLE;
+  volatile uint32_t PSEL;
+  volatile uint32_t REFSEL;
+  volatile uint32_t EXTREFSEL;
+  volatile const uint32_t RESERVED5[4];
+  volatile uint32_t ANADETECT;
+  volatile const uint32_t RESERVED6[5];
+  volatile uint32_t HYST;
+} NRF_LPCOMP_Type;
+# 2223 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_TRIGGER[16];
+
+  volatile const uint32_t RESERVED[48];
+  volatile uint32_t EVENTS_TRIGGERED[16];
+
+
+  volatile const uint32_t RESERVED1[112];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+} NRF_EGU_Type;
+# 2247 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t UNUSED;
+} NRF_SWI_Type;
+# 2262 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED;
+  volatile uint32_t TASKS_STOP;
+
+
+  volatile uint32_t TASKS_SEQSTART[2];
+
+
+
+
+  volatile uint32_t TASKS_NEXTSTEP;
+
+
+
+  volatile const uint32_t RESERVED1[60];
+  volatile uint32_t EVENTS_STOPPED;
+
+  volatile uint32_t EVENTS_SEQSTARTED[2];
+
+  volatile uint32_t EVENTS_SEQEND[2];
+
+
+  volatile uint32_t EVENTS_PWMPERIODEND;
+  volatile uint32_t EVENTS_LOOPSDONE;
+
+  volatile const uint32_t RESERVED2[56];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED3[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED4[125];
+  volatile uint32_t ENABLE;
+  volatile uint32_t MODE;
+  volatile uint32_t COUNTERTOP;
+
+  volatile uint32_t PRESCALER;
+  volatile uint32_t DECODER;
+  volatile uint32_t LOOP;
+  volatile const uint32_t RESERVED5[2];
+  volatile PWM_SEQ_Type SEQ[2];
+  volatile PWM_PSEL_Type PSEL;
+} NRF_PWM_Type;
+# 2317 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+  volatile uint32_t TASKS_STOP;
+  volatile const uint32_t RESERVED[62];
+  volatile uint32_t EVENTS_STARTED;
+  volatile uint32_t EVENTS_STOPPED;
+  volatile uint32_t EVENTS_END;
+
+
+  volatile const uint32_t RESERVED1[125];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[125];
+  volatile uint32_t ENABLE;
+  volatile uint32_t PDMCLKCTRL;
+  volatile uint32_t MODE;
+
+  volatile const uint32_t RESERVED3[3];
+  volatile uint32_t GAINL;
+  volatile uint32_t GAINR;
+  volatile uint32_t RATIO;
+
+  volatile const uint32_t RESERVED4[7];
+  volatile PDM_PSEL_Type PSEL;
+  volatile const uint32_t RESERVED5[6];
+  volatile PDM_SAMPLE_Type SAMPLE;
+} NRF_PDM_Type;
+# 2357 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[512];
+  volatile ACL_ACL_Type ACL[8];
+} NRF_ACL_Type;
+# 2373 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[256];
+  volatile const uint32_t READY;
+  volatile const uint32_t RESERVED1;
+  volatile const uint32_t READYNEXT;
+  volatile const uint32_t RESERVED2[62];
+  volatile uint32_t CONFIG;
+
+  union {
+    volatile uint32_t ERASEPAGE;
+    volatile uint32_t ERASEPCR1;
+
+  };
+  volatile uint32_t ERASEALL;
+  volatile uint32_t ERASEPCR0;
+
+  volatile uint32_t ERASEUICR;
+
+  volatile uint32_t ERASEPAGEPARTIAL;
+
+  volatile uint32_t ERASEPAGEPARTIALCFG;
+  volatile const uint32_t RESERVED3[8];
+  volatile uint32_t ICACHECNF;
+  volatile const uint32_t RESERVED4;
+  volatile uint32_t IHIT;
+  volatile uint32_t IMISS;
+} NRF_NVMC_Type;
+# 2412 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile PPI_TASKS_CHG_Type TASKS_CHG[6];
+  volatile const uint32_t RESERVED[308];
+  volatile uint32_t CHEN;
+  volatile uint32_t CHENSET;
+  volatile uint32_t CHENCLR;
+  volatile const uint32_t RESERVED1;
+  volatile PPI_CH_Type CH[20];
+  volatile const uint32_t RESERVED2[148];
+  volatile uint32_t CHG[6];
+  volatile const uint32_t RESERVED3[62];
+  volatile PPI_FORK_Type FORK[32];
+} NRF_PPI_Type;
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[64];
+  volatile MWU_EVENTS_REGION_Type EVENTS_REGION[4];
+  volatile const uint32_t RESERVED1[16];
+  volatile MWU_EVENTS_PREGION_Type EVENTS_PREGION[2];
+  volatile const uint32_t RESERVED2[100];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[5];
+  volatile uint32_t NMIEN;
+  volatile uint32_t NMIENSET;
+  volatile uint32_t NMIENCLR;
+  volatile const uint32_t RESERVED4[53];
+  volatile MWU_PERREGION_Type PERREGION[2];
+  volatile const uint32_t RESERVED5[64];
+  volatile uint32_t REGIONEN;
+  volatile uint32_t REGIONENSET;
+  volatile uint32_t REGIONENCLR;
+  volatile const uint32_t RESERVED6[57];
+  volatile MWU_REGION_Type REGION[4];
+  volatile const uint32_t RESERVED7[32];
+  volatile MWU_PREGION_Type PREGION[2];
+} NRF_MWU_Type;
+# 2473 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_START;
+
+  volatile uint32_t TASKS_STOP;
+
+
+  volatile const uint32_t RESERVED[63];
+  volatile uint32_t EVENTS_RXPTRUPD;
+
+
+
+
+  volatile uint32_t EVENTS_STOPPED;
+  volatile const uint32_t RESERVED1[2];
+  volatile uint32_t EVENTS_TXPTRUPD;
+
+
+
+
+  volatile const uint32_t RESERVED2[122];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED3[125];
+  volatile uint32_t ENABLE;
+  volatile I2S_CONFIG_Type CONFIG;
+  volatile const uint32_t RESERVED4[3];
+  volatile I2S_RXD_Type RXD;
+  volatile const uint32_t RESERVED5;
+  volatile I2S_TXD_Type TXD;
+  volatile const uint32_t RESERVED6[3];
+  volatile I2S_RXTXD_Type RXTXD;
+  volatile const uint32_t RESERVED7[3];
+  volatile I2S_PSEL_Type PSEL;
+} NRF_I2S_Type;
+# 2520 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t UNUSED;
+} NRF_FPU_Type;
+# 2535 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED;
+  volatile uint32_t TASKS_STARTEPIN[8];
+
+
+
+  volatile uint32_t TASKS_STARTISOIN;
+
+
+  volatile uint32_t TASKS_STARTEPOUT[8];
+
+
+
+  volatile uint32_t TASKS_STARTISOOUT;
+
+
+  volatile uint32_t TASKS_EP0RCVOUT;
+  volatile uint32_t TASKS_EP0STATUS;
+  volatile uint32_t TASKS_EP0STALL;
+
+  volatile uint32_t TASKS_DPDMDRIVE;
+
+  volatile uint32_t TASKS_DPDMNODRIVE;
+
+  volatile const uint32_t RESERVED1[40];
+  volatile uint32_t EVENTS_USBRESET;
+
+  volatile uint32_t EVENTS_STARTED;
+
+
+
+  volatile uint32_t EVENTS_ENDEPIN[8];
+
+
+  volatile uint32_t EVENTS_EP0DATADONE;
+
+  volatile uint32_t EVENTS_ENDISOIN;
+
+  volatile uint32_t EVENTS_ENDEPOUT[8];
+
+
+  volatile uint32_t EVENTS_ENDISOOUT;
+
+  volatile uint32_t EVENTS_SOF;
+
+  volatile uint32_t EVENTS_USBEVENT;
+
+
+  volatile uint32_t EVENTS_EP0SETUP;
+
+  volatile uint32_t EVENTS_EPDATA;
+
+  volatile const uint32_t RESERVED2[39];
+  volatile uint32_t SHORTS;
+  volatile const uint32_t RESERVED3[63];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED4[61];
+  volatile uint32_t EVENTCAUSE;
+  volatile const uint32_t RESERVED5[7];
+  volatile USBD_HALTED_Type HALTED;
+  volatile const uint32_t RESERVED6;
+  volatile uint32_t EPSTATUS;
+
+  volatile uint32_t EPDATASTATUS;
+
+
+  volatile const uint32_t USBADDR;
+  volatile const uint32_t RESERVED7[3];
+  volatile const uint32_t BMREQUESTTYPE;
+  volatile const uint32_t BREQUEST;
+  volatile const uint32_t WVALUEL;
+  volatile const uint32_t WVALUEH;
+  volatile const uint32_t WINDEXL;
+  volatile const uint32_t WINDEXH;
+  volatile const uint32_t WLENGTHL;
+  volatile const uint32_t WLENGTHH;
+  volatile USBD_SIZE_Type SIZE;
+  volatile const uint32_t RESERVED8[15];
+  volatile uint32_t ENABLE;
+  volatile uint32_t USBPULLUP;
+  volatile uint32_t DPDMVALUE;
+
+
+
+  volatile uint32_t DTOGGLE;
+  volatile uint32_t EPINEN;
+  volatile uint32_t EPOUTEN;
+  volatile uint32_t EPSTALL;
+  volatile uint32_t ISOSPLIT;
+  volatile const uint32_t FRAMECNTR;
+
+  volatile const uint32_t RESERVED9[2];
+  volatile uint32_t LOWPOWER;
+
+  volatile uint32_t ISOINCONFIG;
+
+
+  volatile const uint32_t RESERVED10[51];
+  volatile USBD_EPIN_Type EPIN[8];
+  volatile USBD_ISOIN_Type ISOIN;
+  volatile const uint32_t RESERVED11[21];
+  volatile USBD_EPOUT_Type EPOUT[8];
+  volatile USBD_ISOOUT_Type ISOOUT;
+} NRF_USBD_Type;
+# 2653 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile uint32_t TASKS_ACTIVATE;
+  volatile uint32_t TASKS_READSTART;
+
+  volatile uint32_t TASKS_WRITESTART;
+
+  volatile uint32_t TASKS_ERASESTART;
+  volatile uint32_t TASKS_DEACTIVATE;
+  volatile const uint32_t RESERVED[59];
+  volatile uint32_t EVENTS_READY;
+
+  volatile const uint32_t RESERVED1[127];
+  volatile uint32_t INTEN;
+  volatile uint32_t INTENSET;
+  volatile uint32_t INTENCLR;
+  volatile const uint32_t RESERVED2[125];
+  volatile uint32_t ENABLE;
+
+  volatile QSPI_READ_Type READ;
+  volatile QSPI_WRITE_Type WRITE;
+  volatile QSPI_ERASE_Type ERASE;
+  volatile QSPI_PSEL_Type PSEL;
+  volatile uint32_t XIPOFFSET;
+
+  volatile uint32_t IFCONFIG0;
+  volatile const uint32_t RESERVED3[46];
+  volatile uint32_t IFCONFIG1;
+  volatile const uint32_t STATUS;
+  volatile const uint32_t RESERVED4[3];
+  volatile uint32_t DPMDUR;
+
+  volatile const uint32_t RESERVED5[3];
+  volatile uint32_t ADDRCONF;
+  volatile const uint32_t RESERVED6[3];
+  volatile uint32_t CINSTRCONF;
+  volatile uint32_t CINSTRDAT0;
+  volatile uint32_t CINSTRDAT1;
+  volatile uint32_t IFTIMING;
+} NRF_QSPI_Type;
+# 2704 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[1678];
+  volatile uint32_t HOST_CRYPTOKEY_SEL;
+  volatile const uint32_t RESERVED1[4];
+  volatile uint32_t HOST_IOT_KPRTL_LOCK;
+
+
+
+
+  volatile uint32_t HOST_IOT_KDR0;
+
+
+
+
+  volatile uint32_t HOST_IOT_KDR1;
+
+
+  volatile uint32_t HOST_IOT_KDR2;
+
+
+  volatile uint32_t HOST_IOT_KDR3;
+
+
+  volatile uint32_t HOST_IOT_LCS;
+
+} NRF_CC_HOST_RGF_Type;
+# 2742 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840.h"
+typedef struct {
+  volatile const uint32_t RESERVED[320];
+  volatile uint32_t ENABLE;
+} NRF_CRYPTOCELL_Type;
+# 194 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840_bitfields.h" 1
+# 195 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf51_to_nrf52840.h" 1
+# 196 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52_to_nrf52840.h" 1
+# 197 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h" 2
+# 271 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/compiler_abstraction.h" 1
+# 352 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/compiler_abstraction.h"
+    static inline unsigned int gcc_current_sp(void)
+    {
+        unsigned int stack_pointer = 0;
+        __asm__ __volatile__ ("mov %0, sp" : "=r"(stack_pointer));
+        return stack_pointer;
+    }
+# 272 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf.h" 2
+# 44 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_utils.h" 1
+# 37 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_utils.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_utils_internal.h" 1
+# 38 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_utils.h" 2
+# 45 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf_peripherals.h" 1
+# 56 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf_peripherals.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840_peripherals.h" 1
+# 57 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf_peripherals.h" 2
+# 46 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf_mem.h" 1
+# 69 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf_mem.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf52840_xxaa_memory.h" 1
+# 70 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/mdk/nrf_mem.h" 2
+# 47 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_ext.h" 1
+# 48 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 2
+# 573 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+typedef void (* nrfx_irq_handler_t)(void);
+
+
+typedef enum
+{
+    NRFX_DRV_STATE_UNINITIALIZED,
+    NRFX_DRV_STATE_INITIALIZED,
+    NRFX_DRV_STATE_POWERED_ON,
+} nrfx_drv_state_t;
+# 595 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+static inline 
+# 595 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 3 4
+                 _Bool 
+# 595 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+                      nrfx_is_in_ram(void const * p_object);
+# 609 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+static inline 
+# 609 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 3 4
+                 _Bool 
+# 609 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+                      nrfx_is_word_aligned(void const * p_object);
+# 618 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+static inline IRQn_Type nrfx_get_irq_number(void const * p_reg);
+# 634 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+static inline uint32_t nrfx_bitpos_to_event(uint32_t bit);
+# 650 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+static inline uint32_t nrfx_event_to_bitpos(uint32_t event);
+
+
+
+static inline 
+# 654 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 3 4
+                 _Bool 
+# 654 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+                      nrfx_is_in_ram(void const * p_object)
+{
+    return ((((uint32_t)p_object) & 0xE0000000u) == 0x20000000u);
+}
+
+static inline 
+# 659 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h" 3 4
+                 _Bool 
+# 659 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_common.h"
+                      nrfx_is_word_aligned(void const * p_object)
+{
+    return ((((uint32_t)p_object) & 0x3u) == 0u);
+}
+
+static inline IRQn_Type nrfx_get_irq_number(void const * p_reg)
+{
+    return (IRQn_Type)(uint16_t)(((uint32_t)(p_reg) >> 12) & 0x000001FF);
+}
+
+static inline uint32_t nrfx_bitpos_to_event(uint32_t bit)
+{
+    static const uint32_t event_reg_offset = 0x100u;
+    return event_reg_offset + (bit * sizeof(uint32_t));
+}
+
+static inline uint32_t nrfx_event_to_bitpos(uint32_t event)
+{
+    static const uint32_t event_reg_offset = 0x100u;
+    return (event - event_reg_offset) / sizeof(uint32_t);
+}
+# 39 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq.h" 1
+# 64 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq.h"
+static inline int
+irq_connect_dynamic(unsigned int irq, unsigned int priority,
+      void (*routine)(const void *parameter),
+      const void *parameter, uint32_t flags)
+{
+ return arch_irq_connect_dynamic(irq, priority, routine, parameter,
+     flags);
+}
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq.h"
+static inline int
+irq_disconnect_dynamic(unsigned int irq, unsigned int priority,
+         void (*routine)(const void *parameter),
+         const void *parameter, uint32_t flags)
+{
+ return arch_irq_disconnect_dynamic(irq, priority, routine,
+        parameter, flags);
+}
+# 291 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/irq.h"
+static inline unsigned int irq_get_level(unsigned int irq)
+{
+ const uint32_t mask2 = ((1UL << (8)) - 1UL) <<
+  8;
+ const uint32_t mask3 = ((1UL << (8)) - 1UL) <<
+  (8 + 8);
+
+ if (0 && (irq & mask3) != 0) {
+  return 3;
+ }
+
+ if (0 && (irq & mask2) != 0) {
+  return 2;
+ }
+
+ return 1;
+}
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h" 2
+# 127 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h"
+void nrfx_busy_wait(uint32_t usec_to_wait);
+# 324 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/bt_ctlr_used_resources.h" 1
+
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/../radio/radio_nrf5_resources.h" 1
+# 8 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/bt_ctlr_used_resources.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/../radio/radio_nrf5_fem.h" 1
+# 16 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/../radio/radio_nrf5_fem.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/../radio/radio_nrf5_fem.h" 2
+# 9 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/bt_ctlr_used_resources.h" 2
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/../radio/radio_nrf5_ppi_resources.h" 1
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue/bt_ctlr_used_resources.h" 2
+# 325 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h" 2
+# 389 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/hal_nordic/nrfx/./nrfx_glue.h"
+void nrfx_isr(const void *irq_handler);
+# 40 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h" 1
+# 172 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+static inline 
+# 172 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h" 3 4
+                 _Bool 
+# 172 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+                      nrf_dma_accessible_check(void const * p_reg, void const * p_object);
+
+static inline void nrf_barrier_w(void);
+
+static inline void nrf_barrier_r(void);
+
+static inline void nrf_barrier_rw(void);
+
+static inline 
+# 180 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h" 3 4
+                 _Bool 
+# 180 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+                      nrf_event_check(void const * p_reg, uint32_t event);
+
+static inline uint32_t nrf_task_event_address_get(void const * p_reg, uint32_t task_event);
+
+
+
+static inline void nrf_event_readback(void * p_event_reg)
+{
+
+    (void)*((volatile uint32_t *)(p_event_reg));
+
+
+
+}
+
+static inline void nrf_barrier_w(void)
+{
+
+
+
+}
+
+static inline void nrf_barrier_r(void)
+{
+
+
+
+}
+
+static inline void nrf_barrier_rw(void)
+{
+
+
+
+}
+# 258 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+static inline 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h" 3 4
+                 _Bool 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+                      nrf_dma_accessible_check(void const * p_reg, void const * p_object)
+{
+# 276 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+    (void)p_reg;
+    return ((((uint32_t)p_object) & 0xE0000000u) == 0x20000000u);
+
+}
+
+static inline 
+# 281 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h" 3 4
+                 _Bool 
+# 281 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+                      nrf_event_check(void const * p_reg, uint32_t event)
+{
+    return (
+# 283 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h" 3 4
+           _Bool
+# 283 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/hal/nrf_common.h"
+               )*(volatile const uint32_t *)((const uint8_t *)p_reg + (uint32_t)event);
+}
+
+static inline uint32_t nrf_task_event_address_get(void const * p_reg, uint32_t task_event)
+{
+    return (uint32_t)((const uint8_t *)p_reg + task_event);
+}
+# 41 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/haly/nrfy_common.h" 1
+# 42 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_errors.h" 1
+# 54 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/drivers/nrfx_errors.h"
+typedef enum {
+    NRFX_SUCCESS = (0x0BAD0000 + 0),
+    NRFX_ERROR_INTERNAL = (0x0BAD0000 + 1),
+    NRFX_ERROR_NO_MEM = (0x0BAD0000 + 2),
+    NRFX_ERROR_NOT_SUPPORTED = (0x0BAD0000 + 3),
+    NRFX_ERROR_INVALID_PARAM = (0x0BAD0000 + 4),
+    NRFX_ERROR_INVALID_STATE = (0x0BAD0000 + 5),
+    NRFX_ERROR_INVALID_LENGTH = (0x0BAD0000 + 6),
+    NRFX_ERROR_TIMEOUT = (0x0BAD0000 + 7),
+    NRFX_ERROR_FORBIDDEN = (0x0BAD0000 + 8),
+    NRFX_ERROR_NULL = (0x0BAD0000 + 9),
+    NRFX_ERROR_INVALID_ADDR = (0x0BAD0000 + 10),
+    NRFX_ERROR_BUSY = (0x0BAD0000 + 11),
+    NRFX_ERROR_ALREADY = (0x0BAD0000 + 12),
+    NRFX_ERROR_ALREADY_INITIALIZED = NRFX_ERROR_ALREADY,
+
+    NRFX_ERROR_DRV_TWI_ERR_OVERRUN = ((0x0BAD0000 + 0x10000) + 0),
+    NRFX_ERROR_DRV_TWI_ERR_ANACK = ((0x0BAD0000 + 0x10000) + 1),
+    NRFX_ERROR_DRV_TWI_ERR_DNACK = ((0x0BAD0000 + 0x10000) + 2)
+} nrfx_err_t;
+# 43 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/nordic/nrfx/nrfx.h" 2
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/soc/arm/nordic_nrf/common/./soc_nrf_common.h" 2
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/soc/arm/nordic_nrf/nrf52/soc.h" 2
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core_m.h" 2
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core_m.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h" 1
+# 96 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core_m.h" 2
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/modules/cmsis/./cmsis_core.h" 2
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu_v7m.h" 2
+# 152 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu_v7m.h"
+struct arm_mpu_region_attr {
+
+ uint32_t rasr;
+};
+
+typedef struct arm_mpu_region_attr arm_mpu_region_attr_t;
+
+
+typedef struct {
+ uint32_t rasr_attr;
+} k_mem_partition_attr_t;
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu.h" 2
+# 27 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu.h"
+struct arm_mpu_region {
+
+ uint32_t base;
+
+ const char *name;
+
+
+
+
+
+ arm_mpu_region_attr_t attr;
+};
+
+
+struct arm_mpu_config {
+
+ uint32_t num_regions;
+
+ const struct arm_mpu_region *mpu_regions;
+};
+# 73 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/mpu/arm_mpu.h"
+extern const struct arm_mpu_config mpu_config;
+# 269 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/arm/arch.h" 2
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/arch/cpu.h" 2
+# 38 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h" 1
+# 46 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+typedef int64_t k_ticks_t;
+# 65 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+typedef struct {
+ k_ticks_t ticks;
+} k_timeout_t;
+# 191 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+uint32_t sys_clock_tick_get_32(void);
+# 200 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+int64_t sys_clock_tick_get(void);
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+typedef struct { uint64_t tick; } k_timepoint_t;
+# 237 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+k_timepoint_t sys_timepoint_calc(k_timeout_t timeout);
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+k_timeout_t sys_timepoint_timeout(k_timepoint_t timepoint);
+# 261 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+__attribute__((deprecated))
+static inline uint64_t sys_clock_timeout_end_calc(k_timeout_t timeout)
+{
+ k_timepoint_t tp = sys_timepoint_calc(timeout);
+
+ return tp.tick;
+}
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+static inline int sys_timepoint_cmp(k_timepoint_t a, k_timepoint_t b)
+{
+ if (a.tick == b.tick) {
+  return 0;
+ }
+ return a.tick < b.tick ? -1 : 1;
+}
+# 327 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+static inline 
+# 327 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h" 3 4
+             _Bool 
+# 327 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys_clock.h"
+                  sys_timepoint_expired(k_timepoint_t timepoint)
+{
+ return ((sys_timepoint_timeout(timepoint)).ticks == (((k_timeout_t) {0})).ticks);
+}
+# 40 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h" 1
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/errno.h" 1 3 4
+# 38 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/errno.h" 3 4
+
+# 38 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/errno.h" 3 4
+typedef int error_t;
+
+
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/errno.h" 1 3 4
+# 43 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/errno.h" 3 4
+extern const char * const _sys_errlist[];
+extern int _sys_nerr;
+# 62 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/sys/errno.h" 3 4
+extern __thread int errno;
+# 43 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/errno.h" 2 3 4
+# 16 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h" 2
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+struct z_spinlock_key {
+ int key;
+};
+# 45 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+struct k_spinlock {
+# 79 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+};
+# 108 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+typedef struct z_spinlock_key k_spinlock_key_t;
+
+static inline __attribute__((always_inline)) void z_spinlock_validate_pre(struct k_spinlock *l)
+{
+ (void)(l);
+
+
+
+
+
+
+}
+
+static inline __attribute__((always_inline)) void z_spinlock_validate_post(struct k_spinlock *l)
+{
+ (void)(l);
+
+
+
+
+
+
+}
+# 160 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+static inline __attribute__((always_inline)) k_spinlock_key_t k_spin_lock(struct k_spinlock *l)
+{
+ (void)(l);
+ k_spinlock_key_t k;
+
+
+
+
+
+ k.key = arch_irq_lock();
+
+ z_spinlock_validate_pre(l);
+
+
+
+
+
+ z_spinlock_validate_post(l);
+
+ return k;
+}
+# 196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+static inline __attribute__((always_inline)) int k_spin_trylock(struct k_spinlock *l, k_spinlock_key_t *k)
+{
+ int key = arch_irq_lock();
+
+ z_spinlock_validate_pre(l);
+
+
+
+
+
+
+ z_spinlock_validate_post(l);
+
+ k->key = key;
+
+ return 0;
+}
+# 235 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+static inline __attribute__((always_inline)) void k_spin_unlock(struct k_spinlock *l,
+     k_spinlock_key_t key)
+{
+ (void)(l);
+# 261 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+ arch_irq_unlock(key.key);
+}
+# 283 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/spinlock.h"
+static inline __attribute__((always_inline)) void k_spin_release(struct k_spinlock *l)
+{
+ (void)(l);
+
+
+
+
+
+
+}
+# 41 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/fatal.h" 1
+# 36 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/fatal.h"
+__attribute__((__noreturn__)) void k_fatal_halt(unsigned int reason);
+# 67 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/fatal.h"
+void k_sys_fatal_error_handler(unsigned int reason, const z_arch_esf_t *esf);
+# 83 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/fatal.h"
+void z_fatal_error(unsigned int reason, const z_arch_esf_t *esf);
+# 42 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread_stack.h" 1
+# 47 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread_stack.h"
+struct 
+# 47 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread_stack.h" 3 4
+      __attribute__((__packed__)) 
+# 47 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread_stack.h"
+               z_thread_stack_element {
+ char data;
+};
+# 69 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread_stack.h"
+static inline char *z_stack_ptr_align(char *ptr)
+{
+ return (char *)(((unsigned long)(ptr) / (unsigned long)(8)) * (unsigned long)(8));
+}
+# 286 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread_stack.h"
+static inline char *Z_KERNEL_STACK_BUFFER(k_thread_stack_t *sym)
+{
+ return (char *)sym + ((size_t)0);
+}
+# 44 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h" 1
+# 43 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+struct k_thread;
+
+
+
+
+
+
+struct _pipe_desc {
+ sys_dnode_t node;
+ unsigned char *buffer;
+ size_t bytes_to_xfer;
+ struct k_thread *thread;
+};
+
+
+struct _thread_base {
+
+
+ union {
+  sys_dnode_t qnode_dlist;
+  struct rbnode qnode_rb;
+ };
+
+
+
+
+ _wait_q_t *pended_on;
+
+
+ uint8_t user_options;
+
+
+ uint8_t thread_state;
+# 91 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+ union {
+  struct {
+
+
+
+
+   int8_t prio;
+   uint8_t sched_locked;
+
+  };
+  uint16_t preempt;
+ };
+
+
+
+
+
+ uint32_t order_key;
+# 132 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+ void *swap_data;
+
+
+
+ struct _timeout timeout;
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+};
+
+typedef struct _thread_base _thread_base_t;
+
+
+
+struct _thread_stack_info {
+
+
+
+ uintptr_t start;
+# 167 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+ size_t size;
+
+
+
+
+
+ size_t delta;
+};
+
+typedef struct _thread_stack_info _thread_stack_info_t;
+# 197 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+typedef struct k_thread_runtime_stats {
+# 239 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+} k_thread_runtime_stats_t;
+
+struct z_poller {
+ 
+# 242 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h" 3 4
+_Bool 
+# 242 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+     is_polling;
+ uint8_t mode;
+};
+
+
+
+
+
+struct k_thread {
+
+ struct _thread_base base;
+
+
+ struct _callee_saved callee_saved;
+
+
+ void *init_data;
+
+
+ _wait_q_t join_queue;
+
+
+ struct z_poller poller;
+# 308 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+ struct _thread_stack_info stack_info;
+# 333 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+ struct k_heap *resource_pool;
+
+
+
+ uintptr_t tls;
+# 355 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/thread.h"
+ struct _thread_arch arch;
+};
+
+typedef struct k_thread _thread_t;
+typedef struct k_thread *k_tid_t;
+# 16 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h" 2
+# 105 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h"
+struct k_mem_domain;
+struct k_mem_partition;
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h"
+extern int k_mem_domain_init(struct k_mem_domain *domain, uint8_t num_parts,
+        struct k_mem_partition *parts[]);
+# 159 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h"
+extern int k_mem_domain_add_partition(struct k_mem_domain *domain,
+          struct k_mem_partition *part);
+# 174 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h"
+extern int k_mem_domain_remove_partition(struct k_mem_domain *domain,
+      struct k_mem_partition *part);
+# 188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/app_memory/mem_domain.h"
+extern int k_mem_domain_add_thread(struct k_mem_domain *domain,
+       k_tid_t thread);
+# 45 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/iterable_sections.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 2
+
+
+
+
+
+struct k_thread;
+struct k_mutex;
+struct z_futex_data;
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+enum k_objects {
+ K_OBJ_ANY,
+
+
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/kobj-types-enum.h" 1
+
+K_OBJ_MEM_SLAB,
+K_OBJ_MSGQ,
+K_OBJ_MUTEX,
+K_OBJ_PIPE,
+K_OBJ_QUEUE,
+K_OBJ_POLL_SIGNAL,
+K_OBJ_SEM,
+K_OBJ_STACK,
+K_OBJ_THREAD,
+K_OBJ_TIMER,
+K_OBJ_THREAD_STACK_ELEMENT,
+K_OBJ_NET_SOCKET,
+K_OBJ_NET_IF,
+K_OBJ_SYS_MUTEX,
+K_OBJ_FUTEX,
+K_OBJ_CONDVAR,
+# 43 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/kobj-types-enum.h"
+K_OBJ_DRIVER_ADC,
+K_OBJ_DRIVER_ENTROPY,
+K_OBJ_DRIVER_FLASH,
+K_OBJ_DRIVER_GPIO,
+K_OBJ_DRIVER_KSCAN,
+K_OBJ_DRIVER_SENSOR,
+K_OBJ_DRIVER_UART,
+K_OBJ_DRIVER_SPI,
+K_OBJ_DRIVER_BEHAVIOR,
+K_OBJ_DRIVER_EXT_POWER_API,
+K_OBJ_DRIVER_ZMK_INPUT_PROCESSOR,
+K_OBJ_DRIVER_CRYPTO,
+K_OBJ_DRIVER_AUXDISPLAY,
+K_OBJ_DRIVER_BBRAM,
+K_OBJ_DRIVER_CAN,
+K_OBJ_DRIVER_CHARGER,
+K_OBJ_DRIVER_COREDUMP,
+K_OBJ_DRIVER_COUNTER,
+K_OBJ_DRIVER_DAC,
+K_OBJ_DRIVER_DAI,
+K_OBJ_DRIVER_DMA,
+K_OBJ_DRIVER_EDAC,
+K_OBJ_DRIVER_EEPROM,
+K_OBJ_DRIVER_FUEL_GAUGE_EMUL,
+K_OBJ_DRIVER_EMUL_SENSOR_BACKEND_API,
+K_OBJ_DRIVER_ESPI,
+K_OBJ_DRIVER_ESPI_SAF,
+K_OBJ_DRIVER_FPGA,
+K_OBJ_DRIVER_FUEL_GAUGE,
+K_OBJ_DRIVER_HWSPINLOCK,
+K_OBJ_DRIVER_I2C,
+K_OBJ_DRIVER_I2S,
+K_OBJ_DRIVER_I3C,
+K_OBJ_DRIVER_IPM,
+K_OBJ_DRIVER_LED,
+K_OBJ_DRIVER_MBOX,
+K_OBJ_DRIVER_MDIO,
+K_OBJ_DRIVER_MIPI_DSI,
+K_OBJ_DRIVER_PECI,
+K_OBJ_DRIVER_PS2,
+K_OBJ_DRIVER_PTP_CLOCK,
+K_OBJ_DRIVER_PWM,
+K_OBJ_DRIVER_REGULATOR_PARENT,
+K_OBJ_DRIVER_REGULATOR,
+K_OBJ_DRIVER_RESET,
+K_OBJ_DRIVER_RETAINED_MEM,
+K_OBJ_DRIVER_RTC,
+K_OBJ_DRIVER_SDHC,
+K_OBJ_DRIVER_SMBUS,
+K_OBJ_DRIVER_SYSCON,
+K_OBJ_DRIVER_W1,
+K_OBJ_DRIVER_WDT,
+K_OBJ_DRIVER_CAN_TRANSCEIVER,
+K_OBJ_DRIVER_UART_MUX,
+K_OBJ_DRIVER_ITS,
+K_OBJ_DRIVER_TGPIO,
+K_OBJ_DRIVER_PCIE_CTRL,
+K_OBJ_DRIVER_SVC,
+K_OBJ_DRIVER_BC12_EMUL,
+K_OBJ_DRIVER_BC12,
+K_OBJ_DRIVER_TCPC,
+K_OBJ_DRIVER_IVSHMEM,
+K_OBJ_DRIVER_EC_HOST_CMD_BACKEND_API,
+K_OBJ_DRIVER_ETHPHY,
+# 39 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 2
+
+
+
+ K_OBJ_LAST
+};
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+static inline void z_object_init(const void *obj)
+{
+ (void)(obj);
+}
+
+
+
+
+static inline void z_impl_k_object_access_grant(const void *object,
+      struct k_thread *thread)
+{
+ (void)(object);
+ (void)(thread);
+}
+
+
+
+
+static inline void k_object_access_revoke(const void *object,
+       struct k_thread *thread)
+{
+ (void)(object);
+ (void)(thread);
+}
+
+
+
+
+static inline void z_impl_k_object_release(const void *object)
+{
+ (void)(object);
+}
+
+static inline void k_object_access_all_grant(const void *object)
+{
+ (void)(object);
+}
+
+static inline 
+# 253 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 3 4
+             _Bool 
+# 253 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+                  k_object_is_valid(const void *obj, enum k_objects otype)
+{
+ (void)(obj);
+ (void)(otype);
+
+ return 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 3 4
+       1
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+           ;
+}
+# 359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+static inline void *z_impl_k_object_alloc(enum k_objects otype)
+{
+ (void)(otype);
+
+ return 
+# 363 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 3 4
+       ((void *)0)
+# 363 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+           ;
+}
+
+static inline void *z_impl_k_object_alloc_size(enum k_objects otype,
+     size_t size)
+{
+ (void)(otype);
+ (void)(size);
+
+ return 
+# 372 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 3 4
+       ((void *)0)
+# 372 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+           ;
+}
+
+static inline struct z_object *z_dynamic_object_aligned_create(size_t align,
+              size_t size)
+{
+ (void)(align);
+ (void)(size);
+
+ return 
+# 381 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 3 4
+       ((void *)0)
+# 381 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+           ;
+}
+
+static inline struct z_object *z_dynamic_object_create(size_t size)
+{
+ (void)(size);
+
+ return 
+# 388 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 3 4
+       ((void *)0)
+# 388 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h"
+           ;
+}
+
+
+
+
+
+
+static inline void k_object_free(void *obj)
+{
+ (void)(obj);
+}
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h" 1
+
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing_syscall.h" 1
+# 8 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h" 2
+# 23 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+extern void z_impl_k_object_access_grant(const void * object, struct k_thread * thread);
+
+
+static inline void k_object_access_grant(const void * object, struct k_thread * thread)
+{
+# 36 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 36 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h" 3 4
+0
+# 36 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+);
+ z_impl_k_object_access_grant(object, thread);
+}
+# 48 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+extern void z_impl_k_object_release(const void * object);
+
+
+static inline void k_object_release(const void * object)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 60 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h" 3 4
+0
+# 60 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+);
+ z_impl_k_object_release(object);
+}
+# 72 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+extern void * z_impl_k_object_alloc(enum k_objects otype);
+
+
+static inline void * k_object_alloc(enum k_objects otype)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 83 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h" 3 4
+0
+# 83 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+);
+ return z_impl_k_object_alloc(otype);
+}
+# 95 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+extern void * z_impl_k_object_alloc_size(enum k_objects otype, size_t size);
+
+
+static inline void * k_object_alloc_size(enum k_objects otype, size_t size)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 107 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h" 3 4
+0
+# 107 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kobject.h"
+);
+ return z_impl_k_object_alloc_size(otype, size);
+}
+# 406 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/kobject.h" 2
+# 46 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/smp.h" 1
+# 9 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/smp.h"
+struct k_thread;
+# 19 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel/internal/smp.h"
+void z_init_cpu(int id);
+void z_sched_ipi(void);
+void z_smp_start_cpu(int id);
+# 49 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel_includes.h" 2
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 2
+
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/picolibc/include/limits.h" 1 3 4
+# 20 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing_macros.h" 1
+# 23 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 2
+# 34 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+_Static_assert(sizeof(int32_t) == sizeof(int), "" );
+_Static_assert(sizeof(int64_t) == sizeof(long long), "" );
+_Static_assert(sizeof(intptr_t) == sizeof(long), "" );
+# 69 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_thread;
+struct k_mutex;
+struct k_sem;
+struct k_msgq;
+struct k_mbox;
+struct k_pipe;
+struct k_queue;
+struct k_fifo;
+struct k_lifo;
+struct k_stack;
+struct k_mem_slab;
+struct k_timer;
+struct k_poll_event;
+struct k_poll_signal;
+struct k_mem_domain;
+struct k_mem_partition;
+struct k_futex;
+struct k_event;
+
+enum execution_context_types {
+ K_ISR = 0,
+ K_COOP_THREAD,
+ K_PREEMPT_THREAD,
+};
+
+
+struct k_work_poll;
+typedef int (*_poller_cb_t)(struct k_poll_event *event, uint32_t state);
+
+
+
+
+
+
+typedef void (*k_thread_user_cb_t)(const struct k_thread *thread,
+       void *user_data);
+# 121 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_thread_foreach(k_thread_user_cb_t user_cb, void *user_data);
+# 150 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_thread_foreach_unlocked(
+ k_thread_user_cb_t user_cb, void *user_data);
+# 282 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_thread_stack_t *k_thread_stack_alloc(size_t size, int flags);
+# 296 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_thread_stack_free(k_thread_stack_t *stack);
+# 346 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_tid_t k_thread_create(struct k_thread *new_thread,
+      k_thread_stack_t *stack,
+      size_t stack_size,
+      k_thread_entry_t entry,
+      void *p1, void *p2, void *p3,
+      int prio, uint32_t options, k_timeout_t delay);
+# 374 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern __attribute__((__noreturn__)) void k_thread_user_mode_enter(k_thread_entry_t entry,
+         void *p1, void *p2,
+         void *p3);
+# 408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_heap_assign(struct k_thread *thread,
+     struct k_heap *heap)
+{
+ thread->resource_pool = heap;
+}
+# 474 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_thread_join(struct k_thread *thread, k_timeout_t timeout);
+# 489 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int32_t k_sleep(k_timeout_t timeout);
+# 501 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int32_t k_msleep(int32_t ms)
+{
+ return k_sleep(((k_timeout_t) { .ticks = ((k_ticks_t)((
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               1
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? ( ((32768) == (1000)) ? (uint64_t) ((((ms) > (0)) ? (ms) : (0))) : ((1000) > (32768) && (1000) % (32768) == 0U) ? (((uint64_t) ((((ms) > (0)) ? (ms) : (0))) + ((
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               0
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? ((1000) / (32768)) / 2 : (
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               1
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? ((1000) / (32768)) - 1 : 0)) / ((1000) / (32768))) : ((32768) > (1000) && (32768) % (1000) == 0U) ? (uint64_t) ((((ms) > (0)) ? (ms) : (0)))*((32768) / (1000)) : ((((((365 * 24ULL * 3600ULL * 1000) + (
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               (0xffffffffUL)
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) - 1) / (
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               (0xffffffffUL)
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               )) * 32768) <= 
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               (0xffffffffUL)
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (((uint64_t) ((((ms) > (0)) ? (ms) : (0)))*(32768) + ((
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               0
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (1000) / 2 : (
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               1
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (1000) - 1 : 0)) / (1000)) : (((uint64_t) ((((ms) > (0)) ? (ms) : (0))) / (1000))*(32768) + (((uint64_t) ((((ms) > (0)) ? (ms) : (0))) % (1000))*(32768) + ((
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               0
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (1000) / 2 : (
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               1
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (1000) - 1 : 0)) / (1000))) ) : (((uint64_t) ((((ms) > (0)) ? (ms) : (0))) / (1000))*(32768) + (((uint64_t) ((((ms) > (0)) ? (ms) : (0))) % (1000))*(32768) + ((
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               0
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (1000) / 2 : (
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+               1
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+               ) ? (1000) - 1 : 0)) / (1000)) )) }));
+}
+# 521 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int32_t k_usleep(int32_t us);
+# 539 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_busy_wait(uint32_t usec_to_wait);
+# 552 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 552 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 552 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_can_yield(void);
+# 561 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_yield(void);
+# 572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_wakeup(k_tid_t thread);
+# 587 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+__attribute__((__const__))
+static inline k_tid_t k_sched_current_thread_query(void);
+
+
+
+
+
+
+
+__attribute__((__const__))
+static inline k_tid_t k_current_get(void)
+{
+
+
+ extern __thread k_tid_t z_tls_current;
+
+ return z_tls_current;
+
+
+
+}
+# 632 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_abort(k_tid_t thread);
+# 644 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_start(k_tid_t thread);
+
+extern k_ticks_t z_timeout_expires(const struct _timeout *timeout);
+extern k_ticks_t z_timeout_remaining(const struct _timeout *timeout);
+# 658 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_ticks_t k_thread_timeout_expires_ticks(const struct k_thread *t);
+
+static inline k_ticks_t z_impl_k_thread_timeout_expires_ticks(
+      const struct k_thread *t)
+{
+ return z_timeout_expires(&t->base.timeout);
+}
+# 673 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_ticks_t k_thread_timeout_remaining_ticks(const struct k_thread *t);
+
+static inline k_ticks_t z_impl_k_thread_timeout_remaining_ticks(
+      const struct k_thread *t)
+{
+ return z_timeout_remaining(&t->base.timeout);
+}
+
+
+
+
+
+
+
+struct _static_thread_data {
+ struct k_thread *init_thread;
+ k_thread_stack_t *init_stack;
+ unsigned int init_stack_size;
+ k_thread_entry_t init_entry;
+ void *init_p1;
+ void *init_p2;
+ void *init_p3;
+ int init_prio;
+ uint32_t init_options;
+ const char *init_name;
+
+
+
+ k_timeout_t init_delay;
+
+};
+# 834 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_thread_priority_get(k_tid_t thread);
+# 861 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_priority_set(k_tid_t thread, int prio);
+# 985 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_suspend(k_tid_t thread);
+# 997 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_resume(k_tid_t thread);
+# 1025 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_sched_time_slice_set(int32_t slice, int prio);
+# 1065 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_thread_time_slice_set(struct k_thread *th, int32_t slice_ticks,
+        k_thread_timeslice_fn_t expired, void *data);
+# 1086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern 
+# 1086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+      _Bool 
+# 1086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+           k_is_in_isr(void);
+# 1104 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_is_preempt_thread(void);
+# 1117 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline 
+# 1117 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+             _Bool 
+# 1117 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                  k_is_pre_kernel(void)
+{
+ extern 
+# 1119 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       _Bool 
+# 1119 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+            z_sys_post_kernel;
+
+ return !z_sys_post_kernel;
+}
+# 1158 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_sched_lock(void);
+# 1167 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_sched_unlock(void);
+# 1181 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_thread_custom_data_set(void *value);
+# 1190 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void *k_thread_custom_data_get(void);
+# 1205 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_thread_name_set(k_tid_t thread, const char *str);
+# 1215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+const char *k_thread_name_get(k_tid_t thread);
+# 1228 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_thread_name_copy(k_tid_t thread, char *buf,
+     size_t size);
+# 1243 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+const char *k_thread_state_str(k_tid_t thread_id, char *buf, size_t buf_size);
+# 1455 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_timer {
+
+
+
+
+
+ struct _timeout timeout;
+
+
+ _wait_q_t wait_q;
+
+
+ void (*expiry_fn)(struct k_timer *timer);
+
+
+ void (*stop_fn)(struct k_timer *timer);
+
+
+ k_timeout_t period;
+
+
+ uint32_t status;
+
+
+ void *user_data;
+
+
+
+
+
+
+};
+# 1522 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+typedef void (*k_timer_expiry_t)(struct k_timer *timer);
+# 1538 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+typedef void (*k_timer_stop_t)(struct k_timer *timer);
+# 1564 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_timer_init(struct k_timer *timer,
+    k_timer_expiry_t expiry_fn,
+    k_timer_stop_t stop_fn);
+# 1582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_timer_start(struct k_timer *timer,
+        k_timeout_t duration, k_timeout_t period);
+# 1601 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_timer_stop(struct k_timer *timer);
+# 1615 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_timer_status_get(struct k_timer *timer);
+# 1634 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_timer_status_sync(struct k_timer *timer);
+# 1648 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_ticks_t k_timer_expires_ticks(const struct k_timer *timer);
+
+static inline k_ticks_t z_impl_k_timer_expires_ticks(
+           const struct k_timer *timer)
+{
+ return z_timeout_expires(&timer->timeout);
+}
+# 1663 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_ticks_t k_timer_remaining_ticks(const struct k_timer *timer);
+
+static inline k_ticks_t z_impl_k_timer_remaining_ticks(
+           const struct k_timer *timer)
+{
+ return z_timeout_remaining(&timer->timeout);
+}
+# 1681 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_timer_remaining_get(struct k_timer *timer)
+{
+ return ((
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       1
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ( ((1000) == (32768)) ? (uint32_t) (k_timer_remaining_ticks(timer)) : ((32768) > (1000) && (32768) % (1000) == 0U) ? ((uint64_t) (k_timer_remaining_ticks(timer)) <= 0xffffffffU - ((
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) / 2 : (
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) - 1 : 0) ? ((uint32_t)((k_timer_remaining_ticks(timer)) + ((
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) / 2 : (
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) - 1 : 0)) / ((32768) / (1000))) : (uint32_t) (((uint64_t) (k_timer_remaining_ticks(timer)) + ((
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) / 2 : (
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) - 1 : 0)) / ((32768) / (1000))) ) : ((1000) > (32768) && (1000) % (32768) == 0U) ? (uint32_t) (k_timer_remaining_ticks(timer))*((1000) / (32768)) : ((uint32_t) (((uint64_t) (k_timer_remaining_ticks(timer))*(1000) + ((
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) / 2 : (
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) - 1 : 0)) / (32768))) ) : ((uint32_t) (((uint64_t) (k_timer_remaining_ticks(timer))*(1000) + ((
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) / 2 : (
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) - 1 : 0)) / (32768))) );
+}
+# 1700 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_timer_user_data_set(struct k_timer *timer, void *user_data);
+
+
+
+
+static inline void z_impl_k_timer_user_data_set(struct k_timer *timer,
+            void *user_data)
+{
+ timer->user_data = user_data;
+}
+# 1718 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void *k_timer_user_data_get(const struct k_timer *timer);
+
+static inline void *z_impl_k_timer_user_data_get(const struct k_timer *timer)
+{
+ return timer->user_data;
+}
+# 1742 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int64_t k_uptime_ticks(void);
+# 1757 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int64_t k_uptime_get(void)
+{
+ return ((
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       1
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ( ((1000) == (32768)) ? (uint64_t) (k_uptime_ticks()) : ((32768) > (1000) && (32768) % (1000) == 0U) ? (((uint64_t) (k_uptime_ticks()) + ((
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) / 2 : (
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? ((32768) / (1000)) - 1 : 0)) / ((32768) / (1000))) : ((1000) > (32768) && (1000) % (32768) == 0U) ? (uint64_t) (k_uptime_ticks())*((1000) / (32768)) : ((((((365 * 24ULL * 3600ULL * 32768) + (
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       (0xffffffffUL)
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) - 1) / (
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       (0xffffffffUL)
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       )) * 1000) <= 
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       (0xffffffffUL)
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (((uint64_t) (k_uptime_ticks())*(1000) + ((
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) / 2 : (
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) - 1 : 0)) / (32768)) : (((uint64_t) (k_uptime_ticks()) / (32768))*(1000) + (((uint64_t) (k_uptime_ticks()) % (32768))*(1000) + ((
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) / 2 : (
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) - 1 : 0)) / (32768))) ) : (((uint64_t) (k_uptime_ticks()) / (32768))*(1000) + (((uint64_t) (k_uptime_ticks()) % (32768))*(1000) + ((
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) / 2 : (
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       0
+# 1759 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       ) ? (32768) - 1 : 0)) / (32768)) );
+}
+# 1781 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_uptime_get_32(void)
+{
+ return (uint32_t)k_uptime_get();
+}
+# 1797 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int64_t k_uptime_delta(int64_t *reftime)
+{
+ int64_t uptime, delta;
+
+ uptime = k_uptime_get();
+ delta = uptime - *reftime;
+ *reftime = uptime;
+
+ return delta;
+}
+# 1816 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_cycle_get_32(void)
+{
+ return arch_k_cycle_get_32();
+}
+# 1831 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint64_t k_cycle_get_64(void)
+{
+ if (!0) {
+  { }
+                                                  ;
+  return 0;
+ }
+
+ return arch_k_cycle_get_64();
+}
+
+
+
+
+
+struct k_queue {
+ sys_sflist_t data_q;
+ struct k_spinlock lock;
+ _wait_q_t wait_q;
+
+ sys_dlist_t poll_events;
+
+
+};
+# 1885 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_queue_init(struct k_queue *queue);
+# 1900 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_queue_cancel_wait(struct k_queue *queue);
+# 1914 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_queue_append(struct k_queue *queue, void *data);
+# 1932 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int32_t k_queue_alloc_append(struct k_queue *queue, void *data);
+# 1946 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_queue_prepend(struct k_queue *queue, void *data);
+# 1964 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int32_t k_queue_alloc_prepend(struct k_queue *queue, void *data);
+# 1979 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_queue_insert(struct k_queue *queue, void *prev, void *data);
+# 1999 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_queue_append_list(struct k_queue *queue, void *head, void *tail);
+# 2016 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_queue_merge_slist(struct k_queue *queue, sys_slist_t *list);
+# 2036 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void *k_queue_get(struct k_queue *queue, k_timeout_t timeout);
+# 2054 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 2054 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 2054 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_queue_remove(struct k_queue *queue, void *data);
+# 2070 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 2070 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 2070 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_queue_unique_append(struct k_queue *queue, void *data);
+# 2085 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_queue_is_empty(struct k_queue *queue);
+
+static inline int z_impl_k_queue_is_empty(struct k_queue *queue)
+{
+ return (int)sys_sflist_is_empty(&queue->data_q);
+}
+# 2101 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void *k_queue_peek_head(struct k_queue *queue);
+# 2112 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void *k_queue_peek_tail(struct k_queue *queue);
+# 2218 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_event {
+ _wait_q_t wait_q;
+ uint32_t events;
+ struct k_spinlock lock;
+
+
+
+
+
+
+
+};
+# 2244 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_event_init(struct k_event *event);
+# 2261 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_post(struct k_event *event, uint32_t events);
+# 2278 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_set(struct k_event *event, uint32_t events);
+# 2294 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_set_masked(struct k_event *event, uint32_t events,
+      uint32_t events_mask);
+# 2307 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_clear(struct k_event *event, uint32_t events);
+# 2330 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_wait(struct k_event *event, uint32_t events,
+    
+# 2331 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+   _Bool 
+# 2331 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+        reset, k_timeout_t timeout);
+# 2354 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_wait_all(struct k_event *event, uint32_t events,
+        
+# 2355 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       _Bool 
+# 2355 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+            reset, k_timeout_t timeout);
+# 2365 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_event_test(struct k_event *event, uint32_t events_mask)
+{
+ return k_event_wait(event, events_mask, 
+# 2367 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+                                        0
+# 2367 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                                             , ((k_timeout_t) {0}));
+}
+# 2385 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_fifo {
+ struct k_queue _queue;
+
+
+
+};
+# 2624 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_lifo {
+ struct k_queue _queue;
+
+
+
+};
+# 2754 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+typedef uintptr_t stack_data_t;
+
+struct k_stack {
+ _wait_q_t wait_q;
+ struct k_spinlock lock;
+ stack_data_t *base, *next, *top;
+
+ uint8_t flags;
+
+
+
+
+
+
+};
+# 2797 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_stack_init(struct k_stack *stack,
+    stack_data_t *buffer, uint32_t num_entries);
+# 2815 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int32_t k_stack_alloc_init(struct k_stack *stack,
+       uint32_t num_entries);
+# 2829 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_stack_cleanup(struct k_stack *stack);
+# 2844 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_stack_push(struct k_stack *stack, stack_data_t data);
+# 2866 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_stack_pop(struct k_stack *stack, stack_data_t *data,
+     k_timeout_t timeout);
+# 2892 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_work;
+struct k_work_q;
+struct k_work_queue_config;
+extern struct k_work_q k_sys_work_q;
+# 2911 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_mutex {
+
+ _wait_q_t wait_q;
+
+ struct k_thread *owner;
+
+
+ uint32_t lock_count;
+
+
+ int owner_orig_prio;
+
+
+
+
+
+
+};
+# 2970 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_mutex_init(struct k_mutex *mutex);
+# 2994 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_mutex_lock(struct k_mutex *mutex, k_timeout_t timeout);
+# 3016 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_mutex_unlock(struct k_mutex *mutex);
+
+
+
+
+
+
+struct k_condvar {
+ _wait_q_t wait_q;
+
+
+
+
+};
+# 3048 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_condvar_init(struct k_condvar *condvar);
+
+
+
+
+
+
+
+static inline int k_condvar_signal(struct k_condvar *condvar);
+# 3065 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_condvar_broadcast(struct k_condvar *condvar);
+# 3084 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_condvar_wait(struct k_condvar *condvar, struct k_mutex *mutex,
+        k_timeout_t timeout);
+# 3108 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_sem {
+ _wait_q_t wait_q;
+ unsigned int count;
+ unsigned int limit;
+
+ sys_dlist_t poll_events;
+
+
+
+
+
+
+};
+# 3165 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_sem_init(struct k_sem *sem, unsigned int initial_count,
+     unsigned int limit);
+# 3186 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_sem_take(struct k_sem *sem, k_timeout_t timeout);
+# 3198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_sem_give(struct k_sem *sem);
+# 3209 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_sem_reset(struct k_sem *sem);
+# 3220 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline unsigned int k_sem_count_get(struct k_sem *sem);
+
+
+
+
+static inline unsigned int z_impl_k_sem_count_get(struct k_sem *sem)
+{
+ return sem->count;
+}
+# 3254 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_work_delayable;
+struct k_work_sync;
+# 3273 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+typedef void (*k_work_handler_t)(struct k_work *work);
+# 3288 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_work_init(struct k_work *work,
+    k_work_handler_t handler);
+# 3305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_busy_get(const struct k_work *work);
+# 3320 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline 
+# 3320 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+             _Bool 
+# 3320 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                  k_work_is_pending(const struct k_work *work);
+# 3342 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_submit_to_queue(struct k_work_q *queue,
+      struct k_work *work);
+# 3353 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_work_submit(struct k_work *work);
+# 3379 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 3379 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 3379 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_work_flush(struct k_work *work,
+    struct k_work_sync *sync);
+# 3401 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_cancel(struct k_work *work);
+# 3433 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 3433 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 3433 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_work_cancel_sync(struct k_work *work, struct k_work_sync *sync);
+# 3444 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_work_queue_init(struct k_work_q *queue);
+# 3465 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_work_queue_start(struct k_work_q *queue,
+   k_thread_stack_t *stack, size_t stack_size,
+   int prio, const struct k_work_queue_config *cfg);
+# 3478 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_tid_t k_work_queue_thread_get(struct k_work_q *queue);
+# 3503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_queue_drain(struct k_work_q *queue, 
+# 3503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+                                              _Bool 
+# 3503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                                                   plug);
+# 3518 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_queue_unplug(struct k_work_q *queue);
+# 3533 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_work_init_delayable(struct k_work_delayable *dwork,
+      k_work_handler_t handler);
+# 3547 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline struct k_work_delayable *
+k_work_delayable_from_work(struct k_work *work);
+# 3563 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_delayable_busy_get(const struct k_work_delayable *dwork);
+# 3579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline 
+# 3579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+             _Bool 
+# 3579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                  k_work_delayable_is_pending(
+ const struct k_work_delayable *dwork);
+# 3595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_ticks_t k_work_delayable_expires_get(
+ const struct k_work_delayable *dwork);
+# 3611 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_ticks_t k_work_delayable_remaining_get(
+ const struct k_work_delayable *dwork);
+# 3639 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_schedule_for_queue(struct k_work_q *queue,
+          struct k_work_delayable *dwork,
+          k_timeout_t delay);
+# 3656 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_work_schedule(struct k_work_delayable *dwork,
+       k_timeout_t delay);
+# 3694 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_reschedule_for_queue(struct k_work_q *queue,
+     struct k_work_delayable *dwork,
+     k_timeout_t delay);
+# 3710 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_work_reschedule(struct k_work_delayable *dwork,
+         k_timeout_t delay);
+# 3737 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 3737 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 3737 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_work_flush_delayable(struct k_work_delayable *dwork,
+       struct k_work_sync *sync);
+# 3760 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_work_cancel_delayable(struct k_work_delayable *dwork);
+# 3790 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+
+# 3790 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 3790 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+    k_work_cancel_delayable_sync(struct k_work_delayable *dwork,
+      struct k_work_sync *sync);
+
+enum {
+# 3805 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+ K_WORK_RUNNING_BIT = 0,
+ K_WORK_CANCELING_BIT = 1,
+ K_WORK_QUEUED_BIT = 2,
+ K_WORK_DELAYED_BIT = 3,
+
+ K_WORK_MASK = (1UL << (K_WORK_DELAYED_BIT)) | (1UL << (K_WORK_QUEUED_BIT))
+  | (1UL << (K_WORK_RUNNING_BIT)) | (1UL << (K_WORK_CANCELING_BIT)),
+
+
+ K_WORK_DELAYABLE_BIT = 8,
+ K_WORK_DELAYABLE = (1UL << (K_WORK_DELAYABLE_BIT)),
+
+
+ K_WORK_QUEUE_STARTED_BIT = 0,
+ K_WORK_QUEUE_STARTED = (1UL << (K_WORK_QUEUE_STARTED_BIT)),
+ K_WORK_QUEUE_BUSY_BIT = 1,
+ K_WORK_QUEUE_BUSY = (1UL << (K_WORK_QUEUE_BUSY_BIT)),
+ K_WORK_QUEUE_DRAIN_BIT = 2,
+ K_WORK_QUEUE_DRAIN = (1UL << (K_WORK_QUEUE_DRAIN_BIT)),
+ K_WORK_QUEUE_PLUGGED_BIT = 3,
+ K_WORK_QUEUE_PLUGGED = (1UL << (K_WORK_QUEUE_PLUGGED_BIT)),
+
+
+ K_WORK_QUEUE_NO_YIELD_BIT = 8,
+ K_WORK_QUEUE_NO_YIELD = (1UL << (K_WORK_QUEUE_NO_YIELD_BIT)),
+# 3841 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+ K_WORK_RUNNING = (1UL << (K_WORK_RUNNING_BIT)),
+
+
+
+
+
+ K_WORK_CANCELING = (1UL << (K_WORK_CANCELING_BIT)),
+
+
+
+
+
+
+ K_WORK_QUEUED = (1UL << (K_WORK_QUEUED_BIT)),
+
+
+
+
+
+
+ K_WORK_DELAYED = (1UL << (K_WORK_DELAYED_BIT)),
+};
+
+
+struct k_work {
+
+
+
+
+
+ sys_snode_t node;
+
+
+ k_work_handler_t handler;
+
+
+ struct k_work_q *queue;
+
+
+
+
+
+
+
+ uint32_t flags;
+};
+
+
+
+
+
+
+struct k_work_delayable {
+
+ struct k_work work;
+
+
+ struct _timeout timeout;
+
+
+ struct k_work_q *queue;
+};
+# 3942 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct z_work_flusher {
+ struct k_work work;
+ struct k_sem sem;
+};
+
+
+
+
+
+
+
+struct z_work_canceller {
+ sys_snode_t node;
+ struct k_work *work;
+ struct k_sem sem;
+};
+# 3976 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_work_sync {
+ union {
+  struct z_work_flusher flusher;
+  struct z_work_canceller canceller;
+ };
+};
+
+
+
+
+
+
+
+struct k_work_queue_config {
+
+
+
+
+ const char *name;
+# 4008 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+ 
+# 4008 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+_Bool 
+# 4008 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+     no_yield;
+};
+
+
+struct k_work_q {
+
+ struct k_thread thread;
+
+
+
+
+
+
+ sys_slist_t pending;
+
+
+ _wait_q_t notifyq;
+
+
+ _wait_q_t drainq;
+
+
+ uint32_t flags;
+};
+
+
+
+static inline 
+# 4035 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+             _Bool 
+# 4035 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                  k_work_is_pending(const struct k_work *work)
+{
+ return k_work_busy_get(work) != 0;
+}
+
+static inline struct k_work_delayable *
+k_work_delayable_from_work(struct k_work *work)
+{
+ return ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*(work)), __typeof__(((struct k_work_delayable *)0)->work)) || __builtin_types_compatible_p(__typeof__(*(work)), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((struct k_work_delayable *)(((char *)(work)) - 
+# 4043 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       __builtin_offsetof (
+# 4043 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       struct k_work_delayable
+# 4043 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       , 
+# 4043 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       work
+# 4043 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+       )
+# 4043 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+       )); });
+}
+
+static inline 
+# 4046 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+             _Bool 
+# 4046 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                  k_work_delayable_is_pending(
+ const struct k_work_delayable *dwork)
+{
+ return k_work_delayable_busy_get(dwork) != 0;
+}
+
+static inline k_ticks_t k_work_delayable_expires_get(
+ const struct k_work_delayable *dwork)
+{
+ return z_timeout_expires(&dwork->timeout);
+}
+
+static inline k_ticks_t k_work_delayable_remaining_get(
+ const struct k_work_delayable *dwork)
+{
+ return z_timeout_remaining(&dwork->timeout);
+}
+
+static inline k_tid_t k_work_queue_thread_get(struct k_work_q *queue)
+{
+ return &queue->thread;
+}
+
+
+
+struct k_work_user;
+# 4087 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+typedef void (*k_work_user_handler_t)(struct k_work_user *work);
+
+
+
+
+
+struct k_work_user_q {
+ struct k_queue queue;
+ struct k_thread thread;
+};
+
+enum {
+ K_WORK_USER_STATE_PENDING,
+};
+
+struct k_work_user {
+ void *_reserved;
+ k_work_user_handler_t handler;
+ atomic_t flags;
+};
+# 4146 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_work_user_init(struct k_work_user *work,
+        k_work_user_handler_t handler)
+{
+ *work = (struct k_work_user){ ._reserved = 
+# 4149 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+                            ((void *)0)
+# 4149 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                            , .handler = handler, .flags = 0 };
+}
+# 4168 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline 
+# 4168 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+             _Bool 
+# 4168 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                  k_work_user_is_pending(struct k_work_user *work)
+{
+ return atomic_test_bit(&work->flags, K_WORK_USER_STATE_PENDING);
+}
+# 4191 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_work_user_submit_to_queue(struct k_work_user_q *work_q,
+           struct k_work_user *work)
+{
+ int ret = -
+# 4194 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 3 4
+           16
+# 4194 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+                ;
+
+ if (!atomic_test_and_set_bit(&work->flags,
+         K_WORK_USER_STATE_PENDING)) {
+  ret = k_queue_alloc_append(&work_q->queue, work);
+
+
+
+
+  if (ret != 0) {
+   atomic_clear_bit(&work->flags,
+      K_WORK_USER_STATE_PENDING);
+  }
+ }
+
+ return ret;
+}
+# 4231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_work_user_queue_start(struct k_work_user_q *work_q,
+        k_thread_stack_t *stack,
+        size_t stack_size, int prio,
+        const char *name);
+# 4246 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline k_tid_t k_work_user_queue_thread_get(struct k_work_user_q *work_q)
+{
+ return &work_q->thread;
+}
+
+
+
+
+
+
+
+struct k_work_poll {
+ struct k_work work;
+ struct k_work_q *workq;
+ struct z_poller poller;
+ struct k_poll_event *events;
+ int num_events;
+ k_work_handler_t real_handler;
+ struct _timeout timeout;
+ int poll_result;
+};
+# 4300 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_work_poll_init(struct k_work_poll *work,
+        k_work_handler_t handler);
+# 4337 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_work_poll_submit_to_queue(struct k_work_q *work_q,
+           struct k_work_poll *work,
+           struct k_poll_event *events,
+           int num_events,
+           k_timeout_t timeout);
+# 4374 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_work_poll_submit(struct k_work_poll *work,
+         struct k_poll_event *events,
+         int num_events,
+         k_timeout_t timeout);
+# 4393 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_work_poll_cancel(struct k_work_poll *work);
+# 4406 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_msgq {
+
+ _wait_q_t wait_q;
+
+ struct k_spinlock lock;
+
+ size_t msg_size;
+
+ uint32_t max_msgs;
+
+ char *buffer_start;
+
+ char *buffer_end;
+
+ char *read_ptr;
+
+ char *write_ptr;
+
+ uint32_t used_msgs;
+
+ sys_dlist_t poll_events;
+
+
+ uint8_t flags;
+
+
+
+
+
+
+};
+# 4465 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_msgq_attrs {
+
+ size_t msg_size;
+
+ uint32_t max_msgs;
+
+ uint32_t used_msgs;
+};
+# 4514 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_msgq_init(struct k_msgq *msgq, char *buffer, size_t msg_size,
+   uint32_t max_msgs);
+# 4536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_msgq_alloc_init(struct k_msgq *msgq, size_t msg_size,
+    uint32_t max_msgs);
+# 4549 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_msgq_cleanup(struct k_msgq *msgq);
+# 4572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_msgq_put(struct k_msgq *msgq, const void *data, k_timeout_t timeout);
+# 4594 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_msgq_get(struct k_msgq *msgq, void *data, k_timeout_t timeout);
+# 4610 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_msgq_peek(struct k_msgq *msgq, void *data);
+# 4628 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_msgq_peek_at(struct k_msgq *msgq, void *data, uint32_t idx);
+# 4639 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_msgq_purge(struct k_msgq *msgq);
+# 4651 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_msgq_num_free_get(struct k_msgq *msgq);
+# 4661 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_msgq_get_attrs(struct k_msgq *msgq,
+     struct k_msgq_attrs *attrs);
+
+
+static inline uint32_t z_impl_k_msgq_num_free_get(struct k_msgq *msgq)
+{
+ return msgq->max_msgs - msgq->used_msgs;
+}
+# 4679 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_msgq_num_used_get(struct k_msgq *msgq);
+
+static inline uint32_t z_impl_k_msgq_num_used_get(struct k_msgq *msgq)
+{
+ return msgq->used_msgs;
+}
+# 4698 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_mbox_msg {
+
+ uint32_t _mailbox;
+
+ size_t size;
+
+ uint32_t info;
+
+ void *tx_data;
+
+ k_tid_t rx_source_thread;
+
+ k_tid_t tx_target_thread;
+
+ k_tid_t _syncing_thread;
+
+
+ struct k_sem *_async_sem;
+
+};
+
+
+
+
+struct k_mbox {
+
+ _wait_q_t tx_msg_queue;
+
+ _wait_q_t rx_msg_queue;
+ struct k_spinlock lock;
+
+
+
+
+
+
+};
+# 4769 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_mbox_init(struct k_mbox *mbox);
+# 4790 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_mbox_put(struct k_mbox *mbox, struct k_mbox_msg *tx_msg,
+        k_timeout_t timeout);
+# 4806 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_mbox_async_put(struct k_mbox *mbox, struct k_mbox_msg *tx_msg,
+        struct k_sem *sem);
+# 4826 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_mbox_get(struct k_mbox *mbox, struct k_mbox_msg *rx_msg,
+        void *buffer, k_timeout_t timeout);
+# 4842 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_mbox_data_get(struct k_mbox_msg *rx_msg, void *buffer);
+# 4853 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_pipe {
+ unsigned char *buffer;
+ size_t size;
+ size_t bytes_used;
+ size_t read_index;
+ size_t write_index;
+ struct k_spinlock lock;
+
+ struct {
+  _wait_q_t readers;
+  _wait_q_t writers;
+ } wait_q;
+
+ sys_dlist_t poll_events;
+
+ uint8_t flags;
+
+
+
+
+
+
+};
+# 4932 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_pipe_init(struct k_pipe *pipe, unsigned char *buffer, size_t size);
+# 4945 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_pipe_cleanup(struct k_pipe *pipe);
+# 4962 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_pipe_alloc_init(struct k_pipe *pipe, size_t size);
+# 4982 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_pipe_put(struct k_pipe *pipe, void *data,
+    size_t bytes_to_write, size_t *bytes_written,
+    size_t min_xfer, k_timeout_t timeout);
+# 5005 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_pipe_get(struct k_pipe *pipe, void *data,
+    size_t bytes_to_read, size_t *bytes_read,
+    size_t min_xfer, k_timeout_t timeout);
+# 5017 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline size_t k_pipe_read_avail(struct k_pipe *pipe);
+# 5027 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline size_t k_pipe_write_avail(struct k_pipe *pipe);
+# 5039 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_pipe_flush(struct k_pipe *pipe);
+# 5052 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_pipe_buffer_flush(struct k_pipe *pipe);
+
+
+
+
+
+
+
+struct k_mem_slab_info {
+ uint32_t num_blocks;
+ size_t block_size;
+ uint32_t num_used;
+
+
+
+};
+
+struct k_mem_slab {
+ _wait_q_t wait_q;
+ struct k_spinlock lock;
+ char *buffer;
+ char *free_list;
+ struct k_mem_slab_info info;
+
+
+
+
+
+
+};
+# 5178 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_mem_slab_init(struct k_mem_slab *slab, void *buffer,
+      size_t block_size, uint32_t num_blocks);
+# 5203 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_mem_slab_alloc(struct k_mem_slab *slab, void **mem,
+       k_timeout_t timeout);
+# 5215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_mem_slab_free(struct k_mem_slab *slab, void *mem);
+# 5227 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_mem_slab_num_used_get(struct k_mem_slab *slab)
+{
+ return slab->info.num_used;
+}
+# 5242 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_mem_slab_max_used_get(struct k_mem_slab *slab)
+{
+
+
+
+ (void)(slab);
+ return 0;
+
+}
+# 5262 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline uint32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
+{
+ return slab->info.num_blocks - slab->info.num_used;
+}
+# 5279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_mem_slab_runtime_stats_get(struct k_mem_slab *slab, struct sys_memory_stats *stats);
+# 5292 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_mem_slab_runtime_stats_reset_max(struct k_mem_slab *slab);
+# 5303 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_heap {
+ struct sys_heap heap;
+ _wait_q_t wait_q;
+ struct k_spinlock lock;
+};
+# 5322 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_heap_init(struct k_heap *h, void *mem, size_t bytes);
+# 5343 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void *k_heap_aligned_alloc(struct k_heap *h, size_t align, size_t bytes,
+   k_timeout_t timeout);
+# 5367 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void *k_heap_alloc(struct k_heap *h, size_t bytes,
+     k_timeout_t timeout);
+# 5380 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+void k_heap_free(struct k_heap *h, void *mem);
+# 5477 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void *k_aligned_alloc(size_t align, size_t size);
+# 5490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void *k_malloc(size_t size);
+# 5502 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_free(void *ptr);
+# 5515 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void *k_calloc(size_t nmemb, size_t size);
+# 5528 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+enum _poll_types_bits {
+
+ _POLL_TYPE_IGNORE,
+
+
+ _POLL_TYPE_SIGNAL,
+
+
+ _POLL_TYPE_SEM_AVAILABLE,
+
+
+ _POLL_TYPE_DATA_AVAILABLE,
+
+
+ _POLL_TYPE_MSGQ_DATA_AVAILABLE,
+
+
+ _POLL_TYPE_PIPE_DATA_AVAILABLE,
+
+ _POLL_NUM_TYPES
+};
+
+
+
+
+enum _poll_states_bits {
+
+ _POLL_STATE_NOT_READY,
+
+
+ _POLL_STATE_SIGNALED,
+
+
+ _POLL_STATE_SEM_AVAILABLE,
+
+
+ _POLL_STATE_DATA_AVAILABLE,
+
+
+ _POLL_STATE_CANCELLED,
+
+
+ _POLL_STATE_MSGQ_DATA_AVAILABLE,
+
+
+ _POLL_STATE_PIPE_DATA_AVAILABLE,
+
+ _POLL_NUM_STATES
+};
+# 5609 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+enum k_poll_modes {
+
+ K_POLL_MODE_NOTIFY_ONLY = 0,
+
+ K_POLL_NUM_MODES
+};
+# 5627 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_poll_signal {
+
+ sys_dlist_t poll_events;
+
+
+
+
+
+ unsigned int signaled;
+
+
+ int result;
+};
+# 5651 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+struct k_poll_event {
+
+ sys_dnode_t _node;
+
+
+ struct z_poller *poller;
+
+
+ uint32_t tag:8;
+
+
+ uint32_t type:_POLL_NUM_TYPES;
+
+
+ uint32_t state:_POLL_NUM_STATES;
+
+
+ uint32_t mode:1;
+
+
+ uint32_t unused:(32 - (0 + 8 + _POLL_NUM_TYPES + _POLL_NUM_STATES + 1 ));
+
+
+ union {
+  void *obj;
+  struct k_poll_signal *signal;
+  struct k_sem *sem;
+  struct k_fifo *fifo;
+  struct k_queue *queue;
+  struct k_msgq *msgq;
+
+
+
+ };
+};
+# 5727 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_poll_event_init(struct k_poll_event *event, uint32_t type,
+         int mode, void *obj);
+# 5773 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_poll(struct k_poll_event *events, int num_events,
+       k_timeout_t timeout);
+# 5784 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_poll_signal_init(struct k_poll_signal *sig);
+
+
+
+
+
+
+static inline void k_poll_signal_reset(struct k_poll_signal *sig);
+# 5803 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_poll_signal_check(struct k_poll_signal *sig,
+       unsigned int *signaled, int *result);
+# 5830 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_poll_signal_raise(struct k_poll_signal *sig, int result);
+# 5852 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_cpu_idle(void)
+{
+ arch_cpu_idle();
+}
+# 5871 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_cpu_atomic_idle(unsigned int key)
+{
+ arch_cpu_atomic_idle(key);
+}
+# 5950 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void z_init_static_threads(void);
+# 5961 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void z_timer_expiration_handler(struct _timeout *t);
+# 5974 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline void k_str_out(char *c, size_t n);
+# 5997 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_float_disable(struct k_thread *thread);
+# 6037 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+static inline int k_float_enable(struct k_thread *thread, unsigned int options);
+# 6046 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+int k_thread_runtime_stats_get(k_tid_t thread,
+          k_thread_runtime_stats_t *stats);
+
+
+
+
+
+
+
+int k_thread_runtime_stats_all_get(k_thread_runtime_stats_t *stats);
+# 6066 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_thread_runtime_stats_enable(k_tid_t thread);
+# 6077 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern int k_thread_runtime_stats_disable(k_tid_t thread);
+# 6086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_sys_runtime_stats_enable(void);
+# 6095 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h"
+extern void k_sys_runtime_stats_disable(void);
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing.h" 1
+# 9 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracking.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing.h" 2
+# 2001 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/tracing/tracing.h"
+void sys_trace_isr_enter(void);
+
+
+
+
+void sys_trace_isr_exit(void);
+
+
+
+
+void sys_trace_isr_exit_to_scheduler(void);
+
+
+
+
+void sys_trace_idle(void);
+# 6102 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 1
+# 23 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+extern k_thread_stack_t * z_impl_k_thread_stack_alloc(size_t size, int flags);
+
+
+static inline k_thread_stack_t * k_thread_stack_alloc(size_t size, int flags)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 35 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 35 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_stack_alloc(size, flags);
+}
+
+
+extern int z_impl_k_thread_stack_free(k_thread_stack_t * stack);
+
+
+static inline int k_thread_stack_free(k_thread_stack_t * stack)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 51 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 51 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_stack_free(stack);
+}
+
+
+extern k_tid_t z_impl_k_thread_create(struct k_thread * new_thread, k_thread_stack_t * stack, size_t stack_size, k_thread_entry_t entry, void * p1, void * p2, void * p3, int prio, uint32_t options, k_timeout_t delay);
+
+
+static inline k_tid_t k_thread_create(struct k_thread * new_thread, k_thread_stack_t * stack, size_t stack_size, k_thread_entry_t entry, void * p1, void * p2, void * p3, int prio, uint32_t options, k_timeout_t delay)
+{
+# 84 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 84 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 84 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_create(new_thread, stack, stack_size, entry, p1, p2, p3, prio, options, delay);
+}
+
+
+extern int z_impl_k_thread_stack_space_get(const struct k_thread * thread, size_t * unused_ptr);
+
+
+static inline int k_thread_stack_space_get(const struct k_thread * thread, size_t * unused_ptr)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 101 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 101 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_stack_space_get(thread, unused_ptr);
+}
+
+
+extern int z_impl_k_thread_join(struct k_thread * thread, k_timeout_t timeout);
+
+
+static inline int k_thread_join(struct k_thread * thread, k_timeout_t timeout)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 118 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 118 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_join(thread, timeout);
+}
+
+
+extern int32_t z_impl_k_sleep(k_timeout_t timeout);
+
+
+static inline int32_t k_sleep(k_timeout_t timeout)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 134 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 134 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_sleep(timeout);
+}
+
+
+extern int32_t z_impl_k_usleep(int32_t us);
+
+
+static inline int32_t k_usleep(int32_t us)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 150 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 150 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_usleep(us);
+}
+
+
+extern void z_impl_k_busy_wait(uint32_t usec_to_wait);
+
+
+static inline void k_busy_wait(uint32_t usec_to_wait)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 167 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 167 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_busy_wait(usec_to_wait);
+}
+
+
+extern void z_impl_k_yield(void);
+
+
+static inline void k_yield(void)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 183 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 183 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_yield();
+}
+
+
+extern void z_impl_k_wakeup(k_tid_t thread);
+
+
+static inline void k_wakeup(k_tid_t thread)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 200 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 200 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_wakeup(thread);
+}
+
+
+extern k_tid_t z_impl_k_sched_current_thread_query(void);
+
+
+static inline k_tid_t k_sched_current_thread_query(void)
+{
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 215 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 215 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_sched_current_thread_query();
+}
+
+
+extern void z_impl_k_thread_abort(k_tid_t thread);
+
+
+static inline void k_thread_abort(k_tid_t thread)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_abort(thread);
+}
+
+
+extern void z_impl_k_thread_start(k_tid_t thread);
+
+
+static inline void k_thread_start(k_tid_t thread)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 249 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 249 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_start(thread);
+}
+
+
+extern k_ticks_t z_impl_k_thread_timeout_expires_ticks(const struct k_thread * t);
+
+
+static inline k_ticks_t k_thread_timeout_expires_ticks(const struct k_thread * t)
+{
+# 267 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 267 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 267 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_timeout_expires_ticks(t);
+}
+
+
+extern k_ticks_t z_impl_k_thread_timeout_remaining_ticks(const struct k_thread * t);
+
+
+static inline k_ticks_t k_thread_timeout_remaining_ticks(const struct k_thread * t)
+{
+# 285 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 285 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 285 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_timeout_remaining_ticks(t);
+}
+
+
+extern int z_impl_k_thread_priority_get(k_tid_t thread);
+
+
+static inline int k_thread_priority_get(k_tid_t thread)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 301 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 301 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_priority_get(thread);
+}
+
+
+extern void z_impl_k_thread_priority_set(k_tid_t thread, int prio);
+
+
+static inline void k_thread_priority_set(k_tid_t thread, int prio)
+{
+# 319 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 319 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 319 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_priority_set(thread, prio);
+}
+
+
+extern void z_impl_k_thread_deadline_set(k_tid_t thread, int deadline);
+
+
+static inline void k_thread_deadline_set(k_tid_t thread, int deadline)
+{
+# 337 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 337 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 337 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_deadline_set(thread, deadline);
+}
+
+
+extern void z_impl_k_thread_suspend(k_tid_t thread);
+
+
+static inline void k_thread_suspend(k_tid_t thread)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 354 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 354 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_suspend(thread);
+}
+
+
+extern void z_impl_k_thread_resume(k_tid_t thread);
+
+
+static inline void k_thread_resume(k_tid_t thread)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 371 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 371 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_resume(thread);
+}
+
+
+extern int z_impl_k_is_preempt_thread(void);
+
+
+static inline int k_is_preempt_thread(void)
+{
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 386 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 386 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_is_preempt_thread();
+}
+
+
+extern void z_impl_k_thread_custom_data_set(void * value);
+
+
+static inline void k_thread_custom_data_set(void * value)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 403 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 403 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_thread_custom_data_set(value);
+}
+
+
+extern void * z_impl_k_thread_custom_data_get(void);
+
+
+static inline void * k_thread_custom_data_get(void)
+{
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 418 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 418 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_custom_data_get();
+}
+
+
+extern int z_impl_k_thread_name_set(k_tid_t thread, const char * str);
+
+
+static inline int k_thread_name_set(k_tid_t thread, const char * str)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 435 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 435 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_name_set(thread, str);
+}
+
+
+extern int z_impl_k_thread_name_copy(k_tid_t thread, char * buf, size_t size);
+
+
+static inline int k_thread_name_copy(k_tid_t thread, char * buf, size_t size)
+{
+# 453 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 453 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 453 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_thread_name_copy(thread, buf, size);
+}
+
+
+extern void z_impl_k_timer_start(struct k_timer * timer, k_timeout_t duration, k_timeout_t period);
+
+
+static inline void k_timer_start(struct k_timer * timer, k_timeout_t duration, k_timeout_t period)
+{
+# 472 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 472 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 472 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_timer_start(timer, duration, period);
+}
+
+
+extern void z_impl_k_timer_stop(struct k_timer * timer);
+
+
+static inline void k_timer_stop(struct k_timer * timer)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 489 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 489 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_timer_stop(timer);
+}
+
+
+extern uint32_t z_impl_k_timer_status_get(struct k_timer * timer);
+
+
+static inline uint32_t k_timer_status_get(struct k_timer * timer)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 505 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 505 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_timer_status_get(timer);
+}
+
+
+extern uint32_t z_impl_k_timer_status_sync(struct k_timer * timer);
+
+
+static inline uint32_t k_timer_status_sync(struct k_timer * timer)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 521 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 521 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_timer_status_sync(timer);
+}
+
+
+extern k_ticks_t z_impl_k_timer_expires_ticks(const struct k_timer * timer);
+
+
+static inline k_ticks_t k_timer_expires_ticks(const struct k_timer * timer)
+{
+# 539 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 539 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 539 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_timer_expires_ticks(timer);
+}
+
+
+extern k_ticks_t z_impl_k_timer_remaining_ticks(const struct k_timer * timer);
+
+
+static inline k_ticks_t k_timer_remaining_ticks(const struct k_timer * timer)
+{
+# 557 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 557 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 557 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_timer_remaining_ticks(timer);
+}
+
+
+extern void z_impl_k_timer_user_data_set(struct k_timer * timer, void * user_data);
+
+
+static inline void k_timer_user_data_set(struct k_timer * timer, void * user_data)
+{
+# 575 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 575 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 575 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_timer_user_data_set(timer, user_data);
+}
+
+
+extern void * z_impl_k_timer_user_data_get(const struct k_timer * timer);
+
+
+static inline void * k_timer_user_data_get(const struct k_timer * timer)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 591 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 591 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_timer_user_data_get(timer);
+}
+
+
+extern int64_t z_impl_k_uptime_ticks(void);
+
+
+static inline int64_t k_uptime_ticks(void)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 608 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 608 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_uptime_ticks();
+}
+
+
+extern void z_impl_k_queue_init(struct k_queue * queue);
+
+
+static inline void k_queue_init(struct k_queue * queue)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 625 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 625 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_queue_init(queue);
+}
+
+
+extern void z_impl_k_queue_cancel_wait(struct k_queue * queue);
+
+
+static inline void k_queue_cancel_wait(struct k_queue * queue)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 642 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 642 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_queue_cancel_wait(queue);
+}
+
+
+extern int32_t z_impl_k_queue_alloc_append(struct k_queue * queue, void * data);
+
+
+static inline int32_t k_queue_alloc_append(struct k_queue * queue, void * data)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 659 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 659 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_queue_alloc_append(queue, data);
+}
+
+
+extern int32_t z_impl_k_queue_alloc_prepend(struct k_queue * queue, void * data);
+
+
+static inline int32_t k_queue_alloc_prepend(struct k_queue * queue, void * data)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 676 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 676 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_queue_alloc_prepend(queue, data);
+}
+
+
+extern void * z_impl_k_queue_get(struct k_queue * queue, k_timeout_t timeout);
+
+
+static inline void * k_queue_get(struct k_queue * queue, k_timeout_t timeout)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 693 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 693 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_queue_get(queue, timeout);
+}
+
+
+extern int z_impl_k_queue_is_empty(struct k_queue * queue);
+
+
+static inline int k_queue_is_empty(struct k_queue * queue)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 709 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 709 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_queue_is_empty(queue);
+}
+
+
+extern void * z_impl_k_queue_peek_head(struct k_queue * queue);
+
+
+static inline void * k_queue_peek_head(struct k_queue * queue)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 725 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 725 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_queue_peek_head(queue);
+}
+
+
+extern void * z_impl_k_queue_peek_tail(struct k_queue * queue);
+
+
+static inline void * k_queue_peek_tail(struct k_queue * queue)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 741 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 741 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_queue_peek_tail(queue);
+}
+
+
+extern int z_impl_k_futex_wait(struct k_futex * futex, int expected, k_timeout_t timeout);
+
+
+static inline int k_futex_wait(struct k_futex * futex, int expected, k_timeout_t timeout)
+{
+# 759 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 759 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 759 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_futex_wait(futex, expected, timeout);
+}
+
+
+extern int z_impl_k_futex_wake(struct k_futex * futex, 
+# 764 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+                                                      _Bool 
+# 764 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+                                                           wake_all);
+
+
+static inline int k_futex_wake(struct k_futex * futex, 
+# 767 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+                                                      _Bool 
+# 767 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+                                                           wake_all)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 776 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 776 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_futex_wake(futex, wake_all);
+}
+
+
+extern void z_impl_k_event_init(struct k_event * event);
+
+
+static inline void k_event_init(struct k_event * event)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 793 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 793 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_event_init(event);
+}
+
+
+extern uint32_t z_impl_k_event_post(struct k_event * event, uint32_t events);
+
+
+static inline uint32_t k_event_post(struct k_event * event, uint32_t events)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 810 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 810 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_event_post(event, events);
+}
+
+
+extern uint32_t z_impl_k_event_set(struct k_event * event, uint32_t events);
+
+
+static inline uint32_t k_event_set(struct k_event * event, uint32_t events)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 827 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 827 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_event_set(event, events);
+}
+
+
+extern uint32_t z_impl_k_event_set_masked(struct k_event * event, uint32_t events, uint32_t events_mask);
+
+
+static inline uint32_t k_event_set_masked(struct k_event * event, uint32_t events, uint32_t events_mask)
+{
+# 845 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 845 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 845 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_event_set_masked(event, events, events_mask);
+}
+
+
+extern uint32_t z_impl_k_event_clear(struct k_event * event, uint32_t events);
+
+
+static inline uint32_t k_event_clear(struct k_event * event, uint32_t events)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 862 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 862 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_event_clear(event, events);
+}
+
+
+extern uint32_t z_impl_k_event_wait(struct k_event * event, uint32_t events, 
+# 867 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+                                                                            _Bool 
+# 867 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+                                                                                 reset, k_timeout_t timeout);
+
+
+static inline uint32_t k_event_wait(struct k_event * event, uint32_t events, 
+# 870 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+                                                                            _Bool 
+# 870 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+                                                                                 reset, k_timeout_t timeout)
+{
+# 881 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 881 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 881 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_event_wait(event, events, reset, timeout);
+}
+
+
+extern uint32_t z_impl_k_event_wait_all(struct k_event * event, uint32_t events, 
+# 886 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+                                                                                _Bool 
+# 886 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+                                                                                     reset, k_timeout_t timeout);
+
+
+static inline uint32_t k_event_wait_all(struct k_event * event, uint32_t events, 
+# 889 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+                                                                                _Bool 
+# 889 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+                                                                                     reset, k_timeout_t timeout)
+{
+# 900 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 900 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 900 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_event_wait_all(event, events, reset, timeout);
+}
+
+
+extern int32_t z_impl_k_stack_alloc_init(struct k_stack * stack, uint32_t num_entries);
+
+
+static inline int32_t k_stack_alloc_init(struct k_stack * stack, uint32_t num_entries)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 917 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 917 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_stack_alloc_init(stack, num_entries);
+}
+
+
+extern int z_impl_k_stack_push(struct k_stack * stack, stack_data_t data);
+
+
+static inline int k_stack_push(struct k_stack * stack, stack_data_t data)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 934 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 934 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_stack_push(stack, data);
+}
+
+
+extern int z_impl_k_stack_pop(struct k_stack * stack, stack_data_t * data, k_timeout_t timeout);
+
+
+static inline int k_stack_pop(struct k_stack * stack, stack_data_t * data, k_timeout_t timeout)
+{
+# 952 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 952 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 952 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_stack_pop(stack, data, timeout);
+}
+
+
+extern int z_impl_k_mutex_init(struct k_mutex * mutex);
+
+
+static inline int k_mutex_init(struct k_mutex * mutex)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 968 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 968 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_mutex_init(mutex);
+}
+
+
+extern int z_impl_k_mutex_lock(struct k_mutex * mutex, k_timeout_t timeout);
+
+
+static inline int k_mutex_lock(struct k_mutex * mutex, k_timeout_t timeout)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 985 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 985 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_mutex_lock(mutex, timeout);
+}
+
+
+extern int z_impl_k_mutex_unlock(struct k_mutex * mutex);
+
+
+static inline int k_mutex_unlock(struct k_mutex * mutex)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1001 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1001 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_mutex_unlock(mutex);
+}
+
+
+extern int z_impl_k_condvar_init(struct k_condvar * condvar);
+
+
+static inline int k_condvar_init(struct k_condvar * condvar)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1017 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1017 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_condvar_init(condvar);
+}
+
+
+extern int z_impl_k_condvar_signal(struct k_condvar * condvar);
+
+
+static inline int k_condvar_signal(struct k_condvar * condvar)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1033 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1033 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_condvar_signal(condvar);
+}
+
+
+extern int z_impl_k_condvar_broadcast(struct k_condvar * condvar);
+
+
+static inline int k_condvar_broadcast(struct k_condvar * condvar)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1049 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1049 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_condvar_broadcast(condvar);
+}
+
+
+extern int z_impl_k_condvar_wait(struct k_condvar * condvar, struct k_mutex * mutex, k_timeout_t timeout);
+
+
+static inline int k_condvar_wait(struct k_condvar * condvar, struct k_mutex * mutex, k_timeout_t timeout)
+{
+# 1067 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1067 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1067 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_condvar_wait(condvar, mutex, timeout);
+}
+
+
+extern int z_impl_k_sem_init(struct k_sem * sem, unsigned int initial_count, unsigned int limit);
+
+
+static inline int k_sem_init(struct k_sem * sem, unsigned int initial_count, unsigned int limit)
+{
+# 1085 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1085 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1085 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_sem_init(sem, initial_count, limit);
+}
+
+
+extern int z_impl_k_sem_take(struct k_sem * sem, k_timeout_t timeout);
+
+
+static inline int k_sem_take(struct k_sem * sem, k_timeout_t timeout)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1102 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1102 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_sem_take(sem, timeout);
+}
+
+
+extern void z_impl_k_sem_give(struct k_sem * sem);
+
+
+static inline void k_sem_give(struct k_sem * sem)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1119 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1119 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_sem_give(sem);
+}
+
+
+extern void z_impl_k_sem_reset(struct k_sem * sem);
+
+
+static inline void k_sem_reset(struct k_sem * sem)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1136 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1136 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_sem_reset(sem);
+}
+
+
+extern unsigned int z_impl_k_sem_count_get(struct k_sem * sem);
+
+
+static inline unsigned int k_sem_count_get(struct k_sem * sem)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1152 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1152 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_sem_count_get(sem);
+}
+
+
+extern int z_impl_k_msgq_alloc_init(struct k_msgq * msgq, size_t msg_size, uint32_t max_msgs);
+
+
+static inline int k_msgq_alloc_init(struct k_msgq * msgq, size_t msg_size, uint32_t max_msgs)
+{
+# 1170 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1170 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1170 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_alloc_init(msgq, msg_size, max_msgs);
+}
+
+
+extern int z_impl_k_msgq_put(struct k_msgq * msgq, const void * data, k_timeout_t timeout);
+
+
+static inline int k_msgq_put(struct k_msgq * msgq, const void * data, k_timeout_t timeout)
+{
+# 1188 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1188 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1188 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_put(msgq, data, timeout);
+}
+
+
+extern int z_impl_k_msgq_get(struct k_msgq * msgq, void * data, k_timeout_t timeout);
+
+
+static inline int k_msgq_get(struct k_msgq * msgq, void * data, k_timeout_t timeout)
+{
+# 1206 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1206 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1206 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_get(msgq, data, timeout);
+}
+
+
+extern int z_impl_k_msgq_peek(struct k_msgq * msgq, void * data);
+
+
+static inline int k_msgq_peek(struct k_msgq * msgq, void * data)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1223 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1223 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_peek(msgq, data);
+}
+
+
+extern int z_impl_k_msgq_peek_at(struct k_msgq * msgq, void * data, uint32_t idx);
+
+
+static inline int k_msgq_peek_at(struct k_msgq * msgq, void * data, uint32_t idx)
+{
+# 1241 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1241 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1241 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_peek_at(msgq, data, idx);
+}
+
+
+extern void z_impl_k_msgq_purge(struct k_msgq * msgq);
+
+
+static inline void k_msgq_purge(struct k_msgq * msgq)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1258 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1258 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_msgq_purge(msgq);
+}
+
+
+extern uint32_t z_impl_k_msgq_num_free_get(struct k_msgq * msgq);
+
+
+static inline uint32_t k_msgq_num_free_get(struct k_msgq * msgq)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1274 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1274 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_num_free_get(msgq);
+}
+
+
+extern void z_impl_k_msgq_get_attrs(struct k_msgq * msgq, struct k_msgq_attrs * attrs);
+
+
+static inline void k_msgq_get_attrs(struct k_msgq * msgq, struct k_msgq_attrs * attrs)
+{
+# 1292 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1292 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1292 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_msgq_get_attrs(msgq, attrs);
+}
+
+
+extern uint32_t z_impl_k_msgq_num_used_get(struct k_msgq * msgq);
+
+
+static inline uint32_t k_msgq_num_used_get(struct k_msgq * msgq)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1308 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1308 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_msgq_num_used_get(msgq);
+}
+
+
+extern int z_impl_k_pipe_alloc_init(struct k_pipe * pipe, size_t size);
+
+
+static inline int k_pipe_alloc_init(struct k_pipe * pipe, size_t size)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1325 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1325 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_pipe_alloc_init(pipe, size);
+}
+
+
+extern int z_impl_k_pipe_put(struct k_pipe * pipe, void * data, size_t bytes_to_write, size_t * bytes_written, size_t min_xfer, k_timeout_t timeout);
+
+
+static inline int k_pipe_put(struct k_pipe * pipe, void * data, size_t bytes_to_write, size_t * bytes_written, size_t min_xfer, k_timeout_t timeout)
+{
+# 1350 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1350 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1350 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_pipe_put(pipe, data, bytes_to_write, bytes_written, min_xfer, timeout);
+}
+
+
+extern int z_impl_k_pipe_get(struct k_pipe * pipe, void * data, size_t bytes_to_read, size_t * bytes_read, size_t min_xfer, k_timeout_t timeout);
+
+
+static inline int k_pipe_get(struct k_pipe * pipe, void * data, size_t bytes_to_read, size_t * bytes_read, size_t min_xfer, k_timeout_t timeout)
+{
+# 1375 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1375 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1375 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_pipe_get(pipe, data, bytes_to_read, bytes_read, min_xfer, timeout);
+}
+
+
+extern size_t z_impl_k_pipe_read_avail(struct k_pipe * pipe);
+
+
+static inline size_t k_pipe_read_avail(struct k_pipe * pipe)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1391 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1391 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_pipe_read_avail(pipe);
+}
+
+
+extern size_t z_impl_k_pipe_write_avail(struct k_pipe * pipe);
+
+
+static inline size_t k_pipe_write_avail(struct k_pipe * pipe)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1407 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1407 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_pipe_write_avail(pipe);
+}
+
+
+extern void z_impl_k_pipe_flush(struct k_pipe * pipe);
+
+
+static inline void k_pipe_flush(struct k_pipe * pipe)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1424 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1424 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_pipe_flush(pipe);
+}
+
+
+extern void z_impl_k_pipe_buffer_flush(struct k_pipe * pipe);
+
+
+static inline void k_pipe_buffer_flush(struct k_pipe * pipe)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1441 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1441 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_pipe_buffer_flush(pipe);
+}
+
+
+extern int z_impl_k_poll(struct k_poll_event * events, int num_events, k_timeout_t timeout);
+
+
+static inline int k_poll(struct k_poll_event * events, int num_events, k_timeout_t timeout)
+{
+# 1459 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1459 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1459 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_poll(events, num_events, timeout);
+}
+
+
+extern void z_impl_k_poll_signal_init(struct k_poll_signal * sig);
+
+
+static inline void k_poll_signal_init(struct k_poll_signal * sig)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1476 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1476 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_poll_signal_init(sig);
+}
+
+
+extern void z_impl_k_poll_signal_reset(struct k_poll_signal * sig);
+
+
+static inline void k_poll_signal_reset(struct k_poll_signal * sig)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1493 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1493 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_poll_signal_reset(sig);
+}
+
+
+extern void z_impl_k_poll_signal_check(struct k_poll_signal * sig, unsigned int * signaled, int * result);
+
+
+static inline void k_poll_signal_check(struct k_poll_signal * sig, unsigned int * signaled, int * result)
+{
+# 1512 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1512 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1512 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_poll_signal_check(sig, signaled, result);
+}
+
+
+extern int z_impl_k_poll_signal_raise(struct k_poll_signal * sig, int result);
+
+
+static inline int k_poll_signal_raise(struct k_poll_signal * sig, int result)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1529 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1529 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_poll_signal_raise(sig, result);
+}
+
+
+extern void z_impl_k_str_out(char * c, size_t n);
+
+
+static inline void k_str_out(char * c, size_t n)
+{
+# 1547 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1547 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1547 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ z_impl_k_str_out(c, n);
+}
+
+
+extern int z_impl_k_float_disable(struct k_thread * thread);
+
+
+static inline int k_float_disable(struct k_thread * thread)
+{
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1563 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1563 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_float_disable(thread);
+}
+
+
+extern int z_impl_k_float_enable(struct k_thread * thread, unsigned int options);
+
+
+static inline int k_float_enable(struct k_thread * thread, unsigned int options)
+{
+
+
+
+
+
+
+
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 1580 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h" 3 4
+0
+# 1580 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/kernel.h"
+);
+ return z_impl_k_float_enable(thread, options);
+}
+# 6103 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/kernel.h" 2
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 2
+# 83 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf_simple {
+
+ uint8_t *data;
+
+
+
+
+
+
+ uint16_t len;
+
+
+ uint16_t size;
+
+
+
+
+ uint8_t *__buf;
+};
+# 136 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_simple_init(struct net_buf_simple *buf,
+           size_t reserve_head)
+{
+ if (!buf->__buf) {
+  buf->__buf = (uint8_t *)buf + sizeof(*buf);
+ }
+
+ buf->data = buf->__buf + reserve_head;
+ buf->len = 0U;
+}
+# 156 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_init_with_data(struct net_buf_simple *buf,
+       void *data, size_t size);
+# 166 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_simple_reset(struct net_buf_simple *buf)
+{
+ buf->len = 0U;
+ buf->data = buf->__buf;
+}
+# 182 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_clone(const struct net_buf_simple *original,
+     struct net_buf_simple *clone);
+# 196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_add(struct net_buf_simple *buf, size_t len);
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_add_mem(struct net_buf_simple *buf, const void *mem,
+        size_t len);
+# 224 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint8_t *net_buf_simple_add_u8(struct net_buf_simple *buf, uint8_t val);
+# 236 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_le16(struct net_buf_simple *buf, uint16_t val);
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_be16(struct net_buf_simple *buf, uint16_t val);
+# 260 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_le24(struct net_buf_simple *buf, uint32_t val);
+# 272 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_be24(struct net_buf_simple *buf, uint32_t val);
+# 284 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_le32(struct net_buf_simple *buf, uint32_t val);
+# 296 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_be32(struct net_buf_simple *buf, uint32_t val);
+# 308 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_le48(struct net_buf_simple *buf, uint64_t val);
+# 320 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_be48(struct net_buf_simple *buf, uint64_t val);
+# 332 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_le64(struct net_buf_simple *buf, uint64_t val);
+# 344 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_add_be64(struct net_buf_simple *buf, uint64_t val);
+# 356 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_remove_mem(struct net_buf_simple *buf, size_t len);
+# 368 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint8_t net_buf_simple_remove_u8(struct net_buf_simple *buf);
+# 380 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint16_t net_buf_simple_remove_le16(struct net_buf_simple *buf);
+# 392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint16_t net_buf_simple_remove_be16(struct net_buf_simple *buf);
+# 404 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_remove_le24(struct net_buf_simple *buf);
+# 416 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_remove_be24(struct net_buf_simple *buf);
+# 428 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_remove_le32(struct net_buf_simple *buf);
+# 440 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_remove_be32(struct net_buf_simple *buf);
+# 452 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_remove_le48(struct net_buf_simple *buf);
+# 464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_remove_be48(struct net_buf_simple *buf);
+# 476 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_remove_le64(struct net_buf_simple *buf);
+# 488 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_remove_be64(struct net_buf_simple *buf);
+# 501 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_push(struct net_buf_simple *buf, size_t len);
+# 515 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_push_mem(struct net_buf_simple *buf, const void *mem,
+         size_t len);
+# 527 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_le16(struct net_buf_simple *buf, uint16_t val);
+# 538 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_be16(struct net_buf_simple *buf, uint16_t val);
+# 548 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_u8(struct net_buf_simple *buf, uint8_t val);
+# 559 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_le24(struct net_buf_simple *buf, uint32_t val);
+# 570 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_be24(struct net_buf_simple *buf, uint32_t val);
+# 581 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_le32(struct net_buf_simple *buf, uint32_t val);
+# 592 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_be32(struct net_buf_simple *buf, uint32_t val);
+# 603 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_le48(struct net_buf_simple *buf, uint64_t val);
+# 614 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_be48(struct net_buf_simple *buf, uint64_t val);
+# 625 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_le64(struct net_buf_simple *buf, uint64_t val);
+# 636 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_push_be64(struct net_buf_simple *buf, uint64_t val);
+# 649 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_pull(struct net_buf_simple *buf, size_t len);
+# 662 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void *net_buf_simple_pull_mem(struct net_buf_simple *buf, size_t len);
+# 674 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint8_t net_buf_simple_pull_u8(struct net_buf_simple *buf);
+# 686 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint16_t net_buf_simple_pull_le16(struct net_buf_simple *buf);
+# 698 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint16_t net_buf_simple_pull_be16(struct net_buf_simple *buf);
+# 710 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_pull_le24(struct net_buf_simple *buf);
+# 722 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_pull_be24(struct net_buf_simple *buf);
+# 734 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_pull_le32(struct net_buf_simple *buf);
+# 746 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint32_t net_buf_simple_pull_be32(struct net_buf_simple *buf);
+# 758 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_pull_le48(struct net_buf_simple *buf);
+# 770 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_pull_be48(struct net_buf_simple *buf);
+# 782 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_pull_le64(struct net_buf_simple *buf);
+# 794 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint64_t net_buf_simple_pull_be64(struct net_buf_simple *buf);
+# 805 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint8_t *net_buf_simple_tail(struct net_buf_simple *buf)
+{
+ return buf->data + buf->len;
+}
+# 819 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+size_t net_buf_simple_headroom(struct net_buf_simple *buf);
+# 830 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+size_t net_buf_simple_tailroom(struct net_buf_simple *buf);
+# 841 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+uint16_t net_buf_simple_max_len(struct net_buf_simple *buf);
+# 850 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf_simple_state {
+
+ uint16_t offset;
+
+ uint16_t len;
+};
+# 865 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_simple_save(struct net_buf_simple *buf,
+           struct net_buf_simple_state *state)
+{
+ state->offset = net_buf_simple_headroom(buf);
+ state->len = buf->len;
+}
+# 881 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_simple_restore(struct net_buf_simple *buf,
+       struct net_buf_simple_state *state)
+{
+ buf->data = buf->__buf + state->offset;
+ buf->len = state->len;
+}
+# 906 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf {
+
+ sys_snode_t node;
+
+
+ struct net_buf *frags;
+
+
+ uint8_t ref;
+
+
+ uint8_t flags;
+
+
+ uint8_t pool_id;
+
+
+ uint8_t user_data_size;
+
+
+
+
+ union {
+
+  struct {
+
+   uint8_t *data;
+
+
+   uint16_t len;
+
+
+   uint16_t size;
+
+
+
+
+
+   uint8_t *__buf;
+  };
+
+  struct net_buf_simple b;
+ };
+
+
+ uint8_t user_data[] 
+# 951 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 3 4
+                    __attribute__((__aligned__(
+# 951 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+                    sizeof(void *)
+# 951 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 3 4
+                    )))
+# 951 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+                                   ;
+};
+
+struct net_buf_data_cb {
+ uint8_t * __attribute__((warn_unused_result)) (*alloc)(struct net_buf *buf, size_t *size,
+      k_timeout_t timeout);
+ uint8_t * __attribute__((warn_unused_result)) (*ref)(struct net_buf *buf, uint8_t *data);
+ void (*unref)(struct net_buf *buf, uint8_t *data);
+};
+
+struct net_buf_data_alloc {
+ const struct net_buf_data_cb *cb;
+ void *alloc_data;
+};
+
+
+
+
+
+
+struct net_buf_pool {
+
+ struct k_lifo free;
+
+
+ struct k_spinlock lock;
+
+
+ const uint16_t buf_count;
+
+
+ uint16_t uninit_count;
+
+
+ uint8_t user_data_size;
+# 999 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+ void (*const destroy)(struct net_buf *buf);
+
+
+ const struct net_buf_data_alloc *alloc;
+
+
+ struct net_buf * const __bufs;
+};
+# 1050 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+extern const struct net_buf_data_alloc net_buf_heap_alloc;
+# 1087 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf_pool_fixed {
+ size_t data_size;
+ uint8_t *data_pool;
+};
+
+
+extern const struct net_buf_data_cb net_buf_fixed_cb;
+# 1141 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+extern const struct net_buf_data_cb net_buf_var_cb;
+# 1211 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf_pool *net_buf_pool_get(int id);
+# 1225 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+int net_buf_id(struct net_buf *buf);
+# 1249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_alloc_fixed(struct net_buf_pool *pool,
+        k_timeout_t timeout);
+
+
+
+
+
+static inline struct net_buf * __attribute__((warn_unused_result)) net_buf_alloc(struct net_buf_pool *pool,
+         k_timeout_t timeout)
+{
+ return net_buf_alloc_fixed(pool, timeout);
+}
+# 1286 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_alloc_len(struct net_buf_pool *pool,
+      size_t size,
+      k_timeout_t timeout);
+# 1319 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_alloc_with_data(struct net_buf_pool *pool,
+            void *data, size_t size,
+            k_timeout_t timeout);
+# 1344 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_get(struct k_fifo *fifo,
+       k_timeout_t timeout);
+# 1357 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_destroy(struct net_buf *buf)
+{
+ struct net_buf_pool *pool = net_buf_pool_get(buf->pool_id);
+
+ ({ do { } while (
+# 1361 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 3 4
+0
+# 1361 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+); k_queue_prepend(&(&pool->free)->_queue, buf); do { } while (
+# 1361 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 3 4
+0
+# 1361 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+); });
+}
+# 1371 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_reset(struct net_buf *buf);
+# 1381 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_simple_reserve(struct net_buf_simple *buf, size_t reserve);
+# 1392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_slist_put(sys_slist_t *list, struct net_buf *buf);
+# 1404 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_slist_get(sys_slist_t *list);
+# 1415 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_put(struct k_fifo *fifo, struct net_buf *buf);
+# 1429 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_unref(struct net_buf *buf);
+# 1439 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_ref(struct net_buf *buf);
+# 1454 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf * __attribute__((warn_unused_result)) net_buf_clone(struct net_buf *buf,
+         k_timeout_t timeout);
+# 1464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void * __attribute__((warn_unused_result)) net_buf_user_data(const struct net_buf *buf)
+{
+ return (void *)buf->user_data;
+}
+# 1477 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_reserve(struct net_buf *buf, size_t reserve)
+{
+ net_buf_simple_reserve(&buf->b, reserve);
+}
+# 1493 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_add(struct net_buf *buf, size_t len)
+{
+ return net_buf_simple_add(&buf->b, len);
+}
+# 1510 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_add_mem(struct net_buf *buf, const void *mem,
+        size_t len)
+{
+ return net_buf_simple_add_mem(&buf->b, mem, len);
+}
+# 1527 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint8_t *net_buf_add_u8(struct net_buf *buf, uint8_t val)
+{
+ return net_buf_simple_add_u8(&buf->b, val);
+}
+# 1542 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_le16(struct net_buf *buf, uint16_t val)
+{
+ net_buf_simple_add_le16(&buf->b, val);
+}
+# 1557 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_be16(struct net_buf *buf, uint16_t val)
+{
+ net_buf_simple_add_be16(&buf->b, val);
+}
+# 1572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_le24(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_add_le24(&buf->b, val);
+}
+# 1587 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_be24(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_add_be24(&buf->b, val);
+}
+# 1602 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_le32(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_add_le32(&buf->b, val);
+}
+# 1617 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_be32(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_add_be32(&buf->b, val);
+}
+# 1632 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_le48(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_add_le48(&buf->b, val);
+}
+# 1647 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_be48(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_add_be48(&buf->b, val);
+}
+# 1662 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_le64(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_add_le64(&buf->b, val);
+}
+# 1677 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_add_be64(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_add_be64(&buf->b, val);
+}
+# 1692 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_remove_mem(struct net_buf *buf, size_t len)
+{
+ return net_buf_simple_remove_mem(&buf->b, len);
+}
+# 1707 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint8_t net_buf_remove_u8(struct net_buf *buf)
+{
+ return net_buf_simple_remove_u8(&buf->b);
+}
+# 1722 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint16_t net_buf_remove_le16(struct net_buf *buf)
+{
+ return net_buf_simple_remove_le16(&buf->b);
+}
+# 1737 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint16_t net_buf_remove_be16(struct net_buf *buf)
+{
+ return net_buf_simple_remove_be16(&buf->b);
+}
+# 1752 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_remove_be24(struct net_buf *buf)
+{
+ return net_buf_simple_remove_be24(&buf->b);
+}
+# 1767 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_remove_le24(struct net_buf *buf)
+{
+ return net_buf_simple_remove_le24(&buf->b);
+}
+# 1782 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_remove_le32(struct net_buf *buf)
+{
+ return net_buf_simple_remove_le32(&buf->b);
+}
+# 1797 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_remove_be32(struct net_buf *buf)
+{
+ return net_buf_simple_remove_be32(&buf->b);
+}
+# 1812 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_remove_le48(struct net_buf *buf)
+{
+ return net_buf_simple_remove_le48(&buf->b);
+}
+# 1827 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_remove_be48(struct net_buf *buf)
+{
+ return net_buf_simple_remove_be48(&buf->b);
+}
+# 1842 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_remove_le64(struct net_buf *buf)
+{
+ return net_buf_simple_remove_le64(&buf->b);
+}
+# 1857 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_remove_be64(struct net_buf *buf)
+{
+ return net_buf_simple_remove_be64(&buf->b);
+}
+# 1873 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_push(struct net_buf *buf, size_t len)
+{
+ return net_buf_simple_push(&buf->b, len);
+}
+# 1890 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_push_mem(struct net_buf *buf, const void *mem,
+         size_t len)
+{
+ return net_buf_simple_push_mem(&buf->b, mem, len);
+}
+# 1904 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_u8(struct net_buf *buf, uint8_t val)
+{
+ net_buf_simple_push_u8(&buf->b, val);
+}
+# 1918 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_le16(struct net_buf *buf, uint16_t val)
+{
+ net_buf_simple_push_le16(&buf->b, val);
+}
+# 1932 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_be16(struct net_buf *buf, uint16_t val)
+{
+ net_buf_simple_push_be16(&buf->b, val);
+}
+# 1946 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_le24(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_push_le24(&buf->b, val);
+}
+# 1960 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_be24(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_push_be24(&buf->b, val);
+}
+# 1974 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_le32(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_push_le32(&buf->b, val);
+}
+# 1988 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_be32(struct net_buf *buf, uint32_t val)
+{
+ net_buf_simple_push_be32(&buf->b, val);
+}
+# 2002 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_le48(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_push_le48(&buf->b, val);
+}
+# 2016 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_be48(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_push_be48(&buf->b, val);
+}
+# 2030 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_le64(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_push_le64(&buf->b, val);
+}
+# 2044 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void net_buf_push_be64(struct net_buf *buf, uint64_t val)
+{
+ net_buf_simple_push_be64(&buf->b, val);
+}
+# 2060 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_pull(struct net_buf *buf, size_t len)
+{
+ return net_buf_simple_pull(&buf->b, len);
+}
+# 2076 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline void *net_buf_pull_mem(struct net_buf *buf, size_t len)
+{
+ return net_buf_simple_pull_mem(&buf->b, len);
+}
+# 2091 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint8_t net_buf_pull_u8(struct net_buf *buf)
+{
+ return net_buf_simple_pull_u8(&buf->b);
+}
+# 2106 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint16_t net_buf_pull_le16(struct net_buf *buf)
+{
+ return net_buf_simple_pull_le16(&buf->b);
+}
+# 2121 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint16_t net_buf_pull_be16(struct net_buf *buf)
+{
+ return net_buf_simple_pull_be16(&buf->b);
+}
+# 2136 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_pull_le24(struct net_buf *buf)
+{
+ return net_buf_simple_pull_le24(&buf->b);
+}
+# 2151 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_pull_be24(struct net_buf *buf)
+{
+ return net_buf_simple_pull_be24(&buf->b);
+}
+# 2166 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_pull_le32(struct net_buf *buf)
+{
+ return net_buf_simple_pull_le32(&buf->b);
+}
+# 2181 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint32_t net_buf_pull_be32(struct net_buf *buf)
+{
+ return net_buf_simple_pull_be32(&buf->b);
+}
+# 2196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_pull_le48(struct net_buf *buf)
+{
+ return net_buf_simple_pull_le48(&buf->b);
+}
+# 2211 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_pull_be48(struct net_buf *buf)
+{
+ return net_buf_simple_pull_be48(&buf->b);
+}
+# 2226 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_pull_le64(struct net_buf *buf)
+{
+ return net_buf_simple_pull_le64(&buf->b);
+}
+# 2241 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint64_t net_buf_pull_be64(struct net_buf *buf)
+{
+ return net_buf_simple_pull_be64(&buf->b);
+}
+# 2255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline size_t net_buf_tailroom(struct net_buf *buf)
+{
+ return net_buf_simple_tailroom(&buf->b);
+}
+# 2269 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline size_t net_buf_headroom(struct net_buf *buf)
+{
+ return net_buf_simple_headroom(&buf->b);
+}
+# 2283 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint16_t net_buf_max_len(struct net_buf *buf)
+{
+ return net_buf_simple_max_len(&buf->b);
+}
+# 2297 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline uint8_t *net_buf_tail(struct net_buf *buf)
+{
+ return net_buf_simple_tail(&buf->b);
+}
+
+
+
+
+
+
+struct net_buf *net_buf_frag_last(struct net_buf *frags);
+# 2320 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+void net_buf_frag_insert(struct net_buf *parent, struct net_buf *frag);
+# 2336 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf *net_buf_frag_add(struct net_buf *head, struct net_buf *frag);
+# 2354 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+struct net_buf *net_buf_frag_del(struct net_buf *parent, struct net_buf *frag);
+# 2372 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+size_t net_buf_linearize(void *dst, size_t dst_len,
+    struct net_buf *src, size_t offset, size_t len);
+# 2389 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+typedef struct net_buf * __attribute__((warn_unused_result)) (*net_buf_allocator_cb)(k_timeout_t timeout,
+             void *user_data);
+# 2413 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+size_t net_buf_append_bytes(struct net_buf *buf, size_t len,
+       const void *value, k_timeout_t timeout,
+       net_buf_allocator_cb allocate_cb, void *user_data);
+# 2432 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline struct net_buf *net_buf_skip(struct net_buf *buf, size_t len)
+{
+ while (buf && len--) {
+  net_buf_pull_u8(buf);
+  if (!buf->len) {
+   buf = net_buf_frag_del(
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h" 3 4
+                         ((void *)0)
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+                             , buf);
+  }
+ }
+
+ return buf;
+}
+# 2454 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/net/buf.h"
+static inline size_t net_buf_frags_len(struct net_buf *buf)
+{
+ size_t bytes = 0;
+
+ while (buf) {
+  bytes += buf->len;
+  buf = buf->frags;
+ }
+
+ return bytes;
+}
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 1
+# 44 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+typedef struct {
+ uint8_t val[6];
+} bt_addr_t;
+
+
+
+
+
+
+typedef struct {
+ uint8_t type;
+ bt_addr_t a;
+} bt_addr_le_t;
+
+
+extern const bt_addr_t bt_addr_any;
+extern const bt_addr_t bt_addr_none;
+extern const bt_addr_le_t bt_addr_le_any;
+extern const bt_addr_le_t bt_addr_le_none;
+# 80 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline int bt_addr_cmp(const bt_addr_t *a, const bt_addr_t *b)
+{
+ return memcmp(a, b, sizeof(*a));
+}
+
+
+
+
+
+
+static inline 
+# 90 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+             _Bool 
+# 90 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                  bt_addr_eq(const bt_addr_t *a, const bt_addr_t *b)
+{
+ return bt_addr_cmp(a, b) == 0;
+}
+# 104 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline int bt_addr_le_cmp(const bt_addr_le_t *a, const bt_addr_le_t *b)
+{
+ return memcmp(a, b, sizeof(*a));
+}
+# 117 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline 
+# 117 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+             _Bool 
+# 117 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                  bt_addr_le_eq(const bt_addr_le_t *a, const bt_addr_le_t *b)
+{
+ return bt_addr_le_cmp(a, b) == 0;
+}
+
+
+
+
+
+
+static inline void bt_addr_copy(bt_addr_t *dst, const bt_addr_t *src)
+{
+ 
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+((__builtin_object_size(
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 0) != (size_t)-1) ? __builtin___memcpy_chk(
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+src
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+sizeof(*dst)
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, __builtin_object_size(
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 0)) : __memcpy_ichk(
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+src
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+sizeof(*dst)
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+))
+# 129 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                              ;
+}
+
+
+
+
+
+
+static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
+{
+ 
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+((__builtin_object_size(
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 0) != (size_t)-1) ? __builtin___memcpy_chk(
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+src
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+sizeof(*dst)
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, __builtin_object_size(
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 0)) : __memcpy_ichk(
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+dst
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+src
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+, 
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+sizeof(*dst)
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+))
+# 139 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                              ;
+}
+# 158 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+int bt_addr_le_create_nrpa(bt_addr_le_t *addr);
+
+
+int bt_addr_le_create_static(bt_addr_le_t *addr);
+# 170 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline 
+# 170 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+             _Bool 
+# 170 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                  bt_addr_le_is_rpa(const bt_addr_le_t *addr)
+{
+ if (addr->type != 0x01) {
+  return 
+# 173 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+        0
+# 173 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+             ;
+ }
+
+ return (((&addr->a)->val[5] & 0xc0) == 0x40);
+}
+# 188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline 
+# 188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+             _Bool 
+# 188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                  bt_addr_le_is_identity(const bt_addr_le_t *addr)
+{
+ if (addr->type == 0x00) {
+  return 
+# 191 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+        1
+# 191 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+            ;
+ }
+
+ return (((&addr->a)->val[5] & 0xc0) == 0xc0);
+}
+# 225 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline int bt_addr_to_str(const bt_addr_t *addr, char *str, size_t len)
+{
+ return snprintf(str, len, "%02X:%02X:%02X:%02X:%02X:%02X", addr->val[5], addr->val[4], addr->val[3], addr->val[2], addr->val[1], addr->val[0])
+
+                                            ;
+}
+# 242 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+static inline int bt_addr_le_to_str(const bt_addr_le_t *addr, char *str,
+        size_t len)
+{
+ char type[10];
+
+ switch (addr->type) {
+ case 0x00:
+  
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ((__builtin_object_size(
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0) != (size_t)-1) ? __builtin___strcpy_chk(
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "public"
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , __builtin_object_size(
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0)) : __strcpy_ichk(
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "public"
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ))
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                       ;
+  break;
+ case 0x01:
+  
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ((__builtin_object_size(
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0) != (size_t)-1) ? __builtin___strcpy_chk(
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "random"
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , __builtin_object_size(
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0)) : __strcpy_ichk(
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "random"
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ))
+# 252 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                       ;
+  break;
+ case 0x02:
+  
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ((__builtin_object_size(
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0) != (size_t)-1) ? __builtin___strcpy_chk(
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "public-id"
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , __builtin_object_size(
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0)) : __strcpy_ichk(
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "public-id"
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ))
+# 255 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                          ;
+  break;
+ case 0x03:
+  
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ((__builtin_object_size(
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0) != (size_t)-1) ? __builtin___strcpy_chk(
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "random-id"
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , __builtin_object_size(
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 0)) : __strcpy_ichk(
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ type
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ , 
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+ "random-id"
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h" 3 4
+ ))
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+                          ;
+  break;
+ default:
+  snprintf(type, sizeof(type), "0x%02x", addr->type);
+  break;
+ }
+
+ return snprintf(str, len, "%02X:%02X:%02X:%02X:%02X:%02X (%s)", addr->a.val[5], addr->a.val[4], addr->a.val[3], addr->a.val[2], addr->a.val[1], addr->a.val[0], type)
+
+                                                        ;
+}
+# 278 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+int bt_addr_from_str(const char *str, bt_addr_t *addr);
+# 289 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/addr.h"
+int bt_addr_le_from_str(const char *str, const char *type, bt_addr_le_t *addr);
+# 16 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 1
+# 23 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 1
+# 26 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/gap.h" 1
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/gap.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/byteorder.h" 1
+# 16 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/gap.h" 2
+# 736 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/gap.h"
+enum {
+
+ BT_GAP_LE_PHY_NONE = 0,
+
+ BT_GAP_LE_PHY_1M = (1UL << (0)),
+
+ BT_GAP_LE_PHY_2M = (1UL << (1)),
+
+ BT_GAP_LE_PHY_CODED = (1UL << (2)),
+};
+
+
+enum {
+
+ BT_GAP_ADV_TYPE_ADV_IND = 0x00,
+
+ BT_GAP_ADV_TYPE_ADV_DIRECT_IND = 0x01,
+
+ BT_GAP_ADV_TYPE_ADV_SCAN_IND = 0x02,
+
+ BT_GAP_ADV_TYPE_ADV_NONCONN_IND = 0x03,
+
+ BT_GAP_ADV_TYPE_SCAN_RSP = 0x04,
+
+ BT_GAP_ADV_TYPE_EXT_ADV = 0x05,
+};
+
+
+enum {
+
+ BT_GAP_ADV_PROP_CONNECTABLE = (1UL << (0)),
+
+ BT_GAP_ADV_PROP_SCANNABLE = (1UL << (1)),
+
+ BT_GAP_ADV_PROP_DIRECTED = (1UL << (2)),
+
+ BT_GAP_ADV_PROP_SCAN_RESPONSE = (1UL << (3)),
+
+ BT_GAP_ADV_PROP_EXT_ADV = (1UL << (4)),
+};
+# 829 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/gap.h"
+enum {
+
+ BT_GAP_CTE_AOA = 0x00,
+
+ BT_GAP_CTE_AOD_1US = 0x01,
+
+ BT_GAP_CTE_AOD_2US = 0x02,
+
+ BT_GAP_CTE_NONE = 0xFF,
+};
+
+
+enum {
+ BT_GAP_SCA_UNKNOWN = 0,
+ BT_GAP_SCA_251_500 = 0,
+ BT_GAP_SCA_151_250 = 1,
+ BT_GAP_SCA_101_150 = 2,
+ BT_GAP_SCA_76_100 = 3,
+ BT_GAP_SCA_51_75 = 4,
+ BT_GAP_SCA_31_50 = 5,
+ BT_GAP_SCA_21_30 = 6,
+ BT_GAP_SCA_0_20 = 7,
+};
+# 27 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/crypto.h" 1
+# 39 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/crypto.h"
+int bt_rand(void *buf, size_t len);
+# 53 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/crypto.h"
+int bt_encrypt_le(const uint8_t key[16], const uint8_t plaintext[16],
+    uint8_t enc_data[16]);
+# 68 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/crypto.h"
+int bt_encrypt_be(const uint8_t key[16], const uint8_t plaintext[16],
+    uint8_t enc_data[16]);
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/crypto.h"
+int bt_ccm_decrypt(const uint8_t key[16], uint8_t nonce[13], const uint8_t *enc_data,
+     size_t len, const uint8_t *aad, size_t aad_len,
+     uint8_t *plaintext, size_t mic_size);
+# 116 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/crypto.h"
+int bt_ccm_encrypt(const uint8_t key[16], uint8_t nonce[13],
+     const uint8_t *plaintext, size_t len, const uint8_t *aad,
+     size_t aad_len, uint8_t *enc_data, size_t mic_size);
+# 29 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 2
+# 49 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+struct bt_le_ext_adv;
+
+
+struct bt_le_per_adv_sync;
+
+
+struct bt_conn;
+
+
+struct bt_iso_biginfo;
+
+
+struct bt_df_per_adv_sync_iq_samples_report;
+
+struct bt_le_ext_adv_sent_info {
+
+ uint8_t num_sent;
+};
+
+struct bt_le_ext_adv_connected_info {
+
+ struct bt_conn *conn;
+};
+
+struct bt_le_ext_adv_scanned_info {
+
+ bt_addr_le_t *addr;
+};
+
+struct bt_le_per_adv_data_request {
+
+ uint8_t start;
+
+
+ uint8_t count;
+};
+
+struct bt_le_per_adv_response_info {
+
+ uint8_t subevent;
+
+
+
+
+
+
+
+ uint8_t tx_status;
+
+
+ int8_t tx_power;
+
+
+ int8_t rssi;
+
+
+ uint8_t cte_type;
+
+
+ uint8_t response_slot;
+};
+
+struct bt_le_ext_adv_cb {
+# 123 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*sent)(struct bt_le_ext_adv *adv,
+       struct bt_le_ext_adv_sent_info *info);
+# 135 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*connected)(struct bt_le_ext_adv *adv,
+     struct bt_le_ext_adv_connected_info *info);
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*scanned)(struct bt_le_ext_adv *adv,
+   struct bt_le_ext_adv_scanned_info *info);
+# 192 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+};
+
+
+
+
+
+
+
+typedef void (*bt_ready_cb_t)(int err);
+# 221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_enable(bt_ready_cb_t cb);
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_disable(void);
+
+
+
+
+
+
+
+# 239 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+_Bool 
+# 239 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+    bt_is_ready(void);
+# 258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_set_name(const char *name);
+# 267 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+const char *bt_get_name(void);
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+uint16_t bt_get_appearance(void);
+# 295 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_set_appearance(uint16_t new_appearance);
+# 317 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+void bt_id_get(bt_addr_le_t *addrs, size_t *count);
+# 359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_id_create(bt_addr_le_t *addr, uint8_t *irk);
+# 393 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_id_reset(uint8_t id, bt_addr_le_t *addr, uint8_t *irk);
+# 411 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_id_delete(uint8_t id);
+# 433 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+struct bt_data {
+ uint8_t type;
+ uint8_t data_len;
+ const uint8_t *data;
+};
+# 479 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+size_t bt_data_get_len(const struct bt_data data[], size_t data_count);
+# 495 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+size_t bt_data_serialize(const struct bt_data *input, uint8_t *output);
+
+
+enum {
+
+ BT_LE_ADV_OPT_NONE = 0,
+# 510 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_CONNECTABLE = (1UL << (0)),
+# 526 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_ONE_TIME = (1UL << (1)),
+# 538 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_USE_IDENTITY = (1UL << (2)),
+# 560 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_USE_NAME = (1UL << (3)),
+
+
+
+
+
+
+
+ BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY = (1UL << (4)),
+# 582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_DIR_ADDR_RPA = (1UL << (5)),
+
+
+
+
+ BT_LE_ADV_OPT_FILTER_SCAN_REQ = (1UL << (6)),
+
+
+ BT_LE_ADV_OPT_FILTER_CONN = (1UL << (7)),
+
+
+
+
+ BT_LE_ADV_OPT_NOTIFY_SCAN_REQ = (1UL << (8)),
+# 606 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_SCANNABLE = (1UL << (9)),
+# 626 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_EXT_ADV = (1UL << (10)),
+# 642 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_NO_2M = (1UL << (11)),
+# 654 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_CODED = (1UL << (12)),
+
+
+
+
+
+
+ BT_LE_ADV_OPT_ANONYMOUS = (1UL << (13)),
+
+
+
+
+
+
+ BT_LE_ADV_OPT_USE_TX_POWER = (1UL << (14)),
+
+
+ BT_LE_ADV_OPT_DISABLE_CHAN_37 = (1UL << (15)),
+
+
+ BT_LE_ADV_OPT_DISABLE_CHAN_38 = (1UL << (16)),
+
+
+ BT_LE_ADV_OPT_DISABLE_CHAN_39 = (1UL << (17)),
+# 687 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_FORCE_NAME_IN_AD = (1UL << (18)),
+# 701 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_ADV_OPT_USE_NRPA = (1UL << (19)),
+};
+
+
+struct bt_le_adv_param {
+# 714 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint8_t id;
+
+
+
+
+
+
+ uint8_t sid;
+# 731 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint8_t secondary_max_skip;
+
+
+ uint32_t options;
+# 743 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint32_t interval_min;
+# 752 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint32_t interval_max;
+# 769 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ const bt_addr_le_t *peer;
+};
+
+
+
+enum {
+
+ BT_LE_PER_ADV_OPT_NONE = 0,
+
+
+
+
+
+
+ BT_LE_PER_ADV_OPT_USE_TX_POWER = (1UL << (1)),
+
+
+
+
+
+
+ BT_LE_PER_ADV_OPT_INCLUDE_ADI = (1UL << (2)),
+};
+
+struct bt_le_per_adv_param {
+
+
+
+
+
+
+ uint16_t interval_min;
+
+
+
+
+
+
+
+ uint16_t interval_max;
+
+
+ uint32_t options;
+# 849 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+};
+# 1068 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_adv_start(const struct bt_le_adv_param *param,
+      const struct bt_data *ad, size_t ad_len,
+      const struct bt_data *sd, size_t sd_len);
+# 1084 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_adv_update_data(const struct bt_data *ad, size_t ad_len,
+     const struct bt_data *sd, size_t sd_len);
+# 1094 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_adv_stop(void);
+# 1110 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_create(const struct bt_le_adv_param *param,
+    const struct bt_le_ext_adv_cb *cb,
+    struct bt_le_ext_adv **adv);
+
+struct bt_le_ext_adv_start_param {
+# 1128 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint16_t timeout;
+
+
+
+
+
+
+ uint8_t num_events;
+};
+# 1151 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_start(struct bt_le_ext_adv *adv,
+   struct bt_le_ext_adv_start_param *param);
+# 1164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_stop(struct bt_le_ext_adv *adv);
+# 1200 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_set_data(struct bt_le_ext_adv *adv,
+      const struct bt_data *ad, size_t ad_len,
+      const struct bt_data *sd, size_t sd_len);
+# 1220 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_update_param(struct bt_le_ext_adv *adv,
+          const struct bt_le_adv_param *param);
+# 1231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_delete(struct bt_le_ext_adv *adv);
+# 1244 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+uint8_t bt_le_ext_adv_get_index(struct bt_le_ext_adv *adv);
+
+
+struct bt_le_ext_adv_info {
+
+ uint8_t id;
+
+
+ int8_t tx_power;
+
+
+ const bt_addr_le_t *addr;
+};
+# 1266 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_get_info(const struct bt_le_ext_adv *adv,
+      struct bt_le_ext_adv_info *info);
+# 1282 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+typedef void bt_le_scan_cb_t(const bt_addr_le_t *addr, int8_t rssi,
+        uint8_t adv_type, struct net_buf_simple *buf);
+# 1297 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_set_param(struct bt_le_ext_adv *adv,
+       const struct bt_le_per_adv_param *param);
+# 1313 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_set_data(const struct bt_le_ext_adv *adv,
+      const struct bt_data *ad, size_t ad_len);
+
+struct bt_le_per_adv_subevent_data_params {
+
+ uint8_t subevent;
+
+
+ uint8_t response_slot_start;
+
+
+ uint8_t response_slot_count;
+
+
+ const struct net_buf_simple *data;
+};
+# 1345 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_set_subevent_data(const struct bt_le_ext_adv *adv, uint8_t num_subevents,
+        const struct bt_le_per_adv_subevent_data_params *params);
+# 1365 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_start(struct bt_le_ext_adv *adv);
+# 1378 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_stop(struct bt_le_ext_adv *adv);
+
+struct bt_le_per_adv_sync_synced_info {
+
+ const bt_addr_le_t *addr;
+
+
+ uint8_t sid;
+
+
+ uint16_t interval;
+
+
+ uint8_t phy;
+
+
+ 
+# 1394 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+_Bool 
+# 1394 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+     recv_enabled;
+
+
+
+
+
+
+ uint16_t service_data;
+
+
+
+
+
+
+
+ struct bt_conn *conn;
+# 1424 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+};
+
+struct bt_le_per_adv_sync_term_info {
+
+ const bt_addr_le_t *addr;
+
+
+ uint8_t sid;
+
+
+ uint8_t reason;
+};
+
+struct bt_le_per_adv_sync_recv_info {
+
+ const bt_addr_le_t *addr;
+
+
+ uint8_t sid;
+
+
+ int8_t tx_power;
+
+
+ int8_t rssi;
+
+
+ uint8_t cte_type;
+
+
+
+
+
+
+
+};
+
+
+struct bt_le_per_adv_sync_state_info {
+
+ 
+# 1464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+_Bool 
+# 1464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+     recv_enabled;
+};
+
+struct bt_le_per_adv_sync_cb {
+# 1478 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*synced)(struct bt_le_per_adv_sync *sync,
+         struct bt_le_per_adv_sync_synced_info *info);
+# 1490 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*term)(struct bt_le_per_adv_sync *sync,
+       const struct bt_le_per_adv_sync_term_info *info);
+# 1506 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*recv)(struct bt_le_per_adv_sync *sync,
+       const struct bt_le_per_adv_sync_recv_info *info,
+       struct net_buf_simple *buf);
+# 1520 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*state_changed)(struct bt_le_per_adv_sync *sync,
+         const struct bt_le_per_adv_sync_state_info *info);
+# 1533 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*biginfo)(struct bt_le_per_adv_sync *sync, const struct bt_iso_biginfo *biginfo);
+# 1542 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ void (*cte_report_cb)(struct bt_le_per_adv_sync *sync,
+         struct bt_df_per_adv_sync_iq_samples_report const *info);
+
+ sys_snode_t node;
+};
+
+
+enum {
+
+ BT_LE_PER_ADV_SYNC_OPT_NONE = 0,
+
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_OPT_USE_PER_ADV_LIST = (1UL << (0)),
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_OPT_REPORTING_INITIALLY_DISABLED = (1UL << (1)),
+
+
+ BT_LE_PER_ADV_SYNC_OPT_FILTER_DUPLICATE = (1UL << (2)),
+
+
+ BT_LE_PER_ADV_SYNC_OPT_DONT_SYNC_AOA = (1UL << (3)),
+
+
+ BT_LE_PER_ADV_SYNC_OPT_DONT_SYNC_AOD_1US = (1UL << (4)),
+
+
+ BT_LE_PER_ADV_SYNC_OPT_DONT_SYNC_AOD_2US = (1UL << (5)),
+
+
+ BT_LE_PER_ADV_SYNC_OPT_SYNC_ONLY_CONST_TONE_EXT = (1UL << (6)),
+};
+
+struct bt_le_per_adv_sync_param {
+
+
+
+
+
+
+ bt_addr_le_t addr;
+
+
+
+
+
+
+
+ uint8_t sid;
+
+
+ uint32_t options;
+# 1611 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint16_t skip;
+
+
+
+
+
+
+
+ uint16_t timeout;
+};
+# 1633 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+uint8_t bt_le_per_adv_sync_get_index(struct bt_le_per_adv_sync *per_adv_sync);
+# 1647 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+struct bt_le_per_adv_sync *bt_le_per_adv_sync_lookup_index(uint8_t index);
+
+
+struct bt_le_per_adv_sync_info {
+
+ bt_addr_le_t addr;
+
+
+ uint8_t sid;
+
+
+ uint16_t interval;
+
+
+ uint8_t phy;
+};
+# 1672 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_get_info(struct bt_le_per_adv_sync *per_adv_sync,
+    struct bt_le_per_adv_sync_info *info);
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+struct bt_le_per_adv_sync *bt_le_per_adv_sync_lookup_addr(const bt_addr_le_t *adv_addr,
+         uint8_t sid);
+# 1702 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_create(const struct bt_le_per_adv_sync_param *param,
+         struct bt_le_per_adv_sync **out_sync);
+# 1721 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_delete(struct bt_le_per_adv_sync *per_adv_sync);
+# 1734 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+void bt_le_per_adv_sync_cb_register(struct bt_le_per_adv_sync_cb *cb);
+# 1745 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_recv_enable(struct bt_le_per_adv_sync *per_adv_sync);
+# 1756 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_recv_disable(struct bt_le_per_adv_sync *per_adv_sync);
+
+
+enum {
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_NONE = 0,
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_SYNC_NO_AOA = (1UL << (0)),
+
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_SYNC_NO_AOD_1US = (1UL << (1)),
+
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_SYNC_NO_AOD_2US = (1UL << (2)),
+
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_SYNC_ONLY_CTE = (1UL << (3)),
+
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_REPORTING_INITIALLY_DISABLED = (1UL << (4)),
+
+
+
+
+
+
+
+ BT_LE_PER_ADV_SYNC_TRANSFER_OPT_FILTER_DUPLICATES = (1UL << (5)),
+};
+
+struct bt_le_per_adv_sync_transfer_param {
+
+
+
+
+
+
+ uint16_t skip;
+
+
+
+
+
+
+
+ uint16_t timeout;
+
+
+ uint32_t options;
+};
+# 1839 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_transfer(const struct bt_le_per_adv_sync *per_adv_sync,
+    const struct bt_conn *conn,
+    uint16_t service_data);
+# 1856 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_set_info_transfer(const struct bt_le_ext_adv *adv,
+        const struct bt_conn *conn,
+        uint16_t service_data);
+# 1873 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_transfer_subscribe(
+ const struct bt_conn *conn,
+ const struct bt_le_per_adv_sync_transfer_param *param);
+# 1890 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_transfer_unsubscribe(const struct bt_conn *conn);
+# 1905 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_list_add(const bt_addr_le_t *addr, uint8_t sid);
+# 1918 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_list_remove(const bt_addr_le_t *addr, uint8_t sid);
+# 1927 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_list_clear(void);
+
+
+enum {
+
+ BT_LE_SCAN_OPT_NONE = 0,
+
+
+ BT_LE_SCAN_OPT_FILTER_DUPLICATE = (1UL << (0)),
+
+
+ BT_LE_SCAN_OPT_FILTER_ACCEPT_LIST = (1UL << (1)),
+
+
+ BT_LE_SCAN_OPT_CODED = (1UL << (2)),
+
+
+
+
+
+
+ BT_LE_SCAN_OPT_NO_1M = (1UL << (3)),
+};
+
+
+
+enum {
+
+ BT_LE_SCAN_TYPE_PASSIVE = 0x00,
+# 1964 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ BT_LE_SCAN_TYPE_ACTIVE = 0x01,
+};
+
+
+struct bt_le_scan_param {
+
+ uint8_t type;
+
+
+ uint32_t options;
+
+
+ uint16_t interval;
+
+
+ uint16_t window;
+
+
+
+
+
+
+
+ uint16_t timeout;
+
+
+
+
+
+
+ uint16_t interval_coded;
+
+
+
+
+
+
+ uint16_t window_coded;
+};
+
+
+struct bt_le_scan_recv_info {
+
+
+
+
+
+
+ const bt_addr_le_t *addr;
+
+
+ uint8_t sid;
+
+
+ int8_t rssi;
+
+
+ int8_t tx_power;
+# 2031 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint8_t adv_type;
+# 2041 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint16_t adv_props;
+
+
+
+
+
+
+ uint16_t interval;
+
+
+ uint8_t primary_phy;
+
+
+ uint8_t secondary_phy;
+};
+
+
+struct bt_le_scan_cb {
+
+
+
+
+
+
+
+ void (*recv)(const struct bt_le_scan_recv_info *info,
+       struct net_buf_simple *buf);
+
+
+ void (*timeout)(void);
+
+ sys_snode_t node;
+};
+# 2173 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb);
+# 2183 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_scan_stop(void);
+# 2196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+void bt_le_scan_cb_register(struct bt_le_scan_cb *cb);
+# 2205 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+void bt_le_scan_cb_unregister(struct bt_le_scan_cb *cb);
+# 2221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_filter_accept_list_add(const bt_addr_le_t *addr);
+__attribute__((deprecated))
+static inline int bt_le_whitelist_add(const bt_addr_le_t *addr)
+{
+ return bt_le_filter_accept_list_add(addr);
+}
+# 2242 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_filter_accept_list_remove(const bt_addr_le_t *addr);
+__attribute__((deprecated))
+static inline int bt_le_whitelist_rem(const bt_addr_le_t *addr)
+{
+ return bt_le_filter_accept_list_remove(addr);
+}
+# 2261 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_filter_accept_list_clear(void);
+__attribute__((deprecated))
+static inline int bt_le_whitelist_clear(void)
+{
+ return bt_le_filter_accept_list_clear();
+}
+# 2276 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_set_chan_map(uint8_t chan_map[5]);
+# 2296 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_set_rpa_timeout(uint16_t new_rpa_timeout);
+# 2315 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+void bt_data_parse(struct net_buf_simple *ad,
+     
+# 2316 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+    _Bool 
+# 2316 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+         (*func)(struct bt_data *data, void *user_data),
+     void *user_data);
+
+
+struct bt_le_oob_sc_data {
+
+ uint8_t r[16];
+
+
+ uint8_t c[16];
+};
+
+
+struct bt_le_oob {
+
+
+
+ bt_addr_le_t addr;
+
+
+ struct bt_le_oob_sc_data le_sc_data;
+};
+# 2367 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_oob_get_local(uint8_t id, struct bt_le_oob *oob);
+# 2393 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_ext_adv_oob_get_local(struct bt_le_ext_adv *adv,
+    struct bt_le_oob *oob);
+
+
+struct bt_br_discovery_result {
+
+ uint8_t _priv[4];
+
+
+ bt_addr_t addr;
+
+
+ int8_t rssi;
+
+
+ uint8_t cod[3];
+
+
+ uint8_t eir[240];
+};
+# 2426 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+typedef void bt_br_discovery_cb_t(struct bt_br_discovery_result *results,
+      size_t count);
+
+
+struct bt_br_discovery_param {
+
+
+
+ uint8_t length;
+
+
+ 
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+_Bool 
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+     limited;
+};
+# 2457 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_br_discovery_start(const struct bt_br_discovery_param *param,
+     struct bt_br_discovery_result *results, size_t count,
+     bt_br_discovery_cb_t cb);
+# 2470 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_br_discovery_stop(void);
+
+struct bt_br_oob {
+
+ bt_addr_t addr;
+};
+# 2485 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_br_oob_get_local(struct bt_br_oob *oob);
+# 2500 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_br_set_discoverable(
+# 2500 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+                          _Bool 
+# 2500 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+                               enable);
+# 2514 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_br_set_connectable(
+# 2514 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h" 3 4
+                         _Bool 
+# 2514 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+                              enable);
+# 2525 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_unpair(uint8_t id, const bt_addr_le_t *addr);
+
+
+struct bt_bond_info {
+
+ bt_addr_le_t addr;
+};
+# 2540 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+void bt_foreach_bond(uint8_t id, void (*func)(const struct bt_bond_info *info,
+        void *user_data),
+       void *user_data);
+# 2558 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_configure_data_path(uint8_t dir, uint8_t id, uint8_t vs_config_len,
+      const uint8_t *vs_config);
+
+struct bt_le_per_adv_sync_subevent_params {
+
+
+
+
+
+ uint16_t properties;
+
+
+ uint8_t num_subevents;
+
+
+
+
+
+
+ uint8_t *subevents;
+};
+# 2590 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_sync_subevent(struct bt_le_per_adv_sync *per_adv_sync,
+    struct bt_le_per_adv_sync_subevent_params *params);
+
+struct bt_le_per_adv_response_params {
+# 2602 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+ uint16_t request_event;
+
+
+
+
+
+
+ uint8_t request_subevent;
+
+
+ uint8_t response_subevent;
+
+
+ uint8_t response_slot;
+};
+# 2630 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/bluetooth.h"
+int bt_le_per_adv_set_response_data(struct bt_le_per_adv_sync *per_adv_sync,
+        const struct bt_le_per_adv_response_params *params,
+        const struct net_buf_simple *data);
+# 24 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 1
+# 41 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_sco_hdr {
+ uint16_t handle;
+ uint8_t len;
+} 
+# 44 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 44 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_evt_hdr {
+ uint8_t evt;
+ uint8_t len;
+} 
+# 51 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 51 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 71 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_acl_hdr {
+ uint16_t handle;
+ uint16_t len;
+} 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 100 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_iso_data_hdr {
+ uint16_t sn;
+ uint16_t slen;
+} 
+# 103 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 103 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_iso_ts_data_hdr {
+ uint32_t ts;
+ struct bt_hci_iso_data_hdr data;
+} 
+# 109 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 109 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_iso_hdr {
+ uint16_t handle;
+ uint16_t len;
+} 
+# 116 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 116 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cmd_hdr {
+ uint16_t opcode;
+ uint8_t param_len;
+} 
+# 123 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 123 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 344 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_op_inquiry {
+ uint8_t lap[3];
+ uint8_t length;
+ uint8_t num_rsp;
+} 
+# 348 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 348 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_connect {
+ bt_addr_t bdaddr;
+ uint16_t packet_type;
+ uint8_t pscan_rep_mode;
+ uint8_t reserved;
+ uint16_t clock_offset;
+ uint8_t allow_role_switch;
+} 
+# 360 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 360 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_disconnect {
+ uint16_t handle;
+ uint8_t reason;
+} 
+# 366 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 366 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_connect_cancel {
+ bt_addr_t bdaddr;
+} 
+# 371 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 371 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_connect_cancel {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 375 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 375 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_accept_conn_req {
+ bt_addr_t bdaddr;
+ uint8_t role;
+} 
+# 381 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 381 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_setup_sync_conn {
+ uint16_t handle;
+ uint32_t tx_bandwidth;
+ uint32_t rx_bandwidth;
+ uint16_t max_latency;
+ uint16_t content_format;
+ uint8_t retrans_effort;
+ uint16_t pkt_type;
+} 
+# 392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_accept_sync_conn_req {
+ bt_addr_t bdaddr;
+ uint32_t tx_bandwidth;
+ uint32_t rx_bandwidth;
+ uint16_t max_latency;
+ uint16_t content_format;
+ uint8_t retrans_effort;
+ uint16_t pkt_type;
+} 
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 403 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_reject_conn_req {
+ bt_addr_t bdaddr;
+ uint8_t reason;
+} 
+# 409 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 409 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_link_key_reply {
+ bt_addr_t bdaddr;
+ uint8_t link_key[16];
+} 
+# 415 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 415 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_link_key_neg_reply {
+ bt_addr_t bdaddr;
+} 
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_pin_code_reply {
+ bt_addr_t bdaddr;
+ uint8_t pin_len;
+ uint8_t pin_code[16];
+} 
+# 427 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 427 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_pin_code_reply {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 431 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 431 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_pin_code_neg_reply {
+ bt_addr_t bdaddr;
+} 
+# 436 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 436 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_pin_code_neg_reply {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 440 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 440 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_auth_requested {
+ uint16_t handle;
+} 
+# 445 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 445 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_set_conn_encrypt {
+ uint16_t handle;
+ uint8_t encrypt;
+} 
+# 451 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 451 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_remote_name_request {
+ bt_addr_t bdaddr;
+ uint8_t pscan_rep_mode;
+ uint8_t reserved;
+ uint16_t clock_offset;
+} 
+# 459 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 459 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_remote_name_cancel {
+ bt_addr_t bdaddr;
+} 
+# 464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_remote_name_cancel {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 468 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 468 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_remote_features {
+ uint16_t handle;
+} 
+# 473 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 473 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_remote_ext_features {
+ uint16_t handle;
+ uint8_t page;
+} 
+# 479 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 479 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_remote_version_info {
+ uint16_t handle;
+} 
+# 484 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 484 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_io_capability_reply {
+ bt_addr_t bdaddr;
+ uint8_t capability;
+ uint8_t oob_data;
+ uint8_t authentication;
+} 
+# 492 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 492 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cp_user_confirm_reply {
+ bt_addr_t bdaddr;
+} 
+# 498 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 498 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_user_confirm_reply {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 502 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 502 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_user_passkey_reply {
+ bt_addr_t bdaddr;
+ uint32_t passkey;
+} 
+# 508 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 508 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_user_passkey_neg_reply {
+ bt_addr_t bdaddr;
+} 
+# 513 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 513 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_io_capability_neg_reply {
+ bt_addr_t bdaddr;
+ uint8_t reason;
+} 
+# 519 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 519 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_set_event_mask {
+ uint8_t events[8];
+} 
+# 524 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 524 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_write_local_name {
+ uint8_t local_name[248];
+} 
+# 531 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 531 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_read_conn_accept_timeout {
+ uint8_t status;
+ uint16_t conn_accept_timeout;
+} 
+# 537 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 537 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_write_conn_accept_timeout {
+ uint16_t conn_accept_timeout;
+} 
+# 542 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 542 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_write_conn_accept_timeout {
+ uint8_t status;
+} 
+# 546 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 546 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 556 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_write_class_of_device {
+ uint8_t class_of_device[3];
+} 
+# 558 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 558 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_read_tx_power_level {
+ uint16_t handle;
+ uint8_t type;
+} 
+# 566 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 566 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_read_tx_power_level {
+ uint8_t status;
+ uint16_t handle;
+ int8_t tx_power_level;
+} 
+# 572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_set_ctl_to_host_flow {
+ uint8_t flow_enable;
+} 
+# 579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_host_buffer_size {
+ uint16_t acl_mtu;
+ uint8_t sco_mtu;
+ uint16_t acl_pkts;
+ uint16_t sco_pkts;
+} 
+# 587 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 587 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_handle_count {
+ uint16_t handle;
+ uint16_t count;
+} 
+# 592 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 592 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_host_num_completed_packets {
+ uint8_t num_handles;
+ struct bt_hci_handle_count h[0];
+} 
+# 598 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 598 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_write_inquiry_mode {
+ uint8_t mode;
+} 
+# 603 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 603 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_write_ssp_mode {
+ uint8_t mode;
+} 
+# 608 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 608 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_set_event_mask_page_2 {
+ uint8_t events_page_2[8];
+} 
+# 613 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 613 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_write_le_host_supp {
+ uint8_t le;
+ uint8_t simul;
+} 
+# 619 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 619 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_write_sc_host_supp {
+ uint8_t sc_support;
+} 
+# 624 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 624 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_auth_payload_timeout {
+ uint16_t handle;
+} 
+# 629 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 629 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_read_auth_payload_timeout {
+ uint8_t status;
+ uint16_t handle;
+ uint16_t auth_payload_timeout;
+} 
+# 635 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 635 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_write_auth_payload_timeout {
+ uint16_t handle;
+ uint16_t auth_payload_timeout;
+} 
+# 641 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 641 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_write_auth_payload_timeout {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 646 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 646 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_configure_data_path {
+ uint8_t data_path_dir;
+ uint8_t data_path_id;
+ uint8_t vs_config_len;
+ uint8_t vs_config[0];
+} 
+# 654 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 654 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_configure_data_path {
+ uint8_t status;
+} 
+# 658 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 658 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 677 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_rp_read_local_version_info {
+ uint8_t status;
+ uint8_t hci_version;
+ uint16_t hci_revision;
+ uint8_t lmp_version;
+ uint16_t manufacturer;
+ uint16_t lmp_subversion;
+} 
+# 684 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 684 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_read_supported_commands {
+ uint8_t status;
+ uint8_t commands[64];
+} 
+# 690 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 690 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_local_ext_features {
+ uint8_t page;
+};
+struct bt_hci_rp_read_local_ext_features {
+ uint8_t status;
+ uint8_t page;
+ uint8_t max_page;
+ uint8_t ext_features[8];
+} 
+# 701 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 701 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_read_local_features {
+ uint8_t status;
+ uint8_t features[8];
+} 
+# 707 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 707 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_read_buffer_size {
+ uint8_t status;
+ uint16_t acl_max_len;
+ uint8_t sco_max_len;
+ uint16_t acl_max_num;
+ uint16_t sco_max_num;
+} 
+# 716 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 716 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_read_bd_addr {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 722 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 722 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 758 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_std_codec_info {
+ uint8_t codec_id;
+} 
+# 760 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 760 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_std_codecs {
+ uint8_t num_codecs;
+ struct bt_hci_std_codec_info codec_info[0];
+} 
+# 764 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 764 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_vs_codec_info {
+ uint16_t company_id;
+ uint16_t codec_id;
+} 
+# 768 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 768 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_vs_codecs {
+ uint8_t num_codecs;
+ struct bt_hci_vs_codec_info codec_info[0];
+} 
+# 772 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 772 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_read_codecs {
+ uint8_t status;
+
+ uint8_t codecs[0];
+} 
+# 777 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 777 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_std_codec_info_v2 {
+ uint8_t codec_id;
+ uint8_t transports;
+} 
+# 783 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 783 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_std_codecs_v2 {
+ uint8_t num_codecs;
+ struct bt_hci_std_codec_info_v2 codec_info[0];
+} 
+# 787 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 787 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_vs_codec_info_v2 {
+ uint16_t company_id;
+ uint16_t codec_id;
+ uint8_t transports;
+} 
+# 792 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 792 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_vs_codecs_v2 {
+ uint8_t num_codecs;
+ struct bt_hci_vs_codec_info_v2 codec_info[0];
+} 
+# 796 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 796 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_read_codecs_v2 {
+ uint8_t status;
+
+ uint8_t codecs[0];
+} 
+# 801 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 801 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_codec_id {
+ uint8_t coding_format;
+ uint16_t company_id;
+ uint16_t vs_codec_id;
+} 
+# 807 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 807 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_codec_capabilities {
+ struct bt_hci_cp_codec_id codec_id;
+ uint8_t transport;
+ uint8_t direction;
+} 
+# 814 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 814 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_codec_capability_info {
+ uint8_t length;
+ uint8_t data[0];
+} 
+# 818 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 818 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_read_codec_capabilities {
+ uint8_t status;
+ uint8_t num_capabilities;
+
+ uint8_t capabilities[0];
+} 
+# 824 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 824 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_ctlr_delay {
+ struct bt_hci_cp_codec_id codec_id;
+ uint8_t transport;
+ uint8_t direction;
+ uint8_t codec_config_len;
+ uint8_t codec_config[0];
+} 
+# 833 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 833 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_read_ctlr_delay {
+ uint8_t status;
+ uint8_t min_ctlr_delay[3];
+ uint8_t max_ctlr_delay[3];
+} 
+# 838 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 838 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_read_rssi {
+ uint16_t handle;
+} 
+# 843 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 843 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_read_rssi {
+ uint8_t status;
+ uint16_t handle;
+ int8_t rssi;
+} 
+# 848 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 848 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_read_encryption_key_size {
+ uint16_t handle;
+} 
+# 856 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 856 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_read_encryption_key_size {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t key_size;
+} 
+# 861 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 861 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_le_set_event_mask {
+ uint8_t events[8];
+} 
+# 868 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 868 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_buffer_size {
+ uint8_t status;
+ uint16_t le_max_len;
+ uint8_t le_max_num;
+} 
+# 875 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 875 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_local_features {
+ uint8_t status;
+ uint8_t features[8];
+} 
+# 881 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 881 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_random_address {
+ bt_addr_t bdaddr;
+} 
+# 886 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 886 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 910 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_adv_param {
+ uint16_t min_interval;
+ uint16_t max_interval;
+ uint8_t type;
+ uint8_t own_addr_type;
+ bt_addr_le_t direct_addr;
+ uint8_t channel_map;
+ uint8_t filter_policy;
+} 
+# 918 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 918 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_chan_tx_power {
+ uint8_t status;
+ int8_t tx_power_level;
+} 
+# 924 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 924 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_adv_data {
+ uint8_t len;
+ uint8_t data[31];
+} 
+# 930 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 930 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_scan_rsp_data {
+ uint8_t len;
+ uint8_t data[31];
+} 
+# 936 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 936 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_le_set_adv_enable {
+ uint8_t enable;
+} 
+# 944 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 944 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 956 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_scan_param {
+ uint8_t scan_type;
+ uint16_t interval;
+ uint16_t window;
+ uint8_t addr_type;
+ uint8_t filter_policy;
+} 
+# 962 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 962 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 972 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_scan_enable {
+ uint8_t enable;
+ uint8_t filter_dup;
+} 
+# 975 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 975 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+struct bt_hci_cp_le_create_conn {
+ uint16_t scan_interval;
+ uint16_t scan_window;
+ uint8_t filter_policy;
+ bt_addr_le_t peer_addr;
+ uint8_t own_addr_type;
+ uint16_t conn_interval_min;
+ uint16_t conn_interval_max;
+ uint16_t conn_latency;
+ uint16_t supervision_timeout;
+ uint16_t min_ce_len;
+ uint16_t max_ce_len;
+} 
+# 994 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 994 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_rp_le_read_fal_size {
+ uint8_t status;
+ uint8_t fal_size;
+} 
+# 1002 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1002 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_le_add_dev_to_fal {
+ bt_addr_le_t addr;
+} 
+# 1009 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1009 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_rem_dev_from_fal {
+ bt_addr_le_t addr;
+} 
+# 1014 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1014 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct hci_cp_le_conn_update {
+ uint16_t handle;
+ uint16_t conn_interval_min;
+ uint16_t conn_interval_max;
+ uint16_t conn_latency;
+ uint16_t supervision_timeout;
+ uint16_t min_ce_len;
+ uint16_t max_ce_len;
+} 
+# 1025 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1025 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_host_chan_classif {
+ uint8_t ch_map[5];
+} 
+# 1030 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1030 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_chan_map {
+ uint16_t handle;
+} 
+# 1035 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1035 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_read_chan_map {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t ch_map[5];
+} 
+# 1040 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1040 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_remote_features {
+ uint16_t handle;
+} 
+# 1045 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1045 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_encrypt {
+ uint8_t key[16];
+ uint8_t plaintext[16];
+} 
+# 1051 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1051 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_encrypt {
+ uint8_t status;
+ uint8_t enc_data[16];
+} 
+# 1055 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1055 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_rand {
+ uint8_t status;
+ uint8_t rand[8];
+} 
+# 1061 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1061 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_start_encryption {
+ uint16_t handle;
+ uint64_t rand;
+ uint16_t ediv;
+ uint8_t ltk[16];
+} 
+# 1069 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1069 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_ltk_req_reply {
+ uint16_t handle;
+ uint8_t ltk[16];
+} 
+# 1075 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1075 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_ltk_req_reply {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1079 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1079 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_ltk_req_neg_reply {
+ uint16_t handle;
+} 
+# 1084 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1084 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_ltk_req_neg_reply {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1088 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1088 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_supp_states {
+ uint8_t status;
+ uint8_t le_states[8];
+} 
+# 1094 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1094 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_rx_test {
+ uint8_t rx_ch;
+} 
+# 1099 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1099 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1111 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_tx_test {
+ uint8_t tx_ch;
+ uint8_t test_data_len;
+ uint8_t pkt_payload;
+} 
+# 1115 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1115 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_test_end {
+ uint8_t status;
+ uint16_t rx_pkt_count;
+} 
+# 1121 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1121 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_conn_param_req_reply {
+ uint16_t handle;
+ uint16_t interval_min;
+ uint16_t interval_max;
+ uint16_t latency;
+ uint16_t timeout;
+ uint16_t min_ce_len;
+ uint16_t max_ce_len;
+} 
+# 1132 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1132 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_conn_param_req_reply {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1136 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1136 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_conn_param_req_neg_reply {
+ uint16_t handle;
+ uint8_t reason;
+} 
+# 1142 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1142 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_conn_param_req_neg_reply {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1146 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1146 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_data_len {
+ uint16_t handle;
+ uint16_t tx_octets;
+ uint16_t tx_time;
+} 
+# 1153 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1153 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_set_data_len {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1157 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1157 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_default_data_len {
+ uint8_t status;
+ uint16_t max_tx_octets;
+ uint16_t max_tx_time;
+} 
+# 1164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_write_default_data_len {
+ uint16_t max_tx_octets;
+ uint16_t max_tx_time;
+} 
+# 1170 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1170 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_le_generate_dhkey {
+ uint8_t key[64];
+} 
+# 1177 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1177 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_cp_le_generate_dhkey_v2 {
+ uint8_t key[64];
+ uint8_t key_type;
+} 
+# 1188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1188 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cp_le_add_dev_to_rl {
+ bt_addr_le_t peer_id_addr;
+ uint8_t peer_irk[16];
+ uint8_t local_irk[16];
+} 
+# 1196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1196 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_rem_dev_from_rl {
+ bt_addr_le_t peer_id_addr;
+} 
+# 1201 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1201 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_rp_le_read_rl_size {
+ uint8_t status;
+ uint8_t rl_size;
+} 
+# 1209 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1209 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_peer_rpa {
+ bt_addr_le_t peer_id_addr;
+} 
+# 1214 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1214 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_read_peer_rpa {
+ uint8_t status;
+ bt_addr_t peer_rpa;
+} 
+# 1218 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1218 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_local_rpa {
+ bt_addr_le_t peer_id_addr;
+} 
+# 1223 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1223 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_read_local_rpa {
+ uint8_t status;
+ bt_addr_t local_rpa;
+} 
+# 1227 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1227 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_le_set_addr_res_enable {
+ uint8_t enable;
+} 
+# 1235 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1235 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_rpa_timeout {
+ uint16_t rpa_timeout;
+} 
+# 1240 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1240 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_max_data_len {
+ uint8_t status;
+ uint16_t max_tx_octets;
+ uint16_t max_tx_time;
+ uint16_t max_rx_octets;
+ uint16_t max_rx_time;
+} 
+# 1249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+struct bt_hci_cp_le_read_phy {
+ uint16_t handle;
+} 
+# 1258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1258 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_read_phy {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t tx_phy;
+ uint8_t rx_phy;
+} 
+# 1264 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1264 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1274 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_default_phy {
+ uint8_t all_phys;
+ uint8_t tx_phys;
+ uint8_t rx_phys;
+} 
+# 1278 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1278 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+struct bt_hci_cp_le_set_phy {
+ uint16_t handle;
+ uint8_t all_phys;
+ uint8_t tx_phys;
+ uint8_t rx_phys;
+ uint16_t phy_opts;
+} 
+# 1291 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1291 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1301 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_enh_rx_test {
+ uint8_t rx_ch;
+ uint8_t phy;
+ uint8_t mod_index;
+} 
+# 1305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1305 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_cp_le_enh_tx_test {
+ uint8_t tx_ch;
+ uint8_t test_data_len;
+ uint8_t pkt_payload;
+ uint8_t phy;
+} 
+# 1318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1318 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_adv_set_random_addr {
+ uint8_t handle;
+ bt_addr_t bdaddr;
+} 
+# 1324 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1324 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1347 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_ext_adv_param {
+ uint8_t handle;
+ uint16_t props;
+ uint8_t prim_min_interval[3];
+ uint8_t prim_max_interval[3];
+ uint8_t prim_channel_map;
+ uint8_t own_addr_type;
+ bt_addr_le_t peer_addr;
+ uint8_t filter_policy;
+ int8_t tx_power;
+ uint8_t prim_adv_phy;
+ uint8_t sec_adv_max_skip;
+ uint8_t sec_adv_phy;
+ uint8_t sid;
+ uint8_t scan_req_notify_enable;
+} 
+# 1362 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1362 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_rp_le_set_ext_adv_param {
+ uint8_t status;
+ int8_t tx_power;
+} 
+# 1366 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1366 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1380 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_ext_adv_data {
+ uint8_t handle;
+ uint8_t op;
+ uint8_t frag_pref;
+ uint8_t len;
+ uint8_t data[0];
+} 
+# 1386 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1386 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_ext_scan_rsp_data {
+ uint8_t handle;
+ uint8_t op;
+ uint8_t frag_pref;
+ uint8_t len;
+ uint8_t data[0];
+} 
+# 1395 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1395 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_ext_adv_set {
+ uint8_t handle;
+ uint16_t duration;
+ uint8_t max_ext_adv_evts;
+} 
+# 1402 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1402 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_set_ext_adv_enable {
+ uint8_t enable;
+ uint8_t set_num;
+ struct bt_hci_ext_adv_set s[0];
+} 
+# 1408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1408 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_max_adv_data_len {
+ uint8_t status;
+ uint16_t max_adv_data_len;
+} 
+# 1414 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1414 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_num_adv_sets {
+ uint8_t status;
+ uint8_t num_sets;
+} 
+# 1420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_remove_adv_set {
+ uint8_t handle;
+} 
+# 1425 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1425 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_cp_le_set_per_adv_param {
+ uint8_t handle;
+ uint16_t min_interval;
+ uint16_t max_interval;
+ uint16_t props;
+} 
+# 1438 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1438 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1448 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_per_adv_data {
+ uint8_t handle;
+ uint8_t op;
+ uint8_t len;
+ uint8_t data[0];
+} 
+# 1453 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1453 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_le_set_per_adv_enable {
+ uint8_t enable;
+ uint8_t handle;
+} 
+# 1462 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1462 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_ext_scan_phy {
+ uint8_t type;
+ uint16_t interval;
+ uint16_t window;
+} 
+# 1469 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1469 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_le_set_ext_scan_param {
+ uint8_t own_addr_type;
+ uint8_t filter_policy;
+ uint8_t phys;
+ struct bt_hci_ext_scan_phy p[0];
+} 
+# 1480 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1480 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_le_set_ext_scan_enable {
+ uint8_t enable;
+ uint8_t filter_dup;
+ uint16_t duration;
+ uint16_t period;
+} 
+# 1491 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1491 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_ext_conn_phy {
+ uint16_t scan_interval;
+ uint16_t scan_window;
+ uint16_t conn_interval_min;
+ uint16_t conn_interval_max;
+ uint16_t conn_latency;
+ uint16_t supervision_timeout;
+ uint16_t min_ce_len;
+ uint16_t max_ce_len;
+} 
+# 1504 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1504 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_ext_create_conn {
+ uint8_t filter_policy;
+ uint8_t own_addr_type;
+ bt_addr_le_t peer_addr;
+ uint8_t phys;
+ struct bt_hci_ext_conn_phy p[0];
+} 
+# 1512 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1512 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_ext_create_conn_v2 {
+ uint8_t adv_handle;
+ uint8_t subevent;
+ uint8_t filter_policy;
+ uint8_t own_addr_type;
+ bt_addr_le_t peer_addr;
+ uint8_t phys;
+ struct bt_hci_ext_conn_phy p[0];
+} 
+# 1522 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1522 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_pawr_subevent_data_element {
+ uint8_t subevent;
+ uint8_t response_slot_start;
+ uint8_t response_slot_count;
+ uint8_t subevent_data_length;
+ uint8_t subevent_data[0];
+} 
+# 1531 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1531 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_set_pawr_subevent_data {
+ uint8_t adv_handle;
+ uint8_t num_subevents;
+ struct bt_hci_cp_le_set_pawr_subevent_data_element subevents[0];
+} 
+# 1537 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1537 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cp_le_set_pawr_response_data {
+ uint16_t sync_handle;
+ uint16_t request_event;
+ uint8_t request_subevent;
+ uint8_t response_subevent;
+ uint8_t response_slot;
+ uint8_t response_data_length;
+ uint8_t response_data[0];
+} 
+# 1549 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1549 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_pawr_sync_subevent {
+ uint16_t sync_handle;
+ uint16_t periodic_adv_properties;
+ uint8_t num_subevents;
+ uint8_t subevents[0];
+} 
+# 1557 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1557 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cp_le_set_per_adv_param_v2 {
+ uint8_t handle;
+ uint16_t min_interval;
+ uint16_t max_interval;
+ uint16_t props;
+ uint8_t num_subevents;
+ uint8_t subevent_interval;
+ uint8_t response_slot_delay;
+ uint8_t response_slot_spacing;
+ uint8_t num_response_slots;
+} 
+# 1571 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1571 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1590 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_per_adv_create_sync {
+ uint8_t options;
+ uint8_t sid;
+ bt_addr_le_t addr;
+ uint16_t skip;
+ uint16_t sync_timeout;
+ uint8_t cte_type;
+} 
+# 1597 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1597 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_cp_le_per_adv_terminate_sync {
+ uint16_t handle;
+} 
+# 1604 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1604 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_add_dev_to_per_adv_list {
+ bt_addr_le_t addr;
+ uint8_t sid;
+} 
+# 1610 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1610 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_rem_dev_from_per_adv_list {
+ bt_addr_le_t addr;
+ uint8_t sid;
+} 
+# 1616 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1616 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_rp_le_read_per_adv_list_size {
+ uint8_t status;
+ uint8_t list_size;
+} 
+# 1624 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1624 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_tx_power {
+ uint8_t status;
+ int8_t min_tx_power;
+ int8_t max_tx_power;
+} 
+# 1631 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1631 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_rf_path_comp {
+ uint8_t status;
+ int16_t tx_path_comp;
+ int16_t rx_path_comp;
+} 
+# 1638 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1638 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_write_rf_path_comp {
+ int16_t tx_path_comp;
+ int16_t rx_path_comp;
+} 
+# 1644 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1644 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_cp_le_set_privacy_mode {
+ bt_addr_le_t id_addr;
+ uint8_t mode;
+} 
+# 1653 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1653 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_cp_le_rx_test_v3 {
+ uint8_t rx_ch;
+ uint8_t phy;
+ uint8_t mod_index;
+ uint8_t expected_cte_len;
+ uint8_t expected_cte_type;
+ uint8_t slot_durations;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 1670 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1670 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cp_le_tx_test_v3 {
+ uint8_t tx_ch;
+ uint8_t test_data_len;
+ uint8_t pkt_payload;
+ uint8_t phy;
+ uint8_t cte_len;
+ uint8_t cte_type;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1683 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1698 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_cl_cte_tx_params {
+ uint8_t handle;
+ uint8_t cte_len;
+ uint8_t cte_type;
+ uint8_t cte_count;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 1705 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1705 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_cl_cte_tx_enable {
+ uint8_t handle;
+ uint8_t cte_enable;
+} 
+# 1711 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1711 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1721 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_cl_cte_sampling_enable {
+ uint16_t sync_handle;
+ uint8_t sampling_enable;
+ uint8_t slot_durations;
+ uint8_t max_sampled_cte;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 1728 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1728 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_set_cl_cte_sampling_enable {
+ uint8_t status;
+ uint16_t sync_handle;
+} 
+# 1733 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1733 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_conn_cte_rx_params {
+ uint16_t handle;
+ uint8_t sampling_enable;
+ uint8_t slot_durations;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 1742 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1742 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_set_conn_cte_rx_params {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1747 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1747 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1757 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_set_conn_cte_tx_params {
+ uint16_t handle;
+ uint8_t cte_types;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 1762 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1762 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_set_conn_cte_tx_params {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1767 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1767 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_cp_le_conn_cte_req_enable {
+ uint16_t handle;
+ uint8_t enable;
+ uint16_t cte_request_interval;
+ uint8_t requested_cte_length;
+ uint8_t requested_cte_type;
+} 
+# 1781 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1781 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_conn_cte_req_enable {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1786 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1786 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_conn_cte_rsp_enable {
+ uint16_t handle;
+ uint8_t enable;
+} 
+# 1792 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1792 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_conn_cte_rsp_enable {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 1797 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1797 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1813 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_rp_le_read_ant_info {
+ uint8_t status;
+ uint8_t switch_sample_rates;
+ uint8_t num_ant;
+ uint8_t max_switch_pattern_len;
+ uint8_t max_cte_len;
+};
+
+
+
+
+
+struct bt_hci_cp_le_set_per_adv_recv_enable {
+ uint16_t handle;
+ uint8_t enable;
+} 
+# 1828 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1828 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_per_adv_sync_transfer {
+ uint16_t conn_handle;
+ uint16_t service_data;
+ uint16_t sync_handle;
+} 
+# 1835 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1835 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_per_adv_sync_transfer {
+ uint8_t status;
+ uint16_t conn_handle;
+} 
+# 1840 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1840 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_per_adv_set_info_transfer {
+ uint16_t conn_handle;
+ uint16_t service_data;
+ uint8_t adv_handle;
+} 
+# 1847 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1847 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_per_adv_set_info_transfer {
+ uint8_t status;
+ uint16_t conn_handle;
+} 
+# 1852 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1852 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1866 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_past_param {
+ uint16_t conn_handle;
+ uint8_t mode;
+ uint16_t skip;
+ uint16_t timeout;
+ uint8_t cte_type;
+} 
+# 1872 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1872 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_past_param {
+ uint8_t status;
+ uint16_t conn_handle;
+} 
+# 1877 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1877 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_default_past_param {
+ uint8_t mode;
+ uint16_t skip;
+ uint16_t timeout;
+ uint8_t cte_type;
+} 
+# 1885 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1885 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_default_past_param {
+ uint8_t status;
+} 
+# 1889 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1889 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_rp_le_read_buffer_size_v2 {
+ uint8_t status;
+ uint16_t acl_max_len;
+ uint8_t acl_max_num;
+ uint16_t iso_max_len;
+ uint8_t iso_max_num;
+} 
+# 1898 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1898 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_iso_tx_sync {
+ uint16_t handle;
+} 
+# 1903 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1903 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_read_iso_tx_sync {
+ uint8_t status;
+ uint16_t handle;
+ uint16_t seq;
+ uint32_t timestamp;
+ uint8_t offset[3];
+} 
+# 1911 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1911 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 1929 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cis_params {
+ uint8_t cis_id;
+ uint16_t c_sdu;
+ uint16_t p_sdu;
+ uint8_t c_phy;
+ uint8_t p_phy;
+ uint8_t c_rtn;
+ uint8_t p_rtn;
+} 
+# 1937 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1937 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_set_cig_params {
+ uint8_t cig_id;
+ uint8_t c_interval[3];
+ uint8_t p_interval[3];
+ uint8_t sca;
+ uint8_t packing;
+ uint8_t framing;
+ uint16_t c_latency;
+ uint16_t p_latency;
+ uint8_t num_cis;
+ struct bt_hci_cis_params cis[0];
+} 
+# 1950 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1950 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_set_cig_params {
+ uint8_t status;
+ uint8_t cig_id;
+ uint8_t num_handles;
+ uint16_t handle[0];
+} 
+# 1957 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1957 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cis_params_test {
+ uint8_t cis_id;
+ uint8_t nse;
+ uint16_t c_sdu;
+ uint16_t p_sdu;
+ uint16_t c_pdu;
+ uint16_t p_pdu;
+ uint8_t c_phy;
+ uint8_t p_phy;
+ uint8_t c_bn;
+ uint8_t p_bn;
+} 
+# 1971 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1971 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_set_cig_params_test {
+ uint8_t cig_id;
+ uint8_t c_interval[3];
+ uint8_t p_interval[3];
+ uint8_t c_ft;
+ uint8_t p_ft;
+ uint16_t iso_interval;
+ uint8_t sca;
+ uint8_t packing;
+ uint8_t framing;
+ uint8_t num_cis;
+ struct bt_hci_cis_params_test cis[0];
+} 
+# 1985 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1985 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_set_cig_params_test {
+ uint8_t status;
+ uint8_t cig_id;
+ uint8_t num_handles;
+ uint16_t handle[0];
+} 
+# 1992 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1992 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cis {
+ uint16_t cis_handle;
+ uint16_t acl_handle;
+} 
+# 1998 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 1998 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_cp_le_create_cis {
+ uint8_t num_cis;
+ struct bt_hci_cis cis[0];
+} 
+# 2003 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2003 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_remove_cig {
+ uint8_t cig_id;
+} 
+# 2008 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2008 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_remove_cig {
+ uint8_t status;
+ uint8_t cig_id;
+} 
+# 2013 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2013 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_accept_cis {
+ uint16_t handle;
+} 
+# 2018 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2018 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_reject_cis {
+ uint16_t handle;
+ uint8_t reason;
+} 
+# 2024 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2024 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_reject_cis {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2029 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2029 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_create_big {
+ uint8_t big_handle;
+ uint8_t adv_handle;
+ uint8_t num_bis;
+ uint8_t sdu_interval[3];
+ uint16_t max_sdu;
+ uint16_t max_latency;
+ uint8_t rtn;
+ uint8_t phy;
+ uint8_t packing;
+ uint8_t framing;
+ uint8_t encryption;
+ uint8_t bcode[16];
+} 
+# 2045 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2045 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_create_big_test {
+ uint8_t big_handle;
+ uint8_t adv_handle;
+ uint8_t num_bis;
+ uint8_t sdu_interval[3];
+ uint16_t iso_interval;
+ uint8_t nse;
+ uint16_t max_sdu;
+ uint16_t max_pdu;
+ uint8_t phy;
+ uint8_t packing;
+ uint8_t framing;
+ uint8_t bn;
+ uint8_t irc;
+ uint8_t pto;
+ uint8_t encryption;
+ uint8_t bcode[16];
+} 
+# 2065 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2065 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_terminate_big {
+ uint8_t big_handle;
+ uint8_t reason;
+} 
+# 2071 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2071 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_big_create_sync {
+ uint8_t big_handle;
+ uint16_t sync_handle;
+ uint8_t encryption;
+ uint8_t bcode[16];
+ uint8_t mse;
+ uint16_t sync_timeout;
+ uint8_t num_bis;
+ uint8_t bis[0];
+} 
+# 2083 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2083 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_big_terminate_sync {
+ uint8_t big_handle;
+} 
+# 2088 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2088 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_big_terminate_sync {
+ uint8_t status;
+ uint8_t big_handle;
+} 
+# 2093 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2093 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_req_peer_sca {
+ uint16_t handle;
+} 
+# 2098 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2098 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_setup_iso_path {
+ uint16_t handle;
+ uint8_t path_dir;
+ uint8_t path_id;
+ struct bt_hci_cp_codec_id codec_id;
+ uint8_t controller_delay[3];
+ uint8_t codec_config_len;
+ uint8_t codec_config[0];
+} 
+# 2109 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2109 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_setup_iso_path {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_remove_iso_path {
+ uint16_t handle;
+ uint8_t path_dir;
+} 
+# 2120 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2120 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_remove_iso_path {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2125 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2125 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+struct bt_hci_cp_le_iso_transmit_test {
+ uint16_t handle;
+ uint8_t payload_type;
+} 
+# 2135 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2135 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_iso_transmit_test {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2140 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2140 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_iso_receive_test {
+ uint16_t handle;
+ uint8_t payload_type;
+} 
+# 2146 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2146 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_iso_receive_test {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2151 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2151 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_test_counters {
+ uint16_t handle;
+} 
+# 2156 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2156 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_read_test_counters {
+ uint8_t status;
+ uint16_t handle;
+ uint32_t received_cnt;
+ uint32_t missed_cnt;
+ uint32_t failed_cnt;
+} 
+# 2164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_iso_test_end {
+ uint16_t handle;
+} 
+# 2169 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2169 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_iso_test_end {
+ uint8_t status;
+ uint16_t handle;
+ uint32_t received_cnt;
+ uint32_t missed_cnt;
+ uint32_t failed_cnt;
+} 
+# 2177 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2177 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_set_host_feature {
+ uint8_t bit_number;
+ uint8_t bit_value;
+} 
+# 2183 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2183 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_set_host_feature {
+ uint8_t status;
+} 
+# 2187 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2187 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_cp_le_read_iso_link_quality {
+ uint16_t handle;
+} 
+# 2192 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2192 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_rp_le_read_iso_link_quality {
+ uint8_t status;
+ uint16_t handle;
+ uint32_t tx_unacked_packets;
+ uint32_t tx_flushed_packets;
+ uint32_t tx_last_subevent_packets;
+ uint32_t retransmitted_packets;
+ uint32_t crc_error_packets;
+ uint32_t rx_unreceived_packets;
+ uint32_t duplicate_packets;
+} 
+# 2204 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2204 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_cp_le_tx_test_v4 {
+ uint8_t tx_ch;
+ uint8_t test_data_len;
+ uint8_t pkt_payload;
+ uint8_t phy;
+ uint8_t cte_len;
+ uint8_t cte_type;
+ uint8_t switch_pattern_len;
+ uint8_t ant_ids[0];
+} 
+# 2217 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2217 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 2229 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_cp_le_tx_test_v4_tx_power {
+ int8_t tx_power;
+} 
+# 2231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_evt_inquiry_complete {
+ uint8_t status;
+} 
+# 2241 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2241 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_conn_complete {
+ uint8_t status;
+ uint16_t handle;
+ bt_addr_t bdaddr;
+ uint8_t link_type;
+ uint8_t encr_enabled;
+} 
+# 2250 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2250 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_conn_request {
+ bt_addr_t bdaddr;
+ uint8_t dev_class[3];
+ uint8_t link_type;
+} 
+# 2257 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2257 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_disconn_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t reason;
+} 
+# 2264 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2264 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_auth_complete {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2270 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2270 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_remote_name_req_complete {
+ uint8_t status;
+ bt_addr_t bdaddr;
+ uint8_t name[248];
+} 
+# 2277 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2277 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_encrypt_change {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t encrypt;
+} 
+# 2284 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2284 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_remote_features {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t features[8];
+} 
+# 2291 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2291 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_remote_version_info {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t version;
+ uint16_t manufacturer;
+ uint16_t subversion;
+} 
+# 2300 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2300 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_cmd_complete {
+ uint8_t ncmd;
+ uint16_t opcode;
+} 
+# 2306 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2306 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_evt_cc_status {
+ uint8_t status;
+} 
+# 2310 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2310 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_cmd_status {
+ uint8_t status;
+ uint8_t ncmd;
+ uint16_t opcode;
+} 
+# 2317 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2317 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_hardware_error {
+ uint8_t hardware_code;
+} 
+# 2322 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2322 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_role_change {
+ uint8_t status;
+ bt_addr_t bdaddr;
+ uint8_t role;
+} 
+# 2329 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2329 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_num_completed_packets {
+ uint8_t num_handles;
+ struct bt_hci_handle_count h[0];
+} 
+# 2335 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2335 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_pin_code_req {
+ bt_addr_t bdaddr;
+} 
+# 2340 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2340 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_link_key_req {
+ bt_addr_t bdaddr;
+} 
+# 2345 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2345 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 2359 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_evt_link_key_notify {
+ bt_addr_t bdaddr;
+ uint8_t link_key[16];
+ uint8_t key_type;
+} 
+# 2363 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2363 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+
+
+struct bt_hci_evt_data_buf_overflow {
+ uint8_t link_type;
+} 
+# 2373 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2373 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_inquiry_result_with_rssi {
+ bt_addr_t addr;
+ uint8_t pscan_rep_mode;
+ uint8_t reserved;
+ uint8_t cod[3];
+ uint16_t clock_offset;
+ int8_t rssi;
+} 
+# 2383 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2383 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_remote_ext_features {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t page;
+ uint8_t max_page;
+ uint8_t features[8];
+} 
+# 2392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2392 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_per_adv_sync_established_v2 {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t sid;
+ bt_addr_le_t adv_addr;
+ uint8_t phy;
+ uint16_t interval;
+ uint8_t clock_accuracy;
+ uint8_t num_subevents;
+ uint8_t subevent_interval;
+ uint8_t response_slot_delay;
+ uint8_t response_slot_spacing;
+} 
+# 2407 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2407 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_per_advertising_report_v2 {
+ uint16_t handle;
+ int8_t tx_power;
+ int8_t rssi;
+ uint8_t cte_type;
+ uint16_t periodic_event_counter;
+ uint8_t subevent;
+ uint8_t data_status;
+ uint8_t length;
+ uint8_t data[0];
+} 
+# 2420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_past_received_v2 {
+ uint8_t status;
+ uint16_t conn_handle;
+ uint16_t service_data;
+ uint16_t sync_handle;
+ uint8_t adv_sid;
+ bt_addr_le_t addr;
+ uint8_t phy;
+ uint16_t interval;
+ uint8_t clock_accuracy;
+ uint8_t num_subevents;
+ uint8_t subevent_interval;
+ uint8_t response_slot_delay;
+ uint8_t response_slot_spacing;
+} 
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_per_adv_subevent_data_request {
+ uint8_t adv_handle;
+ uint8_t subevent_start;
+ uint8_t subevent_data_count;
+} 
+# 2444 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2444 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+struct bt_hci_evt_le_per_adv_response {
+ int8_t tx_power;
+ int8_t rssi;
+ uint8_t cte_type;
+ uint8_t response_slot;
+ uint8_t data_status;
+ uint8_t data_length;
+ uint8_t data[0];
+} 
+# 2456 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2456 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+struct bt_hci_evt_le_per_adv_response_report {
+ uint8_t adv_handle;
+ uint8_t subevent;
+ uint8_t tx_status;
+ uint8_t num_responses;
+ struct bt_hci_evt_le_per_adv_response responses[0];
+} 
+# 2464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2464 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_enh_conn_complete_v2 {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t role;
+ bt_addr_le_t peer_addr;
+ bt_addr_t local_rpa;
+ bt_addr_t peer_rpa;
+ uint16_t interval;
+ uint16_t latency;
+ uint16_t supv_timeout;
+ uint8_t clock_accuracy;
+ uint8_t adv_handle;
+ uint16_t sync_handle;
+} 
+# 2480 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2480 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_sync_conn_complete {
+ uint8_t status;
+ uint16_t handle;
+ bt_addr_t bdaddr;
+ uint8_t link_type;
+ uint8_t tx_interval;
+ uint8_t retansmission_window;
+ uint16_t rx_pkt_length;
+ uint16_t tx_pkt_length;
+ uint8_t air_mode;
+} 
+# 2493 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2493 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_extended_inquiry_result {
+ uint8_t num_reports;
+ bt_addr_t addr;
+ uint8_t pscan_rep_mode;
+ uint8_t reserved;
+ uint8_t cod[3];
+ uint16_t clock_offset;
+ int8_t rssi;
+ uint8_t eir[240];
+} 
+# 2505 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2505 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_encrypt_key_refresh_complete {
+ uint8_t status;
+ uint16_t handle;
+} 
+# 2511 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2511 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_io_capa_req {
+ bt_addr_t bdaddr;
+} 
+# 2516 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2516 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_io_capa_resp {
+ bt_addr_t bdaddr;
+ uint8_t capability;
+ uint8_t oob_data;
+ uint8_t authentication;
+} 
+# 2524 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2524 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_user_confirm_req {
+ bt_addr_t bdaddr;
+ uint32_t passkey;
+} 
+# 2530 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2530 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_user_passkey_req {
+ bt_addr_t bdaddr;
+} 
+# 2535 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2535 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_ssp_complete {
+ uint8_t status;
+ bt_addr_t bdaddr;
+} 
+# 2541 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2541 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_user_passkey_notify {
+ bt_addr_t bdaddr;
+ uint32_t passkey;
+} 
+# 2547 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2547 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_meta_event {
+ uint8_t subevent;
+} 
+# 2552 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2552 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_auth_payload_timeout_exp {
+ uint16_t handle;
+} 
+# 2557 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2557 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_evt_le_conn_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t role;
+ bt_addr_le_t peer_addr;
+ uint16_t interval;
+ uint16_t latency;
+ uint16_t supv_timeout;
+ uint8_t clock_accuracy;
+} 
+# 2572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_evt_le_advertising_info {
+ uint8_t evt_type;
+ bt_addr_le_t addr;
+ uint8_t length;
+ uint8_t data[0];
+} 
+# 2582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_evt_le_advertising_report {
+ uint8_t num_reports;
+ struct bt_hci_evt_le_advertising_info adv_info[0];
+} 
+# 2586 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2586 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_conn_update_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint16_t interval;
+ uint16_t latency;
+ uint16_t supv_timeout;
+} 
+# 2595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_remote_feat_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t features[8];
+} 
+# 2602 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2602 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_ltk_request {
+ uint16_t handle;
+ uint64_t rand;
+ uint16_t ediv;
+} 
+# 2609 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2609 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_conn_param_req {
+ uint16_t handle;
+ uint16_t interval_min;
+ uint16_t interval_max;
+ uint16_t latency;
+ uint16_t timeout;
+} 
+# 2618 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2618 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_data_len_change {
+ uint16_t handle;
+ uint16_t max_tx_octets;
+ uint16_t max_tx_time;
+ uint16_t max_rx_octets;
+ uint16_t max_rx_time;
+} 
+# 2627 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2627 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_p256_public_key_complete {
+ uint8_t status;
+ uint8_t key[64];
+} 
+# 2633 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2633 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_generate_dhkey_complete {
+ uint8_t status;
+ uint8_t dhkey[32];
+} 
+# 2639 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2639 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_enh_conn_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t role;
+ bt_addr_le_t peer_addr;
+ bt_addr_t local_rpa;
+ bt_addr_t peer_rpa;
+ uint16_t interval;
+ uint16_t latency;
+ uint16_t supv_timeout;
+ uint8_t clock_accuracy;
+} 
+# 2653 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2653 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_direct_adv_info {
+ uint8_t evt_type;
+ bt_addr_le_t addr;
+ bt_addr_le_t dir_addr;
+ int8_t rssi;
+} 
+# 2661 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2661 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_evt_le_direct_adv_report {
+ uint8_t num_reports;
+ struct bt_hci_evt_le_direct_adv_info direct_adv_info[0];
+} 
+# 2665 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2665 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_phy_update_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t tx_phy;
+ uint8_t rx_phy;
+} 
+# 2673 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2673 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 2689 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_evt_le_ext_advertising_info {
+ uint16_t evt_type;
+ bt_addr_le_t addr;
+ uint8_t prim_phy;
+ uint8_t sec_phy;
+ uint8_t sid;
+ int8_t tx_power;
+ int8_t rssi;
+ uint16_t interval;
+ bt_addr_le_t direct_addr;
+ uint8_t length;
+ uint8_t data[0];
+} 
+# 2701 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2701 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+struct bt_hci_evt_le_ext_advertising_report {
+ uint8_t num_reports;
+ struct bt_hci_evt_le_ext_advertising_info adv_info[0];
+} 
+# 2705 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2705 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_per_adv_sync_established {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t sid;
+ bt_addr_le_t adv_addr;
+ uint8_t phy;
+ uint16_t interval;
+ uint8_t clock_accuracy;
+} 
+# 2716 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2716 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_per_advertising_report {
+ uint16_t handle;
+ int8_t tx_power;
+ int8_t rssi;
+ uint8_t cte_type;
+ uint8_t data_status;
+ uint8_t length;
+ uint8_t data[0];
+} 
+# 2727 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2727 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_per_adv_sync_lost {
+ uint16_t handle;
+} 
+# 2732 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2732 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_evt_le_adv_set_terminated {
+ uint8_t status;
+ uint8_t adv_handle;
+ uint16_t conn_handle;
+ uint8_t num_completed_ext_adv_evts;
+} 
+# 2742 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2742 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_scan_req_received {
+ uint8_t handle;
+ bt_addr_le_t addr;
+} 
+# 2748 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2748 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+
+struct bt_hci_evt_le_chan_sel_algo {
+ uint16_t handle;
+ uint8_t chan_sel_algo;
+} 
+# 2757 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2757 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 2770 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+struct bt_hci_le_iq_sample {
+ int8_t i;
+ int8_t q;
+};
+
+struct bt_hci_evt_le_connectionless_iq_report {
+ uint16_t sync_handle;
+ uint8_t chan_idx;
+ int16_t rssi;
+ uint8_t rssi_ant_id;
+ uint8_t cte_type;
+ uint8_t slot_durations;
+ uint8_t packet_status;
+ uint16_t per_evt_counter;
+ uint8_t sample_count;
+ struct bt_hci_le_iq_sample sample[0];
+} 
+# 2786 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2786 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_connection_iq_report {
+ uint16_t conn_handle;
+ uint8_t rx_phy;
+ uint8_t data_chan_idx;
+ int16_t rssi;
+ uint8_t rssi_ant_id;
+ uint8_t cte_type;
+ uint8_t slot_durations;
+ uint8_t packet_status;
+ uint16_t conn_evt_counter;
+ uint8_t sample_count;
+ struct bt_hci_le_iq_sample sample[0];
+} 
+# 2801 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2801 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+
+
+struct bt_hci_evt_le_cte_req_failed {
+
+
+
+
+
+ uint8_t status;
+ uint16_t conn_handle;
+} 
+# 2814 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2814 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_past_received {
+ uint8_t status;
+ uint16_t conn_handle;
+ uint16_t service_data;
+ uint16_t sync_handle;
+ uint8_t adv_sid;
+ bt_addr_le_t addr;
+ uint8_t phy;
+ uint16_t interval;
+ uint8_t clock_accuracy;
+} 
+# 2827 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2827 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_cis_established {
+ uint8_t status;
+ uint16_t conn_handle;
+ uint8_t cig_sync_delay[3];
+ uint8_t cis_sync_delay[3];
+ uint8_t c_latency[3];
+ uint8_t p_latency[3];
+ uint8_t c_phy;
+ uint8_t p_phy;
+ uint8_t nse;
+ uint8_t c_bn;
+ uint8_t p_bn;
+ uint8_t c_ft;
+ uint8_t p_ft;
+ uint16_t c_max_pdu;
+ uint16_t p_max_pdu;
+ uint16_t interval;
+} 
+# 2847 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2847 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_cis_req {
+ uint16_t acl_handle;
+ uint16_t cis_handle;
+ uint8_t cig_id;
+ uint8_t cis_id;
+} 
+# 2855 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2855 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_big_complete {
+ uint8_t status;
+ uint8_t big_handle;
+ uint8_t sync_delay[3];
+ uint8_t latency[3];
+ uint8_t phy;
+ uint8_t nse;
+ uint8_t bn;
+ uint8_t pto;
+ uint8_t irc;
+ uint16_t max_pdu;
+ uint16_t iso_interval;
+ uint8_t num_bis;
+ uint16_t handle[0];
+} 
+# 2872 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2872 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_big_terminate {
+ uint8_t big_handle;
+ uint8_t reason;
+} 
+# 2878 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2878 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_big_sync_established {
+ uint8_t status;
+ uint8_t big_handle;
+ uint8_t latency[3];
+ uint8_t nse;
+ uint8_t bn;
+ uint8_t pto;
+ uint8_t irc;
+ uint16_t max_pdu;
+ uint16_t iso_interval;
+ uint8_t num_bis;
+ uint16_t handle[0];
+} 
+# 2893 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2893 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_big_sync_lost {
+ uint8_t big_handle;
+ uint8_t reason;
+} 
+# 2899 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2899 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_req_peer_sca_complete {
+ uint8_t status;
+ uint16_t handle;
+ uint8_t sca;
+} 
+# 2906 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2906 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+
+
+struct bt_hci_evt_le_biginfo_adv_report {
+ uint16_t sync_handle;
+ uint8_t num_bis;
+ uint8_t nse;
+ uint16_t iso_interval;
+ uint8_t bn;
+ uint8_t pto;
+ uint8_t irc;
+ uint16_t max_pdu;
+ uint8_t sdu_interval[3];
+ uint16_t max_sdu;
+ uint8_t phy;
+ uint8_t framing;
+ uint8_t encryption;
+} 
+# 2923 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h" 3 4
+ __attribute__((__packed__))
+# 2923 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci_types.h"
+         ;
+# 25 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h" 1
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+enum bt_df_cte_type {
+
+ BT_DF_CTE_TYPE_NONE = 0,
+
+ BT_DF_CTE_TYPE_AOA = (1UL << (0)),
+
+
+
+
+
+ BT_DF_CTE_TYPE_AOD_1US = (1UL << (1)),
+
+
+
+
+
+ BT_DF_CTE_TYPE_AOD_2US = (1UL << (2)),
+
+ BT_DF_CTE_TYPE_ALL = (BT_DF_CTE_TYPE_AOA | BT_DF_CTE_TYPE_AOD_1US | BT_DF_CTE_TYPE_AOD_2US)
+};
+
+
+enum bt_df_antenna_switching_slot {
+ BT_DF_ANTENNA_SWITCHING_SLOT_1US = 0x1,
+ BT_DF_ANTENNA_SWITCHING_SLOT_2US = 0x2
+};
+
+
+enum bt_df_packet_status {
+
+ BT_DF_CTE_CRC_OK = 0x0,
+
+
+
+
+ BT_DF_CTE_CRC_ERR_CTE_BASED_TIME = 0x1,
+
+
+
+ BT_DF_CTE_CRC_ERR_CTE_BASED_OTHER = 0x2,
+
+ BT_DF_CTE_INSUFFICIENT_RESOURCES = 0xFF
+};
+
+
+
+
+
+
+
+struct bt_df_adv_cte_tx_param {
+
+ uint8_t cte_len;
+
+
+
+
+
+
+ uint8_t cte_type;
+
+ uint8_t cte_count;
+
+ uint8_t num_ant_ids;
+
+ uint8_t *ant_ids;
+};
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+struct bt_df_per_adv_sync_cte_rx_param {
+
+
+
+
+
+ uint8_t cte_types;
+
+ uint8_t slot_durations;
+
+ uint8_t max_cte_count;
+
+ uint8_t num_ant_ids;
+
+ const uint8_t *ant_ids;
+};
+
+enum bt_df_iq_sample {
+
+
+
+ BT_DF_IQ_SAMPLE_8_BITS_INT,
+
+ BT_DF_IQ_SAMPLE_16_BITS_INT,
+};
+
+struct bt_df_per_adv_sync_iq_samples_report {
+
+ uint8_t chan_idx;
+
+ int16_t rssi;
+
+ uint8_t rssi_ant_id;
+
+ uint8_t cte_type;
+
+ uint8_t slot_durations;
+
+ uint8_t packet_status;
+
+ uint16_t per_evt_counter;
+
+ uint8_t sample_count;
+
+ enum bt_df_iq_sample sample_type;
+
+ union {
+  struct bt_hci_le_iq_sample const *sample;
+  struct bt_hci_le_iq_sample16 const *sample16;
+ };
+};
+
+struct bt_df_conn_cte_rx_param {
+
+
+
+
+
+ uint8_t cte_types;
+
+ uint8_t slot_durations;
+
+ uint8_t num_ant_ids;
+
+ const uint8_t *ant_ids;
+};
+
+enum bt_df_conn_iq_report_err {
+
+ BT_DF_IQ_REPORT_ERR_SUCCESS,
+
+ BT_DF_IQ_REPORT_ERR_NO_CTE,
+
+ BT_DF_IQ_REPORT_ERR_PEER_REJECTED,
+};
+
+struct bt_df_conn_iq_samples_report {
+
+ enum bt_df_conn_iq_report_err err;
+
+ uint8_t rx_phy;
+
+ uint8_t chan_idx;
+
+ int16_t rssi;
+
+ uint8_t rssi_ant_id;
+
+ uint8_t cte_type;
+
+ uint8_t slot_durations;
+
+ uint8_t packet_status;
+
+ uint16_t conn_evt_counter;
+
+ enum bt_df_iq_sample sample_type;
+
+ uint8_t sample_count;
+
+ union {
+  struct bt_hci_le_iq_sample const *sample;
+  struct bt_hci_le_iq_sample16 const *sample16;
+ };
+};
+
+struct bt_df_conn_cte_tx_param {
+
+
+
+
+ uint8_t cte_types;
+
+ uint8_t num_ant_ids;
+
+ const uint8_t *ant_ids;
+};
+
+struct bt_df_conn_cte_req_params {
+
+
+
+
+
+
+ uint16_t interval;
+
+ uint8_t cte_length;
+
+
+
+
+
+
+ uint8_t cte_type;
+};
+# 234 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_set_adv_cte_tx_param(struct bt_le_ext_adv *adv,
+          const struct bt_df_adv_cte_tx_param *params);
+# 248 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_adv_cte_tx_enable(struct bt_le_ext_adv *adv);
+# 257 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_adv_cte_tx_disable(struct bt_le_ext_adv *adv);
+# 270 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_per_adv_sync_cte_rx_enable(struct bt_le_per_adv_sync *sync,
+         const struct bt_df_per_adv_sync_cte_rx_param *params);
+# 280 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_per_adv_sync_cte_rx_disable(struct bt_le_per_adv_sync *sync);
+# 290 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_conn_cte_rx_enable(struct bt_conn *conn, const struct bt_df_conn_cte_rx_param *params);
+# 299 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_conn_cte_rx_disable(struct bt_conn *conn);
+# 315 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_set_conn_cte_tx_param(struct bt_conn *conn, const struct bt_df_conn_cte_tx_param *params);
+# 327 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_conn_cte_req_enable(struct bt_conn *conn, const struct bt_df_conn_cte_req_params *params);
+# 338 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_conn_cte_req_disable(struct bt_conn *conn);
+# 349 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_conn_cte_rsp_enable(struct bt_conn *conn);
+# 360 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/direction.h"
+int bt_df_conn_cte_rsp_disable(struct bt_conn *conn);
+# 28 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 2
+
+
+
+
+
+
+
+struct bt_conn;
+
+
+struct bt_le_conn_param {
+ uint16_t interval_min;
+ uint16_t interval_max;
+ uint16_t latency;
+ uint16_t timeout;
+};
+# 82 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn_le_phy_info {
+ uint8_t tx_phy;
+ uint8_t rx_phy;
+};
+
+
+enum {
+
+ BT_CONN_LE_PHY_OPT_NONE = 0,
+
+
+ BT_CONN_LE_PHY_OPT_CODED_S2 = (1UL << (0)),
+
+
+ BT_CONN_LE_PHY_OPT_CODED_S8 = (1UL << (1)),
+};
+
+
+struct bt_conn_le_phy_param {
+ uint16_t options;
+ uint8_t pref_tx_phy;
+ uint8_t pref_rx_phy;
+};
+# 149 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn_le_data_len_info {
+
+ uint16_t tx_max_len;
+
+ uint16_t tx_max_time;
+
+ uint16_t rx_max_len;
+
+ uint16_t rx_max_time;
+};
+
+
+struct bt_conn_le_data_len_param {
+
+ uint16_t tx_max_len;
+
+ uint16_t tx_max_time;
+};
+# 200 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+enum 
+# 200 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+    __attribute__((__packed__)) 
+# 200 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+             bt_conn_type {
+
+ BT_CONN_TYPE_LE = (1UL << (0)),
+
+ BT_CONN_TYPE_BR = (1UL << (1)),
+
+ BT_CONN_TYPE_SCO = (1UL << (2)),
+
+ BT_CONN_TYPE_ISO = (1UL << (3)),
+
+ BT_CONN_TYPE_ALL = BT_CONN_TYPE_LE | BT_CONN_TYPE_BR |
+      BT_CONN_TYPE_SCO | BT_CONN_TYPE_ISO,
+};
+# 225 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn *bt_conn_ref(struct bt_conn *conn);
+
+
+
+
+
+
+
+void bt_conn_unref(struct bt_conn *conn);
+# 251 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+void bt_conn_foreach(enum bt_conn_type type,
+       void (*func)(struct bt_conn *conn, void *data),
+       void *data);
+# 267 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn *bt_conn_lookup_addr_le(uint8_t id, const bt_addr_le_t *peer);
+
+
+
+
+
+
+
+const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn);
+# 287 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+uint8_t bt_conn_index(const struct bt_conn *conn);
+
+
+struct bt_conn_le_info {
+
+ const bt_addr_le_t *src;
+
+
+
+ const bt_addr_le_t *dst;
+
+ const bt_addr_le_t *local;
+
+ const bt_addr_le_t *remote;
+ uint16_t interval;
+ uint16_t latency;
+ uint16_t timeout;
+# 313 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+};
+# 331 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn_br_info {
+ const bt_addr_t *dst;
+};
+
+enum {
+ BT_CONN_ROLE_CENTRAL = 0,
+ BT_CONN_ROLE_PERIPHERAL = 1,
+};
+
+enum bt_conn_state {
+
+ BT_CONN_STATE_DISCONNECTED,
+
+ BT_CONN_STATE_CONNECTING,
+
+ BT_CONN_STATE_CONNECTED,
+
+ BT_CONN_STATE_DISCONNECTING,
+};
+
+
+typedef enum 
+# 352 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+            __attribute__((__packed__)) 
+# 352 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+                     {
+
+ BT_SECURITY_L0,
+
+ BT_SECURITY_L1,
+
+ BT_SECURITY_L2,
+
+ BT_SECURITY_L3,
+
+ BT_SECURITY_L4,
+
+
+
+ BT_SECURITY_FORCE_PAIR = (1UL << (7)),
+} bt_security_t;
+
+
+enum bt_security_flag {
+
+ BT_SECURITY_FLAG_SC = (1UL << (0)),
+
+ BT_SECURITY_FLAG_OOB = (1UL << (1)),
+};
+
+
+struct bt_security_info {
+
+ bt_security_t level;
+
+ uint8_t enc_key_size;
+
+ enum bt_security_flag flags;
+};
+
+
+
+
+
+
+struct bt_conn_info {
+
+ enum bt_conn_type type;
+
+ uint8_t role;
+
+ uint8_t id;
+
+ union {
+
+  struct bt_conn_le_info le;
+
+  struct bt_conn_br_info br;
+ };
+
+ enum bt_conn_state state;
+
+ struct bt_security_info security;
+};
+
+
+struct bt_conn_le_remote_info {
+
+
+ const uint8_t *features;
+};
+
+
+struct bt_conn_br_remote_info {
+
+
+ const uint8_t *features;
+
+
+ uint8_t num_pages;
+};
+
+
+
+
+
+
+struct bt_conn_remote_info {
+
+ uint8_t type;
+
+
+ uint8_t version;
+
+
+ uint16_t manufacturer;
+
+
+ uint16_t subversion;
+
+ union {
+
+  struct bt_conn_le_remote_info le;
+
+
+  struct bt_conn_br_remote_info br;
+ };
+};
+
+enum bt_conn_le_tx_power_phy {
+
+ BT_CONN_LE_TX_POWER_PHY_NONE,
+
+ BT_CONN_LE_TX_POWER_PHY_1M,
+
+ BT_CONN_LE_TX_POWER_PHY_2M,
+
+ BT_CONN_LE_TX_POWER_PHY_CODED_S8,
+
+ BT_CONN_LE_TX_POWER_PHY_CODED_S2,
+};
+
+
+struct bt_conn_le_tx_power {
+
+
+ uint8_t phy;
+
+
+ int8_t current_level;
+
+
+ int8_t max_level;
+};
+
+
+
+
+
+
+enum bt_conn_auth_keypress {
+ BT_CONN_AUTH_KEYPRESS_ENTRY_STARTED = 0x00,
+ BT_CONN_AUTH_KEYPRESS_DIGIT_ENTERED = 0x01,
+ BT_CONN_AUTH_KEYPRESS_DIGIT_ERASED = 0x02,
+ BT_CONN_AUTH_KEYPRESS_CLEARED = 0x03,
+ BT_CONN_AUTH_KEYPRESS_ENTRY_COMPLETED = 0x04,
+};
+# 502 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info);
+# 519 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_get_remote_info(struct bt_conn *conn,
+       struct bt_conn_remote_info *remote_info);
+# 530 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_get_tx_power_level(struct bt_conn *conn,
+      struct bt_conn_le_tx_power *tx_power_level);
+# 544 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_param_update(struct bt_conn *conn,
+       const struct bt_le_conn_param *param);
+# 554 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_data_len_update(struct bt_conn *conn,
+          const struct bt_conn_le_data_len_param *param);
+# 567 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_phy_update(struct bt_conn *conn,
+     const struct bt_conn_le_phy_param *param);
+# 592 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason);
+
+enum {
+
+ BT_CONN_LE_OPT_NONE = 0,
+
+
+
+
+
+ BT_CONN_LE_OPT_CODED = (1UL << (0)),
+
+
+
+
+
+
+
+ BT_CONN_LE_OPT_NO_1M = (1UL << (1)),
+};
+
+struct bt_conn_le_create_param {
+
+
+ uint32_t options;
+
+
+ uint16_t interval;
+
+
+ uint16_t window;
+
+
+
+
+
+ uint16_t interval_coded;
+
+
+
+
+
+ uint16_t window_coded;
+# 643 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ uint16_t timeout;
+};
+# 709 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_create(const bt_addr_le_t *peer,
+        const struct bt_conn_le_create_param *create_param,
+        const struct bt_le_conn_param *conn_param,
+        struct bt_conn **conn);
+
+struct bt_conn_le_create_synced_param {
+
+
+
+
+
+
+ const bt_addr_le_t *peer;
+
+
+ uint8_t subevent;
+};
+# 744 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_create_synced(const struct bt_le_ext_adv *adv,
+        const struct bt_conn_le_create_synced_param *synced_param,
+        const struct bt_le_conn_param *conn_param, struct bt_conn **conn);
+# 763 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_le_create_auto(const struct bt_conn_le_create_param *create_param,
+      const struct bt_le_conn_param *conn_param);
+
+
+
+
+
+int bt_conn_create_auto_stop(void);
+# 786 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_le_set_auto_conn(const bt_addr_le_t *addr,
+   const struct bt_le_conn_param *param);
+# 824 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_set_security(struct bt_conn *conn, bt_security_t sec);
+
+
+
+
+
+bt_security_t bt_conn_get_security(const struct bt_conn *conn);
+# 841 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+uint8_t bt_conn_enc_key_size(const struct bt_conn *conn);
+
+enum bt_security_err {
+
+ BT_SECURITY_ERR_SUCCESS,
+
+
+ BT_SECURITY_ERR_AUTH_FAIL,
+
+
+ BT_SECURITY_ERR_PIN_OR_KEY_MISSING,
+
+
+ BT_SECURITY_ERR_OOB_NOT_AVAILABLE,
+
+
+ BT_SECURITY_ERR_AUTH_REQUIREMENT,
+
+
+ BT_SECURITY_ERR_PAIR_NOT_SUPPORTED,
+
+
+ BT_SECURITY_ERR_PAIR_NOT_ALLOWED,
+
+
+ BT_SECURITY_ERR_INVALID_PARAM,
+
+
+ BT_SECURITY_ERR_KEY_REJECTED,
+
+
+ BT_SECURITY_ERR_UNSPECIFIED,
+};
+# 885 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn_cb {
+# 910 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*connected)(struct bt_conn *conn, uint8_t err);
+# 929 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*disconnected)(struct bt_conn *conn, uint8_t reason);
+# 955 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ 
+# 955 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+_Bool 
+# 955 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+     (*le_param_req)(struct bt_conn *conn,
+        struct bt_le_conn_param *param);
+# 968 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*le_param_updated)(struct bt_conn *conn, uint16_t interval,
+     uint16_t latency, uint16_t timeout);
+# 980 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*identity_resolved)(struct bt_conn *conn,
+      const bt_addr_le_t *rpa,
+      const bt_addr_le_t *identity);
+# 1001 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*security_changed)(struct bt_conn *conn, bt_security_t level,
+     enum bt_security_err err);
+# 1055 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ struct bt_conn_cb *_next;
+};
+
+
+
+
+
+
+
+void bt_conn_cb_register(struct bt_conn_cb *cb);
+# 1086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+void bt_set_bondable(
+# 1086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+                    _Bool 
+# 1086 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+                         enable);
+# 1106 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_set_bondable(struct bt_conn *conn, 
+# 1106 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+                                              _Bool 
+# 1106 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+                                                   enable);
+
+
+
+
+
+
+
+void bt_le_oob_set_sc_flag(
+# 1114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+                          _Bool 
+# 1114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+                               enable);
+
+
+
+
+
+
+
+void bt_le_oob_set_legacy_flag(
+# 1122 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+                              _Bool 
+# 1122 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+                                   enable);
+# 1135 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_le_oob_set_legacy_tk(struct bt_conn *conn, const uint8_t *tk);
+# 1155 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_le_oob_set_sc_data(struct bt_conn *conn,
+     const struct bt_le_oob_sc_data *oobd_local,
+     const struct bt_le_oob_sc_data *oobd_remote);
+# 1174 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_le_oob_get_sc_data(struct bt_conn *conn,
+     const struct bt_le_oob_sc_data **oobd_local,
+     const struct bt_le_oob_sc_data **oobd_remote);
+# 1197 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_passkey_set(unsigned int passkey);
+
+
+struct bt_conn_oob_info {
+
+ enum {
+
+  BT_CONN_OOB_LE_LEGACY,
+
+
+  BT_CONN_OOB_LE_SC,
+ } type;
+
+ union {
+
+  struct {
+
+   enum {
+
+    BT_CONN_OOB_LOCAL_ONLY,
+
+
+    BT_CONN_OOB_REMOTE_ONLY,
+
+
+    BT_CONN_OOB_BOTH_PEERS,
+
+
+    BT_CONN_OOB_NO_DATA,
+   } oob_config;
+  } lesc;
+ };
+};
+# 1238 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn_pairing_feat {
+
+ uint8_t io_capability;
+
+
+ uint8_t oob_data_flag;
+
+
+ uint8_t auth_req;
+
+
+ uint8_t max_enc_key_size;
+
+
+
+
+ uint8_t init_key_dist;
+
+
+
+
+ uint8_t resp_key_dist;
+};
+
+
+
+struct bt_conn_auth_cb {
+# 1293 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ enum bt_security_err (*pairing_accept)(struct bt_conn *conn,
+         const struct bt_conn_pairing_feat *const feat);
+# 1315 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
+# 1361 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*passkey_entry)(struct bt_conn *conn);
+# 1384 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
+# 1402 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*oob_data_request)(struct bt_conn *conn,
+     struct bt_conn_oob_info *info);
+# 1417 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*cancel)(struct bt_conn *conn);
+# 1437 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*pairing_confirm)(struct bt_conn *conn);
+# 1460 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+};
+
+
+struct bt_conn_auth_info_cb {
+# 1473 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*pairing_complete)(struct bt_conn *conn, 
+# 1473 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+                                               _Bool 
+# 1473 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+                                                    bonded);
+
+
+
+
+
+
+ void (*pairing_failed)(struct bt_conn *conn,
+          enum bt_security_err reason);
+# 1491 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+ void (*bond_deleted)(uint8_t id, const bt_addr_le_t *peer);
+
+
+ sys_snode_t node;
+};
+# 1506 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb);
+# 1522 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_cb_overlay(struct bt_conn *conn, const struct bt_conn_auth_cb *cb);
+# 1533 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_info_cb_register(struct bt_conn_auth_info_cb *cb);
+# 1543 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_info_cb_unregister(struct bt_conn_auth_info_cb *cb);
+# 1555 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey);
+# 1572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_keypress_notify(struct bt_conn *conn, enum bt_conn_auth_keypress type);
+# 1582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_cancel(struct bt_conn *conn);
+# 1593 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_passkey_confirm(struct bt_conn *conn);
+# 1604 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_pairing_confirm(struct bt_conn *conn);
+# 1616 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+int bt_conn_auth_pincode_entry(struct bt_conn *conn, const char *pin);
+
+
+struct bt_br_conn_param {
+ 
+# 1620 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h" 3 4
+_Bool 
+# 1620 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+     allow_role_switch;
+};
+# 1659 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn *bt_conn_create_br(const bt_addr_t *peer,
+      const struct bt_br_conn_param *param);
+# 1673 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/conn.h"
+struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer);
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h" 2
+# 35 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+struct net_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len);
+# 54 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf);
+# 79 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf,
+    struct net_buf **rsp);
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+int bt_hci_get_conn_handle(const struct bt_conn *conn, uint16_t *conn_handle);
+# 98 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+int bt_hci_get_adv_handle(const struct bt_le_ext_adv *adv, uint8_t *adv_handle);
+# 111 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+typedef 
+# 111 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h" 3 4
+       _Bool 
+# 111 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+            bt_hci_vnd_evt_cb_t(struct net_buf_simple *buf);
+# 120 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+int bt_hci_register_vnd_evt_cb(bt_hci_vnd_evt_cb_t cb);
+# 135 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/bluetooth/hci.h"
+int bt_hci_le_rand(void *buffer, size_t len);
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 2
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h" 1
+# 21 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+struct bt_pub_key_cb {
+# 30 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+ void (*func)(const uint8_t key[(2 * ((32)))]);
+
+
+ sys_snode_t node;
+};
+# 45 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+
+# 45 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h" 3 4
+_Bool 
+# 45 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+    bt_pub_key_is_debug(uint8_t *cmp_pub_key);
+# 60 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+int bt_pub_key_gen(struct bt_pub_key_cb *cb);
+
+
+
+
+
+void bt_pub_key_hci_disrupted(void);
+
+
+
+
+
+
+
+const uint8_t *bt_pub_key_get(void);
+# 83 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+typedef void (*bt_dh_key_cb_t)(const uint8_t key[(32)]);
+# 94 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.h"
+int bt_dh_key_gen(const uint8_t remote_pk[(2 * ((32)))], bt_dh_key_cb_t cb);
+# 14 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 1
+# 24 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+enum {
+ BT_EVENT_CMD_TX,
+ BT_EVENT_CONN_TX_QUEUE,
+};
+
+
+enum {
+ BT_DEV_ENABLE,
+ BT_DEV_DISABLE,
+ BT_DEV_READY,
+ BT_DEV_PRESET_ID,
+ BT_DEV_HAS_PUB_KEY,
+ BT_DEV_PUB_KEY_BUSY,
+
+ BT_DEV_SCANNING,
+ BT_DEV_EXPLICIT_SCAN,
+ BT_DEV_ACTIVE_SCAN,
+ BT_DEV_SCAN_FILTER_DUP,
+ BT_DEV_SCAN_FILTERED,
+ BT_DEV_SCAN_LIMITED,
+ BT_DEV_INITIATING,
+
+ BT_DEV_RPA_VALID,
+ BT_DEV_RPA_TIMEOUT_CHANGED,
+
+ BT_DEV_ID_PENDING,
+ BT_DEV_STORE_ID,
+# 59 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+ BT_DEV_NUM_FLAGS,
+};
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+enum {
+
+ BT_ADV_CREATED,
+
+
+
+
+ BT_ADV_PARAMS_SET,
+
+ BT_ADV_DATA_SET,
+
+ BT_ADV_RANDOM_ADDR_PENDING,
+
+
+
+ BT_ADV_RPA_VALID,
+
+ BT_ADV_RPA_UPDATE,
+
+
+
+ BT_ADV_LIMITED,
+
+ BT_ADV_ENABLED,
+
+ BT_ADV_INCLUDE_NAME_AD,
+
+ BT_ADV_INCLUDE_NAME_SD,
+
+ BT_ADV_CONNECTABLE,
+
+ BT_ADV_SCANNABLE,
+
+ BT_ADV_EXT_ADV,
+
+
+
+ BT_ADV_USE_IDENTITY,
+
+
+
+ BT_ADV_PERSIST,
+
+ BT_ADV_PAUSED,
+
+ BT_PER_ADV_ENABLED,
+
+ BT_PER_ADV_PARAMS_SET,
+
+ BT_PER_ADV_INCLUDE_ADI,
+
+
+
+ BT_PER_ADV_CTE_PARAMS_SET,
+
+
+
+ BT_PER_ADV_CTE_ENABLED,
+
+ BT_ADV_NUM_FLAGS,
+};
+
+struct bt_le_ext_adv {
+
+ uint8_t id;
+
+
+ uint8_t handle;
+
+
+ bt_addr_le_t random_addr;
+
+
+ bt_addr_le_t target_addr;
+
+ atomic_t flags[(1 + ((BT_ADV_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8))];
+# 158 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+ struct k_work_delayable lim_adv_timeout_work;
+
+
+
+
+ uint32_t options;
+};
+
+enum {
+
+ BT_PER_ADV_SYNC_CREATED,
+
+
+ BT_PER_ADV_SYNC_SYNCED,
+
+
+ BT_PER_ADV_SYNC_SYNCING,
+
+
+
+
+ BT_PER_ADV_SYNC_SYNCING_USE_LIST,
+
+
+ BT_PER_ADV_SYNC_RECV_DISABLED,
+
+
+
+
+ BT_PER_ADV_SYNC_CTE_ENABLED,
+
+ BT_PER_ADV_SYNC_NUM_FLAGS,
+};
+
+struct bt_le_per_adv_sync {
+
+ bt_addr_le_t addr;
+
+
+ uint8_t sid;
+
+
+ uint16_t handle;
+
+
+ uint16_t interval;
+
+
+ uint16_t clock_accuracy;
+
+
+ uint8_t phy;
+# 231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+ 
+# 231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 3 4
+_Bool 
+# 231 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+     report_truncated;
+
+
+ atomic_t flags[(1 + ((BT_PER_ADV_SYNC_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8))];
+# 249 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+};
+
+struct bt_dev_le {
+
+ uint8_t features[8];
+
+ uint64_t states;
+
+
+
+ uint16_t mtu;
+ struct k_sem pkts;
+ uint16_t acl_mtu;
+ struct k_sem acl_pkts;
+# 272 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+ uint8_t rl_size;
+
+
+
+ uint8_t rl_entries;
+
+};
+# 298 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+struct bt_dev {
+
+ bt_addr_le_t id_addr[1];
+ uint8_t id_count;
+
+ struct bt_conn_le_create_param create_param;
+
+
+
+ struct bt_le_ext_adv adv;
+# 329 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+ bt_addr_le_t random_addr;
+ uint8_t adv_conn_id;
+
+
+ uint8_t hci_version;
+ uint8_t lmp_version;
+ uint16_t hci_revision;
+ uint16_t lmp_subversion;
+ uint16_t manufacturer;
+
+
+ uint8_t features[1][8];
+
+
+ uint8_t supported_commands[64];
+
+
+
+ uint8_t vs_features[1];
+ uint8_t vs_commands[2];
+
+
+ struct k_work init;
+
+ atomic_t flags[(1 + ((BT_DEV_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8))];
+
+
+ struct bt_dev_le le;
+
+
+
+
+
+
+
+ struct k_sem ncmd_sem;
+
+
+ struct net_buf *sent_cmd;
+
+
+
+
+
+
+
+ struct k_fifo cmd_tx_queue;
+
+
+ const struct bt_hci_driver *drv;
+# 396 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+ char name[16 + 1];
+
+
+
+
+
+};
+
+extern struct bt_dev bt_dev;
+
+extern const struct bt_conn_auth_cb *bt_auth;
+extern sys_slist_t bt_auth_info_cbs;
+enum bt_security_err bt_security_err_get(uint8_t hci_err);
+
+
+
+
+
+struct bt_hci_cmd_state_set {
+
+ atomic_t *target;
+
+ int bit;
+
+ 
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 3 4
+_Bool 
+# 420 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+     val;
+};
+
+
+void bt_hci_cmd_state_set_init(struct net_buf *buf,
+          struct bt_hci_cmd_state_set *state,
+          atomic_t *target, int bit, 
+# 426 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 3 4
+                                    _Bool 
+# 426 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+                                         val);
+
+int bt_hci_disconnect(uint16_t handle, uint8_t reason);
+
+
+# 430 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 3 4
+_Bool 
+# 430 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+    bt_le_conn_params_valid(const struct bt_le_conn_param *param);
+int bt_le_set_data_len(struct bt_conn *conn, uint16_t tx_octets, uint16_t tx_time);
+int bt_le_set_phy(struct bt_conn *conn, uint8_t all_phys,
+    uint8_t pref_tx_phy, uint8_t pref_rx_phy, uint8_t phy_opts);
+uint8_t bt_get_phy(uint8_t hci_phy);
+
+int bt_le_scan_update(
+# 436 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 3 4
+                     _Bool 
+# 436 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+                          fast_scan);
+
+int bt_le_create_conn(const struct bt_conn *conn);
+int bt_le_create_conn_cancel(void);
+int bt_le_create_conn_synced(const struct bt_conn *conn, const struct bt_le_ext_adv *adv,
+        uint8_t subevent);
+
+
+# 443 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h" 3 4
+_Bool 
+# 443 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/hci_core.h"
+    bt_addr_le_is_bonded(uint8_t id, const bt_addr_le_t *addr);
+const bt_addr_le_t *bt_lookup_id_addr(uint8_t id, const bt_addr_le_t *addr);
+
+int bt_send(struct net_buf *buf);
+
+
+struct bt_keys;
+void bt_id_add(struct bt_keys *keys);
+void bt_id_del(struct bt_keys *keys);
+
+struct bt_keys *bt_id_find_conflict(struct bt_keys *candidate);
+
+int bt_setup_random_id_addr(void);
+int bt_setup_public_id_addr(void);
+
+void bt_finalize_init(void);
+
+void bt_hci_host_num_completed_packets(struct net_buf *buf);
+
+
+void bt_hci_pin_code_req(struct net_buf *buf);
+void bt_hci_link_key_notify(struct net_buf *buf);
+void bt_hci_link_key_req(struct net_buf *buf);
+void bt_hci_io_capa_resp(struct net_buf *buf);
+void bt_hci_io_capa_req(struct net_buf *buf);
+void bt_hci_ssp_complete(struct net_buf *buf);
+void bt_hci_user_confirm_req(struct net_buf *buf);
+void bt_hci_user_passkey_notify(struct net_buf *buf);
+void bt_hci_user_passkey_req(struct net_buf *buf);
+void bt_hci_auth_complete(struct net_buf *buf);
+
+
+void bt_hci_evt_le_pkey_complete(struct net_buf *buf);
+void bt_hci_evt_le_dhkey_complete(struct net_buf *buf);
+
+
+void bt_hci_le_enh_conn_complete(struct bt_hci_evt_le_enh_conn_complete *evt);
+
+
+void bt_hci_le_adv_report(struct net_buf *buf);
+void bt_hci_le_scan_timeout(struct net_buf *buf);
+void bt_hci_le_adv_ext_report(struct net_buf *buf);
+void bt_hci_le_per_adv_sync_established(struct net_buf *buf);
+void bt_hci_le_per_adv_sync_established_v2(struct net_buf *buf);
+void bt_hci_le_per_adv_report(struct net_buf *buf);
+void bt_hci_le_per_adv_report_v2(struct net_buf *buf);
+void bt_hci_le_per_adv_sync_lost(struct net_buf *buf);
+void bt_hci_le_biginfo_adv_report(struct net_buf *buf);
+void bt_hci_le_df_connectionless_iq_report(struct net_buf *buf);
+void bt_hci_le_vs_df_connectionless_iq_report(struct net_buf *buf);
+void bt_hci_le_past_received(struct net_buf *buf);
+void bt_hci_le_past_received_v2(struct net_buf *buf);
+
+
+void bt_hci_le_adv_set_terminated(struct net_buf *buf);
+void bt_hci_le_scan_req_received(struct net_buf *buf);
+
+
+void bt_hci_conn_req(struct net_buf *buf);
+void bt_hci_conn_complete(struct net_buf *buf);
+
+
+void bt_hci_inquiry_complete(struct net_buf *buf);
+void bt_hci_inquiry_result_with_rssi(struct net_buf *buf);
+void bt_hci_extended_inquiry_result(struct net_buf *buf);
+void bt_hci_remote_name_request_complete(struct net_buf *buf);
+
+void bt_hci_read_remote_features_complete(struct net_buf *buf);
+void bt_hci_read_remote_ext_features_complete(struct net_buf *buf);
+void bt_hci_role_change(struct net_buf *buf);
+void bt_hci_synchronous_conn_complete(struct net_buf *buf);
+
+void bt_hci_le_df_connection_iq_report(struct net_buf *buf);
+void bt_hci_le_vs_df_connection_iq_report(struct net_buf *buf);
+void bt_hci_le_df_cte_req_failed(struct net_buf *buf);
+
+void bt_hci_le_per_adv_subevent_data_request(struct net_buf *buf);
+void bt_hci_le_per_adv_response_report(struct net_buf *buf);
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 2
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_instance.h" 1
+# 17 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_instance.h"
+struct log_source_const_data {
+ const char *name;
+ uint8_t level;
+
+
+
+
+
+
+
+};
+
+
+struct log_source_dynamic_data {
+ uint32_t filters;
+# 43 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_instance.h"
+};
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h" 1
+# 9 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 1
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/mpsc_packet.h" 1
+# 37 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/mpsc_packet.h"
+struct mpsc_pbuf_hdr {
+ uint32_t valid: 1; uint32_t busy: 1;
+ uint32_t data: 32 - 2;
+};
+
+
+struct mpsc_pbuf_skip {
+ uint32_t valid: 1; uint32_t busy: 1;
+ uint32_t len: 32 - 2;
+};
+
+
+union mpsc_pbuf_generic {
+ struct mpsc_pbuf_hdr hdr;
+ struct mpsc_pbuf_skip skip;
+ uint32_t raw;
+};
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 2
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 1
+# 11 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 2
+# 45 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+struct cbprintf_package_desc {
+
+ uint8_t len;
+
+
+ uint8_t str_cnt;
+
+
+ uint8_t ro_str_cnt;
+
+
+ uint8_t rw_str_cnt;
+# 72 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+} 
+# 72 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+ __attribute__((__packed__))
+# 72 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+         ;
+
+
+
+
+
+union cbprintf_package_hdr {
+
+ struct cbprintf_package_desc desc;
+
+ void *raw;
+
+
+
+
+
+} 
+# 88 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+ __attribute__((__packed__))
+# 88 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+         ;
+
+
+
+
+
+
+
+struct cbprintf_package_hdr_ext {
+
+ union cbprintf_package_hdr hdr;
+
+
+ char *fmt;
+
+
+
+
+
+} 
+# 107 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+ __attribute__((__packed__))
+# 107 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+         ;
+# 124 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h" 1
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h"
+# 1 "/home/g/zephyr-sdk-0.16.3/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stddef.h" 1 3 4
+# 13 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h" 2
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h"
+static inline void z_cbprintf_wcpy(int *dst, int *src, size_t len)
+{
+ for (size_t i = 0; i < len; i++) {
+  dst[i] = src[i];
+ }
+}
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_cxx.h" 1
+# 63 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h" 2
+# 394 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h"
+static inline __attribute__((always_inline)) 
+# 394 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h" 3 4
+                    _Bool 
+# 394 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h"
+                         ___is_null(void *p)
+{
+ return p == 
+# 396 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h" 3 4
+            ((void *)0)
+# 396 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_internal.h"
+                ;
+}
+# 125 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 2
+# 145 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+_Static_assert(((((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) != 0) && ((((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) & (((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))-1)) == 0)), "" );
+# 280 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+# 1 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_enums.h" 1
+# 15 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf_enums.h"
+enum cbprintf_package_arg_type {
+
+ CBPRINTF_PACKAGE_ARG_TYPE_END = 0,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_CHAR,
+ CBPRINTF_PACKAGE_ARG_TYPE_UNSIGNED_CHAR,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_SHORT,
+ CBPRINTF_PACKAGE_ARG_TYPE_UNSIGNED_SHORT,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_INT,
+ CBPRINTF_PACKAGE_ARG_TYPE_UNSIGNED_INT,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_LONG,
+ CBPRINTF_PACKAGE_ARG_TYPE_UNSIGNED_LONG,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_LONG_LONG,
+ CBPRINTF_PACKAGE_ARG_TYPE_UNSIGNED_LONG_LONG,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_FLOAT,
+ CBPRINTF_PACKAGE_ARG_TYPE_DOUBLE,
+ CBPRINTF_PACKAGE_ARG_TYPE_LONG_DOUBLE,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_PTR_CHAR,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_PTR_VOID,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_MAX,
+
+ CBPRINTF_PACKAGE_ARG_TYPE_COUNT = CBPRINTF_PACKAGE_ARG_TYPE_MAX
+};
+# 281 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 2
+# 302 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+typedef int (*cbprintf_cb)( );
+# 313 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+typedef int (*cbprintf_convert_cb)(const void *buf, size_t len, void *ctx);
+# 333 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+typedef int (*cbvprintf_external_formatter_func)(cbprintf_cb out, void *ctx,
+       const char *fmt, va_list ap);
+# 430 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+__attribute__((format (printf, 4, 5)))
+int cbprintf_package(void *packaged,
+       size_t len,
+       uint32_t flags,
+       const char *format,
+       ...);
+# 471 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+int cbvprintf_package(void *packaged,
+        size_t len,
+        uint32_t flags,
+        const char *format,
+        va_list ap);
+# 512 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+int cbprintf_package_convert(void *in_packaged,
+        size_t in_len,
+        cbprintf_convert_cb cb,
+        void *ctx,
+        uint32_t flags,
+        uint16_t *strl,
+        size_t strl_len);
+
+
+struct z_cbprintf_buf_desc {
+ void *buf;
+ size_t size;
+ size_t off;
+};
+
+
+static inline int z_cbprintf_cpy(const void *buf, size_t len, void *ctx)
+{
+ struct z_cbprintf_buf_desc *desc = (struct z_cbprintf_buf_desc *)ctx;
+
+ if ((desc->size - desc->off) < len) {
+  return -
+# 533 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+         28
+# 533 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+               ;
+ }
+
+ 
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+((__builtin_object_size(
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+&((uint8_t *)desc->buf)[desc->off]
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, 0) != (size_t)-1) ? __builtin___memcpy_chk(
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+&((uint8_t *)desc->buf)[desc->off]
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, 
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+buf
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, 
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+len
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, __builtin_object_size(
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+&((uint8_t *)desc->buf)[desc->off]
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, 0)) : __memcpy_ichk(
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+&((uint8_t *)desc->buf)[desc->off]
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, 
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+buf
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+, 
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+len
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+))
+# 536 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+                                                    ;
+ desc->off += len;
+
+ return len;
+}
+# 572 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+static inline int cbprintf_package_copy(void *in_packaged,
+     size_t in_len,
+     void *packaged,
+     size_t len,
+     uint32_t flags,
+     uint16_t *strl,
+     size_t strl_len)
+{
+ struct z_cbprintf_buf_desc buf_desc = {
+  .buf = packaged,
+  .size = len,
+  .off = 0,
+ };
+
+ return cbprintf_package_convert(in_packaged, in_len,
+     packaged ? z_cbprintf_cpy : 
+# 587 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+                                ((void *)0)
+# 587 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+                                    , &buf_desc,
+     flags, strl, strl_len);
+}
+# 620 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+static inline int cbprintf_fsc_package(void *in_packaged,
+           size_t in_len,
+           void *packaged,
+           size_t len)
+{
+ return cbprintf_package_copy(in_packaged, in_len, packaged, len,
+         (1UL << (0)) |
+         (1UL << (1)), 
+# 627 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h" 3 4
+                                         ((void *)0)
+# 627 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+                                             , 0);
+}
+# 650 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+int cbpprintf_external(cbprintf_cb out,
+         cbvprintf_external_formatter_func formatter,
+         void *ctx,
+         void *packaged);
+# 681 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+__attribute__((format (printf, 3, 4)))
+int cbprintf(cbprintf_cb out, void *ctx, const char *format, ...);
+# 712 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+int z_cbvprintf_impl(cbprintf_cb out, void *ctx, const char *format,
+       va_list ap, uint32_t flags);
+# 741 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+int cbvprintf(cbprintf_cb out, void *ctx, const char *format, va_list ap);
+# 777 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+static inline
+int cbvprintf_tagged_args(cbprintf_cb out, void *ctx,
+     const char *format, va_list ap)
+{
+ return z_cbvprintf_impl(out, ctx, format, ap,
+    (1UL << (0)));
+}
+# 802 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+static inline
+int cbpprintf(cbprintf_cb out, void *ctx, void *packaged)
+{
+# 816 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/sys/cbprintf.h"
+ return cbpprintf_external(out, cbvprintf, ctx, packaged);
+}
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 2
+# 36 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+typedef uint32_t log_timestamp_t;
+# 56 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+struct log_msg_desc {
+ uint32_t valid: 1; uint32_t busy: 1; uint32_t type:1;
+ uint32_t domain:3;
+ uint32_t level:3;
+ uint32_t package_len:11;
+ uint32_t data_len:12;
+};
+
+union log_msg_source {
+ const struct log_source_const_data *fixed;
+ struct log_source_dynamic_data *dynamic;
+ void *raw;
+};
+
+struct log_msg_hdr {
+ struct log_msg_desc desc;
+
+
+
+
+
+
+
+ const void *source;
+ log_timestamp_t timestamp;
+
+
+
+
+};
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+struct log_msg {
+ struct log_msg_hdr hdr;
+
+
+
+ uint8_t padding[((sizeof(struct log_msg_hdr) % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) > 0 ? ((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))) - (sizeof(struct log_msg_hdr) % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))) : 0)];
+ uint8_t data[];
+};
+
+
+
+
+_Static_assert(sizeof(struct log_msg) % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))) == 0, "" "Log msg size must aligned")
+                                  ;
+
+
+
+
+
+struct log_msg_generic_hdr {
+ uint32_t valid: 1; uint32_t busy: 1; uint32_t type:1;
+};
+
+union log_msg_generic {
+ union mpsc_pbuf_generic buf;
+ struct log_msg_generic_hdr generic;
+ struct log_msg log;
+};
+
+
+
+
+
+enum z_log_msg_mode {
+
+
+
+ Z_LOG_MSG_MODE_RUNTIME,
+
+
+
+
+ Z_LOG_MSG_MODE_FROM_STACK,
+
+
+
+
+
+ Z_LOG_MSG_MODE_ZERO_COPY,
+};
+# 488 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+struct log_msg *z_log_msg_alloc(uint32_t wlen);
+# 503 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+void z_log_msg_finalize(struct log_msg *msg, const void *source,
+    const struct log_msg_desc desc, const void *data);
+# 516 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+static inline void z_log_msg_static_create(const void *source,
+     const struct log_msg_desc desc,
+     uint8_t *package, const void *data);
+# 541 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+static inline void z_log_msg_runtime_vcreate(uint8_t domain_id, const void *source,
+       uint8_t level, const void *data,
+       size_t dlen, uint32_t package_flags,
+       const char *fmt,
+       va_list ap);
+# 568 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+static inline void z_log_msg_runtime_create(uint8_t domain_id,
+          const void *source,
+          uint8_t level, const void *data,
+          size_t dlen, uint32_t package_flags,
+          const char *fmt, ...)
+{
+ va_list ap;
+
+ 
+# 576 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+__builtin_va_start(
+# 576 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+ap
+# 576 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+,
+# 576 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+fmt
+# 576 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+)
+# 576 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+                 ;
+ z_log_msg_runtime_vcreate(domain_id, source, level,
+       data, dlen, package_flags, fmt, ap);
+ 
+# 579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+__builtin_va_end(
+# 579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+ap
+# 579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+)
+# 579 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+          ;
+}
+
+static inline 
+# 582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+             _Bool 
+# 582 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+                  z_log_item_is_msg(const union log_msg_generic *msg)
+{
+ return msg->generic.type == 0;
+}
+
+
+
+
+
+
+
+static inline uint32_t log_msg_get_total_wlen(const struct log_msg_desc desc)
+{
+ return (((((((unsigned long)((
+# 595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+       __builtin_offsetof (
+# 595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+       struct log_msg
+# 595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+       , 
+# 595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+       data
+# 595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+       ) 
+# 595 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+       + desc.package_len + (desc.data_len))) + ((unsigned long)((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) - 1)) / (unsigned long)((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))) * (unsigned long)((((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))))) + (sizeof(uint32_t)) - 1) / (sizeof(uint32_t)));
+}
+
+
+
+
+
+
+
+static inline uint32_t log_msg_generic_get_wlen(const union mpsc_pbuf_generic *item)
+{
+ const union log_msg_generic *generic_msg = (const union log_msg_generic *)item;
+
+ if (z_log_item_is_msg(generic_msg)) {
+  const struct log_msg *msg = (const struct log_msg *)generic_msg;
+
+  return log_msg_get_total_wlen(msg->hdr.desc);
+ }
+
+ return 0;
+}
+
+
+
+
+
+
+
+static inline uint8_t log_msg_get_domain(struct log_msg *msg)
+{
+ return msg->hdr.desc.domain;
+}
+
+
+
+
+
+
+
+static inline uint8_t log_msg_get_level(struct log_msg *msg)
+{
+ return msg->hdr.desc.level;
+}
+
+
+
+
+
+
+
+static inline const void *log_msg_get_source(struct log_msg *msg)
+{
+ return msg->hdr.source;
+}
+
+
+
+
+
+
+
+static inline log_timestamp_t log_msg_get_timestamp(struct log_msg *msg)
+{
+ return msg->hdr.timestamp;
+}
+
+
+
+
+
+
+
+static inline void *log_msg_get_tid(struct log_msg *msg)
+{
+
+
+
+ (void)(msg);
+ return 
+# 673 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 3 4
+       ((void *)0)
+# 673 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+           ;
+
+}
+# 685 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+static inline uint8_t *log_msg_get_data(struct log_msg *msg, size_t *len)
+{
+ *len = msg->hdr.desc.data_len;
+
+ return msg->data + msg->hdr.desc.package_len;
+}
+# 700 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h"
+static inline uint8_t *log_msg_get_package(struct log_msg *msg, size_t *len)
+{
+ *len = msg->hdr.desc.package_len;
+
+ return msg->data;
+}
+
+
+
+
+
+# 1 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h" 1
+# 23 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h"
+extern void z_impl_z_log_msg_static_create(const void * source, const struct log_msg_desc desc, uint8_t * package, const void * data);
+
+
+static inline void z_log_msg_static_create(const void * source, const struct log_msg_desc desc, uint8_t * package, const void * data)
+{
+# 38 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 38 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h" 3 4
+0
+# 38 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h"
+);
+ z_impl_z_log_msg_static_create(source, desc, package, data);
+}
+# 50 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h"
+extern void z_impl_z_log_msg_runtime_vcreate(uint8_t domain_id, const void * source, uint8_t level, const void * data, size_t dlen, uint32_t package_flags, const char * fmt, va_list ap);
+
+
+static inline void z_log_msg_runtime_vcreate(uint8_t domain_id, const void * source, uint8_t level, const void * data, size_t dlen, uint32_t package_flags, const char * fmt, va_list ap)
+{
+# 76 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h"
+ do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h" 3 4
+0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/app/build/zephyr/include/generated/syscalls/log_msg.h"
+);
+ z_impl_z_log_msg_runtime_vcreate(domain_id, source, level, data, dlen, package_flags, fmt, ap);
+}
+# 712 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_msg.h" 2
+# 10 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h" 2
+# 159 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+void z_log_minimal_hexdump_print(int level, const void *data, size_t size);
+void z_log_minimal_vprintk(const char *fmt, va_list ap);
+void z_log_minimal_printk(const char *fmt, ...);
+# 175 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+static inline char z_log_minimal_level_to_char(int level)
+{
+ switch (level) {
+ case 1U:
+  return 'E';
+ case 2U:
+  return 'W';
+ case 3U:
+  return 'I';
+ case 4U:
+  return 'D';
+ default:
+  return '?';
+ }
+}
+# 390 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+extern struct log_source_const_data _log_const_list_start[];
+extern struct log_source_const_data _log_const_list_end[];
+# 427 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+static inline uint32_t log_const_source_id(
+    const struct log_source_const_data *data)
+{
+ return ((const uint8_t *)data - (uint8_t *)_log_const_list_start)/
+   sizeof(struct log_source_const_data);
+}
+
+extern struct log_source_dynamic_data _log_dynamic_list_start[];
+extern struct log_source_dynamic_data _log_dynamic_list_end[];
+# 453 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+static inline uint32_t log_dynamic_source_id(struct log_source_dynamic_data *data)
+{
+ return ((uint8_t *)data - (uint8_t *)_log_dynamic_list_start)/
+   sizeof(struct log_source_dynamic_data);
+}
+
+
+static inline __attribute__((format (printf, 1, 2)))
+void z_log_printf_arg_checker(const char *fmt, ...)
+{
+ (void)(fmt);
+}
+# 475 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+static inline void log2_generic(uint8_t level, const char *fmt, va_list ap)
+{
+ z_log_msg_runtime_vcreate(0, 
+# 477 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h" 3 4
+                                                 ((void *)0)
+# 477 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+                                                     , level,
+       
+# 478 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h" 3 4
+      ((void *)0)
+# 478 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log_core.h"
+          , 0, 0, fmt, ap);
+}
+# 12 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log.h" 2
+# 279 "/home/g/mise-work/zmk-firmware/zmk/zephyr/include/zephyr/logging/log.h"
+void z_log_vprintk(const char *fmt, va_list ap);
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 2
+const 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__attribute__((__aligned__(
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__alignof(struct log_source_const_data)
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+))) 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_source_const_data log_const_bt_ecc __attribute__((section("." "_log_const" "." "static" "." "log_const_bt_ecc_"))) 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__attribute__((__used__)) 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+= { .name = "bt_ecc", .level = 3 }; extern const struct log_source_const_data log_const_bt_ecc; extern struct log_source_dynamic_data log_dynamic_bt_ecc; static const struct log_source_const_data * __log_current_const_data 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__attribute__((__unused__)) 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+= 1 ? &log_const_bt_ecc : 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; static struct log_source_dynamic_data * __log_current_dynamic_data 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__attribute__((__unused__)) 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+= (1 && 0) ? &log_dynamic_bt_ecc : 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; static const uint32_t __log_level 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__attribute__((__unused__)) 
+# 18 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+= 3;
+
+static uint8_t pub_key[(2 * ((32)))];
+static sys_slist_t pub_key_cb_slist;
+static bt_dh_key_cb_t dh_key_cb;
+
+static const uint8_t debug_public_key[(2 * ((32)))] = {
+
+ 0xe6, 0x9d, 0x35, 0x0e, 0x48, 0x01, 0x03, 0xcc,
+ 0xdb, 0xfd, 0xf4, 0xac, 0x11, 0x91, 0xf4, 0xef,
+ 0xb9, 0xa5, 0xf9, 0xe9, 0xa7, 0x83, 0x2c, 0x5e,
+ 0x2c, 0xbe, 0x97, 0xf2, 0xd2, 0x03, 0xb0, 0x20,
+
+ 0x8b, 0xd2, 0x89, 0x15, 0xd0, 0x8e, 0x1c, 0x74,
+ 0x24, 0x30, 0xed, 0x8f, 0xc2, 0x45, 0x63, 0x76,
+ 0x5c, 0x15, 0x52, 0x5a, 0xbf, 0x9a, 0x32, 0x63,
+ 0x6d, 0xeb, 0x2a, 0x65, 0x49, 0x9c, 0x80, 0xdc
+};
+
+
+# 37 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 37 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+    bt_pub_key_is_debug(uint8_t *cmp_pub_key)
+{
+ return memcmp(cmp_pub_key, debug_public_key, (2 * ((32)))) == 0;
+}
+
+int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
+{
+ struct bt_pub_key_cb *cb;
+ int err;
+
+
+
+
+
+
+
+ if (!(bt_dev.supported_commands[34] & (1UL << (1))) ||
+     !(bt_dev.supported_commands[34] & (1UL << (2)))) {
+  do { if (!(1 && ((2U <= 0) || ((0 == 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) && (2U <= __log_level) && (2U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "ECC HCI commands not available" "\n", z_log_minimal_level_to_char(2U)); } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); break; } if (0 != 0 && !0) { if (2U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 2U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ;
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  do { ; 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ has_rw_str = ({
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  int _rv; if ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = 0 > 0 ? 1 : 0; }
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("ECC HCI commands not available" == 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { _plen = 0; } else { do {
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _Static_assert(!0 || (0 && !(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _ros_pos_en = (_flags) & (1UL << (1)); 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rws_pos_en = (_flags) & (1UL << (2)); 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) ? 0 : 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ (0x7fffffffL)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 22
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("ECC HCI commands not available") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("ECC HCI commands not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC HCI commands not available") + 0))) > (1)) ? (_Generic(("ECC HCI commands not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC HCI commands not available") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("ECC HCI commands not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC HCI commands not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("ECC HCI commands not available") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("ECC HCI commands not available") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("ECC HCI commands not available") + 0; double _d = _Generic(("ECC HCI commands not available") + 0, float : ("ECC HCI commands not available") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("ECC HCI commands not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC HCI commands not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("ECC HCI commands not available") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("ECC HCI commands not available") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "ECC HCI commands not available"; } } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ : _total_len; if (_pbuf != 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); }
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg *_msg;
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  long long _ll_buf[((((
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((__builtin_object_size(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0) != (size_t)-1) ? __builtin___memset_chk(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , __builtin_object_size(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0)) : __memset_ichk(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ))
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); if (_plen != 0) { do {
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _Static_assert(!0 || (0 && !(
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _ros_pos_en = (_flags) & (1UL << (1)); 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rws_pos_en = (_flags) & (1UL << (2)); 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ (0x7fffffffL)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 22
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("ECC HCI commands not available") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("ECC HCI commands not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC HCI commands not available") + 0))) > (1)) ? (_Generic(("ECC HCI commands not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC HCI commands not available") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("ECC HCI commands not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC HCI commands not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("ECC HCI commands not available") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("ECC HCI commands not available") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("ECC HCI commands not available") + 0; double _d = _Generic(("ECC HCI commands not available") + 0, float : ("ECC HCI commands not available") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("ECC HCI commands not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC HCI commands not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("ECC HCI commands not available") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("ECC HCI commands not available") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "ECC HCI commands not available"; } } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ : _total_len; if (_pbuf != 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 2U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); (void)_mode; if (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { z_log_printf_arg_checker("ECC HCI commands not available"); } } while (
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 55 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ );
+  return -
+# 56 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         134
+# 56 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                ;
+ }
+
+ if (0) {
+  if (!(bt_dev.supported_commands[41] & (1UL << (2)))) {
+   do { if (!(1 && ((2U <= 0) || ((0 == 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) && (2U <= __log_level) && (2U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "ECC Debug keys HCI command not available" "\n", z_log_minimal_level_to_char(2U)); } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); break; } if (0 != 0 && !0) { if (2U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 2U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   ;
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   do { ; 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  has_rw_str = ({
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   int _rv; if ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = 0 > 0 ? 1 : 0; }
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("ECC Debug keys HCI command not available" == 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { _plen = 0; } else { do {
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   _Static_assert(!0 || (0 && !(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _ros_pos_en = (_flags) & (1UL << (1)); 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rws_pos_en = (_flags) & (1UL << (2)); 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) ? 0 : 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  (0x7fffffffL)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  )
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  22
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("ECC Debug keys HCI command not available") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("ECC Debug keys HCI command not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC Debug keys HCI command not available") + 0))) > (1)) ? (_Generic(("ECC Debug keys HCI command not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC Debug keys HCI command not available") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("ECC Debug keys HCI command not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC Debug keys HCI command not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("ECC Debug keys HCI command not available") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("ECC Debug keys HCI command not available") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("ECC Debug keys HCI command not available") + 0; double _d = _Generic(("ECC Debug keys HCI command not available") + 0, float : ("ECC Debug keys HCI command not available") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("ECC Debug keys HCI command not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC Debug keys HCI command not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("ECC Debug keys HCI command not available") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("ECC Debug keys HCI command not available") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "ECC Debug keys HCI command not available"; } } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  : _total_len; if (_pbuf != 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); }
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   struct log_msg *_msg;
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   long long _ll_buf[((((
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((__builtin_object_size(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 0) != (size_t)-1) ? __builtin___memset_chk(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , __builtin_object_size(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 0)) : __memset_ichk(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ))
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); if (_plen != 0) { do {
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   _Static_assert(!0 || (0 && !(
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _ros_pos_en = (_flags) & (1UL << (1)); 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rws_pos_en = (_flags) & (1UL << (2)); 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  (0x7fffffffL)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  )
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  22
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("ECC Debug keys HCI command not available") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("ECC Debug keys HCI command not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC Debug keys HCI command not available") + 0))) > (1)) ? (_Generic(("ECC Debug keys HCI command not available") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("ECC Debug keys HCI command not available") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("ECC Debug keys HCI command not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC Debug keys HCI command not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("ECC Debug keys HCI command not available") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("ECC Debug keys HCI command not available") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("ECC Debug keys HCI command not available") + 0; double _d = _Generic(("ECC Debug keys HCI command not available") + 0, float : ("ECC Debug keys HCI command not available") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("ECC Debug keys HCI command not available") + 0; (void)__v; size_t __arg_size = _Generic(("ECC Debug keys HCI command not available"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("ECC Debug keys HCI command not available") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("ECC Debug keys HCI command not available") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "ECC Debug keys HCI command not available"; } } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  : _total_len; if (_pbuf != 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 2U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); (void)_mode; if (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { z_log_printf_arg_checker("ECC Debug keys HCI command not available"); } } while (
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 61 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  );
+  } else {
+   atomic_set_bit(bt_dev.flags, BT_DEV_HAS_PUB_KEY);
+   { };
+   new_cb->func(debug_public_key);
+   return 0;
+  }
+ }
+
+ if (!new_cb) {
+  return -
+# 71 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         22
+# 71 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+               ;
+ }
+
+ for (cb = ((sys_slist_peek_head(&pub_key_cb_slist)) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_head(&pub_key_cb_slist)))) - 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__typeof__(*(cb))
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+node
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)); }) : 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); cb != 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; cb = ((cb) ? ((sys_slist_peek_next(&((cb)->node))) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_next(&((cb)->node))))) - 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__typeof__(*(cb))
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+node
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)); }) : 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) : 
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 74 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)) {
+  if (cb == new_cb) {
+   do { if (!(1 && ((2U <= 0) || ((0 == 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) && (2U <= __log_level) && (2U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "Callback already registered" "\n", z_log_minimal_level_to_char(2U)); } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); break; } if (0 != 0 && !0) { if (2U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 2U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   ;
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   do { ; 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  has_rw_str = ({
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   int _rv; if ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = 0 > 0 ? 1 : 0; }
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("Callback already registered" == 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { _plen = 0; } else { do {
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   _Static_assert(!0 || (0 && !(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _ros_pos_en = (_flags) & (1UL << (1)); 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rws_pos_en = (_flags) & (1UL << (2)); 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) ? 0 : 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  (0x7fffffffL)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  )
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  22
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("Callback already registered") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("Callback already registered") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Callback already registered") + 0))) > (1)) ? (_Generic(("Callback already registered") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Callback already registered") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("Callback already registered") + 0; (void)__v; size_t __arg_size = _Generic(("Callback already registered"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("Callback already registered") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("Callback already registered") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("Callback already registered") + 0; double _d = _Generic(("Callback already registered") + 0, float : ("Callback already registered") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("Callback already registered") + 0; (void)__v; size_t __arg_size = _Generic(("Callback already registered"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("Callback already registered") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("Callback already registered") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "Callback already registered"; } } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  : _total_len; if (_pbuf != 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); }
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   struct log_msg *_msg;
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   long long _ll_buf[((((
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((__builtin_object_size(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 0) != (size_t)-1) ? __builtin___memset_chk(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , __builtin_object_size(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 0)) : __memset_ichk(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  + _plen + (0))
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ))
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); if (_plen != 0) { do {
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   _Static_assert(!0 || (0 && !(
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ) 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _ros_pos_en = (_flags) & (1UL << (1)); 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rws_pos_en = (_flags) & (1UL << (2)); 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  _Bool 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  (0x7fffffffL)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  __builtin_offsetof (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  , 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  data
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  )
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  22
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("Callback already registered") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("Callback already registered") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Callback already registered") + 0))) > (1)) ? (_Generic(("Callback already registered") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Callback already registered") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("Callback already registered") + 0; (void)__v; size_t __arg_size = _Generic(("Callback already registered"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("Callback already registered") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("Callback already registered") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("Callback already registered") + 0; double _d = _Generic(("Callback already registered") + 0, float : ("Callback already registered") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("Callback already registered") + 0; (void)__v; size_t __arg_size = _Generic(("Callback already registered"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("Callback already registered") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("Callback already registered") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "Callback already registered"; } } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  28 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  : _total_len; if (_pbuf != 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+   } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 2U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  ((void *)0)
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ); (void)_mode; if (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ) { z_log_printf_arg_checker("Callback already registered"); } } while (
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+  0
+# 76 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  );
+   return -
+# 77 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+          120
+# 77 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                  ;
+  }
+ }
+
+ sys_slist_prepend(&pub_key_cb_slist, &new_cb->node);
+
+ if (atomic_test_and_set_bit(bt_dev.flags, BT_DEV_PUB_KEY_BUSY)) {
+  return 0;
+ }
+
+ atomic_clear_bit(bt_dev.flags, BT_DEV_HAS_PUB_KEY);
+
+ err = bt_hci_cmd_send_sync(((0x0025) | ((0x08) << 10)), 
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+                                                         ((void *)0)
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                                             , 
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+                                                               ((void *)0)
+# 89 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                                                   );
+ if (err) {
+
+  do { if (!(1 && ((1U <= 0) || ((0 == 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) && (1U <= __log_level) && (1U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "Sending LE P256 Public Key command failed" "\n", z_log_minimal_level_to_char(1U)); } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); break; } if (0 != 0 && !0) { if (1U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 1U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ;
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  do { ; 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ has_rw_str = ({
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  int _rv; if ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = 0 > 0 ? 1 : 0; }
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("Sending LE P256 Public Key command failed" == 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { _plen = 0; } else { do {
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _Static_assert(!0 || (0 && !(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _ros_pos_en = (_flags) & (1UL << (1)); 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rws_pos_en = (_flags) & (1UL << (2)); 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) ? 0 : 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ (0x7fffffffL)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 22
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("Sending LE P256 Public Key command failed") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("Sending LE P256 Public Key command failed") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Sending LE P256 Public Key command failed") + 0))) > (1)) ? (_Generic(("Sending LE P256 Public Key command failed") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Sending LE P256 Public Key command failed") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("Sending LE P256 Public Key command failed") + 0; (void)__v; size_t __arg_size = _Generic(("Sending LE P256 Public Key command failed"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("Sending LE P256 Public Key command failed") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("Sending LE P256 Public Key command failed") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("Sending LE P256 Public Key command failed") + 0; double _d = _Generic(("Sending LE P256 Public Key command failed") + 0, float : ("Sending LE P256 Public Key command failed") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("Sending LE P256 Public Key command failed") + 0; (void)__v; size_t __arg_size = _Generic(("Sending LE P256 Public Key command failed"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("Sending LE P256 Public Key command failed") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("Sending LE P256 Public Key command failed") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "Sending LE P256 Public Key command failed"; } } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ : _total_len; if (_pbuf != 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); }
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg *_msg;
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  long long _ll_buf[((((
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((__builtin_object_size(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0) != (size_t)-1) ? __builtin___memset_chk(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , __builtin_object_size(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0)) : __memset_ichk(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ))
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); if (_plen != 0) { do {
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _Static_assert(!0 || (0 && !(
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _ros_pos_en = (_flags) & (1UL << (1)); 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rws_pos_en = (_flags) & (1UL << (2)); 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = 0; uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? 0 : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ (0x7fffffffL)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 22
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("Sending LE P256 Public Key command failed") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("Sending LE P256 Public Key command failed") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Sending LE P256 Public Key command failed") + 0))) > (1)) ? (_Generic(("Sending LE P256 Public Key command failed") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Sending LE P256 Public Key command failed") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("Sending LE P256 Public Key command failed") + 0; (void)__v; size_t __arg_size = _Generic(("Sending LE P256 Public Key command failed"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("Sending LE P256 Public Key command failed") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("Sending LE P256 Public Key command failed") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("Sending LE P256 Public Key command failed") + 0; double _d = _Generic(("Sending LE P256 Public Key command failed") + 0, float : ("Sending LE P256 Public Key command failed") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("Sending LE P256 Public Key command failed") + 0; (void)__v; size_t __arg_size = _Generic(("Sending LE P256 Public Key command failed"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("Sending LE P256 Public Key command failed") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("Sending LE P256 Public Key command failed") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "Sending LE P256 Public Key command failed"; } } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ : _total_len; if (_pbuf != 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 1U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); (void)_mode; if (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { z_log_printf_arg_checker("Sending LE P256 Public Key command failed"); } } while (
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 92 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ );
+  atomic_clear_bit(bt_dev.flags, BT_DEV_PUB_KEY_BUSY);
+
+  for (cb = ((sys_slist_peek_head(&pub_key_cb_slist)) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_head(&pub_key_cb_slist)))) - 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ __typeof__(*(cb))
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ node
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ )); }) : 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); cb != 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; cb = ((cb) ? ((sys_slist_peek_next(&((cb)->node))) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_next(&((cb)->node))))) - 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ __typeof__(*(cb))
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ node
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ )); }) : 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) : 
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 95 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ )) {
+   if (cb->func) {
+    cb->func(
+# 97 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+            ((void *)0)
+# 97 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                );
+   }
+  }
+
+  sys_slist_init(&pub_key_cb_slist);
+  return err;
+ }
+
+ return 0;
+}
+
+void bt_pub_key_hci_disrupted(void)
+{
+ struct bt_pub_key_cb *cb;
+
+ atomic_clear_bit(bt_dev.flags, BT_DEV_PUB_KEY_BUSY);
+
+ for (cb = ((sys_slist_peek_head(&pub_key_cb_slist)) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_head(&pub_key_cb_slist)))) - 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__typeof__(*(cb))
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+node
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)); }) : 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); cb != 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; cb = ((cb) ? ((sys_slist_peek_next(&((cb)->node))) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_next(&((cb)->node))))) - 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__typeof__(*(cb))
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+node
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)); }) : 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) : 
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 114 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)) {
+  if (cb->func) {
+   cb->func(
+# 116 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+           ((void *)0)
+# 116 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+               );
+  }
+ }
+
+ sys_slist_init(&pub_key_cb_slist);
+}
+
+const uint8_t *bt_pub_key_get(void)
+{
+ if (0 &&
+     (bt_dev.supported_commands[41] & (1UL << (2)))) {
+  return debug_public_key;
+ }
+
+ if (atomic_test_bit(bt_dev.flags, BT_DEV_HAS_PUB_KEY)) {
+  return pub_key;
+ }
+
+ return 
+# 134 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+       ((void *)0)
+# 134 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+           ;
+}
+
+static int hci_generate_dhkey_v1(const uint8_t *remote_pk)
+{
+ struct bt_hci_cp_le_generate_dhkey *cp;
+ struct net_buf *buf;
+
+ buf = bt_hci_cmd_create(((0x0026) | ((0x08) << 10)), sizeof(*cp));
+ if (!buf) {
+  return -
+# 144 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         105
+# 144 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                ;
+ }
+
+ cp = net_buf_add(buf, sizeof(*cp));
+ 
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((__builtin_object_size(
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0) != (size_t)-1) ? __builtin___memcpy_chk(
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+remote_pk
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+sizeof(cp->key)
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, __builtin_object_size(
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0)) : __memcpy_ichk(
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+remote_pk
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+sizeof(cp->key)
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+))
+# 148 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                           ;
+
+ return bt_hci_cmd_send_sync(((0x0026) | ((0x08) << 10)), buf, 
+# 150 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+                                                              ((void *)0)
+# 150 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                                                  );
+}
+
+static int hci_generate_dhkey_v2(const uint8_t *remote_pk, uint8_t key_type)
+{
+ struct bt_hci_cp_le_generate_dhkey_v2 *cp;
+ struct net_buf *buf;
+
+ buf = bt_hci_cmd_create(((0x005e) | ((0x08) << 10)), sizeof(*cp));
+ if (!buf) {
+  return -
+# 160 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         105
+# 160 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                ;
+ }
+
+ cp = net_buf_add(buf, sizeof(*cp));
+ 
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((__builtin_object_size(
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0) != (size_t)-1) ? __builtin___memcpy_chk(
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+remote_pk
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+sizeof(cp->key)
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, __builtin_object_size(
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0)) : __memcpy_ichk(
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+cp->key
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+remote_pk
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+sizeof(cp->key)
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+))
+# 164 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                           ;
+ cp->key_type = key_type;
+
+ return bt_hci_cmd_send_sync(((0x005e) | ((0x08) << 10)), buf, 
+# 167 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+                                                                 ((void *)0)
+# 167 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                                                     );
+}
+
+int bt_dh_key_gen(const uint8_t remote_pk[(2 * ((32)))], bt_dh_key_cb_t cb)
+{
+ int err;
+
+ if (dh_key_cb == cb) {
+  return -
+# 175 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         120
+# 175 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                 ;
+ }
+
+ if (dh_key_cb || atomic_test_bit(bt_dev.flags, BT_DEV_PUB_KEY_BUSY)) {
+  return -
+# 179 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         16
+# 179 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+              ;
+ }
+
+ if (!atomic_test_bit(bt_dev.flags, BT_DEV_HAS_PUB_KEY)) {
+  return -
+# 183 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+         125
+# 183 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                      ;
+ }
+
+ dh_key_cb = cb;
+
+ if (0 &&
+     (bt_dev.supported_commands[41] & (1UL << (2)))) {
+  err = hci_generate_dhkey_v2(remote_pk,
+         0x01);
+ } else {
+  err = hci_generate_dhkey_v1(remote_pk);
+ }
+
+ if (err) {
+  dh_key_cb = 
+# 197 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+             ((void *)0)
+# 197 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                 ;
+  do { if (!(1 && ((2U <= 0) || ((0 == 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) && (2U <= __log_level) && (2U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "Failed to generate DHKey (err %d)" "\n", z_log_minimal_level_to_char(2U), err); } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); break; } if (0 != 0 && !0) { if (2U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 2U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  ; __auto_type _v1 = (err) + 0;
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  do { ; 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ has_rw_str = ({
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  int _rv; if ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = ((0 < (((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) > 0 ? 1 : 0; }
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((0 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("Failed to generate DHKey (err %d)" == 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { _plen = 0; } else { do {
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _Static_assert(!0 || (0 && !(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _ros_pos_en = (_flags) & (1UL << (1)); 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rws_pos_en = (_flags) & (1UL << (2)); 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = ((0 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))); uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) ? 0 : 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ (0x7fffffffL)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 22
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("Failed to generate DHKey (err %d)") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("Failed to generate DHKey (err %d)") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Failed to generate DHKey (err %d)") + 0))) > (1)) ? (_Generic(("Failed to generate DHKey (err %d)") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Failed to generate DHKey (err %d)") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("Failed to generate DHKey (err %d)") + 0; (void)__v; size_t __arg_size = _Generic(("Failed to generate DHKey (err %d)"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("Failed to generate DHKey (err %d)") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("Failed to generate DHKey (err %d)") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("Failed to generate DHKey (err %d)") + 0; double _d = _Generic(("Failed to generate DHKey (err %d)") + 0, float : ("Failed to generate DHKey (err %d)") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("Failed to generate DHKey (err %d)") + 0; (void)__v; size_t __arg_size = _Generic(("Failed to generate DHKey (err %d)"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("Failed to generate DHKey (err %d)") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("Failed to generate DHKey (err %d)") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "Failed to generate DHKey (err %d)"; } } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v1) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) > (1)) ? (_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (1 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v1) + 0; double _d = _Generic((_v1) + 0, float : (_v1) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v1) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v1) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v1; } } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ : _total_len; if (_pbuf != 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); }
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  struct log_msg *_msg;
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  long long _ll_buf[((((
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((__builtin_object_size(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0) != (size_t)-1) ? __builtin___memset_chk(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , __builtin_object_size(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0)) : __memset_ichk(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ + _plen + (0))
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ))
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); if (_plen != 0) { do {
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  _Static_assert(!0 || (0 && !(
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ) 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ % sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _ros_pos_en = (_flags) & (1UL << (1)); 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rws_pos_en = (_flags) & (1UL << (2)); 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ _Bool 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = ((0 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))); uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ (0x7fffffffL)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ __builtin_offsetof (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ data
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ )
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 22
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("Failed to generate DHKey (err %d)") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("Failed to generate DHKey (err %d)") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Failed to generate DHKey (err %d)") + 0))) > (1)) ? (_Generic(("Failed to generate DHKey (err %d)") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("Failed to generate DHKey (err %d)") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("Failed to generate DHKey (err %d)") + 0; (void)__v; size_t __arg_size = _Generic(("Failed to generate DHKey (err %d)"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("Failed to generate DHKey (err %d)") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("Failed to generate DHKey (err %d)") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("Failed to generate DHKey (err %d)") + 0; double _d = _Generic(("Failed to generate DHKey (err %d)") + 0, float : ("Failed to generate DHKey (err %d)") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("Failed to generate DHKey (err %d)") + 0; (void)__v; size_t __arg_size = _Generic(("Failed to generate DHKey (err %d)"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("Failed to generate DHKey (err %d)") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("Failed to generate DHKey (err %d)") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "Failed to generate DHKey (err %d)"; } } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v1) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) > (1)) ? (_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (1 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v1) + 0; double _d = _Generic((_v1) + 0, float : (_v1) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v1) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v1) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v1; } } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 28 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ : _total_len; if (_pbuf != 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+  } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 2U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((void *)0)
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ); (void)_mode; if (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ) { z_log_printf_arg_checker("Failed to generate DHKey (err %d)", err); } } while (
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ 0
+# 198 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ );
+  return err;
+ }
+
+ return 0;
+}
+
+void bt_hci_evt_le_pkey_complete(struct net_buf *buf)
+{
+ struct bt_hci_evt_le_p256_public_key_complete *evt = (void *)buf->data;
+ struct bt_pub_key_cb *cb;
+
+ do { if (!(1 && ((4U <= 0) || ((0 == 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) && (4U <= __log_level) && (4U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "status: 0x%02x" "\n", z_log_minimal_level_to_char(4U), evt->status); } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); break; } if (0 != 0 && !0) { if (4U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 4U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; __auto_type _v1 = ((const char *)__func__) + 0 ; __auto_type _v2 = (evt->status) + 0;
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ do { ; 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+has_rw_str = ({
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ int _rv; if ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = ((0 < (((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) > 0 ? 1 : 0; }
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("%s: " "status: 0x%02x" == 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { _plen = 0; } else { do {
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _Static_assert(!0 || (0 && !(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_ros_pos_en = (_flags) & (1UL << (1)); 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_rws_pos_en = (_flags) & (1UL << (2)); 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = ((0 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))); uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ? 0 : 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+(0x7fffffffL)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+22
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("%s: " "status: 0x%02x") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) > (1)) ? (_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("%s: " "status: 0x%02x") + 0; double _d = _Generic(("%s: " "status: 0x%02x") + 0, float : ("%s: " "status: 0x%02x") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("%s: " "status: 0x%02x") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("%s: " "status: 0x%02x") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "%s: " "status: 0x%02x"; } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v1) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) > (1)) ? (_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (1 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v1) + 0; double _d = _Generic((_v1) + 0, float : (_v1) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v1) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v1) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v1; } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v2) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) > (1)) ? (_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (2 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((2 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v2) + 0; double _d = _Generic((_v2) + 0, float : (_v2) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v2) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v2) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v2; } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+: _total_len; if (_pbuf != 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); }
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg *_msg;
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ long long _ll_buf[((((
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((__builtin_object_size(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0) != (size_t)-1) ? __builtin___memset_chk(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, __builtin_object_size(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0)) : __memset_ichk(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+))
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); if (_plen != 0) { do {
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _Static_assert(!0 || (0 && !(
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_ros_pos_en = (_flags) & (1UL << (1)); 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_rws_pos_en = (_flags) & (1UL << (2)); 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = ((0 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))); uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+(0x7fffffffL)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+22
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("%s: " "status: 0x%02x") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) > (1)) ? (_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("%s: " "status: 0x%02x") + 0; double _d = _Generic(("%s: " "status: 0x%02x") + 0, float : ("%s: " "status: 0x%02x") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("%s: " "status: 0x%02x") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("%s: " "status: 0x%02x") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "%s: " "status: 0x%02x"; } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v1) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) > (1)) ? (_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (1 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v1) + 0; double _d = _Generic((_v1) + 0, float : (_v1) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v1) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v1) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v1; } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v2) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) > (1)) ? (_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (2 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((2 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v2) + 0; double _d = _Generic((_v2) + 0, float : (_v2) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v2) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v2) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v2; } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+: _total_len; if (_pbuf != 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 4U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); (void)_mode; if (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { z_log_printf_arg_checker("status: 0x%02x", evt->status); } } while (
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 210 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+);
+
+ atomic_clear_bit(bt_dev.flags, BT_DEV_PUB_KEY_BUSY);
+
+ if (!evt->status) {
+  
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ((__builtin_object_size(
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ pub_key
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0) != (size_t)-1) ? __builtin___memcpy_chk(
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ pub_key
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ evt->key
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (2 * ((32)))
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , __builtin_object_size(
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ pub_key
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 0)) : __memcpy_ichk(
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ pub_key
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ evt->key
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ , 
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ (2 * ((32)))
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+ ))
+# 215 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                                          ;
+  atomic_set_bit(bt_dev.flags, BT_DEV_HAS_PUB_KEY);
+ }
+
+ for (cb = ((sys_slist_peek_head(&pub_key_cb_slist)) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_head(&pub_key_cb_slist)))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_head(&pub_key_cb_slist)))) - 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__typeof__(*(cb))
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+node
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)); }) : 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); cb != 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; cb = ((cb) ? ((sys_slist_peek_next(&((cb)->node))) ? ({ _Static_assert(__builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(((__typeof__(*(cb)) *)0)->node)) || __builtin_types_compatible_p(__typeof__(*((sys_slist_peek_next(&((cb)->node))))), __typeof__(void)), "" "pointer type mismatch in CONTAINER_OF"); ((__typeof__(*(cb)) *)(((char *)((sys_slist_peek_next(&((cb)->node))))) - 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+__typeof__(*(cb))
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+node
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)); }) : 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) : 
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 219 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+)) {
+  if (cb->func) {
+   cb->func(evt->status ? 
+# 221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+                         ((void *)0) 
+# 221 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                              : pub_key);
+  }
+ }
+
+ sys_slist_init(&pub_key_cb_slist);
+}
+
+void bt_hci_evt_le_dhkey_complete(struct net_buf *buf)
+{
+ struct bt_hci_evt_le_generate_dhkey_complete *evt = (void *)buf->data;
+
+ do { if (!(1 && ((4U <= 0) || ((0 == 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) && (4U <= __log_level) && (4U <= 4) ) ))) { break; } if (0) { do { z_log_minimal_printk("%c: " "status: 0x%02x" "\n", z_log_minimal_level_to_char(4U), evt->status); } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); break; } if (0 != 0 && !0) { if (4U > ((struct log_source_const_data *)__log_current_const_data)->level) { break; } } 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+is_user_context = k_is_user_context(); if (!0 && 0 && !is_user_context && 4U > ((*(&(__log_current_dynamic_data)->filters) >> (3U * (0))) & ((1UL << (3U)) - 1U))) { break; } int _mode; void *_src = 0 ? (void *)__log_current_dynamic_data : (void *)__log_current_const_data; do {
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ ; __auto_type _v1 = ((const char *)__func__) + 0 ; __auto_type _v2 = (evt->status) + 0;
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ do { ; 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+has_rw_str = ({
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ int _rv; if ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (2))) { _rv = 0; } else { _rv = ((0 < (((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0))) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) > 0 ? 1 : 0; }
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _rv; }); if (0 && 1 && ((0) == 0) && !has_rw_str) { ; ; _mode = Z_LOG_MSG_MODE_ZERO_COPY; } else { ; do { int _plen; uint32_t _options = ((1 << 3) | (0 ? ((1UL << (1)) | (1UL << (0))) : 0)) | (1UL << (2)); if ("%s: " "status: 0x%02x" == 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { _plen = 0; } else { do {
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _Static_assert(!0 || (0 && !(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_ros_pos_en = (_flags) & (1UL << (1)); 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_rws_pos_en = (_flags) & (1UL << (2)); 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = ((0 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))); uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ? 0 : 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+(0x7fffffffL)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+22
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("%s: " "status: 0x%02x") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) > (1)) ? (_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("%s: " "status: 0x%02x") + 0; double _d = _Generic(("%s: " "status: 0x%02x") + 0, float : ("%s: " "status: 0x%02x") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("%s: " "status: 0x%02x") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("%s: " "status: 0x%02x") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "%s: " "status: 0x%02x"; } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v1) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) > (1)) ? (_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (1 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v1) + 0; double _d = _Generic((_v1) + 0, float : (_v1) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v1) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v1) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v1; } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v2) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) > (1)) ? (_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (2 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((2 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v2) + 0; double _d = _Generic((_v2) + 0, float : (_v2) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v2) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v2) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v2; } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+: _total_len; if (_pbuf != 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); }
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wshadow"
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ struct log_msg *_msg;
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ long long _ll_buf[((((
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))) + (sizeof(long long)) - 1) / (sizeof(long long)))]; long double _ld_buf[((((
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))) + (sizeof(long double)) - 1) / (sizeof(long double)))]; _msg = (sizeof(long double) == (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1))))) ? (struct log_msg *)_ld_buf : (struct log_msg *)_ll_buf; if (0) { 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((__builtin_object_size(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0) != (size_t)-1) ? __builtin___memset_chk(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, __builtin_object_size(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 0)) : __memset_ichk(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
++ _plen + (0))
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+))
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; }; do { __asm__ __volatile__ ("" ::: "memory"); } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); if (_plen != 0) { do {
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic push
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic ignored "-Wpointer-arith"
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ _Static_assert(!0 || (0 && !(
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% (((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) <= 2UL ? ((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) : (1UL << (8 * sizeof(long) - __builtin_clzl(((((sizeof(double)) > (sizeof(long long))) ? (sizeof(double)) : (sizeof(long long)))) - 1)))))), "" "Xtensa requires aligned package."); _Static_assert((
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+) 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+% sizeof(int)) == 0, "" "Alignment offset must be multiply of a word."); uint32_t _flags = _options; 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_ros_pos_en = (_flags) & (1UL << (1)); 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_rws_pos_en = (_flags) & (1UL << (2)); 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+_Bool 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+_cros_en = (_flags) & (1UL << (0)); uint8_t *_pbuf = _msg->data; uint8_t _rws_pos_idx = 0; uint8_t _ros_pos_idx = 0; uint8_t _alls_cnt = ((0 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((0) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))); uint8_t _fros_cnt = (((_flags) >> 3) & ((1UL << (3)) - 1UL)); uint8_t _rws_cnt = _cros_en ? ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) + (1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) : _alls_cnt - _fros_cnt; uint8_t _ros_cnt = _ros_pos_en ? (1 + _alls_cnt - _rws_cnt) : 0; uint8_t *_ros_pos_buf; { }; uint8_t _ros_pos_buf_buf4[4]; uint8_t _ros_pos_buf_buf8[8]; uint8_t _ros_pos_buf_buf12[12]; uint8_t _ros_pos_buf_buf16[16]; uint8_t _ros_pos_buf_buf32[32]; _ros_pos_buf = (_ros_cnt) <= 4 ? _ros_pos_buf_buf4 : ((_ros_cnt) <= 8 ? _ros_pos_buf_buf8 : ((_ros_cnt) <= 12 ? _ros_pos_buf_buf12 : ((_ros_cnt) <= 16 ? _ros_pos_buf_buf16 : _ros_pos_buf_buf32))); uint8_t *_rws_buffer; { }; uint8_t _rws_buffer_buf4[4]; uint8_t _rws_buffer_buf8[8]; uint8_t _rws_buffer_buf12[12]; uint8_t _rws_buffer_buf16[16]; uint8_t _rws_buffer_buf32[32]; _rws_buffer = (2 * _rws_cnt) <= 4 ? _rws_buffer_buf4 : ((2 * _rws_cnt) <= 8 ? _rws_buffer_buf8 : ((2 * _rws_cnt) <= 12 ? _rws_buffer_buf12 : ((2 * _rws_cnt) <= 16 ? _rws_buffer_buf16 : _rws_buffer_buf32))); size_t _pmax = !___is_null(_msg->data) ? _plen : 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+(0x7fffffffL)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; int _pkg_len = 0; int _total_len = 0; int _pkg_offset = 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+__builtin_offsetof (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+struct log_msg
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+data
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; union cbprintf_package_hdr *_len_loc; if (_rws_cnt && !((_flags) & (1UL << (2)))) { _plen = -
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+22
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } if (_pmax < sizeof(*_len_loc)) { _plen = -
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+; break; } _len_loc = (union cbprintf_package_hdr *)_pbuf; _pkg_len += sizeof(*_len_loc); _pkg_offset += sizeof(*_len_loc); do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic(("%s: " "status: 0x%02x") + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) > (1)) ? (_Generic(("%s: " "status: 0x%02x") + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__(("%s: " "status: 0x%02x") + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (0 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((0 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic(("%s: " "status: 0x%02x") + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 0 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = ("%s: " "status: 0x%02x") + 0; double _d = _Generic(("%s: " "status: 0x%02x") + 0, float : ("%s: " "status: 0x%02x") + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = ("%s: " "status: 0x%02x") + 0; (void)__v; size_t __arg_size = _Generic(("%s: " "status: 0x%02x"), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic(("%s: " "status: 0x%02x") + 0, float : &_d, default : &_v), _wsize); } else { *_Generic(("%s: " "status: 0x%02x") + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = "%s: " "status: 0x%02x"; } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v1) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) > (1)) ? (_Generic((_v1) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v1) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (1 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v1) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((1 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v1) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 1 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v1) + 0; double _d = _Generic((_v1) + 0, float : (_v1) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v1) + 0; (void)__v; size_t __arg_size = _Generic((_v1), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v1) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v1) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v1; } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) ; do { _Static_assert(!((sizeof(double) < (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double)))) && _Generic((_v2) + 0, long double : 1, default : 0) && !0), "" "Packaging of long double not enabled in Kconfig."); while (_pkg_offset % (((_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) > (1)) ? (_Generic((_v2) + 0, float : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), double : (((1) > (__alignof__(double))) ? (1) : (__alignof__(double))), long double : (((1) > (__alignof__(long double))) ? (1) : (__alignof__(long double))), long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), unsigned long long : (((1) > (__alignof__(long long))) ? (1) : (__alignof__(long long))), default : __alignof__((_v2) + 0))) : (1)) != 0UL) { _pkg_len += sizeof(int); _pkg_offset += sizeof(int); } uint32_t _arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); uint32_t _loc = _pkg_len / sizeof(int); if (2 < 1 + _fros_cnt) { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } else if (_Generic((_v2) + 0, char * : 1, const char * : ((0) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((0) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((0) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0)) { if (_cros_en) { if ((2 < (((_flags) >> 3) & ((1UL << (3)) - 1UL)) ? 0 : _Generic((_v2) + 0, char * : 1, const char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile char * : 1, const volatile char * : 1, unsigned char * : 1, const unsigned char * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile unsigned char * : 1, const volatile unsigned char * : 1, wchar_t * : 1, const wchar_t * : ((_flags) & (1UL << (0))) ? 0 : 1, volatile wchar_t * : 1, const volatile wchar_t * : 1, default : 0))) { if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _loc; } } else { if (_ros_pos_en) { _ros_pos_buf[_ros_pos_idx++] = _loc; } } } else if (_rws_pos_en) { _rws_buffer[_rws_pos_idx++] = 2 - 1; _rws_buffer[_rws_pos_idx++] = _pkg_len / sizeof(int); } } if (_pbuf && _pkg_len < (int)_pmax) { do { if (0) { __auto_type _v = (_v2) + 0; double _d = _Generic((_v2) + 0, float : (_v2) + 0, default : 0.0); (void)_v; (void)_d; size_t arg_size = ({ __auto_type __v = (_v2) + 0; (void)__v; size_t __arg_size = _Generic((_v2), float : sizeof(double), default : sizeof((__v)) ); __arg_size; }); size_t _wsize = arg_size / sizeof(int); z_cbprintf_wcpy((int *)&_pbuf[_pkg_len], (int *) _Generic((_v2) + 0, float : &_d, default : &_v), _wsize); } else { *_Generic((_v2) + 0, char : (int *)&_pbuf[_pkg_len], unsigned char: (int *)&_pbuf[_pkg_len], short : (int *)&_pbuf[_pkg_len], unsigned short : (int *)&_pbuf[_pkg_len], int : (int *)&_pbuf[_pkg_len], unsigned int : (unsigned int *)&_pbuf[_pkg_len], long : (long *)&_pbuf[_pkg_len], unsigned long : (unsigned long *)&_pbuf[_pkg_len], long long : (long long *)&_pbuf[_pkg_len], unsigned long long : (unsigned long long *)&_pbuf[_pkg_len], float : (double *)&_pbuf[_pkg_len], double : (double *)&_pbuf[_pkg_len], long double : (long double *)&_pbuf[_pkg_len], default : (const void **)&_pbuf[_pkg_len]) = _v2; } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } _pkg_len += _arg_size; _pkg_offset += _arg_size; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); _total_len = _pkg_len; _total_len += _ros_cnt; _total_len += 2 * _rws_cnt; if (_pbuf != 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { uint8_t *_pbuf_loc = &_pbuf[_pkg_len]; for (size_t _ros_idx = 0; _ros_idx < _ros_cnt; _ros_idx++) { *_pbuf_loc++ = _ros_pos_buf[_ros_idx]; } for (size_t _rws_idx = 0; _rws_idx < (2 * _rws_cnt); _rws_idx++) { *_pbuf_loc++ = _rws_buffer[_rws_idx]; } } _plen = (_total_len > (int)_pmax) ? -
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+28 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+: _total_len; if (_pbuf != 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { union cbprintf_package_hdr pkg_hdr = { .desc = { .len = (uint8_t)(_pkg_len / sizeof(int)), .str_cnt = 0, .ro_str_cnt = _ros_cnt, .rw_str_cnt = _rws_cnt, } }; ; *_len_loc = pkg_hdr; }
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+#pragma GCC diagnostic pop
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+ } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } struct log_msg_desc _desc = { .valid = 0, .busy = 0, .type = 0, .domain = 0, .level = 4U, .package_len = (uint32_t)_plen, .data_len = 0, }; ; z_log_msg_static_create((void *)_src, _desc, _msg->data, 
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+((void *)0)
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); _mode = Z_LOG_MSG_MODE_FROM_STACK; } (void)_mode; } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+); (void)_mode; if (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+) { z_log_printf_arg_checker("status: 0x%02x", evt->status); } } while (
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+0
+# 232 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+);
+
+ if (dh_key_cb) {
+  bt_dh_key_cb_t cb = dh_key_cb;
+
+  dh_key_cb = 
+# 237 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+             ((void *)0)
+# 237 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                 ;
+  cb(evt->status ? 
+# 238 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c" 3 4
+                  ((void *)0) 
+# 238 "/home/g/mise-work/zmk-firmware/zmk/zephyr/subsys/bluetooth/host/ecc.c"
+                       : evt->dhkey);
+ }
+}
