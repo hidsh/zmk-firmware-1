@@ -1,0 +1,8 @@
+file_format: "1"
+id: dynamic-pinctl-spi
+name: DYNAMIC_PINCTLS
+type: shield
+url: https://github.com/hidsh/zmk-dynamic-pinctl-spi
+requires: [seeed_xiao]
+features:
+  - keys

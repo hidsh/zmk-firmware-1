@@ -1,0 +1,100 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&xiao_d 0 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 1 GPIO_ACTIVE_HIGH>
+            ;
+
+        row-gpios
+            = <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <2>;
+        rows = <2>;
+        map = <
+            RC(0,0) RC(0,1)
+            RC(1,0) RC(1,1)
+        >;
+    };
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
+};
+
+// ---------------------------------------------
+// for dynamic-pinctl (to swap pins for uart0)
+// ---------------------------------------------
+#include <zephyr/dt-bindings/input/input-event-codes.h> // `zephyr,code`
+
+/ {
+	zephyr,user {
+		uart0_alt_default = <&uart0_alt_default>;
+		uart0_alt_sleep = <&uart0_alt_sleep>;
+	};
+};
+
+&pinctrl {
+	/* Alternative pin configuration for UART0 */
+	uart0_alt_default: uart0_alt_default {
+		group1 {
+			psels = <NRF_PSEL(UART_TX, 0, 26)>;  // TXD: P0.26 (XIAO led0:red)
+		};
+		group2 {
+			psels = <NRF_PSEL(UART_RX, 1, 15)>;  // RXD: P1.15 (XIAO #11 D10)
+			bias-pull-up;
+		};
+	};
+
+	uart0_alt_sleep: uart0_alt_sleep {
+		group1 {
+			psels = <NRF_PSEL(UART_TX, 0, 26)>,  // TXD: P1.14 (XIAO #10 D9)
+				<NRF_PSEL(UART_RX, 1, 15)>;      // RXD: P1.15 (XIAO #11 D10)
+			low-power-enable;
+		};
+	};
+
+   xiao_serial {
+
+    };
+};
+
+/ {
+    sw0: sw0 {
+        compatible = "gpio-key";
+        gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+        label = "Push Switch";
+        zephyr,code = <INPUT_KEY_0>; // optional, for input subsystem
+    };
+
+    aliases {
+        sw0 = &sw0;
+    };
+};
+
+/*
+/ {
+    sw0: ext_switch_0 {
+        compatible = "gpio-key";
+        gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;  // P0.04, active low (change to ACTIVE_HIGH if needed)
+        label = "Push Switch";
+        zephyr,code = <INPUT_KEY_0>;     // optional, for input subsystem
+    };
+
+    aliases {
+        sw0 = &sw0;
+    };
+};
+
+*/

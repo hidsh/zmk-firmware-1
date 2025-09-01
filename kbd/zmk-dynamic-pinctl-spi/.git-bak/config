@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[submodule "zmk-modules/zmk-analog-input-driver"]
+	url = https://github.com/hidsh/zmk-analog-input-driver.git
+	active = true

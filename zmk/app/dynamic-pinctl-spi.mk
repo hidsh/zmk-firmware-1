@@ -1,0 +1,1 @@
+../../kbd/zmk-dynamic-pinctl-spi/dynamic-pinctl-spi.mk

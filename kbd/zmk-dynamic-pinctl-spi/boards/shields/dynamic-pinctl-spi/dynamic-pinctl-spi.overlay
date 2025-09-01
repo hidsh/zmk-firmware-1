@@ -1,0 +1,271 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
+#include <physical_layouts.dtsi>
+
+&xiao_i2c { status = "disabled"; };
+
+// zmk.studio:  comment-out
+// usb-logging: comment-out
+// &xiao_serial { status = "disabled"; };
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout;
+    };
+
+    physical_layout: physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+        keys                    //  w   h   x   y  rot rx ry
+            = <&key_physical_attrs 100 100   0   0  0   0  0>
+            , <&key_physical_attrs 100 100 100   0  0   0  0>
+            , <&key_physical_attrs 100 100 200   0  0   0  0>
+            , <&key_physical_attrs 100 100 300   0  0   0  0>
+            , <&key_physical_attrs 100 100 400   0  0   0  0>
+            , <&key_physical_attrs 100 100 500   0  0   0  0>
+            , <&key_physical_attrs 100 100 600   0  0   0  0>
+            , <&key_physical_attrs 100 100 700   0  0   0  0>
+
+            , <&key_physical_attrs 100 100   0 100  0   0  0>
+            , <&key_physical_attrs 100 100 100 100  0   0  0>
+            , <&key_physical_attrs 100 100 200 100  0   0  0>
+            , <&key_physical_attrs 100 100 300 100  0   0  0>
+            , <&key_physical_attrs 100 100 400 100  0   0  0>
+            , <&key_physical_attrs 100 100 500 100  0   0  0>
+            , <&key_physical_attrs 100 100 600 100  0   0  0>
+            , <&key_physical_attrs 100 100 700 100  0   0  0>
+
+            , <&key_physical_attrs 100 100   0 200  0   0  0>
+            , <&key_physical_attrs 100 100 100 200  0   0  0>
+            , <&key_physical_attrs 100 100 200 200  0   0  0>
+            , <&key_physical_attrs 100 100 300 200  0   0  0>
+            , <&key_physical_attrs 100 100 400 200  0   0  0>
+            , <&key_physical_attrs 100 100 500 200  0   0  0>
+            , <&key_physical_attrs 100 100 600 200  0   0  0>
+            , <&key_physical_attrs 100 100 700 200  0   0  0>
+            ;
+    };
+
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <8>;
+        rows = <3>;
+        map = <
+RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7)
+RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7)
+RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7)
+        >;
+    };
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&shifter 1 GPIO_ACTIVE_HIGH>         // col0: 1st 595 #1(QB) -> 1
+            , <&shifter 2 GPIO_ACTIVE_HIGH>         // col1: 1st 595 #2(QC) -> 2
+            , <&shifter (8*1+1) GPIO_ACTIVE_HIGH>   // col2: 2nd 595 #1(QB) -> 8*1+1=9
+            , <&shifter (8*1+2) GPIO_ACTIVE_HIGH>   // col3: 2nd 595 #2(QC) -> 8*1+2=10
+            , <&shifter (8*2+1) GPIO_ACTIVE_HIGH>   // col2: 3rd 595 #1(QB) -> 8*2+1=17
+            , <&shifter (8*2+2) GPIO_ACTIVE_HIGH>   // col3: 3rd 595 #2(QC) -> 8*2+2=18
+            , <&shifter (8*3+1) GPIO_ACTIVE_HIGH>   // col2: 4th 595 #1(QB) -> 8*3+1=25
+            , <&shifter (8*3+2) GPIO_ACTIVE_HIGH>   // col3: 4th 595 #2(QC) -> 8*3+2=26
+            ;
+
+        row-gpios
+            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            // , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+
+};
+
+// -------------------------------
+// spi0: 74hc595, pmw3610
+// spi2: mcp320x
+// -------------------------------
+&pinctrl {
+    spi0_default: spi0_default {                // for 595s and pmw3610, during operation
+        group1 {
+            psels                               //       XIAO                595      pmw3610-pcb   mcp320x
+                = <NRF_PSEL(SPIM_SCK,  0, 5)>   // #6 (D5/SCL, P0.05) --> #11 (SRCLK)  #4 (SCLK)   #11 (CLK)
+                , <NRF_PSEL(SPIM_MOSI, 0, 4)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din)
+                , <NRF_PSEL(SPIM_MISO, 0, 4)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din*)   *: so do NOT assert /CS
+                ;
+        };
+    };
+    spi0_sleep: spi0_sleep {                    // for 595s and pmw3610, during sleep
+        group1 {
+            psels                               //       XIAO                595      pmw3610-pcb   mcp320x
+                = <NRF_PSEL(SPIM_SCK,  0, 5)>   // #6 (D5/SCL, P0.05) --> #11 (SRCLK)  #4 (SCLK)   #11 (CLK)
+                , <NRF_PSEL(SPIM_MOSI, 0, 4)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din)
+                , <NRF_PSEL(SPIM_MISO, 0, 4)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din*)   *: so do NOT assert /CS
+                ;
+            low-power-enable;
+        };
+    };
+
+    spi2_default: spi2_default {                // for mcp320x, during operation
+        group1 {
+            psels                               //       XIAO                595      pmw3610-pcb   mcp320x
+                = <NRF_PSEL(SPIM_SCK,  0, 5)>   // #6 (D5/SCL, P0.05) --> #11 (SRCLK)  #4 (SCLK)   #11 (CLK)
+                , <NRF_PSEL(SPIM_MOSI, 0, 4)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din)
+                , <NRF_PSEL(SPIM_MISO, 0,28)>   // #3 (D2,     P0.28) -->   (N.C.)       (N.C.)    #10 (Dout)
+                // = <NRF_PSEL(SPIM_SCK,  0, 6)>   // #6 (D5/SCL, P0.05) --> #11 (SRCLK)  #4 (SCLK)   #11 (CLK)
+                // , <NRF_PSEL(SPIM_MOSI, 0,26)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din)
+                // , <NRF_PSEL(SPIM_MISO, 0,28)>   // #3 (D2,     P0.28) -->   (N.C.)       (N.C.)    #10 (Dout)
+                ;
+        };
+    };
+    spi2_sleep: spi2_sleep {                    // for mcp320x, during sleep
+        group1 {
+            psels                               //       XIAO                595      pmw3610-pcb   mcp320x
+                = <NRF_PSEL(SPIM_SCK,  0, 5)>   // #6 (D5/SCL, P0.05) --> #11 (SRCLK)  #4 (SCLK)   #11 (CLK)
+                , <NRF_PSEL(SPIM_MOSI, 0, 4)>   // #5 (D4/SDA, P0.04) --> #14 (SER)    #3 (SDIO)    #9 (Din)
+                , <NRF_PSEL(SPIM_MISO, 0,28)>   // #3 (D2,     P0.28) -->   (N.C.)       (N.C.)    #10 (Dout)
+                ;
+            low-power-enable;
+        };
+    };
+
+};
+
+&spi0 {                                         // for 595s and pmw3610
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
+	cs-gpios = <&xiao_d  3 GPIO_ACTIVE_LOW>     // XIAO  #4 (D3,  P0.29) --> 595         #12 (RCLK)
+             , <&xiao_d  6 GPIO_ACTIVE_LOW>     // XIAO  #7 (D6,  P1.11) --> pmw3610-pcb  #5 (nCS)
+             ;
+
+	shifter: 595@0 {
+		compatible = "zmk,gpio-595";
+		status = "okay";
+		reg = <0>;
+		gpio-controller;
+		spi-max-frequency = <300000>;
+		#gpio-cells = <2>;
+		ngpios = <(8*4)>;                       // 595 x4
+	};
+
+    trackball: trackball@1 {
+        compatible = "pixart,pmw3610";
+        status = "okay";
+        reg = <1>;
+        spi-max-frequency = <2000000>;
+        //          XIAO #8 (D7/RX, P1.12) --> pmw3610-pcb #6 (MOTION)
+        irq-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        cpi = <600>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+    };
+
+};
+
+&spi2 {                                         // for mcp320x
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
+    pinctrl-names = "default", "sleep";
+	cs-gpios =  <&xiao_d 10 GPIO_ACTIVE_LOW>;   // XIAO #11 (D10, P1.15) --> mcp3204 #8 (/CS)
+
+    adcx: mcp3204@0 {
+        compatible = "microchip,mcp3204";
+        status = "okay";
+        reg = <0>;
+        spi-max-frequency = <400000>;  // ok
+     // spi-max-frequency = <100000>;  // NG
+        #io-channel-cells = <1>;
+     // duplex = <0>;                       // 0(default): full-duplex, 2048: half-duplex
+                                            // but choose 0 because mcp320x does NOT support half-duplex
+    };
+
+};
+
+// -----------------------
+// trackball
+// -----------------------
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&trackball>;
+    };
+
+};
+
+// -----------------------
+// analog pad
+// -----------------------
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+/* Reference: https://docs.zephyrproject.org/apidoc/latest/group__input__events.html */
+
+/ {
+	anin0: analog_input_0 {
+		compatible = "zmk,analog-input";
+        status = "okay";
+		sampling-hz = <100>;
+
+		x-ch {
+            io-channels = <&adcx 0>;     // ch1
+			mv-mid = <1630>;
+			mv-min-max = <1600>;
+			mv-deadzone = <10>;
+			scale-multiplier = <1>;
+			scale-divisor = <70>;
+			invert;
+			evt-type = <INPUT_EV_REL>;
+			input-code = <INPUT_REL_X>;
+		};
+
+		y-ch {
+            io-channels = <&adcx 1>;     // ch2
+			mv-mid = <1630>;
+			mv-min-max = <1600>;
+			mv-deadzone = <10>;
+			scale-multiplier = <3>;
+			scale-divisor = <4>;
+			invert;
+			evt-type = <INPUT_EV_REL>;
+			input-code = <INPUT_REL_Y>;
+
+			/* enable report mdoe for gamepad axix or knob */
+			/* to only call input_report on quantquantized value is updated */
+			/* NOTE: mouse input does NOT need this */
+			// report-on-change-only;
+		};
+	};
+
+};
+
+// -----------------------
+// encoder
+// -----------------------
+
+/*
+/ {
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        status = "okay";
+        a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;           // mouse encoder
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <12>;
+    };
+
+};
+*/

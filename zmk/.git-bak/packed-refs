@@ -1,0 +1,28 @@
+# pack-refs with: peeled fully-peeled sorted 
+40f7137df73eeb76b0488648c77b551756c07f4e refs/remotes/origin/ci/codeql-analysis-action
+a99002dc6eae4a3e95a19f0c34a94a21dfd04767 refs/remotes/origin/dependabot/github_actions/actions/checkout-5
+e413ec257e440aaeb1c9fec3107409e269b0c1c9 refs/remotes/origin/dependabot/npm_and_yarn/docs/development-b0d00a7f03
+9be2f91cd0c20edabb0b4c75e11a8aa729689b24 refs/remotes/origin/dependabot/npm_and_yarn/docs/mermaid-11.10.1
+324007279b13dd1c59ee611e6075f753d2e6b7cf refs/remotes/origin/dependabot/npm_and_yarn/docs/tree-sitter-4e27693d6c
+0c48bc87c858b116a1e5700d2258e6bc123bfd5c refs/remotes/origin/docs/codes-modifier-function-examples-fixes
+b708d684a5eaeec39724980a97f9d7865816cf05 refs/remotes/origin/docs/predefined-behaviors
+51503629c7925739b800eada5666cc44ea8e7200 refs/remotes/origin/docs/recipes
+0b23d0795418460433b33833278f3e250ce74e95 refs/remotes/origin/led-indicators
+f09e55192994a8fba6e103629ebad16d056ea23c refs/remotes/origin/main
+d35e0a650831d5c071e37457c37940658bf1e673 refs/remotes/origin/release-please--branches--main
+f4b9cc2de5c19dae9bb52e9be68e62921c874c38 refs/remotes/origin/revert-2004-build/artifact-name
+1dbc8cf7af7250eb641edb149a8dfe8d814218d2 refs/remotes/origin/revert-2136-ci/fix-missed-upload-artifacts-action-version-node-16
+6f47296a0a4eac75692c9a1801a2e7bcf04c5357 refs/remotes/origin/revert-2397-core/physical-layout-split-sync
+a9ff3a78a1aa3a1a64c063ec1960c680e9738eb3 refs/remotes/origin/v0.1-branch
+fadafc77593858222bd6e43b7d2249727eba64b3 refs/remotes/origin/v0.2-branch
+edf5c0814fd3ea202e43aad2d68fd32e882a518c refs/remotes/origin/v0.3-branch
+c918c5513f88ef17bbc57b718177d7d13e73ad3d refs/tags/v0.1
+^a9ff3a78a1aa3a1a64c063ec1960c680e9738eb3
+a9ff3a78a1aa3a1a64c063ec1960c680e9738eb3 refs/tags/v0.1.0
+ae7d4ba91d375da5cc71f4f69836ff8d3173e835 refs/tags/v0.2
+^241ff39556b3685c9344c4c22fd9a655af8eb3ba
+fadafc77593858222bd6e43b7d2249727eba64b3 refs/tags/v0.2.0
+241ff39556b3685c9344c4c22fd9a655af8eb3ba refs/tags/v0.2.1
+3cf9006a9377f21c99e944e29e2a507d8c3e9069 refs/tags/v0.3
+^edf5c0814fd3ea202e43aad2d68fd32e882a518c
+edf5c0814fd3ea202e43aad2d68fd32e882a518c refs/tags/v0.3.0

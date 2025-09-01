@@ -1,0 +1,10 @@
+if SHIELD_DYNAMIC_PINCTL_SPI
+
+    config ZMK_KEYBOARD_NAME
+        default "DYNAMIC_PINCTLS"
+
+    config ZMK_BLE
+        bool
+        default y
+
+endif

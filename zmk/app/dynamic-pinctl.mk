@@ -1,0 +1,1 @@
+../../kbd/zmk-dynamic-pinctl/dynamic-pinctl.mk
